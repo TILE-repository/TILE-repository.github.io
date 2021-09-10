@@ -99,6 +99,23 @@ find errors.
 
 ### A test domain TILE:
 
+Mad Libs is a phrase template word game where a player asks others for a list of words to substitute for blanks in a story, often comical or nonsensical, and which will be read aloud later. 
+We are going to make a little Mad Libs.
+
+![MadLib example](MadLib-testing.jpg "a madlib example")
+
+So for these examples, our program returns:
+
+`Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs. `
+
+Try other inputs and try to come up with a funny phrase.
+
+<div class="domainTILEd">
+
+This TILE contains the message that testing is important.
+
+</div>
+
 ## Metadata
 
 | Summary 		| Test Informed Learning by Example (TILE) based assignments. |
