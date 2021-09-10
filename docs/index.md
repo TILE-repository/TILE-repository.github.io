@@ -53,9 +53,7 @@ Make a program that receive values for three variables `a`,
 `b` and `c`, and interchange their values as follows:
 
 -   `b` takes the value of `a`,
-
 -   `c` takes the value of `a`, and
-
 -   `a` takes the value of `c`.
 
 This must be done WITHOUT using auxiliary variables, that is, additional
@@ -96,23 +94,17 @@ Implement a program that reads three integer values: day, month, and year of a p
 Using this data, the program should show a four-digit PIN associated with the date of birth. 
 The PIN is calculated as:
 
-1.  p1 = (d1 + d2)% 10.
-
-2.  p2 = (m1 + m2)% 10.
-
-3.  p3 = (y1 + y4)% 10.
-
-4.  p4 = (y2 + y3)% 10.
+ - p1 = (d1 + d2) % 10.
+ - p2 = (m1 + m2) % 10.
+ - p3 = (y1 + y4) % 10.
+ - p4 = (y2 + y3) % 10.
 
 For example, if the date entered is 29 9 1975, the PIN would be 1 9 6 6:
 
-1.  p1 = (2 + 9)% 10 = 1.
-
-2.  p2 = (0 + 9)% 10 = 9.
-
-3.  p3 = (1 + 5)% 10 = 6.
-
-4.  p4 = (9 + 7)% 10 = 6.
+ - p1 = (2 + 9) % 10 = 1.
+ - p2 = (0 + 9) % 10 = 9.
+ - p3 = (1 + 5) % 10 = 6.
+ - p4 = (9 + 7) % 10 = 6.
 
 ```
 >>> %Run 
@@ -122,14 +114,14 @@ For example, if the date entered is 29 9 1975, the PIN would be 1 9 6 6:
   Your PIN is 1 9 6 6 
 ```
 
-| test case ID | inputs |       |      | expected output (PIN) |
-|:-------------|:-------|:------|:-----|:----------------------|
-|              | day    | month | year |                       |
-| 1            | 10     | 12    | 1522 | 1 3 7 2               |
-| 2            | 1      | 1     | 1    | 1 1 1 0               |
-| 3            | 27     | 3     | 1978 | 9 3 9 6               |
-| 4            | 55     | 28    | 300  | 0 0 0 3               |
-| 5            | 356    | 903   | 1568 | 1 3 9 1               |
+| test case ID | inputs |         |        | expected output (PIN) |
+|:-------------|:-------|:--------|:-------|:----------------------|
+|              | *day*  | *month* | *year* |                       |
+| 1            | 10     | 12      | 1522   | 1 3 7 2               |
+| 2            | 1      | 1       | 1      | 1 1 1 0               |
+| 3            | 27     | 3       | 1978   | 9 3 9 6               |
+| 4            | 55     | 28      | 300    | 0 0 0 3               |
+| 5            | 356    | 903     | 1568   | 1 3 9 1               |
 
 Look at test cases 4 and 5. 
 Are they valid? Inputs 55 and 356 are not valid numbers for a day of birth. 
@@ -154,7 +146,7 @@ We are going to make a little Mad Libs.
 
 So for these examples, our program returns:
 
-`Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs. `
+```Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs.```
 
 Try other inputs and try to come up with a funny phrase.
 
@@ -173,7 +165,7 @@ This TILE contains the message that testing is important.
 | Difficulty 	| These are assignments for novice computer science students, but TILE can be used for more advanced assignments as well. |
 | Strengths 	| TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
 | Weaknesses 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank with more of these assignments. |
-| Dependencies 	| This approach integrates into existing programming courses. The assignments presented here require knowledge of basic programming concepts such as conditional statements, datatypes and console input and output. |
+| Dependencies 	| This approach integrates into existing programming courses. The assignments presented here require knowledge of basic programming concepts such as conditional statements, datatypes, artithmetic operations and console input and output. |
 | Variants 		| We identified three main type of TILES, however, this taxonomy can be extended into sub-types or other main types. |
 
 ## Acknowledgements
