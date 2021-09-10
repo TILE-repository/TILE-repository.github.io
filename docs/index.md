@@ -35,13 +35,14 @@ To fill this gap, we developed TILE, Test Informed Learning with Examples.
 There are three main types of TILES:
 
 test run TILES
-:	tiles in students are encouraged to write tests
+:	When we show (or asks) our students what happens when we run (or execute) a piece of programming code, we can, with a minor change of the wording make a TILE out of the example. For example, we can ask the students to *test* the program, or ask them to *assert* the right output instead of asking them to *run* the program. 
 
 test cases TILES
-:	dafdsf
+:	If we ask students to test their programs, they often only test happy path execution [^7] and hence do not really get that awareness we want about the importance of testing. A better way to TILE exercises would be to add more concrete examples of, or ideas about, possible *test cases* that the student should use to check the workings of their code. These example test cases should not just include the happy tests, but also make sure that their code is challenged on some corner cases and other less happy tests.
 
 test domain TILES
-:	dafsdf
+:	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
+
 
 ## TILES of each type
 
@@ -190,3 +191,4 @@ This work was funded by the Erasmus+ project QPeD under contract number 2020-1-N
 [^4]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)
 [^5]: [Test-driven learning in early programming courses](https://dl.acm.org/doi/10.1145/1352322.1352315) 
 [^6]: [Implications of integrating test-driven development into CS1/CS2 curricula](https://dl.acm.org/doi/10.1145/1508865.1508921) 
+[^7]: [Do student programmers all tend to write the same software tests?](https://dl.acm.org/doi/10.1145/2591708.2591757)
