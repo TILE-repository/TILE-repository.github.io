@@ -24,19 +24,17 @@ subtle
 Test Informed Learning with Examples (TILE) was inspired by Test-driven learning (TDL). 
 TDL was coined in 2006 by Janzen and Saiedian [^4]. 
 It describes a pedagogical approach to teaching computer programming that involves introducing and exploring new programming concepts using examples and exercises that evolve around testing. 
-It offers the potential of teaching testing "for free: as early as possible without adding any additional strain on the course schedule. 
 When teaching programming many examples are being given, programming is often learned through examples. 
 Examples related to testing take the same effort to present than other examples.
-
 Janzen et. al. [^5] [^6] continued their work more in the direction of Test Driven Development (TDD) such they diverted from their initial TDL ideas. 
+
 As a consequence, at this moment, there does not exist a clearly defined approach that can be used by any teacher to effortless introduce TDL in their programming course. 
-
 To fill this gap, we developed TILE, Test Informed Learning with Examples.
-Exercises making use of TILE are called TILES.
+The exercises that make use of TILE are called TILES.
 
-## Types of TILES
+## Types of TILEs
 
-There are three types of tiles:
+There are three main types of TILES:
 
 test run TILES
 :	tiles in students are encouraged to write tests
@@ -47,22 +45,24 @@ test cases TILES
 test domain TILES
 :	dafsdf
 
-## Example one
+## Assignments
 
-## Example two
+### One
 
-## Example three
+### Two
+
+### N
 
 ## Metadata
 
 | Summary 		| Test Informed Learning by Example (TILE) based assignments |
-| Topics 		| |
+| Topics 		| Testing, programming |
 | Audience 		| Appropriate for a CS1 course. |
-| Difficulty 	| These are assignments for novice computer science students |
-| Strengths 	| It offers the potential of teaching testing "for free" as early as possible without adding any additional strain on the course schedule. |
-| Weaknesses 	| |
-| Dependencies 	| |
-| Variants 		| |
+| Difficulty 	| These are assignments for novice computer science students, but TILE can be used for more advanced assignments as well. |
+| Strengths 	| TILE offers the potential of teaching testing "for free" as early as possible without adding any additional strain on the course schedule. |
+| Weaknesses 	| Whilst the teaching doesn't put strain on the course schedule, this approach does require effort to change existing course material in order to apply. We aim to reduce this effort by providing an open databank with assignments. |
+| Dependencies 	| This approach integrated into existing programming courses. |
+| Variants 		| We identified three main type of TILES, however, this taxonomy can be extended into sub-types or other main types. |
 
 
 ## Footnotes                                                                                    
