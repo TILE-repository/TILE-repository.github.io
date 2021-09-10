@@ -34,15 +34,14 @@ To fill this gap, we developed TILE, Test Informed Learning with Examples.
 
 There are three main types of TILES:
 
-test run TILES
-:	When we show (or asks) our students what happens when we run (or execute) a piece of programming code, we can, with a minor change of the wording make a TILE out of the example. For example, we can ask the students to *test* the program, or ask them to *assert* the right output instead of asking them to *run* the program. 
+Test run TILES
+:	When we show (or asks) our students what happens when we run (or execute) a piece of programming code, we can, with a minor change of the wording make a TILE out of the example. For example, we can ask the students to *test* the program, or ask them to *assert* the right output instead of asking them to *run* the program.
 
-test cases TILES
+Test cases TILES
 :	If we ask students to test their programs, they often only test happy path execution [^4] and hence do not really get that awareness we want about the importance of testing. A better way to TILE exercises would be to add more concrete examples of, or ideas about, possible *test cases* that the student should use to check the workings of their code. These example test cases should not just include the happy tests, but also make sure that their code is challenged on some corner cases and other less happy tests.
 
-test domain TILES
+Test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
-
 
 ## Assignments
 
