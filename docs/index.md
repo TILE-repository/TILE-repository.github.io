@@ -142,11 +142,20 @@ A table with test cases was added and the student were made aware of the test ca
 Mad Libs is a phrase template word game where a player asks others for a list of words to substitute for blanks in a story, often comical or nonsensical, and which will be read aloud later. 
 We are going to make a little Mad Libs.
 
+Look at the following example:
+
 ![MadLib example](MadLib-testing.jpg "a madlib example")
+
+We need to ask the player for the following words in English:
+
+- verb, for example: `write`
+- plural noun, for example: `problems`
+- adjective, for example: `fun`
+
 
 So for these examples, our program returns:
 
-```Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs.```
+```Whether you *write* computer programs to solve *problems* or just for *fun*, it is very important that you ALWAYS TEST your code for bugs.```
 
 Try other inputs and try to come up with a funny phrase.
 
