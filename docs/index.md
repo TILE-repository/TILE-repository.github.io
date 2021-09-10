@@ -30,9 +30,8 @@ Examples related to testing take the same effort to present than other examples.
 Janzen et. al. [^5] [^6] continued their work more in the direction of Test Driven Development (TDD) such they diverted from their initial TDL ideas. 
 As a consequence, at this moment, there does not exist a clearly defined approach that can be used by any teacher to effortless introduce TDL in their programming course. 
 To fill this gap, we developed TILE, Test Informed Learning with Examples.
-The exercises that make use of TILE are called TILES.
 
-## Types of TILEs
+## Types of TILES
 
 There are three main types of TILES:
 
@@ -45,13 +44,13 @@ test cases TILES
 test domain TILES
 :	dafsdf
 
-## Assignments
+## TILES of each type
 
-We provide some assigments of each type to give a good understanding of the approach.
+We provide some assigments of each type of the approach.
 
-### Password hashing
+### A test run TILE: Password hashing
 
-#### Hashing
+#### Introduction into hashing
 
 Hashing is a mathematical algorithm that maps data of arbitrary size (often called the "message") to a bit array of a fixed size (the "hash value", "hash", or "message digest"). 
 It is a one-way function, that is, a function which is practically infeasible to invert. 
@@ -102,19 +101,7 @@ Prerequisites:
 - Conditional statements (if/else)
 - Loops
 
-#### Open Informatics approach
-
-::: todo
-Look at this assignment from an open inf perspective with Greg
-:::
-
-- If we give a short description of hashing, without the details such as the fixed length of hashes and the in-reversibility of them, we could present a table with passwords, salts and hashes and discuss what the students see to discover these properties.
-- Students could design a hashing function in pairs, using basic mathematics, maybe with a given interface and test file.
-- Discuss possible attack vectors [@Mouha2018], and potential problems like random number generators [@Rukhin2001], leading to explaining/discussing rainbow tables.
-- Discuss the concept of salting and brainstorm about ways to apply salting [@Gauravaram2012].
-- Than we could present the assignment.
-
-#### Assignment: Notsuchasafebank has a problem
+#### The Assignment: Notsuchasafebank has a problem
 
 The website of "Notsuchasafebank", a large financial institute, has a registration function for users.
 Users are required to choose a secure password and use their e-mail address as the user name.
@@ -147,13 +134,13 @@ The data of the file is structured as follows:
 
 Marike asked you to write a program to analyse this data and to determine **how many** passwords where not properly salted and hashed.
 
-::: remark
+**remark**:
+
 The last line of the file contains the correct answer which you can use to verify your solution.
 Use `pytest` to verify if your answer is correct.
-:::
 
 
-#### Solution example
+#### Example Solution
 
 The file `hashingTest.py`, which is listed below, is a possible solution using `pytest` to verify the answer with the answer from the password file.
 It can be used to automate the process of checking the students answers or be discussed with the students afterwards.
@@ -204,7 +191,7 @@ This file can be run using `pytest`:
 1 passed in 0.01s
 ```
 
-#### Generator for the password files
+#### Supportive material: A generator for the password files
 
 This assignment can easily be used to create individual versions by using the generator below.
 
@@ -258,17 +245,16 @@ Number of passwords that were hashed and salted: 78
 
 #### Possible adaptations
 
-By creating unique versions of the password file for each student, copy-pasting code from other students is (a bit) discouraged.
-It is possible to discourage this even more by using different hashing algorithms as well such as `SHA-1`.
+By creating unique versions of the password file for each student, copy-pasting code from other students is discouraged.
+It is possible to discourage this even more by using different hashing algorithms such as `SHA-1`.
 
 In this assignment, students have to count the occurrences of defective hashes.
 The defective hashes are created randomly.
-We could make is more interesting to truly introduce a defect in the code, for example, all passwords longer then 20 characters are not salted.
+We could make is more of a testing excersise to truly introduce a defect in the code, for example, all passwords longer then 20 characters are not salted.
 Or, all passwords containing the letter Q are not salted.
 The students could then try to find such patterns and discover the defect of the salting algorithm of the website.
 To do so, they could separate the defective entries and the correct entries and look for patterns.
-
-Testing for defects in hashing algorithms is an interesting field. 
+However, this is not the aim of TILE, which is to incorporate testing into programming and not convert programming courses into testing courses.
 
 ### Two
 
