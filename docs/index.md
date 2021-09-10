@@ -5,8 +5,6 @@ title: "Nifty TILED Assignments"
 
 By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marin [^3]
 
-![logo](TILE_logo.png "Test Informed Learning with Examples")
-
 ## Introduction
 
 Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory programming courses in the following ways:
