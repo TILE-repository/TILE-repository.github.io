@@ -44,11 +44,11 @@ test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
 
 
-## TILES of each type
+## Assignments
 
 Here we provide one assigments of each type of the approach.
 
-### A test run TILE assignment:
+### A *test run* TILE assignment
 
 Make a program that receive values for three variables `a`,
 `b` and `c`, and interchange their values as follows:
@@ -94,7 +94,7 @@ find errors.
 </p>
 </div>
 
-### A test cases TILE assignment:
+### A *test cases* TILE assignment
 
 Implement a program that reads three integer values: day, month, and
 year of a person’s birth. Using this data, the program should show a
@@ -154,7 +154,7 @@ PIN number.
 </p>
 </div>
 
-### A test domain TILE:
+### A *test domain* TILE
 
 Mad Libs is a phrase template word game where a player asks others for a list of words to substitute for blanks in a story, often comical or nonsensical, and which will be read aloud later. 
 We are going to make a little Mad Libs.
