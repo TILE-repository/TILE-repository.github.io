@@ -85,7 +85,7 @@ Should your program work for all these cases?
 <p>
 This exercise was TILEd by adding the last paragraph. 
 We explicitly ask the students to test for different types of values. 
-Most students, because of the example execution convert the user input to int, but that is not necessary for the swapping, anything can be swappped. 
+Most students, because of the example execution convert the user input to `int`, but that is not necessary for the swapping, anything can be swappped. 
 Asking them to test with all kinds of values makes them aware of the assumptions they made when reading the exercises and hence how testing is good to find errors.
 </p>
 </div>
@@ -168,7 +168,7 @@ This TILE contains the message that testing is important.
 ## Metadata
 
 | Summary 		| Three Test Informed Learning by Example (TILE) based programming assignments. These assignments are usable examples of ways to apply the TILE approach to existing or new programming assignments with the objective to seamlessly, in a subtle way, introduce testing as early as possible in programming courses. |
-| Topics 		| Testing, programming. |
+| Topics 		| Testing, programming |
 | Audience 		| These assignments are appropriate for a CS1 course. The method can also be used on CS2 assignments. |
 | Difficulty 	| These are assignments for novice computer science students, but TILE can be used for more advanced assignments as well. |
 | Strengths 	| TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
