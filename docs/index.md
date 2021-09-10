@@ -1,8 +1,8 @@
 ---
-title: "Nifty TILE Assignments"
+title: "Test Informed Learning with Examples"
 ...
 
-# Nifty TILE Assignments
+# TILE Assignments
 
 By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marín [^3]
 
