@@ -5,9 +5,13 @@
 
 
 .howTILEd {
-    background-color: lightblue;
-    color: #444;
+    background-color: #0a4271;
+    color: #87a7be;
     border: 1px solid black;
     padding: 1em 1em 0 1em;
     margin-bottom: 1em;
+
+    strong {
+        color: #87a7be;
+    }
 }
