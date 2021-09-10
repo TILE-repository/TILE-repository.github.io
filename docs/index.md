@@ -1,11 +1,10 @@
 ---
-title: "Nifty TILED Assignments"
-# Prepare a draft of the web page for your assignment, including the table of metadata described below. The purpose of the web page is to introduce the assignment to another educator.
+title: "Nifty TILE Assignments"
 ...
 
 # Nifty TILE Assignments
 
-By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marin [^3]
+By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marín [^3]
 
 ## Introduction
 
@@ -23,13 +22,12 @@ subtle
 
 ## Background
 
-Test Informed Learning with Examples (TILE) was inspired by Test-driven learning (TDL). 
+Test Informed Learning with Examples was inspired by Test-driven learning (TDL). 
 TDL was coined in 2006 by Janzen and Saiedian [^4]. 
 It describes a pedagogical approach to teaching computer programming that involves introducing and exploring new programming concepts using examples and exercises that evolve around testing. 
 When teaching programming many examples are being given, programming is often learned through examples. 
 Examples related to testing take the same effort to present than other examples.
 Janzen et. al. [^5] [^6] continued their work more in the direction of Test Driven Development (TDD) such they diverted from their initial TDL ideas. 
-
 As a consequence, at this moment, there does not exist a clearly defined approach that can be used by any teacher to effortless introduce TDL in their programming course. 
 To fill this gap, we developed TILE, Test Informed Learning with Examples.
 The exercises that make use of TILE are called TILES.
