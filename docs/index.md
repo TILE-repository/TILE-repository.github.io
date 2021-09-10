@@ -4,7 +4,7 @@ title: "Test Informed Learning with Examples"
 
 # TILE Assignments
 
-By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marín [^3]
+By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
 ## Introduction
 
@@ -22,11 +22,11 @@ subtle
 ## Background
 
 Test Informed Learning with Examples was inspired by Test-driven learning (TDL). 
-TDL was coined in 2006 by Janzen and Saiedian [^4]. 
+TDL was coined in 2006 by Janzen and Saiedian [^1]. 
 It describes a pedagogical approach to teaching computer programming that involves introducing and exploring new programming concepts using examples and exercises that evolve around testing. 
 When teaching programming many examples are being given, programming is often learned through examples. 
 Examples related to testing take the same effort to present than other examples.
-Janzen et. al. [^5] [^6] continued their work more in the direction of Test Driven Development (TDD) such they diverted from their initial TDL ideas. 
+Janzen et. al. [^2] [^3] continued their work more in the direction of Test Driven Development (TDD) such they diverted from their initial TDL ideas. 
 As a consequence, at this moment, there does not exist a clearly defined approach that can be used by any teacher to effortless introduce TDL in their programming course. 
 To fill this gap, we developed TILE, Test Informed Learning with Examples.
 
@@ -38,7 +38,7 @@ test run TILES
 :	When we show (or asks) our students what happens when we run (or execute) a piece of programming code, we can, with a minor change of the wording make a TILE out of the example. For example, we can ask the students to *test* the program, or ask them to *assert* the right output instead of asking them to *run* the program. 
 
 test cases TILES
-:	If we ask students to test their programs, they often only test happy path execution [^7] and hence do not really get that awareness we want about the importance of testing. A better way to TILE exercises would be to add more concrete examples of, or ideas about, possible *test cases* that the student should use to check the workings of their code. These example test cases should not just include the happy tests, but also make sure that their code is challenged on some corner cases and other less happy tests.
+:	If we ask students to test their programs, they often only test happy path execution [^4] and hence do not really get that awareness we want about the importance of testing. A better way to TILE exercises would be to add more concrete examples of, or ideas about, possible *test cases* that the student should use to check the workings of their code. These example test cases should not just include the happy tests, but also make sure that their code is challenged on some corner cases and other less happy tests.
 
 test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
@@ -189,12 +189,9 @@ This TILE contains the message that testing is important.
 
 This work was funded by the Erasmus+ project QPeD under contract number 2020-1-NL01-KA203-064626.
 
-## Footnotes and references
+## References
 
-[^1]: [niels.doorn@ou.nl](mailto:niels.doorn@ou.nl)
-[^2]: [tanja.vos@ou.nl](mailto:tanja.vos@ou.nl)
-[^3]: [bmarin@dsic.upv.es](mailto:bmarin@dsic.upv.es)
-[^4]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)
-[^5]: [Test-driven learning in early programming courses](https://dl.acm.org/doi/10.1145/1352322.1352315) 
-[^6]: [Implications of integrating test-driven development into CS1/CS2 curricula](https://dl.acm.org/doi/10.1145/1508865.1508921) 
-[^7]: [Do student programmers all tend to write the same software tests?](https://dl.acm.org/doi/10.1145/2591708.2591757)
+[^1]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)
+[^2]: [Test-driven learning in early programming courses](https://dl.acm.org/doi/10.1145/1352322.1352315) 
+[^3]: [Implications of integrating test-driven development into CS1/CS2 curricula](https://dl.acm.org/doi/10.1145/1508865.1508921) 
+[^4]: [Do student programmers all tend to write the same software tests?](https://dl.acm.org/doi/10.1145/2591708.2591757)
