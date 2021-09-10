@@ -155,7 +155,7 @@ We need to ask the player for the following words in English:
 
 So for these examples, our program returns:
 
-```Whether you *write* computer programs to solve *problems* or just for *fun*, it is very important that you ALWAYS TEST your code for bugs.```
+```Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs.```
 
 Try other inputs and try to come up with a funny phrase.
 
