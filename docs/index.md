@@ -48,7 +48,7 @@ test domain TILES
 
 Here we provide one assigments of each type of the approach.
 
-### A test run TILE:
+### A test run TILE assignment:
 
 Make a program that receive values for three variables `a`,
 `b` and `c`, and interchange their values as follows:
@@ -82,7 +82,7 @@ Does it work for reals? Can `a`, `b` and `c` have different types?
 Should your program work for all these cases?
 
 
-``` {.howTILEd}
+::: {.howTILEd}
 This exercise was TILEd by adding the last paragraph. We explicitly ask
 the students to test for different types of values. Most students,
 because of the example execution convert the user input to int, but that
@@ -90,10 +90,9 @@ is not necessary for the swapping, anything can be swappped. Asking them
 to test with all kinds of values makes them aware of the assumptions
 they made when reading the exercises and hence how testing is good to
 find errors.
-```
+:::
 
-
-### A test cases TILE:
+### A test cases TILE assignment:
 
 Implement a program that reads three integer values: day, month, and
 year of a person’s birth. Using this data, the program should show a
