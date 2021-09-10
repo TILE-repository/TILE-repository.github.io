@@ -19,7 +19,6 @@ seamless
 subtle
 :	we will make use of clever and indirect methods to teach them testing knowledge and skills.
 
-
 ## Background
 
 Test Informed Learning with Examples was inspired by Test-driven learning (TDL). 
@@ -46,15 +45,59 @@ test domain TILES
 
 ## TILES of each type
 
-We provide some assigments of each type of the approach.
+Here we provide one assigments of each type of the approach.
 
-### A test run TILE: Password hashing
+### A test run TILE:
+
+Make a program in Python that receive values for three variables `a`,
+`b` and `c`, and interchange their values as follows:
+
+-   `b` takes the value of `a`,
+
+-   `c` takes the value of `a`, and
+
+-   `a` takes the value of `c`.
+
+This must be done WITHOUT using auxiliary variables, that is, additional
+helper variables that are not a, b or c, and are used to store some
+values.
+
+The execution of the program should result in the following:
+
+```
+>>> %Run
+  Enter the value of the variable a: 4
+  Enter the value of the variable b: 2
+  Enter the value of the variable c: 7
+  The value of a is 7
+  The value of b is 4
+  The value of c is 4
+```
+
+
+Execute tests through the console and check the output. 
+Does your program work for negative numbers? 
+Does it work for characters? 
+Does it work for reals? Can `a`, `b` and `c` have different types? 
+Should your program work for all these cases?
+
+<div class="howTILEd">
+
+This exercise was TILEd by adding the last paragraph. We explicitly ask
+the students to test for different types of values. Most students,
+because of the example execution convert the user input to int, but that
+is not necessary for the swapping, anything can be swappped. Asking them
+to test with all kinds of values makes them aware of the assumptions
+they made when reading the exercises and hence how testing is good to
+find errors.
+
+</div>
+
+### A test cases TILE:
 
 
 
-### Two
-
-### N
+### A test domain TILE:
 
 ## Metadata
 
