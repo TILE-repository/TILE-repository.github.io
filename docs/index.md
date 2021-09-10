@@ -3,6 +3,8 @@ title: "Nifty TILED Assignments"
 # Prepare a draft of the web page for your assignment, including the table of metadata described below. The purpose of the web page is to introduce the assignment to another educator.
 ...
 
+# Nifty TILE Assignments
+
 By Niels Doorn [^1], Tanja Vos [^2] and Beatriz Marin [^3]
 
 ## Introduction
@@ -47,6 +49,8 @@ test domain TILES
 
 ## Assignments
 
+We provide some assigments of each type to give a good understanding of the approach.
+
 ### One
 
 ### Two
@@ -55,8 +59,8 @@ test domain TILES
 
 ## Metadata
 
-| Summary 		| Test Informed Learning by Example (TILE) based assignments |
-| Topics 		| Testing, programming |
+| Summary 		| Test Informed Learning by Example (TILE) based assignments. |
+| Topics 		| Testing, programming. |
 | Audience 		| Appropriate for a CS1 course. |
 | Difficulty 	| These are assignments for novice computer science students, but TILE can be used for more advanced assignments as well. |
 | Strengths 	| TILE offers the potential of teaching testing "for free" as early as possible without adding any additional strain on the course schedule. |
