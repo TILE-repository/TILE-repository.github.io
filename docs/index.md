@@ -65,11 +65,9 @@ test domain TILES
 | Variants 		| |
                                                                                                       
 
-[^1]: [niels.doorn@ou.nl]{mailto:niels.doorn@ou.nl}
-[^2]: [tanja.vos@ou.nl]{mailto:tanja.vos@ou.nl}
-[^3]: [bmarin@dsic.upv.es]{mailto:bmarin@dsic.upv.es}
-[^4]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum]{http://dl.acm.org/citation.cfm?id=1121419}
-[^5]: [Test-driven learning in early programming courses]{https://dl.acm.org/doi/10.1145/1352322.1352315} 
-[^6]: [Implications of integrating test-driven development into CS1/CS2 curricula]{https://dl.acm.org/doi/10.1145/1508865.1508921}
-[^7]:
-[^8]:  
+[^1]: E-mail: [niels.doorn@ou.nl]{mailto:niels.doorn@ou.nl}
+[^2]: E-mail: [tanja.vos@ou.nl]{mailto:tanja.vos@ou.nl}
+[^3]: E-mail: [bmarin@dsic.upv.es]{mailto:bmarin@dsic.upv.es}
+[^4]: Article: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum]{http://dl.acm.org/citation.cfm?id=1121419}
+[^5]: Article: [Test-driven learning in early programming courses]{https://dl.acm.org/doi/10.1145/1352322.1352315} 
+[^6]: Article: [Implications of integrating test-driven development into CS1/CS2 curricula]{https://dl.acm.org/doi/10.1145/1508865.1508921} 
