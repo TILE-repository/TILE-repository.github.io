@@ -80,8 +80,8 @@ Does it work for characters?
 Does it work for reals? Can `a`, `b` and `c` have different types? 
 Should your program work for all these cases?
 
-<div class="howTILEd">
 
+``` {.howTILEd}
 This exercise was TILEd by adding the last paragraph. We explicitly ask
 the students to test for different types of values. Most students,
 because of the example execution convert the user input to int, but that
@@ -89,8 +89,8 @@ is not necessary for the swapping, anything can be swappped. Asking them
 to test with all kinds of values makes them aware of the assumptions
 they made when reading the exercises and hence how testing is good to
 find errors.
+```
 
-</div>
 
 ### A test cases TILE:
 
@@ -143,13 +143,11 @@ should add conditions that verify the inputs. We will see how we can do
 it in the next thematic unit with decision statements like
 `if - then - else`.
 
-<div class="howTILEd">
-
+``` {.howTILEd}
 A table with test cases was added and the student were made aware of the
 test cases that not really contained valid dates but still calculated a
 PIN number.
-
-</div>
+```
 
 ### A test domain TILE:
 
@@ -164,11 +162,9 @@ So for these examples, our program returns:
 
 Try other inputs and try to come up with a funny phrase.
 
-<div class="domainTILEd">
-
+``` {.howTILEd}
 This TILE contains the message that testing is important.
-
-</div>
+```
 
 ## Metadata
 
