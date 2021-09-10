@@ -84,22 +84,18 @@ Should your program work for all these cases?
 <div class="howTILEd">
 <strong>Test Informed Learning with Examples aspects</strong>
 <p>
-This exercise was TILEd by adding the last paragraph. We explicitly ask
-the students to test for different types of values. Most students,
-because of the example execution convert the user input to int, but that
-is not necessary for the swapping, anything can be swappped. Asking them
-to test with all kinds of values makes them aware of the assumptions
-they made when reading the exercises and hence how testing is good to
-find errors.
+This exercise was TILEd by adding the last paragraph. 
+We explicitly ask the students to test for different types of values. 
+Most students, because of the example execution convert the user input to int, but that is not necessary for the swapping, anything can be swappped. 
+Asking them to test with all kinds of values makes them aware of the assumptions they made when reading the exercises and hence how testing is good to find errors.
 </p>
 </div>
 
 ### A *test cases* TILE assignment
 
-Implement a program that reads three integer values: day, month, and
-year of a person’s birth. Using this data, the program should show a
-four-digit PIN associated with the date of birth. The PIN is calculated
-as:
+Implement a program that reads three integer values: day, month, and year of a person’s birth. 
+Using this data, the program should show a four-digit PIN associated with the date of birth. 
+The PIN is calculated as:
 
 1.  p1 = (d1 + d2)% 10.
 
@@ -136,25 +132,21 @@ For example, if the date entered is 29 9 1975, the PIN would be 1 9 6 6:
 | 4            | 55     | 28    | 300  | 0 0 0 3               |
 | 5            | 356    | 903   | 1568 | 1 3 9 1               |
 
-Look at test cases 4 and 5. Are they valid? Inputs 55 and 356 are not
-valid numbers for a day of birth. However, our program works and
-calculates a PIN. Python does not know what birthdays are and when they
-are valid. For Python the 3 inputs are simply whole numbers. If we want
-our program not to calculate a PIN when the date is not valid, then we
-should add conditions that verify the inputs. We will see how we can do
-it in the next thematic unit with decision statements like
-`if - then - else`.
+Look at test cases 4 and 5. 
+Are they valid? Inputs 55 and 356 are not valid numbers for a day of birth. 
+However, our program works and calculates a PIN. 
+Our programming language does not know what birthdays are and when they are valid. 
+For the programming language, the 3 inputs are simply whole numbers. 
+If we want our program not to calculate a PIN when the date is not valid, then we should add conditions that verify the inputs. 
 
 <div class="howTILEd">
 <strong>Test Informed Learning with Examples aspects</strong>
 <p>
-A table with test cases was added and the student were made aware of the
-test cases that not really contained valid dates but still calculated a
-PIN number.
+A table with test cases was added and the student were made aware of the test cases that not really contained valid dates but still calculated a PIN number.
 </p>
 </div>
 
-### A *test domain* TILE
+### A *test domain* TILE assignment
 
 Mad Libs is a phrase template word game where a player asks others for a list of words to substitute for blanks in a story, often comical or nonsensical, and which will be read aloud later. 
 We are going to make a little Mad Libs.
