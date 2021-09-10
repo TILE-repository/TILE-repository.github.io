@@ -82,7 +82,7 @@ Does it work for reals? Can `a`, `b` and `c` have different types?
 Should your program work for all these cases?
 
 <div class="howTILEd">
-Test Informed Learning with Examples aspects
+<strong>Test Informed Learning with Examples aspects</strong>
 <p>
 This exercise was TILEd by adding the last paragraph. We explicitly ask
 the students to test for different types of values. Most students,
@@ -146,7 +146,7 @@ it in the next thematic unit with decision statements like
 `if - then - else`.
 
 <div class="howTILEd">
-Test Informed Learning with Examples aspects
+<strong>Test Informed Learning with Examples aspects</strong>
 <p>
 A table with test cases was added and the student were made aware of the
 test cases that not really contained valid dates but still calculated a
@@ -168,7 +168,7 @@ So for these examples, our program returns:
 Try other inputs and try to come up with a funny phrase.
 
 <div class="howTILEd">
-Test Informed Learning with Examples aspects
+<strong>Test Informed Learning with Examples aspects</strong>
 <p>
 This TILE contains the message that testing is important.
 </p>
