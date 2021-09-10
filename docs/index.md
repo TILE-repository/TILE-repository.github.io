@@ -189,11 +189,14 @@ This TILE contains the message that testing is important.
 
 This work was funded by the Erasmus+ project QPeD under contract number 2020-1-NL01-KA203-064626.
 
-## Footnotes                                                                                    
+## E-mail addresses of the authors                                                                                  
 
 [^1]: [niels.doorn@ou.nl](mailto:niels.doorn@ou.nl)
 [^2]: [tanja.vos@ou.nl](mailto:tanja.vos@ou.nl)
 [^3]: [bmarin@dsic.upv.es](mailto:bmarin@dsic.upv.es)
+
+## References
+
 [^4]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)
 [^5]: [Test-driven learning in early programming courses](https://dl.acm.org/doi/10.1145/1352322.1352315) 
 [^6]: [Implications of integrating test-driven development into CS1/CS2 curricula](https://dl.acm.org/doi/10.1145/1508865.1508921) 
