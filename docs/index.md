@@ -67,7 +67,7 @@ test domain TILES
 | Variants 		| |
 
 
-## References and links                                                                                    
+## Footnotes                                                                                    
 
 [^1]: [niels.doorn@ou.nl](mailto:niels.doorn@ou.nl)
 [^2]: [tanja.vos@ou.nl](mailto:tanja.vos@ou.nl)
