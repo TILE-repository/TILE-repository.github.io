@@ -65,6 +65,10 @@ test domain TILES
 | Variants 		| We identified three main type of TILES, however, this taxonomy can be extended into sub-types or other main types. |
 
 
+## Acknowledgements
+
+This work was funded by the Erasmus+ project QPeD under contract number 2020-1-NL01-KA203-064626.
+
 ## Footnotes                                                                                    
 
 [^1]: [niels.doorn@ou.nl](mailto:niels.doorn@ou.nl)
