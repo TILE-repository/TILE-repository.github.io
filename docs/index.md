@@ -46,6 +46,9 @@ Test domain TILES
 ## Assignments
 
 Here we provide one assigments of each type of the approach.
+The assignments have different levels of difficulty and cover different programming concepts.
+They can be used in existing courses but are also created to show the possibilities of using TILE with existing assignment.
+Eacht assignment end with some information about the testing aspects that are integrated in the assignment.
 
 ### A *test run* TILE assignment
 
