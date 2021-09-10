@@ -1,4 +1,5 @@
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 title: TILES
 description: Nifty assignments that are using the Test Informed Learning by Example (TILE) method to improve testing.
 author: Niels Doorn
