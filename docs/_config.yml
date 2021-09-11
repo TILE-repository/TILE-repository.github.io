@@ -5,4 +5,4 @@ author: Niels Doorn, Tanja Vos, Beatriz Marin
 show_downloads: false
 logo: TILE_logo.png
 github:
-  is_project_page: false
+  is_project_page: true
