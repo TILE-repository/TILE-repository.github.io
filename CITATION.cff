@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+abstract: "We present three Test Informed Learning by Example (TILE) based programming assignments. These assignments are usable examples of ways to apply the TILE approach to existing or new programming assignments with the objective to seamlessly, in a subtle way, introduce testing as early as possible in programming courses."
+authors:
+- family-names: "Doorn"
+  given-names: "Niels"
+  affiliation: "Open Universiteit Heerlen, The Netherlands"
+  orcid: "https://orcid.org/0000-0002-0680-4443"
+- family-names: "Vos"
+  given-names: "Tanja"
+  affiliation: "Open Universiteit Heerlen, The Netherlands"
+  orcid: "https://orcid.org/0000-0002-6003-9113"
+- family-names: "Marín"
+  given-names: "Beatriz"
+  affiliation: "Universitat Politècnica de València"
+  orcid: "https://orcid.org/0000-0001-8025-0023"
+title: "Nifty Test Informed Learning with Examples assignments"
+version: 1.0.0
+#doi: 10.5281/zenodo.1234
+date-released: 2021-09-10
+url: "https://nielsdoorn.github.io/TILES/"
