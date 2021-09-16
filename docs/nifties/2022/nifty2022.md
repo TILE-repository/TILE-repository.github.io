@@ -12,7 +12,9 @@ Lark can parse all context-free languages. To put it simply, it means that it is
 
 It can be installed using `pip`:
 
-    $ pip install lark --upgrade
+```bash
+$ pip install lark --upgrade
+```
 
 ## Goals and prerequisites
 
@@ -43,9 +45,11 @@ already (see prerequisites).
 When we have python programs with pytests, we can save the outcome of
 the pytest run in a `.txt` file as follows:
 
-    >>> !pytest union_test.py > union_test_output.txt
-    >>> !pytest interseccion_test.py > interseccion_test_output.txt
-    >>> !pytest min_max_list_test.py > min_max_list_test_output.txt
+```bash
+>>> !pytest union_test.py > union_test_output.txt
+>>> !pytest interseccion_test.py > interseccion_test_output.txt
+>>> !pytest min_max_list_test.py > min_max_list_test_output.txt
+```
 
 The `.txt` files summarize the outcome of the tests.
 
@@ -53,65 +57,65 @@ For example, let us consider the program in `union_test.py` that
 contains the definition of the function `union` , together with 8 parameterized
 test cases and a test driver:
 
-```
+```python
 {% include_relative files/pytests-for_testing_reports/union_test.py %}
 ```
 
 The output of running the pytests will give us a file that contains the following information when tests have failed:
+```
+=================================== FAILURES ===================================
+____________________ test_union[4-input13-input23-output3] _____________________
 
-    =================================== FAILURES ===================================
-    ____________________ test_union[4-input13-input23-output3] _____________________
+testcase = 4, input1 = [1, 1], input2 = [], output = [1]
 
-    testcase = 4, input1 = [1, 1], input2 = [], output = [1]
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], []),   #Cardinality
+    (2, [], [1,2,3], [1,2,3]),   #Cardinality
+    (3, [1,2,3], [], [1,2,3]),   #Cardinality
+    (4, [1,1], [], [1]),   #Cardinality
+    (5, [], [1,1], [1]),   #Cardinality
+    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
+    (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+                "case {0}".format(testcase)
+E       AssertionError: case 4
+E       assert [1, 1] == [1]
+E         Left contains one more item: 1
+E         Use -v to get the full diff
 
-        @pytest.mark.parametrize("testcase, input1, input2, output",[
-        (1, [], [], []),   #Cardinality
-        (2, [], [1,2,3], [1,2,3]),   #Cardinality
-        (3, [1,2,3], [], [1,2,3]),   #Cardinality
-        (4, [1,1], [], [1]),   #Cardinality
-        (5, [], [1,1], [1]),   #Cardinality
-        (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
-        (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
-        ])
-        
-        def test_union(testcase, input1, input2, output):
-    >       assert union(input1, input2) == output,\
-                   "case {0}".format(testcase)
-    E       AssertionError: case 4
-    E       assert [1, 1] == [1]
-    E         Left contains one more item: 1
-    E         Use -v to get the full diff
+union_test.py:22: AssertionError
+____________________ test_union[7-input16-input26-output6] _____________________
 
-    union_test.py:22: AssertionError
-    ____________________ test_union[7-input16-input26-output6] _____________________
+testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]
 
-    testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], []),   #Cardinality
+    (2, [], [1,2,3], [1,2,3]),   #Cardinality
+    (3, [1,2,3], [], [1,2,3]),   #Cardinality
+    (4, [1,1], [], [1]),   #Cardinality
+    (5, [], [1,1], [1]),   #Cardinality
+    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
+    (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+                "case {0}".format(testcase)
+E       AssertionError: case 7
+E       assert [1, 1, 2, 2, 3, 3] == [1, 2, 3]
+E         At index 1 diff: 1 != 2
+E         Left contains 3 more items, first extra item: 2
+E         Use -v to get the full diff
 
-        @pytest.mark.parametrize("testcase, input1, input2, output",[
-        (1, [], [], []),   #Cardinality
-        (2, [], [1,2,3], [1,2,3]),   #Cardinality
-        (3, [1,2,3], [], [1,2,3]),   #Cardinality
-        (4, [1,1], [], [1]),   #Cardinality
-        (5, [], [1,1], [1]),   #Cardinality
-        (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
-        (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
-        ])
-        
-        def test_union(testcase, input1, input2, output):
-    >       assert union(input1, input2) == output,\
-                   "case {0}".format(testcase)
-    E       AssertionError: case 7
-    E       assert [1, 1, 2, 2, 3, 3] == [1, 2, 3]
-    E         At index 1 diff: 1 != 2
-    E         Left contains 3 more items, first extra item: 2
-    E         Use -v to get the full diff
-
-    union_test.py:22: AssertionError
-    =========================== short test summary info ============================
-    FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
-    FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
-    ========================= 2 failed, 5 passed in 0.05s ==========================
-
+union_test.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
+FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
+========================= 2 failed, 5 passed in 0.05s ==========================
+```
 
 Indicating that testcase with identifier 4 failed because our function returned 
 `[1,1]` but we expected `[1]`. 
@@ -127,7 +131,7 @@ The following exercises are TILEs to practice file manipulation by reading and w
 
 Write a function `get_failed_testcases` in Python that, given a `.txt` file with the outcomes of a pytest testrun, will return a list with the testcases that have failed, for example for the results of the union test from above:
 
-```
+```python
 >>> get_failed_testcases("union_test_output.txt")
 ['testcase = 4, input1 = [1, 1], input2 = [], output = [1]', 
  'testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]'
@@ -136,7 +140,7 @@ Write a function `get_failed_testcases` in Python that, given a `.txt` file with
 
 The function could look something like this:
 
-```
+```python
 def get_failed_testcases(filename):
     """
     Expects filename to be a file that contains the output of a !pytest run.
@@ -176,14 +180,14 @@ signature is the format of the test cases, i.e. ID, inputs, outputs.)
 (HINT: read through the file until you find: .mark.parametrize@).\
 For example, for the results of the union_test.py file from above:
 
-::: python
+```python
 >>> get_test_signature("union_test.py") 
 ['testcase', 'input1', 'input2', 'output']
-:::
+```
 
 The function would look something like this:
 
-::: python
+```python
 def get_test_signature(filename):
     """
     Given a Python file containing "@pytest.mark.parametrize", it returns a list that represents the signature of the test. If there are no pytests in the file, it returns  the empty list.
@@ -215,8 +219,7 @@ def get_test_signature(filename):
     test_signature = line.split()
     
     return test_signature 
-:::
-
+```
 
 ### Find test cases
 
