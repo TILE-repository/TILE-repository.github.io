@@ -43,7 +43,7 @@ Test cases TILES
 Test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
 
-## Assignments
+## Example assignments
 
 Here we provide one assigments of each type of the approach.
 The assignments have different levels of difficulty and cover different programming concepts.
@@ -154,7 +154,6 @@ We need to ask the player for the following words in English:
 - verb, for example: `write`
 - plural noun, for example: `problems`
 - adjective, for example: `fun`
-
 
 So for these examples, our program returns:
 
