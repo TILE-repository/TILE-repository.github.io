@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: Test Informed Learning with Examples
-description: Nifty assignments that are using the Test Informed Learning with Examples (TILE) method to integrate testing into existing programming courses.
+description: A repository with assignments that are using the Test Informed Learning with Examples (TILE) method to integrate testing into existing programming courses.
 author: Niels Doorn, Tanja Vos, Beatriz Marin
 show_downloads: false
 logo: TILE_logo.png
