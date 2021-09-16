@@ -8,7 +8,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 ## Introduction
 
-Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory programming courses in the following ways:
+Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways:
 
 early 
 :	introduce students to testing from the very first example program they see and write themselves in exercises;
