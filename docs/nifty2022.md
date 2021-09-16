@@ -2,6 +2,8 @@
 layout: page
 title: "Nifty assignment for the SIGCSE Technical Symposium 2022"
 permalink: /nifties/nifty2022
+layout: template
+filename: nifty2022.md
 ...
 
 # 
