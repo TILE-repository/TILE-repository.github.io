@@ -1,20 +1,11 @@
-# Creating test reports (using Test Informed Learning with Examples)
+# Essential data processing assignemt (using Test Informed Learning with Examples)
 
 ## Overview
 
-Ipsum proident aute mollit eu tempor ut ullamco. Sit est nisi ad amet tempor ea. Eiusmod est occaecat veniam qui culpa velit incididunt sint qui nostrud sit adipisicing. Voluptate culpa exercitation excepteur nostrud. Qui velit cupidatat culpa enim minim id tempor ad Lorem eiusmod amet. Ullamco ad eiusmod veniam est dolore fugiat elit qui qui dolore Lorem consectetur.
-
-### Installing Lark
-
-[Lark](https://github.com/lark-parser/lark) is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
-
-Lark can parse all context-free languages. To put it simply, it means that it is capable of parsing almost any programming language out there, and to some degree most natural languages too.
-
-It can be installed using `pip`:
-
-```bash
-$ pip install lark --upgrade
-```
+This is a set of assignments focussed on wrting programs to analyse structured information. 
+Some general usefull and somewhat advanced topics are handled such as processing files, parsing information and generating reports. 
+The assignments puposely revolve around the testing domain.
+This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 
 ## Goals and prerequisites
 
@@ -123,9 +114,9 @@ Also testcase 7 failed.
 
 All these are basic pytest concepts that can be taughed after functions have been treated as a concept.
 
-## Exercises or examples
+## Assignments
 
-The following exercises are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) use these testing files.
+The following assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) use testing files.
 
 ### Find failed test cases
 
@@ -133,8 +124,9 @@ Write a function `get_failed_testcases` in Python that, given a `.txt` file with
 
 ```python
 >>> get_failed_testcases("union_test_output.txt")
-['testcase = 4, input1 = [1, 1], input2 = [], output = [1]', 
- 'testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]'
+[
+    'testcase = 4, input1 = [1, 1], input2 = [], output = [1]', 
+    'testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]'
 ]
 ```
 
@@ -224,7 +216,19 @@ def get_test_signature(filename):
 ### Find test cases
 
 
-### Lark exercise.
+### Lark exercise
+
+### Installing Lark
+
+[Lark](https://github.com/lark-parser/lark) is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
+
+Lark can parse all context-free languages. To put it simply, it means that it is capable of parsing almost any programming language out there, and to some degree most natural languages too.
+
+It can be installed using `pip`:
+
+```bash
+$ pip install lark --upgrade
+```
 
 ## Metadata
 
