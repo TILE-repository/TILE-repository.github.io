@@ -111,15 +111,17 @@ Indicating that testcase with identifier 4 failed because our function returned
 `[1,1]` but we expected `[1]`. 
 Also testcase 7 failed.
 
-All these are basic pytest concepts that can be taughed after functions have been treated as a concept.
+All these are basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
 ## Assignments
 
-The following assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) use testing files.
+The following assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) using testing files. The first three are exercises to get used to the used techniques, the last assignment is the most daunting assignment
 
-### Find failed test cases
+### Exercise 1: Find failed test cases
 
-Write a function `get_failed_testcases` in Python that, given a `.txt` file with the outcomes of a pytest testrun, will return a list with the testcases that have failed, for example for the results of the union test from above:
+#### Description
+
+Write a function `get_failed_testcases` in Python that, given the name of a `.txt` file with the outcomes of a pytest testrun, will return a list with the testcases that have failed, for example for the pytest results of the union test from above this would be:
 
 ```python
 >>> get_failed_testcases("union_test_output.txt")
@@ -129,7 +131,9 @@ Write a function `get_failed_testcases` in Python that, given a `.txt` file with
 ]
 ```
 
-The function could look something like this:
+#### Possible solution
+
+The function `get_failed_testcases` could look something like this:
 
 ```python
 def get_failed_testcases(filename):
@@ -139,19 +143,19 @@ def get_failed_testcases(filename):
     Throws FileNotFoundError exception if file does not exist.
     """
     
-    #1.Open the file and name the file-handle fhand
+    # 1.Open the file and name the file-handle fhand
     fhand = open(filename, 'r')
     
-    #2.Copy the content of the file in variable content
+    # 2.Copy the content of the file in variable content
     content = fhand.read()
     
-    #3: Close the file
+    # 3: Close the file
     fhand.close()
 
-    #Look for the failed test cases
+    # Look for the failed test cases
     
     if not ("= FAILURES" in content):
-       return [] #There are no failed test cases
+       return [] # There are no failed test cases
     else:
         # Find the testcases that have failed, they
         # start with "testcase = " in the file
@@ -163,18 +167,18 @@ def get_failed_testcases(filename):
         return testcases
 ```
 
-### Find test signatures
+### Exercise 2: Find test signatures
 
-Write a Python function that given a *.py* file that contains
-parametrized pytests, returns a list with the test signature. (A test
-signature is the format of the test cases, i.e. ID, inputs, outputs.)
-(HINT: read through the file until you find: .mark.parametrize@).\
-For example, for the results of the union_test.py file from above:
+#### Description
+
+Write a Python function that given a *.py* file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the union_test.py file from above:
 
 ```python
 >>> get_test_signature("union_test.py") 
 ['testcase', 'input1', 'input2', 'output']
 ```
+
+#### Possible solution
 
 The function would look something like this:
 
@@ -215,13 +219,19 @@ def get_test_signature(filename):
     return test_signature 
 ```
 
-### Find test cases
+### Exercise 3: Find test cases
 
-TODO
+#### Description
 
-### Lark exercise
+#### Possible solution
 
-### Installing Lark
+### Exercise 4: The nifty assignment, working with Lark
+
+#### Description
+
+#### Possible solution
+
+#### Installing Lark
 
 [Lark](https://github.com/lark-parser/lark) is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
 
