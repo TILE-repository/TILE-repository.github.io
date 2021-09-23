@@ -7,6 +7,13 @@ Some general usefull and somewhat advanced topics are handled such as processing
 The assignments puposely revolve around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 
+The presented assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) using testing files. The first three are exercises to get used to the used techniques, the last assignment is the most daunting assignment.
+
+- The [first assignment](#ex1)
+- The [second assignment](#ex2)
+- The [third assignment](#ex3)
+- The [fourth assignment](#ex4)
+
 ## Goals and prerequisites
 
 Programming learning goals:
@@ -113,11 +120,7 @@ Also testcase 7 failed.
 
 All these are basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
-## Assignments
-
-The following assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) using testing files. The first three are exercises to get used to the used techniques, the last assignment is the most daunting assignment
-
-### Exercise 1: Find failed test cases
+### Exercise 1: Find failed test cases {: ex1 }
 
 #### Description
 
@@ -167,7 +170,7 @@ def get_failed_testcases(filename):
         return testcases
 ```
 
-### Exercise 2: Find test signatures
+### Exercise 2: Find test signatures {: ex2 }
 
 #### Description
 
@@ -219,13 +222,13 @@ def get_test_signature(filename):
     return test_signature 
 ```
 
-### Exercise 3: Find test cases
+### Exercise 3: Find test cases {: ex3 }
 
 #### Description
 
 #### Possible solution
 
-### Exercise 4: The nifty assignment, working with Lark
+### Exercise 4: The nifty assignment, working with Lark {: ex4 }
 
 #### Description
 

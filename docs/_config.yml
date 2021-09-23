@@ -6,3 +6,5 @@ show_downloads: false
 logo: TILE_logo.png
 github:
   is_project_page: true
+kramdown:
+  auto_ids: true
