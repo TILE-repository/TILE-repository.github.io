@@ -2,8 +2,8 @@ import pytest
 
 def filtrar_impares(entrada):
     """
-     # Devuelve un conjunto que consiste de los elementos pares de entrada.
-     # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+     # Returns a set consisting of the input pair elements.
+     # It only works if input is a list, set or tuple whose elements are ints or floats.
     """
     res = set()
     for x in entrada:
@@ -27,4 +27,4 @@ def filtrar_impares(entrada):
 
 def test_filtrar_impares(testcase, input, output):
     assert filtrar_impares(input) == output,\
-           "caso {0}".format(testcase)
+           "case {0}".format(testcase)

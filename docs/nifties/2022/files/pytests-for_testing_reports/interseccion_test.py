@@ -9,14 +9,14 @@ def interseccion(lista1, lista2, lista3):
     return res + lista3
 
 @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
-(1, [], [], [], []),   #Cardinalidad
-(2, [], [1,2,3], [], []),   #Cardinalidad
-(3, [1,2,3], [], [2], [2]),   #Cardinalidad
-(4, [1,1], [], [], []),   #Cardinalidad
-(5, [], [1,1], [],  []),   #Cardinalidad
-(6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), #Dominio, Estructura
-(7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   #Orden (de parametros), Estructura
-(8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), #Orden (duplicados al final de la lista)
+(1, [], [], [], []),   # Cardinality
+(2, [], [1,2,3], [], []),   # Cardinality
+(3, [1,2,3], [], [2], [2]),   # Cardinality
+(4, [1,1], [], [], []),   # Cardinality
+(5, [], [1,1], [],  []),   # Cardinality
+(6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), # Domain, Structure
+(7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   # Order (of parameters), Structure
+(8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), # Order (duplicates at the end of the list)
 (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
 ])
 

@@ -14,7 +14,7 @@ def min_max_num_in_list( list ):
 
  
 @pytest.mark.parametrize("testcase, input, output",[
-(1, [1,2,3,6,8,0], (0,8)),  #comentario
+(1, [1,2,3,6,8,0], (0,8)),
 (2, [0,8,2,3], (0,8)),    
 (3, [2,8,1,5,3], (1,8)),     
 (4, [8,0,2,3,0], (0,8)),   
@@ -27,6 +27,6 @@ def min_max_num_in_list( list ):
 ]) 
 
 def test_min_max_list(testcase, input, output):
-    assert min_max_num_in_list(input) == output, "caso {0}".format(testcase)
+    assert min_max_num_in_list(input) == output, "case {0}".format(testcase)
  
  

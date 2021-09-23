@@ -1,4 +1,4 @@
-# Essential data processing assignemt (using Test Informed Learning with Examples)
+# Essential data processing assigment using Test Informed Learning with Examples
 
 ## Overview
 
@@ -59,13 +59,13 @@ ____________________ test_union[4-input13-input23-output3] _____________________
 testcase = 4, input1 = [1, 1], input2 = [], output = [1]
 
     @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [], [], []),   #Cardinality
-    (2, [], [1,2,3], [1,2,3]),   #Cardinality
-    (3, [1,2,3], [], [1,2,3]),   #Cardinality
-    (4, [1,1], [], [1]),   #Cardinality
-    (5, [], [1,1], [1]),   #Cardinality
-    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
-    (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
+    (1, [], [], []),   # Cardinality
+    (2, [], [1,2,3], [1,2,3]),   # Cardinality
+    (3, [1,2,3], [], [1,2,3]),   # Cardinality
+    (4, [1,1], [], [1]),   # Cardinality
+    (5, [], [1,1], [1]),   # Cardinality
+    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), # Domain, Structure
+    (7, [1,1,2,2,3,3], [], [1,2,3])   # Order of the parameters, Structure
     ])
     
     def test_union(testcase, input1, input2, output):
@@ -82,13 +82,13 @@ ____________________ test_union[7-input16-input26-output6] _____________________
 testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]
 
     @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [], [], []),   #Cardinality
-    (2, [], [1,2,3], [1,2,3]),   #Cardinality
-    (3, [1,2,3], [], [1,2,3]),   #Cardinality
-    (4, [1,1], [], [1]),   #Cardinality
-    (5, [], [1,1], [1]),   #Cardinality
-    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), #Domain, Structure
-    (7, [1,1,2,2,3,3], [], [1,2,3])   #Order of the parametros, Structure
+    (1, [], [], []),   # Cardinality
+    (2, [], [1,2,3], [1,2,3]),   # Cardinality
+    (3, [1,2,3], [], [1,2,3]),   # Cardinality
+    (4, [1,1], [], [1]),   # Cardinality
+    (5, [], [1,1], [1]),   # Cardinality
+    (6, ["hi", 2, 3, "abc"], ["hi", "hi", "de"], ["hi", 2, 3, "abc", "de"]), # Domain, Structure
+    (7, [1,1,2,2,3,3], [], [1,2,3])   # Order of the parameters, Structure
     ])
     
     def test_union(testcase, input1, input2, output):
@@ -181,27 +181,30 @@ The function would look something like this:
 ```python
 def get_test_signature(filename):
     """
-    Given a Python file containing "@pytest.mark.parametrize", it returns a list that represents the signature of the test. If there are no pytests in the file, it returns  the empty list.
+    Given a Python file containing "@pytest.mark.parametrize", 
+    it returns a list that represents the signature of the test. 
+    If there are no pytests in the file, it returns  the empty list.
     
     Throws FileNotFoundError exception if file does not exist.
     """
     
-    #1: Open the file and name the file-handle fhand
+    # 1: Open the file and name the file-handle fhand
     python_file = open(filename, "r")
 
-    #2: Read through the file to find the line that indicates that the test cases start (i.e. @pytest.mark.parametrize)
+    # 2: Read through the file to find the line that indicates that 
+    # the test cases start (i.e. @pytest.mark.parametrize)
     line = python_file.readline()
     
     while not (line.startswith("@pytest.mark.parametrize") or line==''):
         line = python_file.readline()
     
-    #3: Close the file
+    # 3: Close the file
     python_file.close()
     
-    #line now is the "@pytest.mark.parametrize" line
+    # line now is the "@pytest.mark.parametrize" line
     
-    #Now, we need to know what the structure of the test cases is,
-    #i.e. how many inputs. So we first filter the characters that we do not need.
+    # Now, we need to know what the structure of the test cases is,
+    # i.e. how many inputs. So we first filter the characters that we do not need.
     filter_out = [',', "@pytest.mark.parametrize", "(", ")", "[", '"']
     for f in filter_out:
         line = line.replace(f, "")

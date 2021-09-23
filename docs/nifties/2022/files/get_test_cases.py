@@ -68,10 +68,10 @@ def get_test_cases(filename):
     while not (line.startswith("@pytest.mark.parametrize") or line==''):
         line = python_file.readline()
       
-    #cuando llamamos una vez mas a readline() seguimos leyendo los primeros test cases parametrizados
-    line = python_file.readline() #line ahora apunta al primer test case de forma (ID, input1, .., inputn, output)
+    # when we call readline () once again we continue reading the first parameterized test cases
+    line = python_file.readline() # line now points to the first test case of form (ID, input1, .., inputn, output)
     
-    #test case line for two inputs looks likelooks like: '(num, i1, i2, o),   #Cardinalidad\n'
+    #test case line for two inputs looks likelooks like: '(num, i1, i2, o),   # Cardinality\n'
     #- starts with (
     #- ends with ),
     #- all after ), commenst starting with #can be discarded
@@ -81,17 +81,17 @@ def get_test_cases(filename):
     test_cases = []
     while (line.startswith("(")): #each test case starts with "("
         
-        #parse the line
+        # parse the line
         
         tc = testcase_parser.parse(line)
         test_cases.append(tc)             
         
-        line = python_file.readline() #go to next line in file
+        line = python_file.readline() # go to next line in file
             
     
     return test_cases
 
-    #3: Cerrar el fichero
+    #3: Close the file
     python_file.close()
 
 
@@ -106,4 +106,3 @@ for file in {file1,file2,file3,file4}:
     for tc in get_test_cases(file):
         print(tc)
         print("\n")
-    
