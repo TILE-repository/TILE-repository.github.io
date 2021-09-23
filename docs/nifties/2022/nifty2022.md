@@ -1,4 +1,5 @@
 # Essential data processing assigment using Test Informed Learning with Examples
+{:.no_toc}
 
 1. Table of contents
 {:toc}
