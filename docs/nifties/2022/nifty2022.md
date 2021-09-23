@@ -120,9 +120,9 @@ Also testcase 7 failed.
 
 All these are basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
-### Exercise 1: Find failed test cases {: ex1 }
+## Exercise 1: Find failed test cases {: ex1 }
 
-#### Description
+### Description
 
 Write a function `get_failed_testcases` in Python that, given the name of a `.txt` file with the outcomes of a pytest testrun, will return a list with the testcases that have failed, for example for the pytest results of the union test from above this would be:
 
@@ -134,7 +134,7 @@ Write a function `get_failed_testcases` in Python that, given the name of a `.tx
 ]
 ```
 
-#### Possible solution
+### Possible solution
 
 The function `get_failed_testcases` could look something like this:
 
@@ -170,9 +170,9 @@ def get_failed_testcases(filename):
         return testcases
 ```
 
-### Exercise 2: Find test signatures {: ex2 }
+## Exercise 2: Find test signatures {: ex2 }
 
-#### Description
+### Description
 
 Write a Python function that given a *.py* file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the union_test.py file from above:
 
@@ -181,7 +181,7 @@ Write a Python function that given a *.py* file that contains parametrized pytes
 ['testcase', 'input1', 'input2', 'output']
 ```
 
-#### Possible solution
+### Possible solution
 
 The function would look something like this:
 
@@ -222,19 +222,19 @@ def get_test_signature(filename):
     return test_signature 
 ```
 
-### Exercise 3: Find test cases {: ex3 }
+## Exercise 3: Find test cases {: ex3 }
 
-#### Description
+### Description
 
-#### Possible solution
+### Possible solution
 
-### Exercise 4: The nifty assignment, working with Lark {: ex4 }
+## Exercise 4: The nifty assignment, working with Lark {: ex4 }
 
-#### Description
+### Description
 
-#### Possible solution
+### Possible solution
 
-#### Installing Lark
+### Installing Lark
 
 [Lark](https://github.com/lark-parser/lark) is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
 
