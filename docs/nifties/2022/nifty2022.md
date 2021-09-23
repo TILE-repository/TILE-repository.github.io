@@ -1,5 +1,8 @@
 # Essential data processing assigment using Test Informed Learning with Examples
 
+1. Table of contents
+{:toc}
+
 ## Overview
 
 This is a set of assignments focussed on wrting programs to analyse structured information. 
@@ -8,11 +11,6 @@ The assignments puposely revolve around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 
 The presented assignments are TILEs to practice file manipulation by reading and writing different formats (plain text, Excel and JSON) using testing files. The first three are exercises to get used to the used techniques, the last assignment is the most daunting assignment.
-
-- The [first assignment](#ex1)
-- The [second assignment](#ex2)
-- The [third assignment](#ex3)
-- The [fourth assignment](#ex4)
 
 ## Goals and prerequisites
 
@@ -120,7 +118,7 @@ Also testcase 7 failed.
 
 All these are basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
-## Exercise 1: Find failed test cases {: ex1 }
+## Exercise 1: Find failed test cases
 
 ### Description
 
@@ -170,7 +168,7 @@ def get_failed_testcases(filename):
         return testcases
 ```
 
-## Exercise 2: Find test signatures {: ex2 }
+## Exercise 2: Find test signatures
 
 ### Description
 
@@ -222,13 +220,13 @@ def get_test_signature(filename):
     return test_signature 
 ```
 
-## Exercise 3: Find test cases {: ex3 }
+## Exercise 3: Find test cases
 
 ### Description
 
 ### Possible solution
 
-## Exercise 4: The nifty assignment, working with Lark {: ex4 }
+## Exercise 4: The nifty assignment, working with Lark
 
 ### Description
 
