@@ -8,3 +8,4 @@ github:
   is_project_page: true
 kramdown:
   auto_ids: true
+  toc_levels: 1..2
