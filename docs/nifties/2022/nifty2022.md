@@ -58,7 +58,7 @@ The file also contains eight test cases written using pytest. It is listed here:
 {% include_relative files/union_test.py %}
 ```
 
-If we use a parser to analyse the test cases, we can generate the following output:
+If we use a parser to analyse the test cases in this file, we can generate the following output (the actuall output is longer, but for clarity it is truncated down to two test cases):
 
 ```python
 >>> get_test_cases("union_test.py")
