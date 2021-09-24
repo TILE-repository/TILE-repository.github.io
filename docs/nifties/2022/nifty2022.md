@@ -40,9 +40,20 @@ Prerequisites:
 -   decision and control-flow structures
 -   arrays, lists, etc. (sequence types)
 
-The provided [warmup exercises](warmupexercises.md) can be helpful to forfill these prerequisites.
+The provided [warm up exercises](warmupexercises.md) can be helpful to forfill these prerequisites.
 
 ## Main assignment
+
+**TODO**
+
+I want to use a growth mindset approach (Open Informatics) to see if we can provide some ideas for lectures on how to let students work on this assignment, for example, work in groups of two on the warm up exercises, discuss the problems, discuss benefits of testing, ask what paramaterized testing is.
+
+Then maybe an example of the usage of parsers and formal languages
+
+Make them understand that a file with pytest cases is also a formal language
+
+And finally work towards the main assignment
+
 
 ### Description
 
