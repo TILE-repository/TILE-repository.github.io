@@ -27,6 +27,10 @@ It can be installed using `pip`:
 $ pip install lark --upgrade
 ```
 
+## Tutorial
+
+A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can be used to get a good understanding of the features and the way to use Lark.
+
 # References
 
 [^1]: [Lark homepage](https://lark-parser.readthedocs.io)

@@ -128,20 +128,18 @@ def get_test_cases(filename):
     # 3: Close the file
     python_file.close()
 
+files = {
+    "filter_out_tests-nocomments.py",
+    "filter_out_tests-YEScomments.py",
+    "filter_out_tests-string-cases.py",
+    "intersection_test.py",
+    "min_max_list_test.py",
+    "union_test.py"
+}
 
-
-file1 = "filter_out_tests-nocomments.py"
-file2 = "filter_out_tests-YEScomments.py"
-file3 = "filter_out_tests-string-cases.py"
-file4 = "intersection_test.py"
-file5 = "min_max_list_test.py"
-file6 = "union_test.py"
-
-
-for file in {file1, file2,file3, file4, file5, file6}: 
+for file in files: 
     print(file)
     for tc in get_test_cases(file):
         print(tc.pretty())
         print(MyTransformer().transform(tc))
         print("\n")
-    

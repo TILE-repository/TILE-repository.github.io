@@ -48,20 +48,180 @@ The provided [warmup exercises](warmupexercises.md) can be helpful to forfill th
 
 ### Description
 
-Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark parser.
+Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the **Lark** parser.
+
+TODODODODODODO
+
+
 
 For example, for the results of the `union_test.py` file from above:
 
 ```python
 >>> get_test_cases("union_test.py")
-[['1', '[]', '[]', '[]'], 
- ['2', '[]', '[1,2,3]', '[1,2,3]'], 
- ['3', '[1,2,3]', '[]', '[1,2,3]'], 
- ['4', '[1,1]', '[]', '[1]'], 
- ['5', '[]', '[1,1]', '[1]'], 
- ['6', '["hi",2,3,"abc"]', '["hi","hi","de"]', '["hi",2,3,"abc","de"]'], 
- ['7', '[1,1,2,2,3,3]', '[]', '[1,2,3]']
-]
+union_test.py
+testcase
+  1
+  value
+    list
+  value
+    list
+  value
+    list
+  # Cardinality
+
+(Token('SIGNED_NUMBER', '1'), [[]], [[]], [[]], Token('SH_COMMENT', '# Cardinality'))
+
+
+testcase
+  2
+  value
+    list
+  value
+    list
+      number	1
+      number	2
+      number	3
+  value
+    list
+      number	1
+      number	2
+      number	3
+  # Cardinality
+
+(Token('SIGNED_NUMBER', '2'), [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Cardinality'))
+
+
+testcase
+  3
+  value
+    list
+      number	1
+      number	2
+      number	3
+  value
+    list
+  value
+    list
+      number	1
+      number	2
+      number	3
+  # Cardinality
+
+(Token('SIGNED_NUMBER', '3'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Cardinality'))
+
+
+testcase
+  4
+  value
+    list
+      number	1
+      number	1
+  value
+    list
+  value
+    list
+      number	1
+  # Cardinality
+
+(Token('SIGNED_NUMBER', '4'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1')]], [[]], [[Token('SIGNED_NUMBER', '1')]], Token('SH_COMMENT', '# Cardinality'))
+
+
+testcase
+  5
+  value
+    list
+  value
+    list
+      number	1
+      number	1
+  value
+    list
+      number	1
+  # Cardinality
+
+(Token('SIGNED_NUMBER', '5'), [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1')]], [[Token('SIGNED_NUMBER', '1')]], Token('SH_COMMENT', '# Cardinality'))
+
+
+testcase
+  6
+  value
+    list
+      value
+        string	"hola"
+      number	2
+      number	3
+      value
+        string	"abc"
+  value
+    list
+      value
+        string	"hola"
+      value
+        string	"hola"
+      value
+        string	"de"
+  value
+    list
+      value
+        string	"hola"
+      number	2
+      number	3
+      value
+        string	"abc"
+      value
+        string	"de"
+  # Domain, Structure
+
+(Token('SIGNED_NUMBER', '6'), [[['hola'], Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), ['abc']]], [[['hola'], ['hola'], ['de']]], [[['hola'], Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), ['abc'], ['de']]], Token('SH_COMMENT', '# Domain, Structure'))
+
+
+testcase
+  7
+  value
+    list
+      number	1
+      number	1
+      number	2
+      number	2
+      number	3
+      number	3
+  value
+    list
+  value
+    list
+      number	1
+      number	2
+      number	3
+  # Order (of parameters), Structure
+
+(Token('SIGNED_NUMBER', '7'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '3')]], [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Order (of parameters), Structure'))
+
+
+testcase
+  8
+  value
+    list
+      number	3
+      number	4
+      number	5
+      number	6
+      number	6
+  value
+    list
+      number	3
+      number	4
+      number	5
+      number	6
+      number	6
+  value
+    list
+      number	3
+      number	4
+      number	5
+      number	6
+  # Order (duplicates at the end of the list)
+
+(Token('SIGNED_NUMBER', '8'), [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6')]], Token('SH_COMMENT', '# Order (duplicates at the end of the list)'))
 ```
 
 ### Files to use
@@ -84,6 +244,8 @@ The Lark grammer can also be provided as scaffolding:
 ```python
 {% include_relative files/get_test_cases.py %}
 ```
+
+This solution can also be downloaded [here](files/get_test_cases.py).
 
 ## Metadata
 
