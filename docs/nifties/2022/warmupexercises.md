@@ -3,7 +3,7 @@
 # Warmup exercises
 {:.no_toc}
 
-1. Table of contents
+- Table of contents
 {:toc}
 
 ## Introduction

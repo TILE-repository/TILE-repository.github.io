@@ -1,7 +1,7 @@
 # Learning about parsers and much more using Test Informed Learning with Examples
 {:.no_toc}
 
-1. Table of contents
+- Table of contents
 {:toc}
 
 ## Introduction
