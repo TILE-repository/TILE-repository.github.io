@@ -1,4 +1,4 @@
-# Essential data processing assigment using Test Informed Learning with Examples
+# Parsing files using Test Informed Learning with Examples
 {:.no_toc}
 
 1. Table of contents
@@ -7,18 +7,16 @@
 ## Introduction
 
 This is a set of assignments focussed on wrting programs to analyse structured information. 
-Some general usefull and somewhat advanced topics are handled such as processing files, parsing information and generating reports. 
+Some general usefull and somewhat advanced topics are applied such as processing files and parsing information.
 The assignments puposely revolve around the testing domain.
-This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
+This is one of the ways to apply the [Test Informed Learning with Examples (TILE)](https://nielsdoorn.github.io/TILES/) approach to learn students about testing largely for free.
 
-The presented nifty TILE assignment is an assigment aimed at practicing file manipulation by reading and writing different formats (plain text, Excel and JSON) using testing files. 
+We also provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
 
-We also provide three ["warmup" exercises](warmupexercises.md) to get used to the used techniques.
+For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
 
-For students who don't have prior experience with using pytest, a [pytest introduction](pytestintro.md) is available. 
-It contains some basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
-
-The assigment is based around parsing a context free grammar using lark. Some, if not most, students will not be familiar with this. Therefore we provide some information about the [usage of lark](lark.md) as support. 
+The assigment is based around parsing a context free grammar using Lark. Some, if not most, students will not be familiar with this context free grammer parser. 
+Therefore we provide some information about the [usage of lark](lark.md) as support. 
 
 ## Goals and prerequisites
 
@@ -36,7 +34,7 @@ Testing learning goals (that are learned for free with TILE):
 
 Prerequisites:
 
--   Parametrized tests with pytest and be able to run then and interpret the results.
+-   parametrized tests with pytest and be able to run then and interpret the results.
 -   basic/primitive data types
 -   functions
 -   decision and control-flow structures
@@ -121,6 +119,11 @@ The Lark grammer can also be provided as scaffolding:
 ```
 
 This solution can also be downloaded [here](files/get_test_cases.py), and the produced output on execution can be found [here](files/output.txt).
+
+## Conclusion
+
+With this assignment we can teach students about parsing using context free grammar parsers using test files.
+By using this approach, student both learn advances and useful programming techniques whilst also learning about the use of test cases and the handling of information about and from these test cases without the need to spent extra time on these testing topics or teaching them in isolation.
 
 ## Metadata
 
