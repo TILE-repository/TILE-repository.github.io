@@ -48,7 +48,23 @@ The provided [warmup exercises](warmupexercises.md) can be helpful to forfill th
 
 Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the **Lark** parser.
 
-**TODODODODODODO**
+Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
+
+- test case in file <-- input
+- parse <-- CFG
+- tree <-- output
+- display results (as text)
+- 
+
+
+{% mermaid %}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
+
 
 For example, for the results of the `union_test.py` file from above:
 
@@ -129,8 +145,8 @@ By using this approach, student both learn advances and useful programming techn
 
 | *Summary* 		| Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways: early - introduce students to testing from the very first example program they see and write themselves in exercises; seamless - testing will be introduced in a smooth and continuous way as an inherent part of programming, and not as a separate activity; subtle - we will make use of clever and indirect methods to teach them testing knowledge and skills. This is a TILE based programming assignment that applies general applicable programming techniques such as file handling, parsing and data processing using a context related to testing. This way, students are not only learning those programming concepts, but they are learning testing concepts as well without the need to spend extra time. |
 | *Topics* 		| Testing, programming, file handling, data processing |
-| *Audience* 		| This assignment is appropriate for a CS2 course. The method can also be used on CS1 assignments. |
-| *Difficulty* 	| These are assignments for computer science students who completed a CS1 or similair course, but the principles of TILE can be used for more basic assignments as well. |
+| *Audience* 		| This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
+| *Difficulty* 	| These are assignments for computer science students who completed a CS1 or similair course.|
 | *Strengths* 	| TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
 | *Weaknesses* 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://nielsdoorn.github.io/TILES/) with TILED assignments. |
 | *Dependencies* 	| This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
