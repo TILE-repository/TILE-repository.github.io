@@ -48,6 +48,22 @@ The provided [warmup exercises](warmupexercises.md) can be helpful to forfill th
 
 ### Description
 
+Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark parser.
+
+For example, for the results of the `union_test.py` file from above:
+
+```python
+>>> get_test_cases("union_test.py")
+[['1', '[]', '[]', '[]'], 
+ ['2', '[]', '[1,2,3]', '[1,2,3]'], 
+ ['3', '[1,2,3]', '[]', '[1,2,3]'], 
+ ['4', '[1,1]', '[]', '[1]'], 
+ ['5', '[]', '[1,1]', '[1]'], 
+ ['6', '["hi",2,3,"abc"]', '["hi","hi","de"]', '["hi",2,3,"abc","de"]'], 
+ ['7', '[1,1,2,2,3,3]', '[]', '[1,2,3]']
+]
+```
+
 ### Possible solution
 
 ## Metadata

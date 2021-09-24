@@ -93,24 +93,24 @@ def get_test_cases(filename):
     Throws FileNotFoundError exception if file does not exist.
     """
     
-    #1: Abrir el fichero en file-handle llamado fhand
+    # 1: Open the file in file-handle called fhand
     python_file = open(filename, "r")
 
-    #2: Recorrer el fichero hasta llegar a la linea donde
-    #   empiezan los test cases
+    # 2: Go through the file until you reach the line where
+    #   the test cases begin
     line = python_file.readline()
     while not (line.startswith("@pytest.mark.parametrize") or line==''):
         line = python_file.readline()
       
-    #cuando llamamos una vez mas a readline() seguimos leyendo los primeros test cases parametrizados
-    line = python_file.readline() #line ahora apunta al primer test case de forma (ID, input1, .., inputn, output)
+    # when we call readline() once again we continue reading the first parameterized test cases
+    line = python_file.readline() # line now points to the first test case of form (ID, input1, .., inputn, output)
     
-    #test case line for two inputs looks likelooks like: '(num, i1, i2, o),   #Cardinalidad\n'
-    #- starts with (
-    #- ends with ),
-    #- all after ), commenst starting with #can be discarded
-    #- different parts are separated by ", "
-    #- i1, i2, and o can be anything (also tuples so cannot rely on position of ")" )
+    # test case line for two inputs looks likelooks like: '(num, i1, i2, o),   #Cardinality\n'
+    # - starts with (
+    # - ends with ),
+    # - all after ), commenst starting with # can be discarded
+    # - different parts are separated by ", "
+    # - i1, i2, and o can be anything (also tuples so cannot rely on position of ")" )
     
     test_cases = []
     while (line.startswith("(")): #each test case starts with "("
@@ -125,17 +125,17 @@ def get_test_cases(filename):
     
     return test_cases
 
-    #3: Cerrar el fichero
+    # 3: Close the file
     python_file.close()
 
 
 
-file1 = "pytests-for_testing_reports/filtrar_impares_test-nocomments.py"
-file2 = "pytests-for_testing_reports/filtrar_impares_test-YEScomments.py"
-file3 = "pytests-for_testing_reports/filtrar_impares_test-string-cases.py"
-file4 = "pytests-for_testing_reports/interseccion_test.py"
-file5 = "pytests-for_testing_reports/min_max_list_test.py"
-file6 = "pytests-for_testing_reports/union_test.py"
+file1 = "filter_out_tests-nocomments.py"
+file2 = "filter_out_tests-YEScomments.py"
+file3 = "filter_out_tests-string-cases.py"
+file4 = "intersection_test.py"
+file5 = "min_max_list_test.py"
+file6 = "union_test.py"
 
 
 for file in {file1, file2,file3, file4, file5, file6}: 

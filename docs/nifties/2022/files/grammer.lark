@@ -1,0 +1,34 @@
+testcase : "(" SIGNED_NUMBER "," value ("," value)* ")" [","] [SH_COMMENT]
+    
+    value: dict
+         | list
+         | tuple
+         | set
+         | string
+         | variable_name
+         | SIGNED_NUMBER    -> number
+         | "True"    -> true
+         | "False"   -> false
+         | "None"    -> none
+    
+    dict : "{" [pair ("," pair)*] "}"
+
+    pair : string ":" value
+
+    list : "[" [value ("," value)*] "]"
+
+    tuple: "(" [value ("," value)*] ")"
+
+    set  : "set" "(" [value ("," value)*] ")"
+         |"{" [value ("," value)*] "}"
+    
+    string : ESCAPED_STRING
+    
+    variable_name: CNAME
+                
+    %import common.ESCAPED_STRING
+    %import common.SH_COMMENT
+    %import common.CNAME
+    %import common.SIGNED_NUMBER
+    %import common.WS
+    %ignore WS
