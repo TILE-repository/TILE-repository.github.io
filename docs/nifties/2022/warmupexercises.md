@@ -35,6 +35,8 @@ Write a function `get_failed_testcases` in Python that, given the name of a `.tx
 
 ### Possible solution
 
+This is a possible solution intended for the lecturer.
+
 The function `get_failed_testcases` could look something like this:
 
 ```python
@@ -81,6 +83,8 @@ Write a Python function that given a python file that contains parametrized pyte
 ```
 
 ### Possible solution
+
+This is a possible solution intended for the lecturer.
 
 The function would look something like this:
 
@@ -142,6 +146,8 @@ For example, for the results of the [union_test.py](files/union_test.py) file th
 ```
 
 ### Possible solution
+
+This is a possible solution intended for the lecturer.
 
 The function would look something like this:
 

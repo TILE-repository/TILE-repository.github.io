@@ -11,7 +11,7 @@ Some general usefull and somewhat advanced topics are applied such as processing
 The assignments purposely revolve around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 
-## Goals and prerequisites
+## Learning goals and prerequisites
 
 Programming learning goals:
 
@@ -27,26 +27,25 @@ Testing learning goals (that are learned for free with TILE):
 
 Prerequisites:
 
--   parametrized tests with pytest and be able to run then and interpret the results.
+-   parametrized tests with pytest and be able to run them and interpret the results.
 -   basic/primitive data types
 -   functions
 -   decision and control-flow structures
 -   arrays, lists, etc. (sequence types)
 
-The provided [warm up exercises](warmupexercises.md) can be helpful to forfill these prerequisites.
+The provided [warm up exercises](warmupexercises.md) can be helpful to work on these prerequisites.
 
 ## Main assignment
 
 ### Description
 
-Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark [^1] parser.
+Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark[^1] parser.
 
 #### Background information
 
 Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
 We can use this to proces information written in formal languages.
 In this assignment, the information are test cases written in Python using the pytest tool[^2].
-With pytest, developers can write unit tests for there code.
 We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
 
 #### Example of generating a report
@@ -106,6 +105,14 @@ testcase
 
 **TODO explain output**
 
+### Possible solution
+
+This is a possible solution intended for the lecturer.
+
+```python
+{% include_relative files/get_test_cases.py %}
+```
+
 ### Files to use
 
 The following files can be used as input for the program:
@@ -118,37 +125,36 @@ The following files can be used as input for the program:
 - [min_max_list_test.py](files/min_max_list_test.py)
 - [union_test.py](files/union_test.py)
 
-### Possible solution
+The files of the possible solution:
 
-```python
-{% include_relative files/get_test_cases.py %}
-```
-
-This solution can also be downloaded [here](files/get_test_cases.py), and the produced output on execution can be found [here](files/output.txt).
+- [get_test_cases.py](files/get_test_cases.py)
+- [output.tx](files/output.txt)
 
 ## Suggestions on how to use this assignment in the classroom
 
-**TODO**
-I want to use a growth mindset approach (Open Informatics) to see if we can provide some ideas for lectures on how to let students work on this assignment, for example, work in groups of two on the warm up exercises, discuss the problems, discuss benefits of testing, ask what paramaterized testing is.
+The usage of parsers can be a difficult and complex topic in CS programs. 
+It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
 
-Then maybe an example of the usage of parsers and formal languages
+That is what we want to establish with this assignment. 
+We provide three ["warmup" exercises](warmupexercises.md) of increasing complexity for the students. 
+By letting students analyse test files in these exercises, we want them to experience the limitations of using the concepts they are familiar with such as conditional statements.
+That is the moment to introduce them to the main assignment and the usage of parsers.
 
-Make them understand that a file with pytest cases is also a formal language
-
-And finally work towards the main assignment
-**/TODO**
-
-We provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
-
-For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
-
-The assigment is based around parsing a context free grammar using Lark. 
+Depending on the prior knowledge and experience, it is possible to provide the students with the grammer definition that can be used to parse test files.
+The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
+The assigment is based around parsing a context free grammar using Lark[^1]. 
 Some, if not most, students will not be familiar with this context free grammer parser. 
 Therefore we provide some information about the [usage of lark](lark.md) as support. 
+Of course it is possible to provide a different grammer to gradually increase the complexity, or to not provide the students with the grammar to increase the difficulty.
+This is also depended on the available amount of time and many other factors of the educational setting.
 
 The Lark grammer can also be provided as scaffolding:
 
 - [grammer.lark](files/grammer.lark)
+
+## Known limitations of the assignment and the provided solution
+
+
 
 ## Conclusion
 
@@ -158,14 +164,14 @@ We provided exercises and suggestions on a didactic approach to use this assignm
 
 ## Metadata
 
-| *Summary* 		| Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways: early - introduce students to testing from the very first example program they see and write themselves in exercises; seamless - testing will be introduced in a smooth and continuous way as an inherent part of programming, and not as a separate activity; subtle - we will make use of clever and indirect methods to teach them testing knowledge and skills. This is a TILE based programming assignment that applies general applicable programming techniques such as file handling, parsing and data processing using a context related to testing. This way, students are not only learning those programming concepts, but they are learning testing concepts as well without the need to spend extra time. |
-| *Topics* 		| Testing, programming, file handling, data processing |
-| *Audience* 		| This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
-| *Difficulty* 	| These are assignments for computer science students who completed a CS1 or similair course.|
-| *Strengths* 	| TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
-| *Weaknesses* 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank [^3] with TILED assignments. |
-| *Dependencies* 	| This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
-| *Variants* 		| This assignment can be adapted in many ways, it can also be ported to other programming languages. |
+| *Summary*      | Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways: *early* - introduce students to testing from the very first example program they see and write themselves in exercises; *seamless* - testing will be introduced in a smooth and continuous way as an inherent part of programming, and not as a separate activity; *subtle* - we will make use of clever and indirect methods to teach them testing knowledge and skills. This is a TILE based programming assignment that applies general applicable programming techniques such as file handling, parsing and data processing using a context related to testing. This way, students are not only learning those programming concepts, but they are learning testing concepts as well without the need to spend extra time. |
+| *Topics*       | Testing, programming, file handling, data processing |
+| *Audience*     | This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
+| *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course.|
+| *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
+| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank [^3] with TILED assignments. |
+| *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
+| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. |
 
 # References
 
