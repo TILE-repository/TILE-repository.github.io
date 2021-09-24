@@ -159,8 +159,11 @@ The example grammer:
 ## Conclusion
 
 With this assignment we can teach students about parsing using context free grammar parsers using test files.
-By using this approach, student both learn advances and useful programming techniques whilst also learning about the use of test cases and the handling of information about and from these test cases without the need to spent extra time on these testing topics or teaching them in isolation.
+By using this approach, student both learn advances and useful programming techniques whilst also revisit their prior knowledge about the usage of test cases and the handling of information about and from these test cases to generate reports.
+One of the main programming learning goals is to learn the application of parsers.
+This is done by using the context free grammer parser Lark.
 We provided exercises and suggestions on a didactic approach to use this assignment in the classroom.
+To make the assignment complete, we also provide possible solutions and output files.
 
 ## Metadata
 
