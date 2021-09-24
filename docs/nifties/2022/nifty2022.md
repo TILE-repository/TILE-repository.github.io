@@ -64,7 +64,24 @@ For example, for the results of the `union_test.py` file from above:
 ]
 ```
 
+### Files to use
+
+The following files can be used as input for the program:
+
+- [filter_out_tests-nocomments.py](files/filter_out_tests-nocomments.py)
+- [filter_out_tests-YEScomments.py](files/filter_out_tests-YEScomments.py)
+- [filter_out_tests-string-cases.py](files/filter_out_tests-string-cases.py)
+- [intersection_test.py](files/intersection_test.py)
+- [min_max_list_test.py](files/min_max_list_test.py)
+- [union_test.py](files/union_test.py)
+
+The Lark grammer can also be provided as scaffolding:
+
+- [grammer.lark](files/grammer.lark)
+
 ### Possible solution
+
+{% include_relative files/get_test_cases.py %}
 
 ## Metadata
 
