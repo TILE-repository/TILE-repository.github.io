@@ -57,13 +57,6 @@ Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context fr
 - 
 
 
-{% mermaid %}
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-{% endmermaid %}
 
 
 For example, for the results of the `union_test.py` file from above:
