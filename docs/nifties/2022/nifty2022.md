@@ -6,17 +6,10 @@
 
 ## Introduction
 
-This is a set of assignments focussed on wrting programs to analyse structured information. 
-Some general usefull and somewhat advanced topics are applied such as processing files and parsing information.
-The assignments puposely revolve around the testing domain.
-This is one of the ways to apply the [Test Informed Learning with Examples (TILE)](https://nielsdoorn.github.io/TILES/) approach to learn students about testing largely for free.
-
-We also provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
-
-For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
-
-The assigment is based around parsing a context free grammar using Lark. Some, if not most, students will not be familiar with this context free grammer parser. 
-Therefore we provide some information about the [usage of lark](lark.md) as support. 
+These assignments are focussed on wrting programs to analyse structured information in the form of pytest testcases.
+Some general usefull and somewhat advanced topics are applied such as processing files, parsing information and unit testing.
+The assignments purposely revolve around the testing domain.
+This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 
 ## Goals and prerequisites
 
@@ -45,7 +38,6 @@ The provided [warm up exercises](warmupexercises.md) can be helpful to forfill t
 ## Main assignment
 
 **TODO**
-
 I want to use a growth mindset approach (Open Informatics) to see if we can provide some ideas for lectures on how to let students work on this assignment, for example, work in groups of two on the warm up exercises, discuss the problems, discuss benefits of testing, ask what paramaterized testing is.
 
 Then maybe an example of the usage of parsers and formal languages
@@ -53,6 +45,15 @@ Then maybe an example of the usage of parsers and formal languages
 Make them understand that a file with pytest cases is also a formal language
 
 And finally work towards the main assignment
+**/TODO**
+
+We provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
+
+For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
+
+The assigment is based around parsing a context free grammar using Lark. 
+Some, if not most, students will not be familiar with this context free grammer parser. 
+Therefore we provide some information about the [usage of lark](lark.md) as support. 
 
 
 ### Description
@@ -158,7 +159,7 @@ By using this approach, student both learn advances and useful programming techn
 | *Audience* 		| This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
 | *Difficulty* 	| These are assignments for computer science students who completed a CS1 or similair course.|
 | *Strengths* 	| TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
-| *Weaknesses* 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://nielsdoorn.github.io/TILES/) with TILED assignments. |
+| *Weaknesses* 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank [^3] with TILED assignments. |
 | *Dependencies* 	| This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
 | *Variants* 		| This assignment can be adapted in many ways, it can also be ported to other programming languages. |
 
@@ -166,3 +167,4 @@ By using this approach, student both learn advances and useful programming techn
 
 [^1]: [Lark homepage](https://lark-parser.readthedocs.io)
 [^2]: [Pytest homepage](https://docs.pytest.org/en/6.2.x/contents.html)
+[^3]: [TILE Repository](https://nielsdoorn.github.io/TILES/)
