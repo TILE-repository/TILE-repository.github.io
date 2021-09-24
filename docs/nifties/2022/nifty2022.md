@@ -1,4 +1,4 @@
-# Parsing files using Test Informed Learning with Examples
+# Learning about parsers and much more using Test Informed Learning with Examples
 {:.no_toc}
 
 1. Table of contents
