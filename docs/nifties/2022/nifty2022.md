@@ -113,7 +113,29 @@ This is a possible solution intended for the lecturer.
 {% include_relative files/get_test_cases.py %}
 ```
 
-### Files to use
+## Suggestions on how to use this assignment in the classroom
+
+The usage of parsers can be a difficult and complex topic in CS programs. 
+It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
+
+That is what we want to establish with this assignment. 
+We provide three ["warmup" exercises](warmupexercises.md) of increasing complexity for the students. 
+By letting students analyse test files in these exercises, we want them to experience the limitations of using the concepts they are familiar with such as conditional statements.
+That is the moment to introduce them to the main assignment and the usage of parsers.
+
+Depending on the prior knowledge and experience, it is possible to provide the students with the grammer definition that can be used to parse test files.
+The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
+The assigment is based around parsing a context free grammar using Lark[^1]. 
+Some, if not most, students will not be familiar with this context free grammer parser. 
+Therefore we provide some information about the [usage of lark](lark.md) as support. 
+Of course it is possible to provide a different or a part of the grammer to gradually increase the complexity, or to not provide the students with the grammar to increase the difficulty.
+This is also depended on the available amount of time and many other factors of the educational setting.
+
+## Known limitations of the assignment and the provided solution
+
+**TODO**
+
+## Files to use
 
 The following files can be used as input for the program:
 
@@ -130,31 +152,9 @@ The files of the possible solution:
 - [get_test_cases.py](files/get_test_cases.py)
 - [output.tx](files/output.txt)
 
-## Suggestions on how to use this assignment in the classroom
-
-The usage of parsers can be a difficult and complex topic in CS programs. 
-It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
-
-That is what we want to establish with this assignment. 
-We provide three ["warmup" exercises](warmupexercises.md) of increasing complexity for the students. 
-By letting students analyse test files in these exercises, we want them to experience the limitations of using the concepts they are familiar with such as conditional statements.
-That is the moment to introduce them to the main assignment and the usage of parsers.
-
-Depending on the prior knowledge and experience, it is possible to provide the students with the grammer definition that can be used to parse test files.
-The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
-The assigment is based around parsing a context free grammar using Lark[^1]. 
-Some, if not most, students will not be familiar with this context free grammer parser. 
-Therefore we provide some information about the [usage of lark](lark.md) as support. 
-Of course it is possible to provide a different grammer to gradually increase the complexity, or to not provide the students with the grammar to increase the difficulty.
-This is also depended on the available amount of time and many other factors of the educational setting.
-
-The Lark grammer can also be provided as scaffolding:
+The example grammer:
 
 - [grammer.lark](files/grammer.lark)
-
-## Known limitations of the assignment and the provided solution
-
-
 
 ## Conclusion
 
