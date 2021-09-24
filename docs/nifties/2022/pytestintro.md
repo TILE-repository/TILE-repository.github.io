@@ -1,4 +1,4 @@
-[<< Back to the nifty assignment](nifty2022.md)
+[<< Back to the main assignment](nifty2022.md)
 
 # A brief introduction on running pytest
 
