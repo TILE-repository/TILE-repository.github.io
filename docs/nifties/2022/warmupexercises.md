@@ -110,4 +110,75 @@ def get_test_signature(filename):
 
 ### Description
 
+Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests.
+
+For example, for the results of the `union_test.py` file from above:
+
+```python
+>>> get_test_cases("union_test.py")
+[['1', '[]', '[]', '[]'], 
+ ['2', '[]', '[1,2,3]', '[1,2,3]'], 
+ ['3', '[1,2,3]', '[]', '[1,2,3]'], 
+ ['4', '[1,1]', '[]', '[1]'], 
+ ['5', '[]', '[1,1]', '[1]'], 
+ ['6', '["hi",2,3,"abc"]', '["hi","hi","de"]', '["hi",2,3,"abc","de"]'], 
+ ['7', '[1,1,2,2,3,3]', '[]', '[1,2,3]']
+]
+```
+
 ### Possible solution
+
+The function would look something like this:
+
+```python
+def get_test_cases(filename):
+    
+    """
+    This function returns a list of the test cases that are defined in the
+    file with "@pytest.mark.parametrize". If it is not a pytest file it returns
+    the empty list
+    
+    Throws FileNotFoundError exception if file does not exist.
+    """
+    test_signature = get_test_signature(filename)
+    
+    #1: Open the file and name the file-handle fhand
+    python_file = open(filename, "r")
+
+    #2: Read through the file to find the line that indicates that the test cases
+    #   start (i.e. @pytest.mark.parametrize)
+    line = python_file.readline()
+    while not (line.startswith("@pytest.mark.parametrize") or line==''):
+        line = python_file.readline()
+      
+    #call readline() one more time to start at the testcases
+    line = python_file.readline() #line now points to the furst test case with format (ID, input1, .., inputn, output)
+    
+    #test case line for 2 inputs looks like: '(num, i1, i2, o),  #comments'
+    #- starts with (
+    #- ends with ),
+    #- all text after ) are comments taht starting with # and can be discarded
+    #- different parts are separated by ", "
+    #- i1, i2, and o can be anything
+    
+    test_cases = []
+    while (line.startswith("(")): #each test case starts with "("
+        
+        test_case = line.rstrip().split(", ")[0:len(test_signature)]
+                
+        #Elimina los parentesis del test case. 
+        test_case[0] = test_case[0].replace("(", "")
+        test_case[-1] = test_case[-1].replace(")", "")
+        
+        test_cases.append(test_case)
+                     
+        line = python_file.readline() #go to next line in file
+            
+    return test_cases
+
+    #3: Close the file
+    python_file.close()
+```
+
+*Note that this function contains some faults, for example it does not work when the test data contains tuples, or when there are spaces after the commas in the test_data (inputs and output). 
+This is left unresolved on purpose, such that a BUG BOUNTY can be presented to the students to win extra points for finding these faults by testing it. Later on, this can be the introduction to parsing, leading to the main assignment.*

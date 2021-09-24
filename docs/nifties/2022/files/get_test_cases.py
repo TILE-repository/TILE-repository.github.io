@@ -1,15 +1,51 @@
 from lark import Lark
+from lark import Transformer
+
+class MyTransformer(Transformer):
+    def testcase(self, items):
+        n, *vs= items
+        return (n,) + tuple(vs)
+    
+    def value(self, items):
+        return items
+    
+    def pair(self, key_value):
+        k, v = key_value
+        return k, v
+    
+    def string(self, s):
+        (s,) = s
+        return s[1:-1]
+    
+    def number(self, n):
+        (n,) = n
+        return n
+    
+    list = list
+    tuple = tuple
+    dict = dict
+    set = set
+
+    none = lambda self, _: None
+    true = lambda self, _: True
+    false = lambda self, _: False
+    
+    
+# python strings are double quotes ad single quotes
+
+#   SINGLEQUOTES: "'"
+#   DOUBLEQUOTES: "\""
+    
+#   string: SINGLEQUOTES [(character|digit|symbol)*] SINGLEQUOTES
+#         | DOUBLEQUOTES [(character|digit|symbol)*] DOUBLEQUOTES
+
+
+#Cannot use this
+#       | "'" _STRING_ESC_INNER "'"
+
 
 testcase_parser = Lark(r"""
-    testcase : "(" NUMBER "," value ("," value)* ")" [","] ["#" comments*]
-    
-    comments : (character|digit|symbol)*
-    
-    character: ("a".."z")+ | ("A".."Z")+
-    
-    digit: ("0".."9")+
-    
-    symbol: (" " | "_" | ","  | "}" | "(" | ")" )+
+    testcase : "(" SIGNED_NUMBER "," value ("," value)* ")" [","] [SH_COMMENT]
     
     value: dict
          | list
@@ -17,22 +53,14 @@ testcase_parser = Lark(r"""
          | set
          | string
          | variable_name
-         | NUMBER
-         | "True"
-         | "False"
-         | "None"
-
-    variable_name: character [(character|digit|symbol)*]
-    
-    SINGLEQUOTES: "'"
-    DOUBLEQUOTES: "\""
-    
-    string: SINGLEQUOTES [(character|digit|symbol)*] SINGLEQUOTES
-          | DOUBLEQUOTES [(character|digit|symbol)*] DOUBLEQUOTES
+         | SIGNED_NUMBER    -> number
+         | "True"    -> true
+         | "False"   -> false
+         | "None"    -> none
     
     dict : "{" [pair ("," pair)*] "}"
 
-    pair : STRING ":" value
+    pair : string ":" value
 
     list : "[" [value ("," value)*] "]"
 
@@ -40,9 +68,15 @@ testcase_parser = Lark(r"""
 
     set  : "set" "(" [value ("," value)*] ")"
          |"{" [value ("," value)*] "}"
+    
+    string : ESCAPED_STRING
+    
+    variable_name: CNAME
                 
-    %import common.ESCAPED_STRING   -> STRING
-    %import common.SIGNED_NUMBER    -> NUMBER
+    %import common.ESCAPED_STRING
+    %import common.SH_COMMENT
+    %import common.CNAME
+    %import common.SIGNED_NUMBER
     %import common.WS
     %ignore WS
 
@@ -68,10 +102,10 @@ def get_test_cases(filename):
     while not (line.startswith("@pytest.mark.parametrize") or line==''):
         line = python_file.readline()
       
-    # when we call readline () once again we continue reading the first parameterized test cases
-    line = python_file.readline() # line now points to the first test case of form (ID, input1, .., inputn, output)
+    #cuando llamamos una vez mas a readline() seguimos leyendo los primeros test cases parametrizados
+    line = python_file.readline() #line ahora apunta al primer test case de forma (ID, input1, .., inputn, output)
     
-    #test case line for two inputs looks likelooks like: '(num, i1, i2, o),   # Cardinality\n'
+    #test case line for two inputs looks likelooks like: '(num, i1, i2, o),   #Cardinalidad\n'
     #- starts with (
     #- ends with ),
     #- all after ), commenst starting with #can be discarded
@@ -81,28 +115,33 @@ def get_test_cases(filename):
     test_cases = []
     while (line.startswith("(")): #each test case starts with "("
         
-        # parse the line
+        #parse the line
         
         tc = testcase_parser.parse(line)
         test_cases.append(tc)             
         
-        line = python_file.readline() # go to next line in file
+        line = python_file.readline() #go to next line in file
             
     
     return test_cases
 
-    #3: Close the file
+    #3: Cerrar el fichero
     python_file.close()
 
 
 
-file1 = "pytests-for_testing_reports/filtrar_impares_test.py"
-file2 = "pytests-for_testing_reports/interseccion_test.py"
-file3 = "pytests-for_testing_reports/min_max_list_test.py"
-file4 = "pytests-for_testing_reports/union_test.py"
+file1 = "pytests-for_testing_reports/filtrar_impares_test-nocomments.py"
+file2 = "pytests-for_testing_reports/filtrar_impares_test-YEScomments.py"
+file3 = "pytests-for_testing_reports/filtrar_impares_test-string-cases.py"
+file4 = "pytests-for_testing_reports/interseccion_test.py"
+file5 = "pytests-for_testing_reports/min_max_list_test.py"
+file6 = "pytests-for_testing_reports/union_test.py"
 
-for file in {file1,file2,file3,file4}:
+
+for file in {file1, file2,file3, file4, file5, file6}: 
     print(file)
     for tc in get_test_cases(file):
-        print(tc)
+        print(tc.pretty())
+        print(MyTransformer().transform(tc))
         print("\n")
+    
