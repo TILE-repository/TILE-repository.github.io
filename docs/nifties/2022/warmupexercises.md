@@ -30,10 +30,10 @@ def get_failed_testcases(filename):
     Throws FileNotFoundError exception if file does not exist.
     """
     
-    # 1.Open the file and name the file-handle fhand
+    # 1: Open the file and name the file-handle fhand
     fhand = open(filename, 'r')
     
-    # 2.Copy the content of the file in variable content
+    # 2: Copy the content of the file in variable content
     content = fhand.read()
     
     # 3: Close the file
@@ -142,27 +142,27 @@ def get_test_cases(filename):
     """
     test_signature = get_test_signature(filename)
     
-    #1: Open the file and name the file-handle fhand
+    # 1: Open the file and name the file-handle fhand
     python_file = open(filename, "r")
 
-    #2: Read through the file to find the line that indicates that the test cases
+    # 2: Read through the file to find the line that indicates that the test cases
     #   start (i.e. @pytest.mark.parametrize)
     line = python_file.readline()
     while not (line.startswith("@pytest.mark.parametrize") or line==''):
         line = python_file.readline()
       
-    #call readline() one more time to start at the testcases
+    # call readline() one more time to start at the testcases
     line = python_file.readline() #line now points to the furst test case with format (ID, input1, .., inputn, output)
     
-    #test case line for 2 inputs looks like: '(num, i1, i2, o),  #comments'
-    #- starts with (
-    #- ends with ),
-    #- all text after ) are comments taht starting with # and can be discarded
-    #- different parts are separated by ", "
-    #- i1, i2, and o can be anything
+    # test case line for 2 inputs looks like: '(num, i1, i2, o),  #comments'
+    # - starts with (
+    # - ends with ),
+    # - all text after ) are comments taht starting with # and can be discarded
+    # - different parts are separated by ", "
+    # - i1, i2, and o can be anything
     
     test_cases = []
-    while (line.startswith("(")): #each test case starts with "("
+    while (line.startswith("(")): # each test case starts with "("
         
         test_case = line.rstrip().split(", ")[0:len(test_signature)]
                 
@@ -176,9 +176,11 @@ def get_test_cases(filename):
             
     return test_cases
 
-    #3: Close the file
+    # 3: Close the file
     python_file.close()
 ```
 
-*Note that this function contains some faults, for example it does not work when the test data contains tuples, or when there are spaces after the commas in the test_data (inputs and output). 
-This is left unresolved on purpose, such that a BUG BOUNTY can be presented to the students to win extra points for finding these faults by testing it. Later on, this can be the introduction to parsing, leading to the main assignment.*
+### Option for a bug bounty leading to the main assignment
+
+Note that this function contains some faults, for example it does not work when the test data contains tuples, or when there are spaces after the commas in the test_data (inputs and output). 
+This is left unresolved on purpose, such that a BUG BOUNTY can be presented to the students to win extra points for finding these faults by testing it. Later on, this can be the introduction to parsing, leading to the main assignment.

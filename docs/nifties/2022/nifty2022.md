@@ -15,7 +15,7 @@ The presented nifty TILE assignment is an assigment aimed at practicing file man
 
 We also provide three ["warmup" exercises](warmupexercises.md) to get used to the used techniques.
 
-For students who don't have prior experience with using pytest, an [introduction](pytestintro.md) is available. 
+For students who don't have prior experience with using pytest, a [pytest introduction](pytestintro.md) is available. 
 It contains some basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
 The assigment is based around parsing a context free grammar using lark. Some, if not most, students will not be familiar with this. Therefore we provide some information about the [usage of lark](lark.md) as support. 
@@ -42,7 +42,9 @@ Prerequisites:
 -   decision and control-flow structures
 -   arrays, lists, etc. (sequence types)
 
-## Assignment
+The provided [warmup exercises](warmupexercises.md) can be helpful to forfill these prerequisites.
+
+## Main assignment
 
 ### Description
 
