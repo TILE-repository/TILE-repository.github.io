@@ -52,3 +52,5 @@ Also testcase 7 failed.
 # References
 
 [^1]: [Pytest homepage](https://docs.pytest.org/en/6.2.x/contents.html)
+
+[<< Back to the main assignment](nifty2022.md)

@@ -190,3 +190,5 @@ def get_test_cases(filename):
 
 Note that this function contains some faults, for example it does not work when the test data contains tuples, or when there are spaces after the commas in the test_data (inputs and output). 
 This is left unresolved on purpose, such that a BUG BOUNTY can be presented to the students to win extra points for finding these faults by testing it. Later on, this can be the introduction to parsing, leading to the main assignment.
+
+[<< Back to the main assignment](nifty2022.md)

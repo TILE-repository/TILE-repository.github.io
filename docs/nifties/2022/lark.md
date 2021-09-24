@@ -34,3 +34,5 @@ A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on
 # References
 
 [^1]: [Lark homepage](https://lark-parser.readthedocs.io)
+
+[<< Back to the main assignment](nifty2022.md)
