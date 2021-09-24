@@ -37,26 +37,6 @@ The provided [warm up exercises](warmupexercises.md) can be helpful to forfill t
 
 ## Main assignment
 
-### Suggestions on how to use this assignment in the classroom
-
-**TODO**
-I want to use a growth mindset approach (Open Informatics) to see if we can provide some ideas for lectures on how to let students work on this assignment, for example, work in groups of two on the warm up exercises, discuss the problems, discuss benefits of testing, ask what paramaterized testing is.
-
-Then maybe an example of the usage of parsers and formal languages
-
-Make them understand that a file with pytest cases is also a formal language
-
-And finally work towards the main assignment
-**/TODO**
-
-We provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
-
-For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
-
-The assigment is based around parsing a context free grammar using Lark. 
-Some, if not most, students will not be familiar with this context free grammer parser. 
-Therefore we provide some information about the [usage of lark](lark.md) as support. 
-
 ### Description
 
 Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark [^1] parser.
@@ -71,7 +51,7 @@ To properly test functionality, it is necessary to write as much test cases as n
 These test cases can be written using features provided by pytest.
 We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
 
-#### Example of a generating a report
+#### Example of generating a report
 
 The file [union_test.py](files/union_test.py) contains a function `union` to determine the union of the two sets A and B (the union is the set that contains element that belong to either set A or to set B or to both). For example, the union of `{1, 2, 2, 3, 4}` and `{3, 4, 5, 6}` is `{1, 2, 3, 4, 5, 6}`.
 The file also contains eight test cases written using pytest. It is listed here:
@@ -140,10 +120,6 @@ The following files can be used as input for the program:
 - [min_max_list_test.py](files/min_max_list_test.py)
 - [union_test.py](files/union_test.py)
 
-The Lark grammer can also be provided as scaffolding:
-
-- [grammer.lark](files/grammer.lark)
-
 ### Possible solution
 
 ```python
@@ -151,6 +127,30 @@ The Lark grammer can also be provided as scaffolding:
 ```
 
 This solution can also be downloaded [here](files/get_test_cases.py), and the produced output on execution can be found [here](files/output.txt).
+
+## Suggestions on how to use this assignment in the classroom
+
+**TODO**
+I want to use a growth mindset approach (Open Informatics) to see if we can provide some ideas for lectures on how to let students work on this assignment, for example, work in groups of two on the warm up exercises, discuss the problems, discuss benefits of testing, ask what paramaterized testing is.
+
+Then maybe an example of the usage of parsers and formal languages
+
+Make them understand that a file with pytest cases is also a formal language
+
+And finally work towards the main assignment
+**/TODO**
+
+We provide three ["warmup" exercises](warmupexercises.md) for the students to get aquintad with the techniques.
+
+For students who don't have prior experience with using pytest, a short [pytest introduction](pytestintro.md) is also available. 
+
+The assigment is based around parsing a context free grammar using Lark. 
+Some, if not most, students will not be familiar with this context free grammer parser. 
+Therefore we provide some information about the [usage of lark](lark.md) as support. 
+
+The Lark grammer can also be provided as scaffolding:
+
+- [grammer.lark](files/grammer.lark)
 
 ## Conclusion
 
