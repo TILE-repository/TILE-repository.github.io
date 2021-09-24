@@ -1,6 +1,12 @@
 [<< Back to the main assignment](nifty2022.md)
 
 # Lark
+{:.no_toc}
+
+1. Table of contents
+{:toc}
+
+## Introduction
 
 Lark [^1] is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
 

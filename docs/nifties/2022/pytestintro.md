@@ -1,6 +1,12 @@
 [<< Back to the main assignment](nifty2022.md)
 
 # A brief introduction on running pytest
+{:.no_toc}
+
+1. Table of contents
+{:toc}
+
+## Introduction
 
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries [^1]. 
 

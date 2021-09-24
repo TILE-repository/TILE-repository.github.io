@@ -4,7 +4,7 @@
 1. Table of contents
 {:toc}
 
-## Overview
+## Introduction
 
 This is a set of assignments focussed on wrting programs to analyse structured information. 
 Some general usefull and somewhat advanced topics are handled such as processing files, parsing information and generating reports. 
