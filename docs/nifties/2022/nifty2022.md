@@ -92,7 +92,7 @@ testcase
 
 (Token('SIGNED_NUMBER', '1'), [[]], [[]], [[]], Token('SH_COMMENT', '# Cardinality'))
 
-[TRUNCATED]
+[...]
 
 testcase
   8
@@ -121,7 +121,7 @@ testcase
 (Token('SIGNED_NUMBER', '8'), [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6')]], Token('SH_COMMENT', '# Order (duplicates at the end of the list)'))
 ```
 
-**explain output**
+**TODO explain output**
 
 ### Files to use
 
@@ -151,6 +151,7 @@ This solution can also be downloaded [here](files/get_test_cases.py), and the pr
 
 With this assignment we can teach students about parsing using context free grammar parsers using test files.
 By using this approach, student both learn advances and useful programming techniques whilst also learning about the use of test cases and the handling of information about and from these test cases without the need to spent extra time on these testing topics or teaching them in isolation.
+We provided exercises and suggestions on a didactic approach to use this assignment in the classroom.
 
 ## Metadata
 

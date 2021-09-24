@@ -69,7 +69,7 @@ def get_failed_testcases(filename):
 
 ### Description
 
-Write a Python function that given a *.py* file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the union_test.py file from above:
+Write a Python function that given a python file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the [union_test.py](files/union_test.py) file from above:
 
 ```python
 >>> get_test_signature("union_test.py") 
@@ -123,7 +123,7 @@ def get_test_signature(filename):
 
 Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests.
 
-For example, for the results of the `union_test.py` file from above:
+For example, for the results of the [union_test.py](files/union_test.py) file that we used earlier:
 
 ```python
 >>> get_test_cases("union_test.py")
