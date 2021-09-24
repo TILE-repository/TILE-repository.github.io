@@ -44,11 +44,9 @@ Write a function `get_test_cases` in Python that returns a list with the test ca
 #### Background information
 
 Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
-We can use this to as a step to interpret information written in a formal language.
-In this assignment, the information are test cases written in Python using the pytest tool [^2].
+We can use this to proces information written in formal languages.
+In this assignment, the information are test cases written in Python using the pytest tool[^2].
 With pytest, developers can write unit tests for there code.
-To properly test functionality, it is necessary to write as much test cases as needed to cover all possible exectution scenario's of your functions.
-These test cases can be written using features provided by pytest.
 We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
 
 #### Example of generating a report
