@@ -50,7 +50,7 @@ The provided [warmup exercises](warmupexercises.md) can be helpful to forfill th
 
 Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the **Lark** parser.
 
-TODODODODODODO
+**TODODODODODODO**
 
 
 
@@ -228,9 +228,10 @@ testcase
 
 The following files can be used as input for the program:
 
-- [filter_out_tests-nocomments.py](files/filter_out_tests-nocomments.py)
-- [filter_out_tests-YEScomments.py](files/filter_out_tests-YEScomments.py)
-- [filter_out_tests-string-cases.py](files/filter_out_tests-string-cases.py)
+- [filter_odd_tests-test.py](files/filter_odd_tests-test.py)
+- [filter_odd_tests-nocomments.py](files/filter_odd_tests-nocomments.py)
+- [filter_odd_tests-YEScomments.py](files/filter_odd_tests-YEScomments.py)
+- [filter_odd_tests-string-cases.py](files/filter_odd_tests-string-cases.py)
 - [intersection_test.py](files/intersection_test.py)
 - [min_max_list_test.py](files/min_max_list_test.py)
 - [union_test.py](files/union_test.py)
@@ -245,7 +246,7 @@ The Lark grammer can also be provided as scaffolding:
 {% include_relative files/get_test_cases.py %}
 ```
 
-This solution can also be downloaded [here](files/get_test_cases.py).
+This solution can also be downloaded [here](files/get_test_cases.py), and the produced output on execution can be found [here](files/output.txt).
 
 ## Metadata
 

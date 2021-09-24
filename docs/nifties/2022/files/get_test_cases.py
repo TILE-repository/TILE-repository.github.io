@@ -129,9 +129,9 @@ def get_test_cases(filename):
     python_file.close()
 
 files = {
-    "filter_out_tests-nocomments.py",
-    "filter_out_tests-YEScomments.py",
-    "filter_out_tests-string-cases.py",
+    "filter_odd_tests-nocomments.py",
+    "filter_odd_tests-YEScomments.py",
+    "filter_odd_tests-string-cases.py",
     "intersection_test.py",
     "min_max_list_test.py",
     "union_test.py"

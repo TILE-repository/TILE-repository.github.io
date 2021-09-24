@@ -1,12 +1,12 @@
 import pytest
 
-def interseccion(lista1, lista2, lista3):
+def intersection(list1, list2, list3):
     i = 0
     res = []
-    for i in range(len(lista1)):
-        if lista1[i] in lista2: 
-            res.append(lista1[i]) 
-    return res + lista3
+    for i in range(len(list1)):
+        if list1[i] in list2: 
+            res.append(list1[i]) 
+    return res + list3
 
 @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
 (1, [], [], [], []),   # Cardinality
@@ -20,6 +20,6 @@ def interseccion(lista1, lista2, lista3):
 (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
 ])
 
-def test_interseccion(testcase, input1, input2, input3, output):
-    assert interseccion(input1, input2, input3) == output,\
-           "caso {0}".format(testcase)
+def test_intersection(testcase, input1, input2, input3, output):
+    assert intersection(input1, input2, input3) == output,\
+           "case {0}".format(testcase)

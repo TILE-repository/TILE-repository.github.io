@@ -1,12 +1,12 @@
 import pytest
 
-def filtrar_impares(entrada):
+def filter_odd(input):
     """
-     # Devuelve un conjunto que consiste de los elementos pares de entrada.
-     # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+     # Returns a set consisting of the input pair elements.
+     # It only works if input is a list, set or tuple whose elements are ints or floats.
     """
     res = set()
-    for x in entrada:
+    for x in input:
         if (x % 2 == 0):
             res.add(x)
     return res
@@ -25,6 +25,6 @@ def filtrar_impares(entrada):
 (11, (1,2,3,4,5,6,7), {2,4})
 ])              
 
-def test_filtrar_impares(testcase, input, output):
-    assert filtrar_impares(input) == output,\
-           "caso {0}".format(testcase)
+def test_filter_odd(testcase, input, output):
+    assert filter_odd(input) == output,\
+           "case {0}".format(testcase)
