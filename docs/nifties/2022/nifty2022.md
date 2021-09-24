@@ -52,8 +52,6 @@ Write a function `get_test_cases` in Python that returns a list with the test ca
 
 **TODODODODODODO**
 
-
-
 For example, for the results of the `union_test.py` file from above:
 
 ```python
@@ -71,131 +69,7 @@ testcase
 
 (Token('SIGNED_NUMBER', '1'), [[]], [[]], [[]], Token('SH_COMMENT', '# Cardinality'))
 
-
-testcase
-  2
-  value
-    list
-  value
-    list
-      number	1
-      number	2
-      number	3
-  value
-    list
-      number	1
-      number	2
-      number	3
-  # Cardinality
-
-(Token('SIGNED_NUMBER', '2'), [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Cardinality'))
-
-
-testcase
-  3
-  value
-    list
-      number	1
-      number	2
-      number	3
-  value
-    list
-  value
-    list
-      number	1
-      number	2
-      number	3
-  # Cardinality
-
-(Token('SIGNED_NUMBER', '3'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Cardinality'))
-
-
-testcase
-  4
-  value
-    list
-      number	1
-      number	1
-  value
-    list
-  value
-    list
-      number	1
-  # Cardinality
-
-(Token('SIGNED_NUMBER', '4'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1')]], [[]], [[Token('SIGNED_NUMBER', '1')]], Token('SH_COMMENT', '# Cardinality'))
-
-
-testcase
-  5
-  value
-    list
-  value
-    list
-      number	1
-      number	1
-  value
-    list
-      number	1
-  # Cardinality
-
-(Token('SIGNED_NUMBER', '5'), [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1')]], [[Token('SIGNED_NUMBER', '1')]], Token('SH_COMMENT', '# Cardinality'))
-
-
-testcase
-  6
-  value
-    list
-      value
-        string	"hola"
-      number	2
-      number	3
-      value
-        string	"abc"
-  value
-    list
-      value
-        string	"hola"
-      value
-        string	"hola"
-      value
-        string	"de"
-  value
-    list
-      value
-        string	"hola"
-      number	2
-      number	3
-      value
-        string	"abc"
-      value
-        string	"de"
-  # Domain, Structure
-
-(Token('SIGNED_NUMBER', '6'), [[['hola'], Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), ['abc']]], [[['hola'], ['hola'], ['de']]], [[['hola'], Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), ['abc'], ['de']]], Token('SH_COMMENT', '# Domain, Structure'))
-
-
-testcase
-  7
-  value
-    list
-      number	1
-      number	1
-      number	2
-      number	2
-      number	3
-      number	3
-  value
-    list
-  value
-    list
-      number	1
-      number	2
-      number	3
-  # Order (of parameters), Structure
-
-(Token('SIGNED_NUMBER', '7'), [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '3')]], [[]], [[Token('SIGNED_NUMBER', '1'), Token('SIGNED_NUMBER', '2'), Token('SIGNED_NUMBER', '3')]], Token('SH_COMMENT', '# Order (of parameters), Structure'))
-
+[TRUNCATED]
 
 testcase
   8
