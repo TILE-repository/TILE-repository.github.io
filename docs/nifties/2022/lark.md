@@ -1,3 +1,5 @@
+[<< Back to the nifty assignment](nifty2022.md)
+
 # Lark
 
 Lark [^1] is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.

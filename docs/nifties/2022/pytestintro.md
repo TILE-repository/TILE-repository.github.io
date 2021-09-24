@@ -1,3 +1,5 @@
+[<< Back to the nifty assignment](nifty2022.md)
+
 # A brief introduction on running pytest
 
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries [^1]. 

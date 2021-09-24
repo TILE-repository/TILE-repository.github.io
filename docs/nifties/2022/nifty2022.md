@@ -18,6 +18,8 @@ We also provide three ["warmup" exercises](warmupexercises.md) to get used to th
 For students who don't have prior experience with using pytest, an [introduction](pytestintro.md) is available. 
 It contains some basic pytest concepts that can be taughed in a course after functions have been treated as a concept.
 
+The assigment is based around parsing a context free grammar using lark. Some, if not most, students will not be familiar with this. Therefore we provide some information about the [usage of lark](lark.md) as support. 
+
 ## Goals and prerequisites
 
 Programming learning goals:
@@ -25,6 +27,7 @@ Programming learning goals:
 -   work with plain text, Excel and JSON files
 -   open/close, read and create files
 -   process information coming from files with a specific goal in mind
+-   working with grammers and parsers
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -38,7 +41,6 @@ Prerequisites:
 -   functions
 -   decision and control-flow structures
 -   arrays, lists, etc. (sequence types)
-
 
 ## Assignment
 

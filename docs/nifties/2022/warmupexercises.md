@@ -1,3 +1,5 @@
+[<< Back to the nifty assignment](nifty2022.md)
+
 # Warmup exercises
 
 Here we provide three warmup exercises for the students. This is especially usefull for student who have no prior experience with pytest or with file handling in Python. For each exercise we provide a possible solution.
