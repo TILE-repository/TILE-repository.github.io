@@ -13,7 +13,11 @@ Here we provide three warmup exercises for the students. This is especially usef
 These exercises use the [union_test.py](files/union_test.py) file for analysis.
 That file contains a function `union` to determine the union of the two sets A and B (the union is the set that contains element that belong to either set A or to set B or to both). 
 For example, the union of `{1, 2, 2, 3, 4}` and `{3, 4, 5, 6}` is `{1, 2, 3, 4, 5, 6}`.
-The file also contains eight test cases written using pytest.
+The file also contains eight test cases written using pytest. It is listed here:
+
+```python
+{% include_relative files/union_test.py %}
+```
 
 ## Exercise 1: Find failed test cases
 
