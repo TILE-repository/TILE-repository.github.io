@@ -46,20 +46,24 @@ The provided [warmup exercises](warmupexercises.md) can be helpful to forfill th
 
 ### Description
 
-Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the **Lark** parser.
+Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark [^1] parser.
+
+#### Background information
 
 Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
+We can use this to as a step to interpret information written in a formal language.
+In this assignment, the information are test cases written in Python using the pytest tool [^2].
+With pytest, developers can write unit tests for there code.
+To properly test functionality, it is necessary to write as much test cases as needed to cover all possible exectution scenario's of your functions.
+These test cases can be written using features provided by pytest.
+We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
 
-- test case in file <-- input
-- parse <-- CFG
-- tree <-- output
-- display results (as text)
-- 
+#### Example of a generated report
 
+The file [union_test.py](files/union_test.py) contains a function `union` to determine the union of the two sets A and B (the union is the set that contains element that belong to either set A or to set B or to both). For example, the union of `{1, 2, 2, 3, 4}` and `{3, 4, 5, 6}` is `{1, 2, 3, 4, 5, 6}`.
+The file also contains eight test cases written using pytest.
 
-
-
-For example, for the results of the `union_test.py` file from above:
+If we use a parser to analyse the test cases, we can generate the following output:
 
 ```python
 >>> get_test_cases("union_test.py")
@@ -105,6 +109,8 @@ testcase
 (Token('SIGNED_NUMBER', '8'), [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6')]], Token('SH_COMMENT', '# Order (duplicates at the end of the list)'))
 ```
 
+**explain output**
+
 ### Files to use
 
 The following files can be used as input for the program:
@@ -144,3 +150,8 @@ By using this approach, student both learn advances and useful programming techn
 | *Weaknesses* 	| Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://nielsdoorn.github.io/TILES/) with TILED assignments. |
 | *Dependencies* 	| This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
 | *Variants* 		| This assignment can be adapted in many ways, it can also be ported to other programming languages. |
+
+# References
+
+[^1]: [Lark homepage](https://lark-parser.readthedocs.io)
+[^2]: [Pytest homepage](https://docs.pytest.org/en/6.2.x/contents.html)
