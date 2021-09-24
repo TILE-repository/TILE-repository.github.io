@@ -81,7 +81,9 @@ The Lark grammer can also be provided as scaffolding:
 
 ### Possible solution
 
+```python
 {% include_relative files/get_test_cases.py %}
+```
 
 ## Metadata
 
