@@ -1,31 +1,30 @@
-testcase : "(" SIGNED_NUMBER "," value ("," value)* ")" [","] [SH_COMMENT]
+testcase : "(" DEC_NUMBER "," value ("," value)* ")" [","] [SH_COMMENT]
     
-    value: dict
-         | list
+    value: list
          | tuple
+         | emptyset
          | set
          | string
-         | variable_name
-         | SIGNED_NUMBER    -> number
+         | number
          | "True"    -> true
          | "False"   -> false
          | "None"    -> none
-    
-    dict : "{" [pair ("," pair)*] "}"
-
-    pair : string ":" value
 
     list : "[" [value ("," value)*] "]"
 
     tuple: "(" [value ("," value)*] ")"
 
-    set  : "set" "(" [value ("," value)*] ")"
-         |"{" [value ("," value)*] "}"
+    set  : "{" value ("," value)* "}"
+
+    emptyset: "set()"
     
-    string : ESCAPED_STRING
-    
-    variable_name: CNAME
-                
+    number: DEC_NUMBER | FLOAT_NUMBER 
+  
+    string: /[ubf]?r?("(?!"").*?(?<!\\)(\\\\)*?"|'(?!'').*?(?<!\\)(\\\\)*?')/i
+
+    DEC_NUMBER: /0|[1-9][\d_]*/i
+    FLOAT_NUMBER: /((\d+\.[\d_]*|\.[\d_]+)([Ee][-+]?\d+)?|\d+([Ee][-+]?\d+))/
+        
     %import common.ESCAPED_STRING
     %import common.SH_COMMENT
     %import common.CNAME

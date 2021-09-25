@@ -37,81 +37,58 @@ The provided [warm up exercises](warmupexercises.md) can be helpful to work on t
 
 ## Main assignment
 
-### Description
+Write a function `get_test_cases` in Python that generates a simple report with the test cases that are defined in a python file containing pytests using the Lark[^1] parser.
 
-Write a function `get_test_cases` in Python that returns a list with the test cases that are defined in a python file containing pytests using the Lark[^1] parser.
+### Grammar description
 
-#### Background information
+Below is the grammar describing test cases.
+test case lines look like: `(num, i1, i2,...,in o),   #any type of comments`
 
-Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
-We can use this to proces information written in formal languages.
-In this assignment, the information are test cases written in Python using the pytest tool[^2].
-We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
+- starts with (
+- ends with ),
+- the first argument is a number, the ID of the test case
+- after the end test case ), commenst starting with #can be discarded
+- different parts of the test case are separated by ", "
+- i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
-#### Example of generating a report
+We assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
-The file [union_test.py](files/union_test.py) contains a function `union` to determine the union of the two sets A and B (the union is the set that contains element that belong to either set A or to set B or to both). For example, the union of `{1, 2, 2, 3, 4}` and `{3, 4, 5, 6}` is `{1, 2, 3, 4, 5, 6}`.
-The file also contains eight test cases written using pytest. It is listed here:
+### Example of analysing the test file and generating a report
+
+The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) contains a dummy function and test cases with all the by the grammar supported elements. 
+It is listed here:
 
 ```python
-{% include_relative files/union_test.py %}
+{% include_relative files/pytest_file_to_test_parser.py %}
 ```
 
-If we use a parser to analyse the test cases in this file, we can generate the following output (the actuall output is longer, but for clarity it is truncated down to two test cases):
+If we analyse the test cases in this file, we can generate the following report:
 
 ```python
->>> get_test_cases("union_test.py")
-union_test.py
-testcase
-  1
-  value
-    list
-  value
-    list
-  value
-    list
-  # Cardinality
-
-(Token('SIGNED_NUMBER', '1'), [[]], [[]], [[]], Token('SH_COMMENT', '# Cardinality'))
-
-[...]
-
-testcase
-  8
-  value
-    list
-      number	3
-      number	4
-      number	5
-      number	6
-      number	6
-  value
-    list
-      number	3
-      number	4
-      number	5
-      number	6
-      number	6
-  value
-    list
-      number	3
-      number	4
-      number	5
-      number	6
-  # Order (duplicates at the end of the list)
-
-(Token('SIGNED_NUMBER', '8'), [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6'), Token('SIGNED_NUMBER', '6')]], [[Token('SIGNED_NUMBER', '3'), Token('SIGNED_NUMBER', '4'), Token('SIGNED_NUMBER', '5'), Token('SIGNED_NUMBER', '6')]], Token('SH_COMMENT', '# Order (duplicates at the end of the list)'))
+>>> get_test_cases("pytest_file_to_test_parser.py")
+using pytest_file_to_test_parser.py
+testcase: (1, {2, 3, 4.2, 4, 6.5, 5}, [2, 3, 4], (3, 4, 5), 'OK!')
+testcase: (2, [], set(), (), 'this')
+testcase: (3, True, 4.5, (3, 4), 'hoi')
+testcase: (4, {5}, set(), '3.555', '3.67')
+testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
+testcase: (6, '', None, '', {2, 4, 7})
 ```
 
-**TODO explain output**
+## Possible solution
 
-### Possible solution
-
-This is a possible solution intended for the lecturer.
+This is a possible solution (intended only for the lecturer):
 
 ```python
 {% include_relative files/get_test_cases.py %}
 ```
+
+### Known limitations of the assignment and the provided solution
+
+There are many possible and advanced test cases that can be constructed using pytest.
+Since the aim of this assignment is to understand the usefullness of applying a parser and not a complete course in compiler building or formal languages, it goed beyond the scope of this assignment to create complete support for all possible test cases. 
+In fact, to do so, a parser for the Python language itself would have to be created (which is possible in Lark).
+To keep the focus of the assignment on the application of parser, the grammar should only support for the basic datatypes: int, float, bool, strings, lists, tuples, variables and sets and not for operators (unary, binary), variable names, dictionaries and function calls.
 
 ## Suggestions on how to use this assignment in the classroom
 
@@ -127,17 +104,43 @@ Depending on the prior knowledge and experience, it is possible to provide the s
 The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
 The assigment is based around parsing a context free grammar using Lark[^1]. 
 Some, if not most, students will not be familiar with this context free grammer parser. 
-Therefore we provide some information about the [usage of lark](lark.md) as support. 
-Of course it is possible to provide a different or a part of the grammer to gradually increase the complexity, or to not provide the students with the grammar to increase the difficulty.
+Therefore we provide some information about the installation and usage of lark as support. 
+Of course it is possible to provide a different or a part of the grammer to gradually increase the complexity.
 This is also depended on the available amount of time and many other factors of the educational setting.
 
-## Known limitations of the assignment and the provided solution
+## Grammars, Parsers and Lark
 
-**TODO**
+Lark is a [parser](https://en.wikipedia.org/wiki/Parsing#Parser) for [context free grammers](https://en.wikipedia.org/wiki/Context-free_grammar).
+We can use this to proces information written in formal languages.
+In this assignment, the information are test cases written in Python using the pytest tool[^2].
+We want to parse Python files to extract the testcases and generate reports with overviews of the testcases.
+
+Lark[^1] is a parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
+
+Lark can parse all context-free languages. To put it simply, it means that it is capable of parsing almost any programming language out there, and to some degree most natural languages too.
+
+Lark provides:
+
+- Advanced grammar language, based on EBNF
+- Three parsing algorithms to choose from: Earley, LALR(1) and CYK
+- Automatic tree construction, inferred from your grammar
+- Fast unicode lexer with regexp support, and automatic line-counting
+
+#### Installing Lark
+
+It can be installed using `pip`:
+
+```bash
+$ pip install lark --upgrade
+```
+
+#### Learning Lark
+
+A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can be used to get a good understanding of the features and the way to use Lark.
 
 ## Files to use
 
-The following files can be used as input for the program:
+The following files can be used as input for the warm up exercises:
 
 - [filter_odd_tests-test.py](files/filter_odd_tests-test.py)
 - [filter_odd_tests-nocomments.py](files/filter_odd_tests-nocomments.py)
@@ -147,12 +150,16 @@ The following files can be used as input for the program:
 - [min_max_list_test.py](files/min_max_list_test.py)
 - [union_test.py](files/union_test.py)
 
-The files of the possible solution:
+Here is a file to use as input for the main assignment:
+
+- [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
+  
+The possible solution and it's output:
 
 - [get_test_cases.py](files/get_test_cases.py)
 - [output.tx](files/output.txt)
 
-The example grammer:
+The Lark grammer as a seperate file which can be provided to the students:
 
 - [grammer.lark](files/grammer.lark)
 
