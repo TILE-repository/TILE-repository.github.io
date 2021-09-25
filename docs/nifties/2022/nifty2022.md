@@ -85,7 +85,7 @@ Write a function `get_test_cases(filename)` in Python that generates a simple re
 
 In this assignment we want Lark to parse files containing parameterized test cases for pytest[^2].
 
-Test case lines look like: 
+Test case lines look like this: 
 
 ```python
 (num, i1, i2,...,in o),   #any type of comments
@@ -167,12 +167,14 @@ To keep the focus of the assignment on the application of parser, the grammar sh
 
 ## Conclusion
 
-With this assignment we can teach students about parsing using context free grammar parsers using test files.
-By using this approach, student both learn advances and useful programming techniques whilst also revisit their prior knowledge about the usage of test cases and the handling of information about and from these test cases to generate reports.
-One of the main programming learning goals is to learn the application of parsers.
-This is done by using the context free grammer parser Lark.
-We provided exercises and suggestions on a didactic approach to use this assignment in the classroom.
-To make the assignment complete, we also provide possible solutions and output files.
+With this assignment we can teach students about parsing using context free grammar parsers using python files containing tests.
+By using this approach, student both learn advanced and useful programming techniques whilst they also revisit their prior knowledge about pytest and test cases. 
+The main focus is on the handling of information about and from these test cases to generate reports.
+One of the main programming learning goals is to learn the application of parsers and not so much on the theory of formal languages. 
+The context free grammer parser Lark is used for this.
+We provide exercises and suggestions on a didactic approach to use this assignment in the classroom.
+The assignment can be adapted to reduce or increase complexity or to incorporate other learning goals such as the generation of files in various formats.
+To make the assignment complete, we also provide a possible solution and input- and output files.
 
 ## Metadata
 
@@ -183,7 +185,7 @@ To make the assignment complete, we also provide possible solutions and output f
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
 | *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank[^3] with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
-| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. |
+| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The assignment in this form has a stronger focus on parsers than the generated report. The report part can be alter to generate  files of different types, for example to generate excel spreadsheets or pdf files.  |
 
 # References
 
