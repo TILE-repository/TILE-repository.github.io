@@ -1,8 +1,8 @@
 ---
-title: "Learning about parsers and much more using Test Informed Learning with Examples"
+title: "Learning about parsers and much more using TILE"
 ...
 
-# Learning about parsers and much more using Test Informed Learning with Examples
+# Learning about parsers and more using Test Informed Learning with Examples
 {:.no_toc}
 
 By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
@@ -48,7 +48,13 @@ Write a function `get_test_cases` in Python that generates a simple report with 
 ### Grammar description
 
 Below is the grammar describing test cases.
-test case lines look like: `(num, i1, i2,...,in o),   #any type of comments`
+test case lines look like: 
+
+```python
+(num, i1, i2,...,in o),   #any type of comments
+```
+
+Each test case:
 
 - starts with (
 - ends with ),
@@ -57,11 +63,12 @@ test case lines look like: `(num, i1, i2,...,in o),   #any type of comments`
 - different parts of the test case are separated by ", "
 - i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
-We assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
+To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
 ### Example of analysing the test file and generating a report
 
 The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) contains a dummy function and test cases with all the by the grammar supported elements. 
+
 It is listed here:
 
 ```python
@@ -185,7 +192,7 @@ To make the assignment complete, we also provide possible solutions and output f
 | *Audience*     | This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
 | *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course.|
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
-| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank [^3] with TILED assignments. |
+| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank[^3] with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
 | *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. |
 
