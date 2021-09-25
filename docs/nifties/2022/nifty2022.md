@@ -1,5 +1,11 @@
+---
+title: "Learning about parsers and much more using Test Informed Learning with Examples"
+...
+
 # Learning about parsers and much more using Test Informed Learning with Examples
 {:.no_toc}
+
+By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
 - Table of contents
 {:toc}
