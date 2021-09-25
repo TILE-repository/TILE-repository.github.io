@@ -149,12 +149,12 @@ Here is a file to use as input for the main assignment:
 
 - [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
   
-The possible solution and it's output:
+The possible solution (for lecturers only) and it's output:
 
 - [get_test_cases.py](files/get_test_cases.py)
-- [output.tx](files/output.txt)
+- [output.txt](files/output.txt)
 
-The Lark grammer as a seperate file which can be provided to the students:
+The Lark grammer can be provided to the students as a seperate file:
 
 - [grammar.lark](files/grammar.lark)
 
