@@ -1,7 +1,6 @@
 from lark import Lark
 from lark import Transformer
 
-
 # Below is the grammar describing test cases.
 # test case lines look like: '(num, i1, i2,...,in o),   #any type of comments'
 # - starts with (
@@ -48,7 +47,6 @@ testcase_parser = Lark(r"""
     %ignore WS
 
     """, start='testcase')
-
 
 # Evaluate the tree, using a Transformer.
 # A transformer is a class with methods corresponding to branch names.
@@ -145,11 +143,10 @@ def get_test_cases(filename):
         
         line = python_file.readline() #go to next line in file
             
-    
-    return test_cases
-
     # 3: Close the file
     python_file.close()
+
+    return test_cases
 
 
 #testing the parser with main, tester should manually check the output
@@ -157,6 +154,7 @@ def main():
 
     file = "pytest_file_to_test_parser.py"
     
+    # Generate a basic report
     print("using", file)
     for tc in get_test_cases(file):
         print("testcase:",tc)
