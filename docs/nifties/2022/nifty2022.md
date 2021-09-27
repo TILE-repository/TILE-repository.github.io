@@ -1,8 +1,9 @@
 ---
-title: "Learning about parsers and much more using TILE"
+title: "Applying parsers and more using Test Informed Learning with Examples"
+author: Niels Doorn, Tanja Vos, Beatriz Marín
 ...
 
-# Learning about parsers and more using Test Informed Learning with Examples
+# Applying parsers and more using Test Informed Learning with Examples
 {:.no_toc}
 
 By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
@@ -67,15 +68,15 @@ It helps if students discover the benefits of using parsers on their own to crea
 That is what we want to establish with this assignment. 
 We provide three ["warmup" exercises](warmupexercises.md) of increasing complexity for the students. 
 By letting students analyse test files in these exercises, we want them to experience the **limitations** of using the techniques they are familiar with such as conditional statements.
-Either students themselves will at some point question the approach they follow when their code becomes unmaintainable, or lecturers can actively engage students and discuss the problems they will encounter if they continue with using if-then-else constructs to support all possible test case constructs.
-That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and grammars.
+Either students themselves will at some point question the approach they follow when their code becomes unmaintainable, or lecturers can actively engage students and discuss the problems they will encounter if they continue with using if-then-else constructs or maybe regular expressions to support all possible test case constructs.
+That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and **grammars**.
 
 The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
 Depending on the prior knowledge and experience, it is possible to provide the students with the [grammer definition](files/grammar.lark) that can be used to parse test files.
-This reduces the complexity considerably.
+This reduces the complexity considerably, and puts the focus on the application of the parser.
 
-It is advisable to introduce the concept of parsers and context free grammars to the student.
-Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark.
+It is advisable at some point to introduce the concept of parsers and context free grammars to the student.
+Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
 
 ## The assignment: parse Python files containing test cases and generate a simple report
 
@@ -185,7 +186,7 @@ To make the assignment complete, we also provide a possible solution and input- 
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
 | *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank[^3] with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
-| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The assignment in this form has a stronger focus on parsers than the generated report. The report part can be alter to generate  files of different types, for example to generate excel spreadsheets or pdf files.  |
+| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The assignment in this form has a stronger focus on parsers than the generated report. The report part can be alter to generate  files of different types, for example to generate excel spreadsheets or pdf files. This assignment can also be used to introduce students to compilers in general or to a course on compiler building. |
 
 # References
 
