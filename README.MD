@@ -6,7 +6,7 @@ This repository contains the webpage for TILED assignments.
 
 ## Project page
 
-You can visit the project page [https://tile-repository.github.io/TILES/](https://nielsdoorn.github.io/TILES/).
+You can visit the [project page](https://tile-repository.github.io/TILES/https://nielsdoorn.github.io/TILES/).
 
 ## Special assignments
 
