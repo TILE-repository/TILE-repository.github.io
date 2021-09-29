@@ -16,6 +16,5 @@ authors:
   orcid: "https://orcid.org/0000-0001-8025-0023"
 title: "Test Informed Learning with Examples assignments"
 version: 1.0.0
-#doi: 10.5281/zenodo.1234
 date-released: 2021-09-10
-url: "https://nielsdoorn.github.io/TILES/"
+url: "https://tile-repository.github.io/TILES/"
