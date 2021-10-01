@@ -154,7 +154,7 @@ This example is a very simple report using console output.
 This is a possible solution (intended only for the lecturer):
 
 ```python
-{% include_relative files/generate_test_report_all %}
+{% include_relative files/generate_test_report_all.py %}
 ```
 
 ## Files to use for this assignment
