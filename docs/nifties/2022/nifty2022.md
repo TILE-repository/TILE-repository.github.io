@@ -192,4 +192,4 @@ To make the assignment complete, we also provide a possible solution and input- 
 
 [^1]: [Lark homepage](https://lark-parser.readthedocs.io)
 [^2]: [Pytest homepage](https://docs.pytest.org/en/6.2.x/contents.html)
-[^3]: [TILE Repository](https://tile-repository.github.io/TILES/)
+[^3]: [TILE Repository](https://tile-repository.github.io/)
