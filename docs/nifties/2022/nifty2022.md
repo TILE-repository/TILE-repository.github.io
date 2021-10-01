@@ -87,13 +87,19 @@ Depending on the educational setting and the background of the students, this ca
 Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
 The output needs to be in Excel and in JSON. 
 
-For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the generated test report in Excel would be:
+For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the final generated test report in Excel would be:
 
-![Excel report](pics/Excel-testcases-report.png "Excel report")
+![Excel report](pics/excel-testcases-report.png "Excel report")
 
 In JSON that will be something like:
 
 ![JSON report](pics/json_testcases-report.png "JSON report")
+
+The best way to approach this assignment is in three steps.
+
+1. First we need to parse Python files containing test cases;
+2. then we can combine those test cases with the test results which we store in a text file;
+3. finally, we can generate the report.
 
 ### Step one: parse Python files containing test cases
 
@@ -143,7 +149,11 @@ testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
 testcase: (6, '', None, '', {2, 4, 7})
 ```
 
-### Step two: Combine this with the output of the test cases into a report
+### Step two: process the output of the test cases
+
+TODO
+
+### Step three: generate the report
 
 TODO
 
