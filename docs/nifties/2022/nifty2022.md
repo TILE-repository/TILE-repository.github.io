@@ -63,7 +63,7 @@ $ pip install lark --upgrade
 ## Suggestions on how to use this assignment in the classroom
 
 The focus of this assignment is to create reports of test cases and the results of these test cases.
-Before students can do this, they need to distill information from both Python files containing test cases and text files containing output from pytest.
+Before students can do this, they need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
 
 The assigment address several interesing programming topics of which the most advanced topic is the application of a context free grammar using Lark[^1]. 
 The concept of grammars and the usage of parsers can be a difficult and complex topic in CS programs. 
@@ -84,8 +84,8 @@ Depending on the educational setting and the background of the students, this ca
 
 ## The assignment: generate a report combing test cases and test results 
 
-Create a python program to generating a test report in which the test cases and the results of the test run from pytest are combined. 
-The output needs to be in a format like Excel (or JSON, Markdown et cetera). 
+Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
+The output needs to be in Excel and in JSON. 
 
 For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the generated test report in Excel would be:
 
@@ -94,7 +94,6 @@ For example, using a set of pytests (e.g. in the file `test_union.py`), and a te
 In JSON that will be something like:
 
 ![JSON report](pics/json_testcases-report.png "JSON report")
-
 
 ### Step one: parse Python files containing test cases
 
@@ -121,7 +120,7 @@ Each test case:
 
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
-#### Example of analysing the provided test file
+#### Example of analysing a test file
 
 The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) contains a dummy function and test cases with all the by the grammar supported elements. 
 
@@ -131,7 +130,7 @@ It is listed here:
 {% include_relative files/pytest_file_to_test_parser.py %}
 ```
 
-If we analyse the test cases in this file, we can generate the following report:
+If we analyse the test cases in this file, we can, for example, generate the following output:
 
 ```python
 >>> get_test_cases("pytest_file_to_test_parser.py")
@@ -143,11 +142,10 @@ testcase: (4, {5}, set(), '3.555', '3.67')
 testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
 testcase: (6, '', None, '', {2, 4, 7})
 ```
-This example is a very simple report using console output.
 
 ### Step two: Combine this with the output of the test cases into a report
 
-
+TODO
 
 ## Possible solution
 
@@ -203,13 +201,13 @@ To make the assignment complete, we also provide a possible solution and input- 
 ## Metadata
 
 | *Summary*      | Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways: *early* - introduce students to testing from the very first example program they see and write themselves in exercises; *seamless* - testing will be introduced in a smooth and continuous way as an inherent part of programming, and not as a separate activity; *subtle* - we will make use of clever and indirect methods to teach them testing knowledge and skills. This is a TILE based programming assignment that applies general applicable programming techniques such as file handling, parsing and data processing using a context related to testing. This way, students are not only learning those programming concepts, but they are learning testing concepts as well without the need to spend extra time. |
-| *Topics*       | Testing, programming, file handling, data processing |
-| *Audience*     | This assignment is appropriate for CS2 students. The TILE method can also very well be used on CS1 assignments. |
-| *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course.|
+| *Topics*       | Testing, programming, file handling, data processing, parsing, generatin reports. |
+| *Audience*     | This assignment is appropriate for CS2 students. The TILE method itself can very well be used in CS1 assignments. |
+| *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course. |
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
 | *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank[^3] with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
-| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The assignment in this form has a stronger focus on parsers than the generated report. The report part can be alter to generate  files of different types, for example to generate excel spreadsheets or pdf files. This assignment can also be used to introduce students to compilers in general or to a course on compiler building. |
+| *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The parser can be improved to support a more elaborate grammer. The report part can be alter to generate files of different types, for example pdf documents. This assignment can also be used to introduce students to compilers in general or to a course on compiler building. |
 
 # References
 
