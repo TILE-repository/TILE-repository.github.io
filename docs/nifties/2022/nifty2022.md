@@ -22,43 +22,23 @@ Students work on a assignment to learn certain programming concepts and meanwhil
 
 Programming learning goals:
 
--   work with plain text, Excel and JSON files
--   open/close, read and create files
--   process information coming from files with a specific goal in mind
--   working with grammers and parsers, specifically Lark
+-   Extract, Transform and Load (ETL) data using test files.
+-   Processing Python, plain text, Excel and JSON files.
+-   working with grammers and parsers, specifically Lark.
 
 Testing learning goals (that are learned for free with TILE):
 
--   remember how test outputs can be read/interpreted
--   remember how to parametrize tests with pytest
+-   Remember how test outputs can be read/interpreted.
+-   Remember how to parametrize tests with pytest.
+-   Working with test cases and test results.
 
 Prerequisites:
 
--   parametrized tests with pytest and be able to run them and interpret the results.
--   basic/primitive data types
--   functions
--   decision and control-flow structures
--   arrays, lists, etc. (sequence types)
-
-### Grammars, Parsers and Lark
-
-Lark[^1] is a parsing toolkit using context free grammers for Python.
-It is built with a focus on ergonomics, performance and modularity.
-Lark can parse all context-free languages. 
-To put it simply, it means that it is capable of parsing almost any programming language out there, and to some degree most natural languages too.
-
-Lark provides:
-
-- Advanced grammar language, based on EBNF
-- Three parsing algorithms to choose from: Earley, LALR(1) and CYK
-- Automatic tree construction, inferred from your grammar
-- Fast unicode lexer with regexp support, and automatic line-counting
-
-Lark can be installed using `pip`:
-
-```bash
-$ pip install lark --upgrade
-```
+-   Understand parametrized tests with pytest[^2] and be able to run them and interpret the results.
+-   Basic/primitive data types
+-   Functions
+-   Decision and control-flow structures
+-   Arrays, lists, etc. (sequence types)
 
 ## Suggestions on how to use this assignment in the classroom
 
@@ -76,8 +56,9 @@ Either students themselves will at some point question the approach they follow 
 That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and **grammars**.
 
 We don't want to teach the students context free grammars in all their finesses, but we only want to introduce the students to the benefits and the application of parsers.
+To support the students, we provide some information about [lark](lark.md) to get them started.
 Depending on the prior knowledge and experience, it is possible to provide the students with the [grammer definition](files/grammar.lark) that can be used to parse test files.
-This reduces the complexity considerably, and puts the focus on the application of the parser.
+This reduces the complexity considerably, and puts the focus on the application of the parser and less on understanding the grammar.
 
 It is advisable at some point to introduce the concept of parsers and context free grammars to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
@@ -159,7 +140,7 @@ TODO
 
 ## Possible solution
 
-This is a possible solution (intended only for the lecturer):
+This is a possible solution that can be used as a reference (intended only for the lecturer):
 
 ```python
 {% include_relative files/generate_test_report_all.py %}
