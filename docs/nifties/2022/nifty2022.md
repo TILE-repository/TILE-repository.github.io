@@ -1,9 +1,9 @@
 ---
-title: "Generating reports applying parsers and more using Test Informed Learning with Examples"
+title: "Generating test reports using Test Informed Learning with Examples"
 author: Niels Doorn, Tanja Vos, Beatriz Marín
 ...
 
-# Generating reports applying parsers and more using Test Informed Learning with Examples
+# Generating test reports using Test Informed Learning with Examples
 {:.no_toc}
 
 By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
