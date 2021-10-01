@@ -84,7 +84,7 @@ The best way to approach this assignment is in three steps.
 
 ### Step one: parse Python files containing test cases
 
-Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. For this part of the assignment, we use the Lark[^1] parser.
+Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. For this part of the assignment, we use the Lark[^1] parser. Here is an [introduction](lark.md) to get started with Lark.
 
 #### Grammar description
 
