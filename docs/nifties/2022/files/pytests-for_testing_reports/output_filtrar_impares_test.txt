@@ -1,0 +1,97 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/tanjavos/Dropbox/3-LESGEVEN/0-GTDM-PROGRA/2020-2021/Theoria/Tema10/Ejercicios/python-programs/pytests-for_testing_reports
+collected 11 items
+
+filtrar_impares_test.py F....F....F                                      [100%]
+
+=================================== FAILURES ===================================
+____________________ test_filtrar_impares[1-input0-output0] ____________________
+
+testcase = 1, input = {2, 3, 4, 4.2, 5, 6.5}, output = {2, 3, 4}
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, {2,4.2,3,4,6.5,5}, {2,4,3}),
+    (2, {1,1,1,1}, set()),
+    (3, set(), set()),
+    (4, {5}, set()),
+    (5, {4}, {4}),
+    (6, [2,2,3,4,3,5,4,3], {2,4,7}),
+    (7, [1,1,1,1], set()),
+    (8, [], set()),
+    (9, [777.7], set()),
+    (10, [200], {200}),
+    (11, (1,2,3,4,5,6,7), {2,4})
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 1
+E       assert {2, 4} == {2, 3, 4}
+E         Extra items in the right set:
+E         3
+E         Use -v to get the full diff
+
+filtrar_impares_test.py:29: AssertionError
+____________________ test_filtrar_impares[6-input5-output5] ____________________
+
+testcase = 6, input = [2, 2, 3, 4, 3, 5, ...], output = {2, 4, 7}
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, {2,4.2,3,4,6.5,5}, {2,4,3}),
+    (2, {1,1,1,1}, set()),
+    (3, set(), set()),
+    (4, {5}, set()),
+    (5, {4}, {4}),
+    (6, [2,2,3,4,3,5,4,3], {2,4,7}),
+    (7, [1,1,1,1], set()),
+    (8, [], set()),
+    (9, [777.7], set()),
+    (10, [200], {200}),
+    (11, (1,2,3,4,5,6,7), {2,4})
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 6
+E       assert {2, 4} == {2, 4, 7}
+E         Extra items in the right set:
+E         7
+E         Use -v to get the full diff
+
+filtrar_impares_test.py:29: AssertionError
+__________________ test_filtrar_impares[11-input10-output10] ___________________
+
+testcase = 11, input = (1, 2, 3, 4, 5, 6, ...), output = {2, 4}
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, {2,4.2,3,4,6.5,5}, {2,4,3}),
+    (2, {1,1,1,1}, set()),
+    (3, set(), set()),
+    (4, {5}, set()),
+    (5, {4}, {4}),
+    (6, [2,2,3,4,3,5,4,3], {2,4,7}),
+    (7, [1,1,1,1], set()),
+    (8, [], set()),
+    (9, [777.7], set()),
+    (10, [200], {200}),
+    (11, (1,2,3,4,5,6,7), {2,4})
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 11
+E       assert {2, 4, 6} == {2, 4}
+E         Extra items in the left set:
+E         6
+E         Use -v to get the full diff
+
+filtrar_impares_test.py:29: AssertionError
+=========================== short test summary info ============================
+FAILED filtrar_impares_test.py::test_filtrar_impares[1-input0-output0] - Asse...
+FAILED filtrar_impares_test.py::test_filtrar_impares[6-input5-output5] - Asse...
+FAILED filtrar_impares_test.py::test_filtrar_impares[11-input10-output10] - A...
+========================= 3 failed, 8 passed in 0.06s ==========================

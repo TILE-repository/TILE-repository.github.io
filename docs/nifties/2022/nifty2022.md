@@ -1,9 +1,9 @@
 ---
-title: "Applying parsers and more using Test Informed Learning with Examples"
+title: "Generating reports applying parsers and more using Test Informed Learning with Examples"
 author: Niels Doorn, Tanja Vos, Beatriz Marín
 ...
 
-# Applying parsers and more using Test Informed Learning with Examples
+# Generating reports applying parsers and more using Test Informed Learning with Examples
 {:.no_toc}
 
 By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
@@ -13,7 +13,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 ## Introduction
 
-This assignment is focussed on using a parser to analyse python files containing test cases.
+This assignment is focussed on analysing files containing test cases to generate reports using a parser.
 It purposely revolve around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 Students work on a assignment to learn certain programming concepts and meanwhile they are working with test related materials.
@@ -22,9 +22,10 @@ Students work on a assignment to learn certain programming concepts and meanwhil
 
 Programming learning goals:
 
+-   work with plain text, Excel and JSON files
 -   open/close, read and create files
 -   process information coming from files with a specific goal in mind
--   working with grammers and parsers, specifically Lark.
+-   working with grammers and parsers, specifically Lark
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -61,7 +62,10 @@ $ pip install lark --upgrade
 
 ## Suggestions on how to use this assignment in the classroom
 
-The assigment is based around parsing a context free grammar using Lark[^1]. 
+The focus of this assignment is to create reports of test cases and the results of these test cases.
+Before students can do this, they need to distill information from both Python files containing test cases and text files containing output from pytest.
+
+The assigment address several interesing programming topics of which the most advanced topic is the application of a context free grammar using Lark[^1]. 
 The concept of grammars and the usage of parsers can be a difficult and complex topic in CS programs. 
 It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
 
@@ -71,18 +75,32 @@ By letting students analyse test files in these exercises, we want them to exper
 Either students themselves will at some point question the approach they follow when their code becomes unmaintainable, or lecturers can actively engage students and discuss the problems they will encounter if they continue with using if-then-else constructs or maybe regular expressions to support all possible test case constructs.
 That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and **grammars**.
 
-The aim of the assignment is not to teach them context free grammars in all their finesses, but more to introduce the students to the benefits and the application of parsers.
+We don't want to teach the students context free grammars in all their finesses, but we only want to introduce the students to the benefits and the application of parsers.
 Depending on the prior knowledge and experience, it is possible to provide the students with the [grammer definition](files/grammar.lark) that can be used to parse test files.
 This reduces the complexity considerably, and puts the focus on the application of the parser.
 
 It is advisable at some point to introduce the concept of parsers and context free grammars to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
 
-## The assignment: parse Python files containing test cases and generate a simple report
+## The assignment: generate a report combing test cases and test results 
 
-Write a function `get_test_cases(filename)` in Python that generates a simple report with the test cases that are defined in a Python file containing pytests using Lark.
+Create a python program to generating a test report in which the test cases and the results of the test run from pytest are combined. 
+The output needs to be in a format like Excel (or JSON, Markdown et cetera). 
 
-### Grammar description
+For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the generated test report in Excel would be:
+
+![Excel report](pics/Excel-testcases-report.png "Excel report")
+
+In JSON that will be something like:
+
+![JSON report](pics/json_testcases-report.png "JSON report")
+
+
+### Step one: parse Python files containing test cases
+
+Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. For this part of the assignment, we use the Lark[^1] parser.
+
+#### Grammar description
 
 In this assignment we want Lark to parse files containing parameterized test cases for pytest[^2].
 
@@ -103,7 +121,7 @@ Each test case:
 
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
-### Example of analysing the provided test file and generating a simple report
+#### Example of analysing the provided test file
 
 The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) contains a dummy function and test cases with all the by the grammar supported elements. 
 
@@ -125,13 +143,18 @@ testcase: (4, {5}, set(), '3.555', '3.67')
 testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
 testcase: (6, '', None, '', {2, 4, 7})
 ```
+This example is a very simple report using console output.
+
+### Step two: Combine this with the output of the test cases into a report
+
+
 
 ## Possible solution
 
 This is a possible solution (intended only for the lecturer):
 
 ```python
-{% include_relative files/get_test_cases.py %}
+{% include_relative files/generate_test_report_all %}
 ```
 
 ## Files to use for this assignment
@@ -164,7 +187,7 @@ The Lark grammer can be provided to the students as a seperate file:
 There are many possible and advanced test cases that can be constructed using pytest.
 Since the aim of this assignment is to understand the usefullness of applying a parser and not a complete course in compiler building or formal languages, it goed beyond the scope of this assignment to create complete support for all possible test cases. 
 In fact, to do so, a parser for the Python language itself would have to be created (which is possible in Lark).
-To keep the focus of the assignment on the application of parser, the grammar should only support for the basic datatypes: int, float, bool, strings, lists, tuples, variables and sets and not for operators (unary, binary), variable names, dictionaries and function calls.
+To keep the focus of the assignment generating reports and not only on the application of parser, the grammar should only support for the basic datatypes: int, float, bool, strings, lists, tuples, variables and sets and not for operators (unary, binary), variable names, dictionaries and function calls.
 
 ## Conclusion
 
