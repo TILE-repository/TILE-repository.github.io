@@ -72,7 +72,7 @@ The output needs to be in Excel and in JSON.
 
 For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the final generated test report in Excel would be:
 
-![Excel report](pics/excel-testcases-report.png "Excel report")
+![Generated Excel report](pics/excel-testcases-report.png "Generated Excel report")
 
 And in JSON it would be (similar to) this:
 
@@ -173,30 +173,7 @@ For example, let us consider the program in `union_test.py` that contains the de
 `union`, together with 8 parameterized test cases and a test driver `test_union`:
 
 ```python
-import pytest
-
-def union(list1, list2):
-    i = 0
-    res = list1
-    for i in range(len(list2)):
-        if not list2[i] in res: 
-            res.append(list2[i])
-    return res
-
-@pytest.mark.parametrize("testcase, input1, input2, output",[
-(1, [], [], []),                        #Cardinality
-(2, [], [1,2,3], [1,2,3]),              #Cardinality
-(3, [1,2,3], [], [1,2,3]),              #Cardinality
-(4, [1,1], [], [1]),                    #Cardinality
-(5, [], [1,1], [1]),                    #Cardinality
-(6, ["hi",2,3,"abc"], ["hi","hi","de"], ["hi",2,3,"abc","de"]), #Domain, Structure
-(7, [1,1,2,2,3,3], [], [1,2,3]),        #Order of the parameters, Structure
-(8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6])#Orden (duplicados al final de la lista)
-])
-
-def test_union(testcase, input1, input2, output):
-    assert union(input1, input2) == output,\
-           "case {0}".format(testcase)
+{% include_relative files/union_test.py %}
 ```
 
 The output of running the pytests can be saved in a text file like this:
@@ -208,86 +185,7 @@ The output of running the pytests can be saved in a text file like this:
 This will give us the txt file that contains for example the following information:
 
 ```python
-=================================== FAILURES ===================================
-____________________ test_union[4-input13-input23-output3] _____________________
-
-testcase = 4, input1 = [1, 1], input2 = [], output = [1]
-
-    @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [], [], []),   #Cardinalidad
-    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
-    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
-    (4, [1,1], [], [1]),   #Cardinalidad
-    (5, [], [1,1], [1]),   #Cardinalidad
-    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
-    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
-    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
-    ])
-    
-    def test_union(testcase, input1, input2, output):
->       assert union(input1, input2) == output,\
-               "caso {0}".format(testcase)
-E       AssertionError: caso 4
-E       assert [1, 1] == [1]
-E         Left contains one more item: 1
-E         Use -v to get the full diff
-
-union_test.py:23: AssertionError
-____________________ test_union[7-input16-input26-output6] _____________________
-
-testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]
-
-    @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [], [], []),   #Cardinalidad
-    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
-    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
-    (4, [1,1], [], [1]),   #Cardinalidad
-    (5, [], [1,1], [1]),   #Cardinalidad
-    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
-    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
-    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
-    ])
-    
-    def test_union(testcase, input1, input2, output):
->       assert union(input1, input2) == output,\
-               "caso {0}".format(testcase)
-E       AssertionError: caso 7
-E       assert [1, 1, 2, 2, 3, 3] == [1, 2, 3]
-E         At index 1 diff: 1 != 2
-E         Left contains 3 more items, first extra item: 2
-E         Use -v to get the full diff
-
-union_test.py:23: AssertionError
-____________________ test_union[8-input17-input27-output7] _____________________
-
-testcase = 8, input1 = [3, 4, 5, 6, 6], input2 = [3, 4, 5, 6, 6]
-output = [3, 4, 5, 6]
-
-    @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [], [], []),   #Cardinalidad
-    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
-    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
-    (4, [1,1], [], [1]),   #Cardinalidad
-    (5, [], [1,1], [1]),   #Cardinalidad
-    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
-    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
-    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
-    ])
-    
-    def test_union(testcase, input1, input2, output):
->       assert union(input1, input2) == output,\
-               "caso {0}".format(testcase)
-E       AssertionError: caso 8
-E       assert [3, 4, 5, 6, 6] == [3, 4, 5, 6]
-E         Left contains one more item: 6
-E         Use -v to get the full diff
-
-union_test.py:23: AssertionError
-=========================== short test summary info ============================
-FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
-FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
-FAILED union_test.py::test_union[8-input17-input27-output7] - AssertionError:...
-========================= 3 failed, 5 passed in 0.07s ==========================
+{% include_relative files/union_test_pytest_output.txt %}
 ```
 
 Indicating that testcase with identifier 4 failed because our function returned 
@@ -382,16 +280,31 @@ The following files can be used as input for the warm up exercises:
 - [min_max_list_test.py](files/min_max_list_test.py)
 - [union_test.py](files/union_test.py)
 
-Here is a file to use as input for the main assignment:
+Here is a file that can be used as input for the main assignment covering the whole grammar:
 
 - [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
   
-The possible solution (for lecturers only) and it's output:
+The possible solution (for lecturers only):
 
-- [get_test_cases.py](files/get_test_cases.py)
-- [output.txt](files/output.txt)
+- [generate_test_report_all.py](files/generate_test_report_all.py)
 
-The Lark grammer can be provided to the students as a seperate file:
+Input and output files for the solution:
+
+- [union_test.py](pytests-for_testing_reports/union_test.py)
+- [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
+- [min_max_list_test.py](files/pytests-for_testing_reports/min_max_list_test.py)
+- [output_min_max_list_test.txt](files/pytests-for_testing_reports/output_min_max_list_test.txt)
+- [interseccion_test.py](files/pytests-for_testing_reports/interseccion_test.py)
+- [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
+- [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
+- [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
+
+Generated JSON and Excel files for the union test:
+
+- [union_testtest_case_report.json](files/pytests-for_testing_reports/union_testtest_case_report.json)
+- [union_testTestReport.xls](files/pytests-for_testing_reports/union_testTestReport.xls)
+
+The Lark grammer as a seperate file:
 
 - [grammar.lark](files/grammar.lark)
 
