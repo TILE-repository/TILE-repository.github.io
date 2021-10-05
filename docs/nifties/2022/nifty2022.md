@@ -63,6 +63,8 @@ This reduces the complexity considerably, and puts the focus on the application 
 It is advisable at some point to introduce the concept of parsers and context free grammars to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
 
+The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case.
+
 ## The assignment: generate a report combing test cases and test results 
 
 Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
@@ -73,6 +75,12 @@ For example, using a set of pytests (e.g. in the file `test_union.py`), and a te
 ![Excel report](pics/excel-testcases-report.png "Excel report")
 
 In JSON that will be something like:
+
+TODO: Just put the JSON here as listing.
+
+```json
+{% include_relative files/pytests-for_testing_reports/min_max_list_testtest_case_report.json %}
+```
 
 ![JSON report](pics/json_testcases-report.png "JSON report")
 
