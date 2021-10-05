@@ -78,21 +78,21 @@ In JSON that will be something like:
 
 TODO: Just put the JSON here as listing.
 
-```json
+```JSON
 {% include_relative files/pytests-for_testing_reports/min_max_list_testtest_case_report.json %}
 ```
 
-![JSON report](pics/json_testcases-report.png "JSON report")
-
 The best way to approach this assignment is in three steps.
 
-1. First we need to parse Python files containing test cases;
-2. then we can combine those test cases with the test results which we store in a text file;
-3. finally, we can generate the report.
+1. First we parse Python files containing test cases,
+2. then we read test results from a text file and combine those with the test cases,
+3. and finally, we can generate the report in Excel or JSON.
 
 ### Step one: parse Python files containing test cases
 
-Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. For this part of the assignment, we use the Lark[^1] parser. Here is an [introduction](lark.md) to get started with Lark.
+Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. 
+For this part of the assignment, we use the Lark[^1] parser. 
+Here is an [introduction](lark.md) to get started with Lark.
 
 #### Grammar description
 
@@ -140,11 +140,16 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the output of the test cases
 
-TODO
+- Generate outpute, save in a text file
+- process text file in Python
+- parse into some sort of structure
+- 
 
 ### Step three: generate the report
 
-TODO
+- combine step one and two
+- generate report
+
 
 ## Possible solution
 
