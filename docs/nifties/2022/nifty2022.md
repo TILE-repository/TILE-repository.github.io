@@ -74,7 +74,7 @@ For example, using a set of pytests (e.g. in the file `test_union.py`), and a te
 
 ![Excel report](pics/excel-testcases-report.png "Excel report")
 
-In JSON that will be similar to this:
+And in JSON it would be (similar to) this:
 
 ```json
 {% include_relative files/pytests-for_testing_reports/union_testtest_case_report.json %}
@@ -162,11 +162,11 @@ testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
 testcase: (6, '', None, '', {2, 4, 7})
 ```
 
-### Step two: process the output of the test cases
+### Step two: process the test results
 
 First we describe how to save the output of pytest into a text file, then we explain how to process the text file.
 
-#### Saving the output of pytest to a text file
+#### Saving the test results to a text file
 
 We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
 For example, let us consider the program in `union_test.py` that contains the definition of the function
@@ -294,7 +294,7 @@ Indicating that testcase with identifier 4 failed because our function returned
 `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
 
-#### Processing the text file
+#### Finding the test results in the text file
 
 We can create a function in Python that returns a list of failed test cases with a signature and a specification like this:
 
@@ -321,11 +321,46 @@ This line contains the input and output of testcase 4.
 
 We can assume that test cases that didn't fail have passed, so we only need to look for failed test cases in the output of pytest.
 
-### Step three: generate the report
+### Step three: generate the Excel and JSON reports
 
-- combine step one and two
-- generate report
+Now we have all information we need, we have the test cases from step one and the test results from step two.
+We want to combine this information into a test report in Excel and in JSON format.
+To create Excel files we can use [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl), which can be installed using Pip:
 
+```bash
+$ pip install openpyxl
+```
+
+Or [xlwt](https://github.com/python-excel/xlwt), which can be installed in a similar way:
+
+```bash
+$ pip install xlwt
+```
+
+Handling JSON is supported by Python by default, so no extra modules need be installed. 
+There is official Python documentation on the [json](https://docs.python.org/3/library/json.html) module, but there are many other examples to find on the internet.
+
+We need two functions to generate the reports, one for the Excel files with the folowing signature:
+
+```python
+def generate_excel_test_report(filenameTest, filenameTestRes):
+    """ 
+        filenameTest is the file name .py with testcase 
+        and filenameTestRes is the file name .txt with test results
+    """
+```
+
+And a similar function for the JSON reports. 
+
+```python
+def generate_JSON_test_report(filenameTest, filenameTestRes):
+    """ 
+        filenameTest is the file name .py with testcase 
+        and filenameTestRes is the file name .txt with test results
+    """
+```
+
+Both these functions use the functions from the first two steps to collect the data for te reports, and of course can use other functions if good craftmanship requires as well.
 
 ## Possible solution
 
