@@ -216,20 +216,21 @@ def get_test_cases(filename):
         
         line = python_file.readline() #go to next line in file
             
-    
-    return test_cases
-
     #3: Close the file
     python_file.close()
 
+    return test_cases
 
-def fill_excell_headers(test_signature, wb):
+    
+
+
+def fill_excel_headers(test_signature, wb):
       
     """
     # This function fills the headers of a test report with number_of_inputs input values
     """
     
-    #We know the structure we need to create for the excell file from the test_signature
+    #We know the structure we need to create for the excel file from the test_signature
     number_of_inputs = len(test_signature)-2
     
     # add_sheet is used to create sheet for Test Report
@@ -249,9 +250,10 @@ def fill_excell_headers(test_signature, wb):
     return sheet
 
 
-def generate_excell_test_report(filenameTest, filenameTestRes):
-    """ filenameTest es el nombre de fichero .py de testing y 
-        filenameTestRes es el nombre de fichero .txt con test results
+def generate_excel_test_report(filenameTest, filenameTestRes):
+    """ 
+        filenameTest is the file name .py with testcase 
+        and filenameTestRes is the file name .txt with test results
     """
     try:
         test_signature = get_test_signature(filenameTest)
@@ -272,9 +274,9 @@ def generate_excell_test_report(filenameTest, filenameTestRes):
             wb = Workbook()
           
             #fill with headers for the columns
-            sheet = fill_excell_headers(test_signature, wb)
+            sheet = fill_excel_headers(test_signature, wb)
           
-            #write ID, inputs y output in excell        
+            #write ID, inputs y output in excel        
             for i in range(len(test_cases)):
                 for j in range(len(test_cases[i])):
                     sheet.write(i+1, j , str(test_cases[i][j]))
@@ -289,12 +291,13 @@ def generate_excell_test_report(filenameTest, filenameTestRes):
             wb.save(report_name + 'TestReport.xls') 
  
     except FileNotFoundError:
-        print("El fichero no existe" + filenameTest + " o " + filenameTestRes)
+        print("The file does not exist" + filenameTest + " o " + filenameTestRes)
 
 
 def generate_JSON_test_report(filenameTest, filenameTestRes):
-    """ filenameTest es el nombre de fichero .py de testing y 
-        filenameTestRes es el nombre de fichero .txt con test results
+    """ 
+        filenameTest is the file name .py with testcase 
+        and filenameTestRes is the file name .txt with test results
     """
     
     try:
@@ -322,11 +325,11 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
                 for t in tc:
                     inputs.append(t)
                 tc_dict["inputs"]=inputs
-                tc_dict["output esperado"]=out
+                tc_dict["expected output"]=out
                 if tc[0] in failed_test_cases_numbers:
-                    tc_dict["resultado"]= "FAILED"
+                    tc_dict["result"]= "FAILED"
                 else:
-                    tc_dict["resultado"]= "PASSED"
+                    tc_dict["result"]= "PASSED"
                 test_cases_dicts.append(tc_dict)
             
             report_name = filenameTest.replace(".py", "")
@@ -336,7 +339,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
             fhand_write.close()
                 
     except FileNotFoundError:
-        print("El fichero no existe" + filenameTest)
+        print("The file does not exist" + filenameTest)
    
 
 def main():
@@ -358,14 +361,14 @@ def main():
     file4_test = "pytests-for_testing_reports/filtrar_impares_test.py"
     file4_testres = "pytests-for_testing_reports/output_filtrar_impares_test.txt"
     
-    generate_excell_test_report(file1_test, file1_testres)
+    generate_excel_test_report(file1_test, file1_testres)
     generate_JSON_test_report(file1_test, file1_testres)
     
-    generate_excell_test_report(file2_test, file2_testres)
+    generate_excel_test_report(file2_test, file2_testres)
     generate_JSON_test_report(file2_test, file2_testres)
     
-    generate_excell_test_report(file3_test, file3_testres)
+    generate_excel_test_report(file3_test, file3_testres)
     generate_JSON_test_report(file3_test, file3_testres)
     
-    generate_excell_test_report(file4_test, file4_testres)
+    generate_excel_test_report(file4_test, file4_testres)
     generate_JSON_test_report(file4_test, file4_testres)
