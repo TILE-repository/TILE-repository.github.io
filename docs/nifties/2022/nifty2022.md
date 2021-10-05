@@ -168,15 +168,7 @@ First we describe how to save the output of pytest into a text file, then we exp
 
 #### Saving the output of pytest to a text file
 
-When we have python programs with pytests, we can save the outcome of the pytest run in a `.txt` file as follows:
-
-```bash
->>> pytest union_test.py > union_test_output.txt
->>> pytest interseccion_test.py > interseccion_test_output.txt
->>> pytest min_max_list_test.py > min_max_list_test_output.txt
-```
-
-The `.txt` files contain the outcome of the tests that is normally written in the shell. 
+We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
 For example, let us consider the program in `union_test.py` that contains the definition of the function
 `union`, together with 8 parameterized test cases and a test driver `test_union`:
 
@@ -207,13 +199,13 @@ def test_union(testcase, input1, input2, output):
            "case {0}".format(testcase)
 ```
 
-The output of running the pytests like this:
+The output of running the pytests can be saved in a text file like this:
 
 ```bash
 >>> pytest union_test.py > union_test_output.txt
 ```
 
-will give us the txt file that contains for example the following information:
+This will give us the txt file that contains for example the following information:
 
 ```python
 =================================== FAILURES ===================================
@@ -316,10 +308,9 @@ def get_failed_testcases(filename):
 ```
 
 Now that we have the output of the test results in a text file, we can filter out the results of the test cases.
-There is a short test summary in which lines indicating failed test cases start with an all caps `FAILED`.
-We can use this to see if there are any failed test cases.
-
-Lines starting with `testcase = ` contain information about the failed test cases. 
+There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
+We can use this to see if there are any failed test cases in the file.
+If so, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
 For example:
 
 ```python
