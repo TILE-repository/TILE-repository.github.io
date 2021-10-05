@@ -56,14 +56,14 @@ Either students themselves will at some point question the approach they follow 
 That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and **grammars**.
 
 We don't want to teach the students context free grammars in all their finesses, but we only want to introduce the students to the benefits and the application of parsers.
-To support the students, we provide some information about [lark](lark.md) to get them started.
-Depending on the prior knowledge and experience, it is possible to provide the students with the [grammer definition](files/grammar.lark) that can be used to parse test files.
-This reduces the complexity considerably, and puts the focus on the application of the parser and less on understanding the grammar.
+To support the students, we provide some information about [lark](lark.md) and with the [grammer definition](files/grammar.lark) to get them started.
+Depending on the prior knowledge and experience, it is possible for the students to first try to define their own grammar.
+This puts the focus on the application of the parser and less on understanding the grammar.
 
 It is advisable at some point to introduce the concept of parsers and context free grammars to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
 
-The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case.
+The assignment can be further simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results.
 
 ## The assignment: generate a report combing test cases and test results 
 
@@ -131,8 +131,13 @@ Each test case:
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
 For Lark to understand this format, we need to write a grammar describing this format.
+Since this assignment is focussed on generating reports and not on fully understanding grammars and parsers, we already created the grammar for you. 
+You are encouraged to try to create the grammar first and compare it with the one provided.
 
-TODO: include grammar
+```python
+{% include_relative files/grammar.lark %}
+
+```
 
 #### Example of analysing a test file
 
