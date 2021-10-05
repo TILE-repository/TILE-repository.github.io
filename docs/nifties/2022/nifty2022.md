@@ -89,12 +89,29 @@ We approach this assignment in three steps:
 ### Step one: parse Python files containing test cases
 
 Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. 
-For this part of the assignment, we use the Lark[^1] parser. 
-Here is an [introduction](lark.md) to get started with Lark.
+
+We need to find out what test cases are defined in a Python test file.
+For this, we can create a function with the folowing signature and specification:
+
+```python
+def get_test_cases(filename):
+    
+    """
+    This function returns a list of the test cases that are defined in the
+    file with "@pytest.mark.parametrize". If it is not a pytest file it returns
+    the empty list
+    
+    Throws FileNotFoundError exception if file does not exist.
+    """
+```
+
+To implement this function, we need to parse the Python test file.
+This can be done using the Lark[^1] parser.
+If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
 
 #### Grammar description
 
-In this assignment we want Lark to parse files containing parameterized test cases for pytest[^2].
+We need Lark to parse files containing parameterized test cases for pytest[^2].
 
 Test case lines look like this: 
 
@@ -112,6 +129,10 @@ Each test case:
 - i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
+
+For Lark to understand this format, we need to write a grammar describing this format.
+
+TODO: include grammar
 
 #### Example of analysing a test file
 
@@ -138,10 +159,171 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the output of the test cases
 
-- Generate outpute, save in a text file
-- process text file in Python
-- parse into some sort of structure
-- 
+First we describe how to save the output of pytest into a text file, then we explain how to process the text file.
+
+#### Saving the output of pytest to a text file
+
+When we have python programs with pytests, we can save the outcome of the pytest run in a `.txt` file as follows:
+
+```bash
+>>> pytest union_test.py > union_test_output.txt
+>>> pytest interseccion_test.py > interseccion_test_output.txt
+>>> pytest min_max_list_test.py > min_max_list_test_output.txt
+```
+
+The `.txt` files contain the outcome of the tests that is normally written in the shell. 
+For example, let us consider the program in `union_test.py` that contains the definition of the function
+`union`, together with 8 parameterized test cases and a test driver `test_union`:
+
+```python
+import pytest
+
+def union(list1, list2):
+    i = 0
+    res = list1
+    for i in range(len(list2)):
+        if not list2[i] in res: 
+            res.append(list2[i])
+    return res
+
+@pytest.mark.parametrize("testcase, input1, input2, output",[
+(1, [], [], []),                        #Cardinality
+(2, [], [1,2,3], [1,2,3]),              #Cardinality
+(3, [1,2,3], [], [1,2,3]),              #Cardinality
+(4, [1,1], [], [1]),                    #Cardinality
+(5, [], [1,1], [1]),                    #Cardinality
+(6, ["hi",2,3,"abc"], ["hi","hi","de"], ["hi",2,3,"abc","de"]), #Domain, Structure
+(7, [1,1,2,2,3,3], [], [1,2,3]),        #Order of the parameters, Structure
+(8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6])#Orden (duplicados al final de la lista)
+])
+
+def test_union(testcase, input1, input2, output):
+    assert union(input1, input2) == output,\
+           "case {0}".format(testcase)
+```
+
+The output of running the pytests like this:
+
+```bash
+>>> pytest union_test.py > union_test_output.txt
+```
+
+will give us the txt file that contains for example the following information:
+
+```python
+=================================== FAILURES ===================================
+____________________ test_union[4-input13-input23-output3] _____________________
+
+testcase = 4, input1 = [1, 1], input2 = [], output = [1]
+
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], []),   #Cardinalidad
+    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
+    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
+    (4, [1,1], [], [1]),   #Cardinalidad
+    (5, [], [1,1], [1]),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 4
+E       assert [1, 1] == [1]
+E         Left contains one more item: 1
+E         Use -v to get the full diff
+
+union_test.py:23: AssertionError
+____________________ test_union[7-input16-input26-output6] _____________________
+
+testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]
+
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], []),   #Cardinalidad
+    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
+    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
+    (4, [1,1], [], [1]),   #Cardinalidad
+    (5, [], [1,1], [1]),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 7
+E       assert [1, 1, 2, 2, 3, 3] == [1, 2, 3]
+E         At index 1 diff: 1 != 2
+E         Left contains 3 more items, first extra item: 2
+E         Use -v to get the full diff
+
+union_test.py:23: AssertionError
+____________________ test_union[8-input17-input27-output7] _____________________
+
+testcase = 8, input1 = [3, 4, 5, 6, 6], input2 = [3, 4, 5, 6, 6]
+output = [3, 4, 5, 6]
+
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], []),   #Cardinalidad
+    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
+    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
+    (4, [1,1], [], [1]),   #Cardinalidad
+    (5, [], [1,1], [1]),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 8
+E       assert [3, 4, 5, 6, 6] == [3, 4, 5, 6]
+E         Left contains one more item: 6
+E         Use -v to get the full diff
+
+union_test.py:23: AssertionError
+=========================== short test summary info ============================
+FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
+FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
+FAILED union_test.py::test_union[8-input17-input27-output7] - AssertionError:...
+========================= 3 failed, 5 passed in 0.07s ==========================
+```
+
+Indicating that testcase with identifier 4 failed because our function returned 
+`[1,1]` but we expected `[1]`. 
+The testcases 7 and 8 also failed.
+
+#### Processing the text file
+
+We can create a function in Python that returns a list of failed test cases with a signature and a specification like this:
+
+```python
+def get_failed_testcases(filename):
+    """
+    Expects filename to be a file that contains the output of a !pytest run.
+    Returns the list of testcases that have failed.
+    Throws FileNotFoundError exception if file does not exist.
+    """
+```
+
+Now that we have the output of the test results in a text file, we can filter out the results of the test cases.
+There is a short test summary in which lines indicating failed test cases start with an all caps `FAILED`.
+We can use this to see if there are any failed test cases.
+
+Lines starting with `testcase = ` contain information about the failed test cases. 
+For example:
+
+```python
+testcase = 4, input1 = [1, 1], input2 = [], output = [1]
+```
+
+This line contains the input and output of testcase 4.
+
+We can assume that test cases that didn't fail have passed, so we only need to look for failed test cases in the output of pytest.
 
 ### Step three: generate the report
 
