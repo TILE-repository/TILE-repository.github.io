@@ -317,13 +317,15 @@ To keep the focus of the assignment generating reports and not only on the appli
 
 ## Conclusion
 
-With this assignment we can teach students about parsing using context free grammar parsers using python files containing tests.
-By using this approach, student both learn advanced and useful programming techniques whilst they also revisit their prior knowledge about pytest and test cases. 
-The main focus is on the handling of information about and from these test cases to generate reports.
-One of the main programming learning goals is to learn the application of parsers and not so much on the theory of formal languages. 
+We can use this assignment to teach students about extracting data from different sources and transforming that data into reports with useful information about testing.
+The main learning goal is to work with different types of files to extract the data from and to write the information to.
+In this assignment, the students need to extract all test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
+Depending on the prior knowledge of the students, learning to work with parsers and grammars can be achieved as a possible positive side effect.
+This happens when students themselves realise the limitations of using basic programming constructs while extracting data from python files containing test cases.
 The context free grammer parser Lark is used for this.
+During this assignment, student learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
 We provide exercises and suggestions on a didactic approach to use this assignment in the classroom.
-The assignment can be adapted to reduce or increase complexity or to incorporate other learning goals such as the generation of files in various formats.
+The assignment can be adapted to reduce or increase complexity or to incorporate other learning goals.
 To make the assignment complete, we also provide a possible solution and input- and output files.
 
 ## Metadata
