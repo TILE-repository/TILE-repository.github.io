@@ -1,1 +1,52 @@
-[{"id": 1, "inputs": [[], []], "output esperado": [], "resultado": "PASSED"}, {"id": 2, "inputs": [[], [1, 2, 3]], "output esperado": [1, 2, 3], "resultado": "PASSED"}, {"id": 3, "inputs": [[1, 2, 3], []], "output esperado": [1, 2, 3], "resultado": "PASSED"}, {"id": 4, "inputs": [[1, 1], []], "output esperado": [1], "resultado": "PASSED"}, {"id": 5, "inputs": [[], [1, 1]], "output esperado": [1], "resultado": "PASSED"}, {"id": 6, "inputs": [["hola", 2, 3, "abc"], ["hola", "hola", "de"]], "output esperado": ["hola", 2, 3, "abc", "de"], "resultado": "PASSED"}, {"id": 7, "inputs": [[1, 1, 2, 2, 3, 3], []], "output esperado": [1, 2, 3], "resultado": "PASSED"}, {"id": 8, "inputs": [[3, 4, 5, 6, 6], [3, 4, 5, 6, 6]], "output esperado": [3, 4, 5, 6], "resultado": "PASSED"}]
+[
+  { "id": 1, "inputs": [[], []], "expected output": [], "result": "PASSED" },
+  {
+    "id": 2,
+    "inputs": [[], [1, 2, 3]],
+    "expected output": [1, 2, 3],
+    "result": "PASSED"
+  },
+  {
+    "id": 3,
+    "inputs": [[1, 2, 3], []],
+    "expected output": [1, 2, 3],
+    "result": "PASSED"
+  },
+  {
+    "id": 4,
+    "inputs": [[1, 1], []],
+    "expected output": [1],
+    "result": "PASSED"
+  },
+  {
+    "id": 5,
+    "inputs": [[], [1, 1]],
+    "expected output": [1],
+    "result": "PASSED"
+  },
+  {
+    "id": 6,
+    "inputs": [
+      ["hola", 2, 3, "abc"],
+      ["hola", "hola", "de"]
+    ],
+    "expected output": ["hola", 2, 3, "abc", "de"],
+    "result": "PASSED"
+  },
+  {
+    "id": 7,
+    "inputs": [[1, 1, 2, 2, 3, 3], []],
+    "expected output": [1, 2, 3],
+    "result": "PASSED"
+  },
+  {
+    "id": 8,
+    "inputs": [
+      [3, 4, 5, 6, 6],
+      [3, 4, 5, 6, 6]
+    ],
+    "expected output": [3, 4, 5, 6],
+    "result": "PASSED"
+  }
+]
+

@@ -77,7 +77,7 @@ For example, using a set of pytests (e.g. in the file `test_union.py`), and a te
 In JSON that will be similar to this:
 
 ```json
-{% include_relative files/pytests-for_testing_reports/min_max_list_testtest_case_report.json %}
+{% include_relative files/pytests-for_testing_reports/union_testtest_case_report.json %}
 ```
 
 We approach this assignment in three steps:
