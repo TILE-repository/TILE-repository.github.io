@@ -74,15 +74,13 @@ For example, using a set of pytests (e.g. in the file `test_union.py`), and a te
 
 ![Excel report](pics/excel-testcases-report.png "Excel report")
 
-In JSON that will be something like:
+In JSON that will be similar to this:
 
-TODO: Just put the JSON here as listing.
-
-```JSON
+```json
 {% include_relative files/pytests-for_testing_reports/min_max_list_testtest_case_report.json %}
 ```
 
-The best way to approach this assignment is in three steps.
+We approach this assignment in three steps:
 
 1. First we parse Python files containing test cases,
 2. then we read test results from a text file and combine those with the test cases,
