@@ -18,7 +18,7 @@ It purposely revolve around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
 Students work on a assignment to learn certain programming concepts and meanwhile they are working with test related materials.
 
-### Learning goals and prerequisites of the assignment
+## Learning goals and prerequisites of the assignment
 
 Programming learning goals:
 
@@ -136,7 +136,6 @@ You are encouraged to try to create the grammar first and compare it with the on
 
 ```python
 {% include_relative files/grammar.lark %}
-
 ```
 
 #### Example of analysing a test file
