@@ -13,7 +13,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 ## Introduction
 
-This assignment is about analysing files containing test cases and test results, about parsing strings to uncover the underlying structure, and about generating test reports in different formats like Excell and JSON.
+This assignment is about (1) analysing files containing test cases and test results, (2) about parsing strings to uncover the underlying structure, and (3) about generating test reports in different formats like Excell and JSON.
 It purposely revolves around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE), an approach to help students learn about testing.
 The idea behind TILE is that students work on a assignment to learn certain programming concepts, and meanwhile they are also learn about test related concepts because of the domian chosen for the exercise.
