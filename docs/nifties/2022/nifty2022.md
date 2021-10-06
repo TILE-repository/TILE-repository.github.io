@@ -15,7 +15,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 This assignment is focussed on analysing files containing test cases to generate reports using a parser.
 It purposely revolves around the testing domain.
-This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
+This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to help students learn about testing largely for free.
 Students work on a assignment to learn certain programming concepts and meanwhile they are working with test related materials.
 
 ## Learning goals and prerequisites of the assignment
