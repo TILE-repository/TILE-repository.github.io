@@ -13,7 +13,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 ## Introduction
 
-This assignment is about (1) analysing files containing test cases and test results, (2) about parsing strings to uncover the underlying structure, and (3) about generating test reports in different formats like Excell and JSON.
+This assignment is about (1) analysing files containing test cases and test results, (2) parsing strings to uncover the underlying structure, and (3) generating test reports in different formats like Excell and JSON.
 It purposely revolves around the testing domain.
 This is one of the ways to apply the Test Informed Learning with Examples (TILE), an approach to help students learn about testing.
 The idea behind TILE is that students work on a assignment to learn certain programming concepts, and meanwhile they are also learn about test related concepts because of the domian chosen for the exercise.
@@ -23,8 +23,8 @@ The idea behind TILE is that students work on a assignment to learn certain prog
 Programming learning goals:
 
 -   Extract, Transform and Load (ETL) data using test files.
--   Processing Python, plain text, Excel and JSON files.
--   Working with grammers and parsers, specifically Lark.
+-   Process plain text, Excel and JSON files.
+-   Work with grammers and parsers, specifically Lark.
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -38,11 +38,11 @@ Prerequisites:
 -   Basic/primitive data types
 -   Functions
 -   Decision and control-flow structures
--   Arrays, lists, etc. (sequence types)
+-   Strings, lists, etc. (sequence types)
 
 ## Suggestions on how to use this assignment in the classroom
 
-The focus of this assignment is to create reports of test cases and the results of these test cases.
+The focus of this assignment is to create test reports containing the test cases together with the results of test execution.
 Before students can do this, they need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
 
 The assignment address several interesting programming topics of which the most advanced topic is the application of a context free grammar using Lark[^1]. 
