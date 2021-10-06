@@ -99,7 +99,7 @@ def get_test_cases(filename):
     """
     This function returns a list of the test cases that are defined in the
     file with "@pytest.mark.parametrize". If it is not a pytest file it returns
-    the empty list
+    the empty list.
     
     Throws FileNotFoundError exception if file does not exist.
     """
@@ -163,7 +163,7 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the test results
 
-First we describe how to save the output of pytest into a text file, then we explain how to process the text file.
+First, we describe how to save the output of pytest into a text file, then we explain how to process the text file.
 
 #### Saving the test results to a text file
 
