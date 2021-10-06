@@ -65,7 +65,7 @@ Depending on the educational setting and the background of the students, this ca
 
 The assignment can be further simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results.
 
-## The assignment: generate a report combing test cases and test results 
+## The assignment: generate a report combining test cases and test results 
 
 Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
 The output needs to be in Excel and in JSON. 
