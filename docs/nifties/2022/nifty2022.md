@@ -257,7 +257,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
     """
 ```
 
-Both these functions use the functions from the first two steps to collect the data for te reports, and of course can use other functions if good craftmanship requires as well.
+Both these functions use the functions from the first two steps to collect the data for the reports, and of course can use other functions if good craftmanship requires as well.
 
 ## Possible solution
 
@@ -310,7 +310,7 @@ The Lark grammer as a seperate file:
 ## Known limitations of the assignment and the provided solution
 
 There are many possible and advanced test cases that can be constructed using pytest.
-Since the aim of this assignment is to understand the usefullness of applying a parser and not a complete course in compiler building or formal languages, it goed beyond the scope of this assignment to create complete support for all possible test cases. 
+Since the aim of this assignment is to understand the usefulness of applying a parser and not a complete course in compiler building or formal languages, it goes beyond the scope of this assignment to create complete support for all possible test cases. 
 In fact, to do so, a parser for the Python language itself would have to be created (which is possible in Lark).
 To keep the focus of the assignment generating reports and not only on the application of parser, the grammar should only support for the basic datatypes: int, float, bool, strings, lists, tuples, variables and sets and not for operators (unary, binary), variable names, dictionaries and function calls.
 
@@ -318,11 +318,11 @@ To keep the focus of the assignment generating reports and not only on the appli
 
 We can use this assignment to teach students about extracting data from different sources and transforming that data into reports with useful information about testing.
 The main learning goal is to work with different types of files to extract the data from and to write the information to.
-In this assignment, the students need to extract all test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
+In this assignment, the students need to extract all the test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
 Depending on the prior knowledge of the students, learning to work with parsers and grammars can be achieved as a possible positive side effect.
 This happens when students themselves realise the limitations of using basic programming constructs while extracting data from python files containing test cases.
 The context free grammer parser Lark is used for this.
-During this assignment, student learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
+During this assignment, students learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
 We provide exercises and suggestions on a didactic approach to use this assignment in the classroom.
 The assignment can be adapted to reduce or increase complexity or to incorporate other learning goals.
 To make the assignment complete, we also provide a possible solution and input- and output files.
