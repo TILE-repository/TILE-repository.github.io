@@ -24,7 +24,7 @@ Programming learning goals:
 
 -   Extract, Transform and Load (ETL) data using test files.
 -   Processing Python, plain text, Excel and JSON files.
--   working with grammers and parsers, specifically Lark.
+-   Working with grammers and parsers, specifically Lark.
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -45,7 +45,7 @@ Prerequisites:
 The focus of this assignment is to create reports of test cases and the results of these test cases.
 Before students can do this, they need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
 
-The assigment address several interesing programming topics of which the most advanced topic is the application of a context free grammar using Lark[^1]. 
+The assignment address several interesting programming topics of which the most advanced topic is the application of a context free grammar using Lark[^1]. 
 The concept of grammars and the usage of parsers can be a difficult and complex topic in CS programs. 
 It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
 
