@@ -53,7 +53,7 @@ The assignment can be simplified to focus mostly on the file manipulatin part an
 
 ## The assignment: generate a report combining test cases and test results 
 
-The aim of this assignment in¡s to create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
+The aim of this assignment in to create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
 For example, using a set of pytests (e.g. in the file [`union_test.py`](https://github.com/TILE-repository/TILE-repository.github.io/blob/main/docs/nifties/2022/files/union_test.py)), and a textfile [`union_test_pytest_output.txt`](https://github.com/TILE-repository/TILE-repository.github.io/blob/main/docs/nifties/2022/files/union_test_pytest_output.txt)) containing the output of those pytests, the final generated test report in Excel would be:
