@@ -91,7 +91,8 @@ def get_test_cases(filename):
     """
 ```
 
-To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file to obtain the test cases. For example in the file  [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) the 6 test cases are found in this part:
+To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file to obtain the test cases. 
+For example in the file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.md) the 6 test cases are found in this part are:
 
 ```python
 @pytest.mark.parametrize("testcase, i1, i2, i3, output",[
@@ -104,8 +105,7 @@ To implement this function, we need to parse the "@pytest.mark.parametrize()" pa
 ])
 ```
 
-
-This can be done using the Lark parser.
+This parsing can be done using Lark.
 If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
 
 #### Grammar description
