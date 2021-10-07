@@ -167,18 +167,17 @@ Now that we can generate the list of test cases, next we need to obtain the resu
 
 #### Saving the test results to a text file
 
-We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
-For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`.
+The outcomes of pytests are normally written to the standard output in the command line interface (or in an IDE). 
 
-The output of running the pytests can be saved in a text file like this:
+The output of running the pytests can be saved in a text file redirecting is as follows:
 
 ```bash
->>> pytest union_test.py > union_test_output.txt
+>>> pytest union_test.py > union_test_pytest_output.txt
 ```
 
-This will give us the [union_test_pytest_output.txt](union_test_pytest_output.md) txt file that contains the results of the test cases.
+For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [union_test_pytest_output.txt](union_test_pytest_output.md) that contains the results of the test cases.
 
-It indicates that testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
+As we can see, it contains enough information to deduce that the testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
 
 #### Finding the test results in the text file
