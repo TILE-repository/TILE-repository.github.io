@@ -91,7 +91,7 @@ def get_test_cases(filename):
     """
 ```
 
-To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file to obtain the test cases. For example in the file  [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) the test cases are found in this part:
+To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file to obtain the test cases. For example in the file  [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) the 6 test cases are found in this part:
 
 ```python
 @pytest.mark.parametrize("testcase, i1, i2, i3, output",[
@@ -145,10 +145,25 @@ It is listed here:
 {% include_relative files/pytest_file_to_test_parser.py %}
 ```
 
-If we analyse the test cases in this file, we can, for example, generate the following output:
+We can use it to test our function `get_test_cases(filename)` as follows:
+
 
 ```python
->>> get_test_cases("pytest_file_to_test_parser.py")
+#testing the parser with main, tester should manually check the output
+def test_your_implementation():
+
+    file = "pytest_file_to_test_parser.py"
+    
+    # Generate a basic report
+    print("using", file)
+    for tc in get_test_cases(file):
+        print("testcase:",tc)
+```
+
+We then get:
+
+```python
+>>> test_your_implementation(get_test_cases("pytest_file_to_test_parser.py"))
 using pytest_file_to_test_parser.py
 testcase: (1, {2, 3, 4.2, 4, 6.5, 5}, [2, 3, 4], (3, 4, 5), 'OK!')
 testcase: (2, [], set(), (), 'this')
