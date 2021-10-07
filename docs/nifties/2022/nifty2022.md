@@ -121,7 +121,7 @@ Each test case:
 - starts with (
 - ends with ),
 - the first argument is a number, the ID of the test case
-- after the end test case ), commenst starting with #can be discarded
+- after the end test case ), comments starting with #can be discarded
 - different parts of the test case are separated by ", "
 - i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
