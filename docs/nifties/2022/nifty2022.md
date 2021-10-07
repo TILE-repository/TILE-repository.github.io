@@ -56,8 +56,8 @@ The assignment can be simplified to focus mostly on the file manipulatin part an
 The aim of this assignment in to create a Python program to generate a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
-For example, using a set of pytests (e.g. in the file [`union_test.py`](union_test.md)), and a textfile containing the output of those pytests
-(e.g. [`union_test_pytest_output.txt`](union_test_pytest_output.md)), the final generated test report in Excel would be:
+For example, using a set of pytests (e.g. in the file [union_test.py](union_test.md)), and a textfile containing the output of those pytests
+(e.g. [union_test_pytest_output.txt](union_test_pytest_output.md)), the final generated test report in Excel would be:
 
 ![Generated Excel report](pics/excel-testcases-report.png "Generated Excel report")
 
