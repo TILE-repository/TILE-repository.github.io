@@ -110,7 +110,7 @@ If you are not familiar with Lark, then you can start with this [introduction](l
 
 #### Grammar description
 
-So, the test cases start below the "@pytest.mark.parametrize" definition and look like this: 
+As indicated, the test cases start below the "@pytest.mark.parametrize" definition and look like this: 
 
 ```python
 (num, i1, i2,...,in o),   #any type of comments
