@@ -163,7 +163,7 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the test results
 
-Now that we can generate the list of test cases, next we need to obtain the results of executing these tests. When we execute pytests, we can save the output of into a text file. Subsequently, we can inspect that file to know which test cases have failed.
+Now that we can generate the list of test cases, next we need to obtain the results of executing these tests. When we execute pytests, we can save the output into a text file. Subsequently, we can inspect that file to know which test cases have failed.
 
 #### Saving the test results to a text file
 
