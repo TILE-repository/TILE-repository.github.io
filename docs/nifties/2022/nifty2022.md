@@ -42,7 +42,7 @@ Prerequisites:
 
 ## Suggestions on how to use this assignment in the classroom
 
-The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the Lark[^1] parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
+The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the Lark[^1] parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files (.py) containing pytest[^2] test cases and plain text files (.txt) containing output from pytest.
 
 It is advisable to introduce the concept of parsers and context free grammars at some point to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. 
