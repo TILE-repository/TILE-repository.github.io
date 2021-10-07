@@ -13,18 +13,18 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 ## Introduction
 
-This assignment is focussed on analysing files containing test cases to generate reports using a parser.
-It purposely revolve around the testing domain.
-This is one of the ways to apply the Test Informed Learning with Examples (TILE) approach to learn students about testing largely for free.
-Students work on a assignment to learn certain programming concepts and meanwhile they are working with test related materials.
+This assignment is about (1) analysing files containing test cases and test results, (2) parsing strings to uncover the underlying structure, and (3) generating test reports in different formats like Excell and JSON.
+It purposely revolves around the testing domain.
+This is one of the ways to apply the Test Informed Learning with Examples (TILE), an approach to help students learn about testing.
+The idea behind TILE is that students work on a assignment to learn certain programming concepts, and meanwhile they are also learn about test related concepts because of the domian chosen for the exercise.
 
 ## Learning goals and prerequisites of the assignment
 
 Programming learning goals:
 
 -   Extract, Transform and Load (ETL) data using test files.
--   Processing Python, plain text, Excel and JSON files.
--   working with grammers and parsers, specifically Lark.
+-   Process plain text, Excel and JSON files.
+-   Work with grammers and parsers, specifically Lark.
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -38,14 +38,14 @@ Prerequisites:
 -   Basic/primitive data types
 -   Functions
 -   Decision and control-flow structures
--   Arrays, lists, etc. (sequence types)
+-   Strings, lists, etc. (sequence types)
 
 ## Suggestions on how to use this assignment in the classroom
 
-The focus of this assignment is to create reports of test cases and the results of these test cases.
+The focus of this assignment is to create test reports containing the test cases together with the results of test execution.
 Before students can do this, they need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
 
-The assigment address several interesing programming topics of which the most advanced topic is the application of a context free grammar using the Lark[^1] parser. 
+The assigment addresses several interesting programming topics of which the most advanced topic is the application of a context free grammar using the Lark[^1] parser. 
 The concept of grammars and the usage of parsers can be a difficult and complex topic in CS programs. 
 It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
 
@@ -67,7 +67,7 @@ A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on
 
 The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results.
 
-## The assignment: generate a report combing test cases and test results 
+## The assignment: generate a report combining test cases and test results 
 
 Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
 The output needs to be in Excel and in JSON. 
@@ -101,7 +101,7 @@ def get_test_cases(filename):
     """
     This function returns a list of the test cases that are defined in the
     file with "@pytest.mark.parametrize". If it is not a pytest file it returns
-    the empty list
+    the empty list.
     
     Throws FileNotFoundError exception if file does not exist.
     """
@@ -165,7 +165,7 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the test results
 
-First we describe how to save the output of pytest into a text file, then we explain how to process the text file.
+First, we describe how to save the output of pytest into a text file, then we explain how to process the text file.
 
 #### Saving the test results to a text file
 
@@ -259,7 +259,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
     """
 ```
 
-Both these functions use the functions from the first two steps to collect the data for te reports, and of course can use other functions if good craftmanship requires as well.
+Both these functions use the functions from the first two steps to collect the data for the reports, and of course can use other functions if good craftmanship requires as well.
 
 ## Possible solution
 
@@ -302,7 +302,7 @@ The Lark grammer as a seperate file:
 ## Known limitations of the assignment and the provided solution
 
 There are many possible and advanced test cases that can be constructed using pytest.
-Since the aim of this assignment is to understand the usefullness of applying a parser and not a complete course in compiler building or formal languages, it goed beyond the scope of this assignment to create complete support for all possible test cases. 
+Since the aim of this assignment is to understand the usefulness of applying a parser and not a complete course in compiler building or formal languages, it goes beyond the scope of this assignment to create complete support for all possible test cases. 
 In fact, to do so, a parser for the Python language itself would have to be created (which is possible in Lark).
 To keep the focus of the assignment generating reports and not only on the application of parser, the grammar should only support for the basic datatypes: int, float, bool, strings, lists, tuples, variables and sets and not for operators (unary, binary), variable names, dictionaries and function calls.
 
@@ -310,11 +310,11 @@ To keep the focus of the assignment generating reports and not only on the appli
 
 We can use this assignment to teach students about extracting data from different sources and transforming that data into reports with useful information about testing.
 The main learning goal is to work with different types of files to extract the data from and to write the information to.
-In this assignment, the students need to extract all test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
+In this assignment, the students need to extract all the test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
 Depending on the prior knowledge of the students, learning to work with parsers and grammars can be achieved as a possible positive side effect.
 This happens when students themselves realise the limitations of using basic programming constructs while extracting data from python files containing test cases.
 The context free grammer parser Lark is used for this.
-During this assignment, student learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
+During this assignment, students learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
 We provide exercises and suggestions on a didactic approach to use this assignment in the classroom.
 The assignment can be adapted to reduce or increase complexity or to incorporate other learning goals.
 To make the assignment complete, we also provide a possible solution and input- and output files.
