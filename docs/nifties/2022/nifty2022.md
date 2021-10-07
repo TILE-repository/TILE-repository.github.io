@@ -75,7 +75,7 @@ We approach this assignment in three steps:
 
 ### Step one: parse Python files containing test cases
 
-Write a function `get_test_cases(filename)` in Python that, given a .py file with pytests, generates a list with the test cases that are defined in a Python file containing pytests. 
+Write a function `get_test_cases(filename)` that, given a .py file with pytests, generates a list with the test cases that are defined in a Python file containing pytests. 
 
 The function should have the folowing signature and specification:
 
@@ -91,15 +91,25 @@ def get_test_cases(filename):
     """
 ```
 
-To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file.
+To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file to obtain the test cases. For example in the file  [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) the test cases are found in this part:
+
+```python
+@pytest.mark.parametrize("testcase, i1, i2, i3, output",[
+(1, {2,4.2,3,4,6.5,5}, [2,3,4], (3,4,5), "OK!"),   #sets, lists, tuples and strings with double quotes
+(2, [], set(), (), 'this'),                        #empty set/lists/tuples and strings with single quotes      
+(3, True, 4.5, (3,4), 'hoi'),                      #bool, float
+(4, {5}, set(), "3.555", '3.67'),
+(5, {4}, {4}, [2,2,3,4,3,5,4,3], "{2,4,7}"),       #comments
+(6, '', None, "", {2,4,7}),                        #empty string and None        
+])```
+
+
 This can be done using the Lark[^1] parser.
 If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
 
 #### Grammar description
 
-We need Lark to parse files containing parameterized test cases for pytest.
-
-Test cases start below the "@pytest.mark.parametrize" definition and look like this: 
+So, the test cases start below the "@pytest.mark.parametrize" definition and look like this: 
 
 ```python
 (num, i1, i2,...,in o),   #any type of comments
