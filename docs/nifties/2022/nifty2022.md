@@ -256,11 +256,7 @@ Both these functions use the functions from the first two steps to collect the d
 
 ## Possible solution
 
-This is a possible solution that can be used as a reference (intended only for the lecturer):
-
-```python
-{% include_relative files/generate_test_report_all.py %}
-```
+The file [generate_test_report_all.py](files/generate_test_report_all.md) is a possible solution that can be used as a reference (intended only for the lecturer).
 
 ## Files to use for this assignment
 
