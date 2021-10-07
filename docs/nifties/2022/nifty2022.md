@@ -53,7 +53,7 @@ The assignment can be simplified to focus mostly on the file manipulatin part an
 
 ## The assignment: generate a report combining test cases and test results 
 
-The aim of this assignment in to create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
+The aim of this assignment in to create a Python program to generate a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
 For example, using a set of pytests (e.g. in the file [`union_test.py`](union_test.md)), and a textfile containing the output of those pytests
@@ -105,7 +105,7 @@ To implement this function, we need to parse the "@pytest.mark.parametrize()" pa
 ```
 
 
-This can be done using the Lark[^1] parser.
+This can be done using the Lark parser.
 If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
 
 #### Grammar description
