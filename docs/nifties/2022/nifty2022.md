@@ -113,7 +113,7 @@ If you are not familiar with Lark, then you can start with this [introduction](l
 As indicated, the test cases start below the "@pytest.mark.parametrize" definition and look like this: 
 
 ```python
-(num, i1, i2,...,in o),   #any type of comments
+(num, in_1, in_2, ..., in_n, out),   #any type of comments
 ```
 
 Each test case:
@@ -123,7 +123,7 @@ Each test case:
 - the first argument is a number, the ID of the test case
 - after the end test case ), comments starting with #can be discarded
 - different parts of the test case are separated by ", "
-- i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
+- in_1, in_2, ..., in_n, and out can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
