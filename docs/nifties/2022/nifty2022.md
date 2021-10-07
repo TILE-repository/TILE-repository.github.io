@@ -311,12 +311,6 @@ To make the assignment complete, we also provide a possible solution and input- 
 | *Audience*     | This assignment is appropriate for CS2 students. The TILE method itself can very well be used in CS1 assignments. |
 | *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course. |
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
-| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an open databank[^3] with TILED assignments. |
+| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://tile-repository.github.io/) with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
 | *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The parser can be improved to support a more elaborate grammer. The report part can be alter to generate files of different types, for example pdf documents. This assignment can also be used to introduce students to compilers in general or to a course on compiler building. |
-
-# References
-
-[^1]: [Lark homepage](https://lark-parser.readthedocs.io)
-[^2]: [Pytest homepage](https://docs.pytest.org/en/6.2.x/contents.html)
-[^3]: [TILE Repository](https://tile-repository.github.io/)
