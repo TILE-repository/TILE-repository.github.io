@@ -1,4 +1,4 @@
-'''import pytest
+```import pytest
 
 def union(list1, list2):
     i = 0
@@ -22,4 +22,4 @@ def union(list1, list2):
 def test_union(testcase, input1, input2, output):
     assert union(input1, input2) == output,\
            "case {0}".format(testcase)
-'''
+```
