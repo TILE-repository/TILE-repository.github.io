@@ -8,9 +8,6 @@ def some_function(x1, x2, x3):
     
     return "that's it!"
 
-
-variable_name = "Look"
-
 @pytest.mark.parametrize("testcase, i1, i2, i3, output",[
 (1, {2,4.2,3,4,6.5,5}, [2,3,4], (3,4,5), "OK!"),   # sets, lists, tuples and strings with double quotes
 (2, [], set(), (), 'this'),                        # empty set/lists/tuples and strings with single quotes      
