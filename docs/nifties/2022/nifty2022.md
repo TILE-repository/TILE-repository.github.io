@@ -137,16 +137,9 @@ You are encouraged to try to create the grammar first and compare it with the on
 
 #### Example of analysing a test file
 
-The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py) contains a dummy function and test cases with all the by the grammar supported elements. 
-
-It is listed here:
-
-```python
-{% include_relative files/pytest_file_to_test_parser.py %}
-```
+The file [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.md) contains a dummy function and test cases with all the by the grammar supported elements. 
 
 We can use it to test our function `get_test_cases(filename)` as follows:
-
 
 ```python
 #testing the parser with main, tester should manually check the output
@@ -180,12 +173,7 @@ First, we describe how to save the output of pytest into a text file, then we ex
 #### Saving the test results to a text file
 
 We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
-For example, let us consider the program in `union_test.py` that contains the definition of the function
-`union`, together with 8 parameterized test cases and a test driver `test_union`:
-
-```python
-{% include_relative files/union_test.py %}
-```
+For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`.
 
 The output of running the pytests can be saved in a text file like this:
 
@@ -193,14 +181,9 @@ The output of running the pytests can be saved in a text file like this:
 >>> pytest union_test.py > union_test_output.txt
 ```
 
-This will give us the txt file that contains for example the following information:
+This will give us the [union_test_pytest_output.txt](files/union_test_pytest_output.md) txt file that contains the results of the test cases.
 
-```python
-{% include_relative files/union_test_pytest_output.txt %}
-```
-
-Indicating that testcase with identifier 4 failed because our function returned 
-`[1,1]` but we expected `[1]`. 
+It indicates that testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
 
 #### Finding the test results in the text file
