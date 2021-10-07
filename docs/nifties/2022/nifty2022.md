@@ -204,7 +204,7 @@ testcase = 4, input1 = [1, 1], input2 = [], output = [1]
 
 This line contains the input and output of testcase 4.
 
-We can assume that test cases that didn't fail have passed, so we only need to look for failed test cases in the output of pytest.
+We can assume that test cases that did not fail have passed, so we only need to look for failed test cases in the output of pytest.
 
 ### Step three: generate the Excel and JSON reports
 
