@@ -49,14 +49,14 @@ Depending on the educational setting and the background of the students, this ca
 A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d). Depending on the prior knowledge and experience, it is possible for the students to first try to define their own grammar.
 This puts the focus on the application of the parser and less on understanding the grammar.
 
-The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results. 
+The assignment can be simplified to focus mostly on the file manipulatin part and the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results. 
 
 ## The assignment: generate a report combining test cases and test results 
 
-Create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
+The aim of this assignment in¡s to create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
-For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the final generated test report in Excel would be:
+For example, using a set of pytests (e.g. in the file [`union_test.py`](https://github.com/TILE-repository/TILE-repository.github.io/blob/main/docs/nifties/2022/files/union_test.py)), and a textfile [`union_test_pytest_output.txt`](https://github.com/TILE-repository/TILE-repository.github.io/blob/main/docs/nifties/2022/files/union_test_pytest_output.txt)) containing the output of those pytests, the final generated test report in Excel would be:
 
 ![Generated Excel report](pics/excel-testcases-report.png "Generated Excel report")
 
