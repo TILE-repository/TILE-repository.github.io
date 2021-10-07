@@ -128,12 +128,8 @@ Each test case:
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
 For Lark to understand this format, we need to write a grammar describing this format.
-Since this assignment is focussed on generating reports and not on fully understanding grammars and parsers, we already created the grammar for you. 
-You are encouraged to try to create the grammar first and compare it with the one provided.
-
-```python
-{% include_relative files/grammar.lark %}
-```
+Since this assignment is focussed on generating reports and not on fully understanding grammars and parsers, we already created the grammar for you, it can be found in this (.lark) file: [grammar.lark](files/gammar.lark.md).
+You are encouraged to try to create the grammar on your own first and compare it with the one provided.
 
 #### Example of analysing a test file
 
