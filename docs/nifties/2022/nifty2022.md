@@ -42,30 +42,18 @@ Prerequisites:
 
 ## Suggestions on how to use this assignment in the classroom
 
-The focus of this assignment is to create test reports containing the test cases together with the results of test execution.
-Before students can do this, they need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
-
-The assigment addresses several interesting programming topics of which the most advanced topic is the application of a context free grammar using the Lark[^1] parser. 
-The concept of grammars and the usage of parsers can be a difficult and complex topic in CS programs. 
-It helps if students discover the benefits of using parsers on their own to create an intrinsic motivation to dive into the application of a parser for a problem head first.
-
-That is what we want to establish with this assignment. 
-By letting students analyse test files in these exercises, we want them to experience the **limitations** of using the techniques they are familiar with such as conditional statements and regular expressions.
-
-This can be done by giving the students the assignments and letting them experiment with the files. 
-Either students themselves will at some point question the approach they follow when their code becomes unmaintainable, or lecturers can actively engage students and discuss the problems they will encounter if they continue with using if-then-else constructs or regular expressions to support all possible test case constructs.
-That is the moment to introduce them to a better way using the main assignment and the introduction of **parsers** and **grammars**.
-
-We don't want to teach the students context free grammars in all their finesses, but we only want to introduce the students to the benefits and the application of parsers.
-To support the students, we provide some information about [lark](lark.md) and with the [grammer definition](files/grammar.lark) to get them started.
-Depending on the prior knowledge and experience, it is possible for the students to first try to define their own grammar.
-This puts the focus on the application of the parser and less on understanding the grammar.
+The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the Lark[^1] parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files containing pytest[^2] test cases and text files containing output from pytest.
 
 It is advisable to introduce the concept of parsers and context free grammars at some point to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. 
 A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d).
 
-The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results.
+The assignment can be simplified to focus mostly on the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results. 
+
+To support the students, we can provide some information about [lark](lark.md) and with the [grammer definition](files/grammar.lark) to get them started.
+Depending on the prior knowledge and experience, it is possible for the students to first try to define their own grammar.
+This puts the focus on the application of the parser and less on understanding the grammar.
+
 
 ## The assignment: generate a report combining test cases and test results 
 
