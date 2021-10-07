@@ -75,10 +75,9 @@ We approach this assignment in three steps:
 
 ### Step one: parse Python files containing test cases
 
-Write a function `get_test_cases(filename)` in Python that generates a report with the test cases that are defined in a Python file containing pytests. 
+Write a function `get_test_cases(filename)` in Python that, given a .py file with pytests, generates a list with the test cases that are defined in a Python file containing pytests. 
 
-We need to find out what test cases are defined in a Python test file.
-For this, we can create a function with the folowing signature and specification:
+The function should have the folowing signature and specification:
 
 ```python
 def get_test_cases(filename):
@@ -92,15 +91,15 @@ def get_test_cases(filename):
     """
 ```
 
-To implement this function, we need to parse the Python test file.
+To implement this function, we need to parse the "@pytest.mark.parametrize()" part that exists in the Python test file.
 This can be done using the Lark[^1] parser.
 If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
 
 #### Grammar description
 
-We need Lark to parse files containing parameterized test cases for pytest[^2].
+We need Lark to parse files containing parameterized test cases for pytest.
 
-Test case lines look like this: 
+Test cases start below the "@pytest.mark.parametrize" definition and look like this: 
 
 ```python
 (num, i1, i2,...,in o),   #any type of comments
