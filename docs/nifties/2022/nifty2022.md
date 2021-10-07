@@ -173,7 +173,7 @@ First, we describe how to save the output of pytest into a text file, then we ex
 #### Saving the test results to a text file
 
 We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
-For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`.
+For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`.
 
 The output of running the pytests can be saved in a text file like this:
 
@@ -181,7 +181,7 @@ The output of running the pytests can be saved in a text file like this:
 >>> pytest union_test.py > union_test_output.txt
 ```
 
-This will give us the [union_test_pytest_output.txt](files/union_test_pytest_output.md) txt file that contains the results of the test cases.
+This will give us the [union_test_pytest_output.txt](union_test_pytest_output.md) txt file that contains the results of the test cases.
 
 It indicates that testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
