@@ -6,7 +6,7 @@ author: Niels Doorn, Tanja Vos, Beatriz Marín
 # Generating test reports using Test Informed Learning with Examples
 {:.no_toc}
 
-By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
+By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](https://tanjavos.nl/) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
 - Table of contents
 {:toc}
@@ -15,7 +15,7 @@ By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) 
 
 This assignment is about (1) analysing files containing test cases and test results, (2) parsing strings to uncover the underlying structure, and (3) generating test reports in different formats like Excell and JSON.
 It purposely revolves around the testing domain.
-This is one of the ways to apply the Test Informed Learning with Examples (TILE), an approach to help students learn about testing.
+This is one of the ways to apply the Test Informed Learning with Examples [(TILE)](https://tile-repository.github.io/), an approach to help students learn about testing.
 The idea behind TILE is that students work on a assignment to learn certain programming concepts, and meanwhile they are also learn about test related concepts because of the domian chosen for the exercise.
 
 ## Learning goals and prerequisites of the assignment
@@ -42,7 +42,7 @@ Prerequisites:
 
 ## Suggestions on how to use this assignment in the classroom
 
-The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the [Lark](lark.md) parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files (.py) containing pytest[^2] test cases and plain text files (.txt) containing output from pytest.
+The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the [Lark](lark.md) parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files (.py) containing [pytest](https://docs.pytest.org/en/6.2.x/contents.html) test cases and plain text files (.txt) containing output from pytest.
 
 It is advisable to introduce the concept of parsers and context free grammars at some point to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. 
@@ -53,7 +53,7 @@ The assignment can be simplified to focus mostly on the report generation by pro
 
 ## The assignment: generate a report combining test cases and test results 
 
-Create a Python program to generating a test report in which the test cases and the results of the test run from pytest[^2] are combined. 
+Create a Python program to generating a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
 For example, using a set of pytests (e.g. in the file `test_union.py`), and a textfile `test_union_output.txt`) containing the output of those pytests, the final generated test report in Excel would be:
