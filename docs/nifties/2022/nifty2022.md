@@ -168,8 +168,7 @@ Now that we can generate the list of test cases, next we need to obtain the resu
 #### Saving the test results to a text file
 
 The outcomes of pytests are normally written to the standard output in the command line interface (or in an IDE). 
-
-The output of running the pytests can be saved in a text file redirecting is as follows:
+They can be saved in a text file redirecting it as follows:
 
 ```bash
 >>> pytest union_test.py > union_test_pytest_output.txt
@@ -182,18 +181,18 @@ The testcases 7 and 8 also failed.
 
 #### Finding the test results in the text file
 
-We can create a function in Python that returns a list of failed test cases with a signature and a specification like this:
+Now you should create a function `get_failed_testcases(filename)` in Python that returns a list of failed test cases with a signature and a specification like this:
 
 ```python
 def get_failed_testcases(filename):
     """
-    Expects filename to be a file that contains the output of a !pytest run.
+    Expects filename to be a file that contains the output of a pytest run.
     Returns the list of testcases that have failed.
     Throws FileNotFoundError exception if file does not exist.
     """
 ```
 
-Now that we have the output of the test results in a text file, we can filter out the results of the test cases.
+Looking at the output of the test results in the text file, we can filter out the results of the test cases.
 There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
 We can use this to see if there are any failed test cases in the file.
 If so, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
