@@ -113,7 +113,7 @@ If you are not familiar with Lark, then you can start with this [introduction](l
 As indicated, the test cases start below the "@pytest.mark.parametrize" definition and look like this: 
 
 ```python
-(num, i1, i2,...,in o),   #any type of comments
+(num, in_1, in_2, ..., in_n, out),   #any type of comments
 ```
 
 Each test case:
@@ -123,13 +123,12 @@ Each test case:
 - the first argument is a number, the ID of the test case
 - after the end test case ), comments starting with #can be discarded
 - different parts of the test case are separated by ", "
-- i1, i2, ..., in and o can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
+- in_1, in_2, ..., in_n, and out can be of any Python type (int, float, bool, strings, lists, tuples, variables, sets)
 
 To reduce complexity, we assume there are no operators (unary, binary operators), variable names, dictionaries or function calls.
 
 For Lark to understand this format, we need to write a grammar describing this format.
-Since this assignment is focussed on generating reports and not on fully understanding grammars and parsers, we already created the grammar for you, it can be found in this (.lark) file: [grammar.lark](files/gammar.lark.md).
-You are encouraged to try to create the grammar on your own first and compare it with the one provided.
+Depending on the depth we want to go into grammars and parsing, we can give part of the grammar and parser already to the students. The grammar can be found in this (.lark) file: [grammar.lark](files/gammar.lark.md).
 
 #### Example of analysing a test file
 
@@ -164,38 +163,36 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the test results
 
-First, we describe how to save the output of pytest into a text file, then we explain how to process the text file.
+Now that we can generate the list of test cases, next we need to obtain the results of executing these tests. When we execute pytests, we can save the output into a text file. Subsequently, we can inspect that file to know which test cases have failed.
 
 #### Saving the test results to a text file
 
-We need textfiles containing the outcomes of the tests that is normally written to the standard output in the command line interface (or in an IDE). 
-For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`.
-
-The output of running the pytests can be saved in a text file like this:
+The outcomes of pytests are normally written to the standard output in the command line interface (or in an IDE). 
+They can be saved in a text file redirecting it as follows:
 
 ```bash
->>> pytest union_test.py > union_test_output.txt
+>>> pytest union_test.py > union_test_pytest_output.txt
 ```
 
-This will give us the [union_test_pytest_output.txt](union_test_pytest_output.md) txt file that contains the results of the test cases.
+For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [union_test_pytest_output.txt](union_test_pytest_output.md) that contains the results of the test cases.
 
-It indicates that testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
+As we can see, it contains enough information to deduce that the testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
 
 #### Finding the test results in the text file
 
-We can create a function in Python that returns a list of failed test cases with a signature and a specification like this:
+Now you should create a function `get_failed_testcases(filename)` in Python that returns a list of failed test cases with a signature and a specification like this:
 
 ```python
 def get_failed_testcases(filename):
     """
-    Expects filename to be a file that contains the output of a !pytest run.
+    Expects filename to be a file that contains the output of a pytest run.
     Returns the list of testcases that have failed.
     Throws FileNotFoundError exception if file does not exist.
     """
 ```
 
-Now that we have the output of the test results in a text file, we can filter out the results of the test cases.
+Looking at the output of the test results in the text file, we can filter out the results of the test cases.
 There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
 We can use this to see if there are any failed test cases in the file.
 If so, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
@@ -207,7 +204,7 @@ testcase = 4, input1 = [1, 1], input2 = [], output = [1]
 
 This line contains the input and output of testcase 4.
 
-We can assume that test cases that didn't fail have passed, so we only need to look for failed test cases in the output of pytest.
+We can assume that test cases that did not fail have passed, so we only need to look for failed test cases in the output of pytest.
 
 ### Step three: generate the Excel and JSON reports
 
