@@ -304,6 +304,7 @@ And their corresponding pytest outputs:
 - [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
 - [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
 
+You should check the outputs of your functions manualy by inspecting the Excel and JSON files.
 
 ## Possible solution
 
