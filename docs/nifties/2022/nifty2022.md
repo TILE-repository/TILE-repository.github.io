@@ -56,7 +56,7 @@ The aim of this assignment in to create a Python program to generate a test repo
 The output needs to be in Excel and in JSON. 
 
 For example, using a set of pytests (e.g. in the file [union_test.py](files/union_test.md)), and a textfile containing the output of those pytests
-(e.g. [union_test_pytest_output.txt](files/union_test_pytest_output.md)), the final generated test report in Excel would be:
+(e.g. [output_union_test.txt](files/output_union_test.md)), the final generated test report in Excel would be:
 
 ![Generated Excel report](pics/excel-testcases-report.png "Generated Excel report")
 
@@ -175,7 +175,7 @@ They can be saved in a text file redirecting it as follows:
 >>> pytest union_test.py > union_test_pytest_output.txt
 ```
 
-For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [union_test_pytest_output.txt](files/union_test_pytest_output.md) that contains the results of the test cases.
+For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [output_union_test.txt](files/output_union_test.md) that contains the results of the test cases.
 
 As we can see, it contains enough information to deduce that the testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
