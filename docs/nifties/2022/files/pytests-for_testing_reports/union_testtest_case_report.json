@@ -1,1 +1,55 @@
-[{"id": 1, "inputs": [1, [], [], []], "output esperado": [], "resultado": "FAILED"}, {"id": 2, "inputs": [2, [], [1, 2, 3], [1, 2, 3]], "output esperado": [1, 2, 3], "resultado": "PASSED"}, {"id": 3, "inputs": [3, [1, 2, 3], [], [1, 2, 3]], "output esperado": [1, 2, 3], "resultado": "PASSED"}, {"id": 4, "inputs": [4, [1, 1], [], [1]], "output esperado": [1], "resultado": "FAILED"}, {"id": 5, "inputs": [5, [], [1, 1], [1]], "output esperado": [1], "resultado": "PASSED"}, {"id": 6, "inputs": [6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]], "output esperado": ["hola", 2, 3, "abc", "de"], "resultado": "PASSED"}, {"id": 7, "inputs": [7, [1, 1, 2, 2, 3, 3], [], [1, 2, 3]], "output esperado": [1, 2, 3], "resultado": "FAILED"}, {"id": 8, "inputs": [8, [3, 4, 5, 6, 6], [3, 4, 5, 6, 6], [3, 4, 5, 6]], "output esperado": [3, 4, 5, 6], "resultado": "FAILED"}]
+[
+  {
+    "id": 1,
+    "inputs": [1, [], [], []],
+    "output esperado": [],
+    "resultado": "FAILED"
+  },
+  {
+    "id": 2,
+    "inputs": [2, [], [1, 2, 3], [1, 2, 3]],
+    "output esperado": [1, 2, 3],
+    "resultado": "PASSED"
+  },
+  {
+    "id": 3,
+    "inputs": [3, [1, 2, 3], [], [1, 2, 3]],
+    "output esperado": [1, 2, 3],
+    "resultado": "PASSED"
+  },
+  {
+    "id": 4,
+    "inputs": [4, [1, 1], [], [1]],
+    "output esperado": [1],
+    "resultado": "FAILED"
+  },
+  {
+    "id": 5,
+    "inputs": [5, [], [1, 1], [1]],
+    "output esperado": [1],
+    "resultado": "PASSED"
+  },
+  {
+    "id": 6,
+    "inputs": [
+      6,
+      ["hola", 2, 3, "abc"],
+      ["hola", "hola", "de"],
+      ["hola", 2, 3, "abc", "de"]
+    ],
+    "output esperado": ["hola", 2, 3, "abc", "de"],
+    "resultado": "PASSED"
+  },
+  {
+    "id": 7,
+    "inputs": [7, [1, 1, 2, 2, 3, 3], [], [1, 2, 3]],
+    "output esperado": [1, 2, 3],
+    "resultado": "FAILED"
+  },
+  {
+    "id": 8,
+    "inputs": [8, [3, 4, 5, 6, 6], [3, 4, 5, 6, 6], [3, 4, 5, 6]],
+    "output esperado": [3, 4, 5, 6],
+    "resultado": "FAILED"
+  }
+]
