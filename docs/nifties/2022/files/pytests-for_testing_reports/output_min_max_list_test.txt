@@ -1,80 +1,9 @@
-=================================== FAILURES ===================================
-_____________________ test_min_max_list[7-input6-output6] ______________________
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/tanjavos/Dropbox/1-PROJECTS/6-QPED/TILE/files-parsers-nifty/pytests-for_testing_reports
+plugins: cov-2.12.1
+collected 10 items
 
-testcase = 7, input = (8, 0, 2, 3), output = (0, 8, 3)
+min_max_list_test.py ..........                                          [100%]
 
-    @pytest.mark.parametrize("testcase, input, output",[
-    (1, [1,2,3,6,8,0], (0,8)),  #comentario
-    (2, [0,8,2,3], (0,8)),
-    (3, [2,8,1,5,3], (1,8)),
-    (4, [8,0,2,3,0], (0,8)),
-    (5, [1,2,3,-6,0,1], (-6,3)),
-    (6, [1], (1,1)),
-    (7, (8,0,2,3), (0,8,3)),
-    (8, (1,2,3,-6,0,1), (-6,3)),
-    (9, [1,1,1,9], (1,1)),
-    (10, [], ())
-    ])
-    
-    def test_min_max_list(testcase, input, output):
->       assert min_max_num_in_list(input) == output, "caso {0}".format(testcase)
-E       AssertionError: caso 7
-E       assert (0, 8) == (0, 8, 3)
-E         Right contains one more item: 3
-E         Use -v to get the full diff
-
-min_max_list_test.py:30: AssertionError
-_____________________ test_min_max_list[9-input8-output8] ______________________
-
-testcase = 9, input = [1, 1, 1, 9], output = (1, 1)
-
-    @pytest.mark.parametrize("testcase, input, output",[
-    (1, [1,2,3,6,8,0], (0,8)),  #comentario
-    (2, [0,8,2,3], (0,8)),
-    (3, [2,8,1,5,3], (1,8)),
-    (4, [8,0,2,3,0], (0,8)),
-    (5, [1,2,3,-6,0,1], (-6,3)),
-    (6, [1], (1,1)),
-    (7, (8,0,2,3), (0,8,3)),
-    (8, (1,2,3,-6,0,1), (-6,3)),
-    (9, [1,1,1,9], (1,1)),
-    (10, [], ())
-    ])
-    
-    def test_min_max_list(testcase, input, output):
->       assert min_max_num_in_list(input) == output, "caso {0}".format(testcase)
-E       AssertionError: caso 9
-E       assert (1, 9) == (1, 1)
-E         At index 1 diff: 9 != 1
-E         Use -v to get the full diff
-
-min_max_list_test.py:30: AssertionError
-_____________________ test_min_max_list[10-input9-output9] _____________________
-
-testcase = 10, input = [], output = ()
-
-    @pytest.mark.parametrize("testcase, input, output",[
-    (1, [1,2,3,6,8,0], (0,8)),  #comentario
-    (2, [0,8,2,3], (0,8)),
-    (3, [2,8,1,5,3], (1,8)),
-    (4, [8,0,2,3,0], (0,8)),
-    (5, [1,2,3,-6,0,1], (-6,3)),
-    (6, [1], (1,1)),
-    (7, (8,0,2,3), (0,8,3)),
-    (8, (1,2,3,-6,0,1), (-6,3)),
-    (9, [1,1,1,9], (1,1)),
-    (10, [], ())
-    ])
-    
-    def test_min_max_list(testcase, input, output):
->       assert min_max_num_in_list(input) == output, "caso {0}".format(testcase)
-E       AssertionError: caso 10
-E       assert 'undefined' == ()
-E        +  where 'undefined' = min_max_num_in_list([])
-
-min_max_list_test.py:30: AssertionError
-=========================== short test summary info ============================
-FAILED min_max_list_test.py::test_min_max_list[7-input6-output6] - AssertionE...
-FAILED min_max_list_test.py::test_min_max_list[9-input8-output8] - AssertionE...
-FAILED min_max_list_test.py::test_min_max_list[10-input9-output9] - Assertion...
-========================= 3 failed, 7 passed in 0.06s ==========================
+============================== 10 passed in 0.03s ==============================

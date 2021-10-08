@@ -9,7 +9,7 @@ def interseccion(lista1, lista2, lista3):
     return res + lista3
 
 @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
-(1, [], [], [], []),   #Cardinalidad
+(1, [], [], [], (1,2,3)),   #Cardinalidad
 (2, [], [1,2,3], [], []),   #Cardinalidad
 (3, [1,2,3], [], [2], [2]),   #Cardinalidad
 (4, [1,1], [], [], []),   #Cardinalidad

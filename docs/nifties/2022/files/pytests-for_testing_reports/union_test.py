@@ -9,7 +9,7 @@ def union(lista1, lista2):
     return res
 
 @pytest.mark.parametrize("testcase, input1, input2, output",[
-(1, [], [], []),   #Cardinalidad
+(1, [], [], ()),   #Cardinalidad
 (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
 (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
 (4, [1,1], [], [1]),   #Cardinalidad
