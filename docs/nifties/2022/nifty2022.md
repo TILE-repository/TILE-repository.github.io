@@ -315,10 +315,14 @@ The test file for the parser (containing all python types supported by the gramm
 
 - [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
 
-Generated JSON and Excel files for the union test:
+Generated JSON and Excel files:
 
+- [interseccion_testtest_case_report.json](files/pytests-for_testing_reports/interseccion_testtest_case_report.json)
+- [interseccion_testTestReport.xls](files/pytests-for_testing_reports/interseccion_testTestReport.xls)
 - [union_testtest_case_report.json](files/pytests-for_testing_reports/union_testtest_case_report.json)
 - [union_testTestReport.xls](files/pytests-for_testing_reports/union_testTestReport.xls)
+- [min_max_list_testtest_case_report.json](files/pytests-for_testing_reports/min_max_list_testtest_case_report.json)
+- [min_max_list_testTestReport.xls](files/pytests-for_testing_reports/min_max_list_testTestReport.xls)
 
 The Lark grammer as a seperate file:
 
