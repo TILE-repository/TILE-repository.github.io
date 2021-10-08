@@ -1,4 +1,4 @@
-[<< Back to the main assignment](nifty2022.md)
+[<< Back to the main assignment](../nifty2022.md)
 
 # Warmup exercises
 {:.no_toc}
@@ -10,7 +10,7 @@
 
 Here we provide three warmup exercises for the students. This is especially usefull for student who have no prior experience with pytest or with file handling in Python. For each exercise we provide a possible solution.
 
-These exercises use the [union_test.py](files/union_test.py) file for analysis.
+These exercises use the [union_test.py](union_test.py) file for analysis.
 That file contains a function `union` to determine the union of the two sets A and B (the union is the set that contains element that belong to either set A or to set B or to both). 
 For example, the union of `{1, 2, 2, 3, 4}` and `{3, 4, 5, 6}` is `{1, 2, 3, 4, 5, 6}`.
 The file also contains eight test cases written using pytest. It is listed here:
@@ -75,7 +75,7 @@ def get_failed_testcases(filename):
 
 ### Description
 
-Write a Python function that given a python file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the [union_test.py](files/union_test.py) file from above:
+Write a Python function that given a python file that contains parametrized pytests, returns a list with the test signature. (A test signature is the format of the test cases, i.e. ID, inputs, outputs.) (HINT: read through the file until you find: .mark.parametrize@). For example, for the results of the [union_test.py](union_test.py) file from above:
 
 ```python
 >>> get_test_signature("union_test.py") 
@@ -206,4 +206,4 @@ def get_test_cases(filename):
 Note that this function contains some faults, for example it does not work when the test data contains tuples, or when there are spaces after the commas in the test_data (inputs and output). 
 This is left unresolved on purpose, such that a BUG BOUNTY can be presented to the students to win extra points for finding these faults by testing it. Later on, this can be the introduction to parsing, leading to the main assignment.
 
-[<< Back to the main assignment](nifty2022.md)
+[<< Back to the main assignment](../nifty2022.md)
