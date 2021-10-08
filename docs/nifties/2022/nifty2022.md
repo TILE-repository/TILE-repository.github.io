@@ -302,7 +302,7 @@ The possible solution (for lecturers only):
 
 Input and output files for step 3:
 
-- [union_test.py](pytests-for_testing_reports/union_test.py)
+- [union_test.py](files/pytests-for_testing_reports/union_test.py)
 - [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
 - [min_max_list_test.py](files/pytests-for_testing_reports/min_max_list_test.py)
 - [output_min_max_list_test.txt](files/pytests-for_testing_reports/output_min_max_list_test.txt)
