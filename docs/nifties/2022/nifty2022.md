@@ -198,24 +198,56 @@ There is a short test summary in which lines indicating failed test cases start 
 For example, this is the part of the output of `union_test.py` containing the information about the failed test cases.
 
 ```python
-union_test.py:22: AssertionError
+union_test.py:23: AssertionError
 =========================== short test summary info ============================
+FAILED union_test.py::test_union[1-input10-input20-output0] - AssertionError:...
 FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
 FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
-========================= 2 failed, 5 passed in 0.05s ==========================
+FAILED union_test.py::test_union[8-input17-input27-output7] - AssertionError:...
+========================= 4 failed, 4 passed in 0.08s ==========================
 ```
 
 We can use this to see if there are any failed test cases in the file.
-If so, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
+If there are, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
 For example:
 
 ```python
-testcase = 4, input1 = [1, 1], input2 = [], output = [1]
+____________________ test_union[1-input10-input20-output0] _____________________
+
+testcase = 1, input1 = [], input2 = [], output = set()
+
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [], [], set()),   #Cardinalidad
+    (2, [], [1,2,3], [1,2,3]),   #Cardinalidad
+    (3, [1,2,3], [], [1,2,3]),   #Cardinalidad
+    (4, [1,1], [], [1]),   #Cardinalidad
+    (5, [], [1,1], [1]),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hola", 2, 3, "abc", "de"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [], [1,2,3]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    ])
+    
+    def test_union(testcase, input1, input2, output):
+>       assert union(input1, input2) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 1
+E       assert [] == set()
+E         Use -v to get the full diff
+
+union_test.py:23: AssertionError
 ```
 
-This line contains the input and output of testcase 4.
-
+We can use the first line that contains the input and output of testcase 1.
 We can assume that test cases that did not fail have passed, so we only need to look for failed test cases in the output of pytest.
+
+```python
+>>> get_failed_testcases("union_test_pytest_output.txt")
+['testcase = 1, input1 = [], input2 = [], output = set()', 
+ 'testcase = 4, input1 = [1, 1], input2 = [], output = [1]', 
+ 'testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]', 
+ 'testcase = 8, input1 = [3, 4, 5, 6, 6], input2 = [3, 4, 5, 6, 6]'
+]
+```
 
 ### Step three: generate the Excel and JSON reports
 
