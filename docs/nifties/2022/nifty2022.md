@@ -253,7 +253,7 @@ We can assume that test cases that did not fail have passed, so we only need to 
 
 Now we have all information we need, we have the test cases from step one and the test results from step two.
 We want to combine this information into a test report in Excel and in JSON format.
-To create Excel files we can use [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl), which can be installed using Pip:
+To create Excel files we can use [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl), which can be installed using `pip`:
 
 ```bash
 $ pip install openpyxl
