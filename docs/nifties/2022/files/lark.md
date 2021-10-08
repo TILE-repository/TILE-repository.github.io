@@ -1,4 +1,4 @@
-[<< Back to the main assignment](nifty2022.md)
+[<< Back to the main assignment](../nifty2022.md)
 
 # Grammars, Parsers and Lark
 
@@ -20,4 +20,4 @@ Lark can be installed using `pip`:
 $ pip install lark --upgrade
 ```
 
-[<< Back to the main assignment](nifty2022.md)
+[<< Back to the main assignment](../nifty2022.md)

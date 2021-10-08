@@ -55,8 +55,8 @@ The assignment can be simplified to focus mostly on the file manipulatin part an
 The aim of this assignment in to create a Python program to generate a test report in which the test cases and the results of the test run from [pytest](https://docs.pytest.org/en/6.2.x/contents.html) are combined. 
 The output needs to be in Excel and in JSON. 
 
-For example, using a set of pytests (e.g. in the file [union_test.py](union_test.md)), and a textfile containing the output of those pytests
-(e.g. [union_test_pytest_output.txt](union_test_pytest_output.md)), the final generated test report in Excel would be:
+For example, using a set of pytests (e.g. in the file [union_test.py](files/union_test.md)), and a textfile containing the output of those pytests
+(e.g. [union_test_pytest_output.txt](files/union_test_pytest_output.md)), the final generated test report in Excel would be:
 
 ![Generated Excel report](pics/excel-testcases-report.png "Generated Excel report")
 
@@ -105,7 +105,7 @@ For example in the file [pytest_file_to_test_parser.py](files/pytest_file_to_tes
 ```
 
 This parsing can be done using Lark.
-If you are not familiar with Lark, then you can start with this [introduction](lark.md) to get started.
+If you are not familiar with Lark, then you can start with this [introduction](files/lark.md) to get started.
 
 #### Grammar description
 
@@ -175,7 +175,7 @@ They can be saved in a text file redirecting it as follows:
 >>> pytest union_test.py > union_test_pytest_output.txt
 ```
 
-For example, let us consider the program in [union_test.py](union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [union_test_pytest_output.txt](union_test_pytest_output.md) that contains the results of the test cases.
+For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [union_test_pytest_output.txt](files/union_test_pytest_output.md) that contains the results of the test cases.
 
 As we can see, it contains enough information to deduce that the testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
