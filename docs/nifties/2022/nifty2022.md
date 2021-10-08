@@ -253,7 +253,7 @@ We can assume that test cases that did not fail have passed, so we only need to 
 
 Now we have all information we need, we have the test cases from step one and the test results from step two.
 We want to combine this information into a test report in Excel and in JSON format.
-To create Excel files we can use [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl), which can be installed using `pip`:
+To create Excel files we can use [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl), which can be installed using Pip:
 
 ```bash
 $ pip install openpyxl
@@ -290,6 +290,22 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
 
 Both these functions use the functions from the first two steps to collect the data for the reports, and of course can use other functions if good craftmanship requires as well.
 
+You can test your functions using the following Python files containing pytests:
+
+- [union_test.py](pytests-for_testing_reports/union_test.py)
+- [min_max_list_test.py](files/pytests-for_testing_reports/min_max_list_test.py)
+- [interseccion_test.py](files/pytests-for_testing_reports/interseccion_test.py)
+- [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
+
+And their corresponding pytest outputs:
+
+- [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
+- [output_min_max_list_test.txt](files/pytests-for_testing_reports/output_min_max_list_test.txt)
+- [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
+- [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
+
+You should check the outputs of your functions manualy by inspecting the Excel and JSON files.
+
 ## Possible solution
 
 The file [generate_test_report_all.py](files/generate_test_report_all.md) is a possible solution that can be used as a reference (intended only for the lecturer).
@@ -302,13 +318,13 @@ The possible solution (for lecturers only):
 
 Input and output files for step 3:
 
-- [union_test.py](files/pytests-for_testing_reports/union_test.py)
-- [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
+- [union_test.py](pytests-for_testing_reports/union_test.py)
 - [min_max_list_test.py](files/pytests-for_testing_reports/min_max_list_test.py)
-- [output_min_max_list_test.txt](files/pytests-for_testing_reports/output_min_max_list_test.txt)
 - [interseccion_test.py](files/pytests-for_testing_reports/interseccion_test.py)
-- [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
 - [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
+- [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
+- [output_min_max_list_test.txt](files/pytests-for_testing_reports/output_min_max_list_test.txt)
+- [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
 - [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
 
 The test file for the parser (containing all python types supported by the grammar):
