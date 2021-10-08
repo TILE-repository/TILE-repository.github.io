@@ -24,7 +24,7 @@ Programming learning goals:
 
 -   Extract, Transform and Load (ETL) data using test files.
 -   Process plain text, Excel and JSON files.
--   Work with grammers and parsers, specifically [Lark](lark.md).
+-   Work with grammers and parsers, specifically Lark.
 
 Testing learning goals (that are learned for free with TILE):
 
@@ -34,7 +34,7 @@ Testing learning goals (that are learned for free with TILE):
 
 Prerequisites:
 
--   Understand parametrized tests with [pytest](https://docs.pytest.org/en/6.2.x/contents.html) and be able to run them and interpret the results.
+-   Understand parametrized tests with pytest and be able to run them and interpret the results.
 -   Basic/primitive data types
 -   Functions
 -   Decision and control-flow structures
@@ -42,12 +42,11 @@ Prerequisites:
 
 ## Suggestions on how to use this assignment in the classroom
 
-The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the [Lark](lark.md) parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files (.py) containing [pytest](https://docs.pytest.org/en/6.2.x/contents.html) test cases and plain text files (.txt) containing output from pytest.
+The learning objectives of this assignment are to practice with file manipulation and the application of a context free grammar using the [Lark](https://github.com/lark-parser/lark) parser in Python. The students' aim is to create a test report containing the test cases together with the results of test execution. Students need to distill information from both Python files (.py) containing [pytest](https://docs.pytest.org/en/6.2.x/contents.html) test cases and plain text files (.txt) containing output from pytest.
 
 It is advisable to introduce the concept of parsers and context free grammars at some point to the student.
 Depending on the educational setting and the background of the students, this can be done by one or more lectures or workshops, but it can also be done individually, in pairs or in small groups. 
 A [tutorial](https://lark-parser.readthedocs.io/en/latest/json_tutorial.html) on parsing JSON using Lark can also be used by the students to get a good understanding of the features and the way to use Lark, but there are many general introductions to parsers and grammars available, such as this [introduction to Parsers](https://medium.com/@chetcorcos/introduction-to-parsers-644d1b5d7f3d). Depending on the prior knowledge and experience, it is possible for the students to first try to define their own grammar.
-This puts the focus on the application of the parser and less on understanding the grammar.
 
 The assignment can be simplified to focus mostly on the file manipulatin part and the report generation by providing the students with the results of step one, the parsing of the test case and with the results of step two, the processing of test results. 
 
@@ -163,7 +162,9 @@ testcase: (6, '', None, '', {2, 4, 7})
 
 ### Step two: process the test results
 
-Now that we can generate the list of test cases, next we need to obtain the results of executing these tests. When we execute pytests, we can save the output into a text file. Subsequently, we can inspect that file to know which test cases have failed.
+Now that we can generate the list of test cases, next we need to obtain the results of executing these tests. 
+When we execute pytests, we can save the output into a text file. 
+Subsequently, we can inspect that file to know which test cases have failed.
 
 #### Saving the test results to a text file
 
@@ -194,7 +195,7 @@ def get_failed_testcases(filename):
 
 Looking at the output of the test results in the text file, we can filter out the results of the test cases.
 There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
-For example, this is the part of the output of  `union_test.py` containing the information about the failed test cases.
+For example, this is the part of the output of `union_test.py` containing the information about the failed test cases.
 
 ```python
 union_test.py:22: AssertionError

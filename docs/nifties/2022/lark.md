@@ -2,7 +2,7 @@
 
 # Grammars, Parsers and Lark
 
-Lark[^1] is a parsing toolkit using context free grammers for Python.
+Lark is a parsing toolkit using context free grammers for Python.
 It is built with a focus on ergonomics, performance and modularity.
 Lark can parse all context-free languages. 
 To put it simply, it means that it is capable of parsing almost any programming language out there, and to some degree most natural languages too.
