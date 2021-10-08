@@ -196,7 +196,7 @@ Looking at the output of the test results in the text file, we can filter out th
 There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
 For example, this is the part of the output of  `union_test.py` containing the information about the failed test cases.
 
-```bash
+```python
 union_test.py:22: AssertionError
 =========================== short test summary info ============================
 FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
@@ -278,7 +278,7 @@ Input and output files for step 3:
 - [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
 - [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
 
-The test file for the parser:
+The test file for the parser (containing all python types supported by the grammar):
 
 - [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
 
