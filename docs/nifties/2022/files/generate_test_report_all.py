@@ -318,7 +318,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
             for tc in test_cases:
                 tc_dict = {"id":tc[0]}
                 out = tc[-1]
-                tc = tc[1:len(tc)-1]
+                tc_inputs = tc[1:len(tc)-1]
                 inputs = []
                 for t in tc:
                     inputs.append(t)
@@ -328,6 +328,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
                     tc_dict["resultado"]= "FAILED"
                 else:
                     tc_dict["resultado"]= "PASSED"
+        
                 test_cases_dicts.append(tc_dict)
             
             report_name = filenameTest.replace(".py", "")
