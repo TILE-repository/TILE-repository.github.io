@@ -6,7 +6,7 @@ author: Niels Doorn, Tanja Vos, Beatriz Marín
 # Generating test reports using Test Informed Learning with Examples
 {:.no_toc}
 
-By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](https://tanjavos.nl/) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
+By [Niels Doorn](https://research.nielsdoorn.nl/), [Tanja Vos](https://tanjavos.nl/) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
 - Table of contents
 {:toc}

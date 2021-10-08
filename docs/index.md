@@ -4,7 +4,7 @@ title: "Test Informed Learning with Examples"
 
 # TILE Assignments Repository
 
-By [Niels Doorn](mailto:niels.doorn@ou.nl), [Tanja Vos](mailto:tanja.vos@ou.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
+By [Niels Doorn](https://research.nielsdoorn.nl/), [Tanja Vos](https://www.tanjavos.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
 ## Introduction
 
