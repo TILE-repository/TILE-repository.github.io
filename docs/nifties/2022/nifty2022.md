@@ -242,7 +242,7 @@ We can assume that test cases that did not fail have passed, so we only need to 
 
 ```python
 >>> get_failed_testcases("union_test_pytest_output.txt")
-['testcase = 1, input1 = [], input2 = [], output = set()', 
+['testcase = 1, input1 = [], input2 = [], output = ()', 
  'testcase = 4, input1 = [1, 1], input2 = [], output = [1]', 
  'testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [], output = [1, 2, 3]', 
  'testcase = 8, input1 = [3, 4, 5, 6, 6], input2 = [3, 4, 5, 6, 6]'
