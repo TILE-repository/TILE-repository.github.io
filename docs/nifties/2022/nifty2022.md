@@ -194,6 +194,16 @@ def get_failed_testcases(filename):
 
 Looking at the output of the test results in the text file, we can filter out the results of the test cases.
 There is a short test summary in which lines indicating failed test cases start with the all caps word `FAILED`.
+For example, this is the part of the output of  `union_test.py` containing the information about the failed test cases.
+
+```bash
+union_test.py:22: AssertionError
+=========================== short test summary info ============================
+FAILED union_test.py::test_union[4-input13-input23-output3] - AssertionError:...
+FAILED union_test.py::test_union[7-input16-input26-output6] - AssertionError:...
+========================= 2 failed, 5 passed in 0.05s ==========================
+```
+
 We can use this to see if there are any failed test cases in the file.
 If so, we can look for lines starting with `testcase = ` that contain information about the failed test cases. 
 For example:
@@ -252,16 +262,12 @@ Both these functions use the functions from the first two steps to collect the d
 The file [generate_test_report_all.py](files/generate_test_report_all.md) is a possible solution that can be used as a reference (intended only for the lecturer).
 
 ## Files to use for this assignment
-
-Here is a file that can be used as input for the main assignment covering the whole grammar:
-
-- [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
   
 The possible solution (for lecturers only):
 
 - [generate_test_report_all.py](files/generate_test_report_all.py)
 
-Input and output files for the solution:
+Input and output files for step 3:
 
 - [union_test.py](pytests-for_testing_reports/union_test.py)
 - [output_union_test.txt](files/pytests-for_testing_reports/output_union_test.txt)
@@ -271,6 +277,10 @@ Input and output files for the solution:
 - [output_interseccion_test.txt](files/pytests-for_testing_reports/output_interseccion_test.txt)
 - [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
 - [output_filtrar_impares_test.txt](files/pytests-for_testing_reports/output_filtrar_impares_test.txt)
+
+The test file for the parser:
+
+- [pytest_file_to_test_parser.py](files/pytest_file_to_test_parser.py)
 
 Generated JSON and Excel files for the union test:
 
@@ -308,6 +318,6 @@ To make the assignment complete, we also provide a possible solution and input- 
 | *Audience*     | This assignment is appropriate for CS2 students. The TILE method itself can very well be used in CS1 assignments. |
 | *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course. |
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
-| *Weaknesses*   | Whilst the teaching doesn't put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://tile-repository.github.io/) with TILED assignments. |
+| *Weaknesses*   | Whilst the teaching does not put strain on the course schedule itself, this approach does require effort to change existing course material in order to apply the method. We aim to reduce this effort by providing an [open databank](https://tile-repository.github.io/) with TILED assignments. |
 | *Dependencies* | This approach integrates into existing programming courses. The assignment presented here requires knowledge of basic programming concepts such as conditional statements, datatypes and artithmetic operations as well as more advanced topics such as using Python modules and the `pytest` tool. |
 | *Variants*     | This assignment can be adapted in many ways, it can also be ported to other programming languages. The parser can be improved to support a more elaborate grammer. The report part can be alter to generate files of different types, for example pdf documents. This assignment can also be used to introduce students to compilers in general or to a course on compiler building. |
