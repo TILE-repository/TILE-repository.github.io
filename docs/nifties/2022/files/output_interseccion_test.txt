@@ -1,0 +1,119 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/tanjavos/Dropbox/1-PROJECTS/6-QPED/TILE/files-parsers-nifty/pytests-for_testing_reports
+plugins: cov-2.12.1
+collected 9 items
+
+interseccion_test.py F.....FFF                                           [100%]
+
+=================================== FAILURES ===================================
+_____________ test_interseccion[1-input10-input20-input30-output0] _____________
+
+testcase = 1, input1 = [], input2 = [], input3 = [], output = (1, 2, 3)
+
+    @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
+    (1, [], [], [], (1,2,3)),   #Cardinalidad
+    (2, [], [1,2,3], [], []),   #Cardinalidad
+    (3, [1,2,3], [], [2], [2]),   #Cardinalidad
+    (4, [1,1], [], [], []),   #Cardinalidad
+    (5, [], [1,1], [],  []),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
+    ])
+    
+    def test_interseccion(testcase, input1, input2, input3, output):
+>       assert interseccion(input1, input2, input3) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 1
+E       assert [] == (1, 2, 3)
+E         Right contains 3 more items, first extra item: 1
+E         Use -v to get the full diff
+
+interseccion_test.py:24: AssertionError
+_____________ test_interseccion[7-input16-input26-input36-output6] _____________
+
+testcase = 7, input1 = [1, 1, 2, 2, 3, 3], input2 = [1, 2, 3], input3 = [8]
+output = [1, 2, 3, 8]
+
+    @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
+    (1, [], [], [], (1,2,3)),   #Cardinalidad
+    (2, [], [1,2,3], [], []),   #Cardinalidad
+    (3, [1,2,3], [], [2], [2]),   #Cardinalidad
+    (4, [1,1], [], [], []),   #Cardinalidad
+    (5, [], [1,1], [],  []),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
+    ])
+    
+    def test_interseccion(testcase, input1, input2, input3, output):
+>       assert interseccion(input1, input2, input3) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 7
+E       assert [1, 1, 2, 2, 3, 3, ...] == [1, 2, 3, 8]
+E         At index 1 diff: 1 != 2
+E         Left contains 3 more items, first extra item: 3
+E         Use -v to get the full diff
+
+interseccion_test.py:24: AssertionError
+_____________ test_interseccion[8-input17-input27-input37-output7] _____________
+
+testcase = 8, input1 = [3, 4, 5, 6, 6], input2 = [3, 4, 5, 6, 6], input3 = []
+output = [3, 4, 5, 6]
+
+    @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
+    (1, [], [], [], (1,2,3)),   #Cardinalidad
+    (2, [], [1,2,3], [], []),   #Cardinalidad
+    (3, [1,2,3], [], [2], [2]),   #Cardinalidad
+    (4, [1,1], [], [], []),   #Cardinalidad
+    (5, [], [1,1], [],  []),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
+    ])
+    
+    def test_interseccion(testcase, input1, input2, input3, output):
+>       assert interseccion(input1, input2, input3) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 8
+E       assert [3, 4, 5, 6, 6] == [3, 4, 5, 6]
+E         Left contains one more item: 6
+E         Use -v to get the full diff
+
+interseccion_test.py:24: AssertionError
+_____________ test_interseccion[9-input18-input28-input38-output8] _____________
+
+testcase = 9, input1 = (3, 4, 5, 6, 6), input2 = (3, 4, 5, 6, 6), input3 = []
+output = [3, 4, 5, 6]
+
+    @pytest.mark.parametrize("testcase, input1, input2, input3, output",[
+    (1, [], [], [], (1,2,3)),   #Cardinalidad
+    (2, [], [1,2,3], [], []),   #Cardinalidad
+    (3, [1,2,3], [], [2], [2]),   #Cardinalidad
+    (4, [1,1], [], [], []),   #Cardinalidad
+    (5, [], [1,1], [],  []),   #Cardinalidad
+    (6, ["hola", 2, 3, "abc"], ["hola", "hola", "de"], ["hi"], ["hola","hi"]), #Dominio, Estructura
+    (7, [1,1,2,2,3,3], [1,2,3], [8], [1,2,3,8]),   #Orden (de parametros), Estructura
+    (8, [3,4,5,6,6], [3,4,5,6,6], [], [3,4,5,6]), #Orden (duplicados al final de la lista)
+    (9, (3,4,5,6,6), (3,4,5,6,6), [], [3,4,5,6])
+    ])
+    
+    def test_interseccion(testcase, input1, input2, input3, output):
+>       assert interseccion(input1, input2, input3) == output,\
+               "caso {0}".format(testcase)
+E       AssertionError: caso 9
+E       assert [3, 4, 5, 6, 6] == [3, 4, 5, 6]
+E         Left contains one more item: 6
+E         Use -v to get the full diff
+
+interseccion_test.py:24: AssertionError
+=========================== short test summary info ============================
+FAILED interseccion_test.py::test_interseccion[1-input10-input20-input30-output0]
+FAILED interseccion_test.py::test_interseccion[7-input16-input26-input36-output6]
+FAILED interseccion_test.py::test_interseccion[8-input17-input27-input37-output7]
+FAILED interseccion_test.py::test_interseccion[9-input18-input28-input38-output8]
+========================= 4 failed, 5 passed in 0.08s ==========================

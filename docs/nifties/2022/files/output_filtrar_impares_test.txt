@@ -1,0 +1,211 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.7.9, pytest-6.1.2, py-1.9.0, pluggy-0.13.1
+rootdir: /Users/tanjavos/Dropbox/1-PROJECTS/6-QPED/TILE/files-parsers-nifty/pytests-for_testing_reports
+plugins: cov-2.12.1
+collected 11 items
+
+filtrar_impares_test.py F...FF...FF                                      [100%]
+
+=================================== FAILURES ===================================
+____________________ test_filtrar_impares[1-input0-output0] ____________________
+
+testcase = 1, input = [2, 4.2, 3, 4, 6.5, 5], output = (2, 4, 3)
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, [2,4.2,3,4,6.5,5], (2,4,3)),
+    (2, [1,1,1,1], ()),
+    (3, (), ()),
+    (4, [5], ()),
+    (5, [4], (4)),
+    (6, [2,2,3,4,3,5,4,3], (2,4,7)),
+    (7, [1,1,1,1], ()),
+    (8, [], ()),
+    (9, [777.7], ()),
+    (10, [200], (200)),
+    (11, (1,2,3,4,5,6,7), [2,4])
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+
+filtrar_impares_test.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+entrada = [2, 4.2, 3, 4, 6.5, 5]
+
+    def filtrar_impares(entrada):
+        """
+         # Devuelve una tupla que consiste de los elementos pares de entrada.
+         # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+        """
+        res = ()
+        for x in entrada:
+            if (x % 2 == 0):
+>               res.add(x)
+E               AttributeError: 'tuple' object has no attribute 'add'
+
+filtrar_impares_test.py:11: AttributeError
+_______________________ test_filtrar_impares[5-input4-4] _______________________
+
+testcase = 5, input = [4], output = 4
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, [2,4.2,3,4,6.5,5], (2,4,3)),
+    (2, [1,1,1,1], ()),
+    (3, (), ()),
+    (4, [5], ()),
+    (5, [4], (4)),
+    (6, [2,2,3,4,3,5,4,3], (2,4,7)),
+    (7, [1,1,1,1], ()),
+    (8, [], ()),
+    (9, [777.7], ()),
+    (10, [200], (200)),
+    (11, (1,2,3,4,5,6,7), [2,4])
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+
+filtrar_impares_test.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+entrada = [4]
+
+    def filtrar_impares(entrada):
+        """
+         # Devuelve una tupla que consiste de los elementos pares de entrada.
+         # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+        """
+        res = ()
+        for x in entrada:
+            if (x % 2 == 0):
+>               res.add(x)
+E               AttributeError: 'tuple' object has no attribute 'add'
+
+filtrar_impares_test.py:11: AttributeError
+____________________ test_filtrar_impares[6-input5-output5] ____________________
+
+testcase = 6, input = [2, 2, 3, 4, 3, 5, ...], output = (2, 4, 7)
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, [2,4.2,3,4,6.5,5], (2,4,3)),
+    (2, [1,1,1,1], ()),
+    (3, (), ()),
+    (4, [5], ()),
+    (5, [4], (4)),
+    (6, [2,2,3,4,3,5,4,3], (2,4,7)),
+    (7, [1,1,1,1], ()),
+    (8, [], ()),
+    (9, [777.7], ()),
+    (10, [200], (200)),
+    (11, (1,2,3,4,5,6,7), [2,4])
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+
+filtrar_impares_test.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+entrada = [2, 2, 3, 4, 3, 5, ...]
+
+    def filtrar_impares(entrada):
+        """
+         # Devuelve una tupla que consiste de los elementos pares de entrada.
+         # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+        """
+        res = ()
+        for x in entrada:
+            if (x % 2 == 0):
+>               res.add(x)
+E               AttributeError: 'tuple' object has no attribute 'add'
+
+filtrar_impares_test.py:11: AttributeError
+_____________________ test_filtrar_impares[10-input9-200] ______________________
+
+testcase = 10, input = [200], output = 200
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, [2,4.2,3,4,6.5,5], (2,4,3)),
+    (2, [1,1,1,1], ()),
+    (3, (), ()),
+    (4, [5], ()),
+    (5, [4], (4)),
+    (6, [2,2,3,4,3,5,4,3], (2,4,7)),
+    (7, [1,1,1,1], ()),
+    (8, [], ()),
+    (9, [777.7], ()),
+    (10, [200], (200)),
+    (11, (1,2,3,4,5,6,7), [2,4])
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+
+filtrar_impares_test.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+entrada = [200]
+
+    def filtrar_impares(entrada):
+        """
+         # Devuelve una tupla que consiste de los elementos pares de entrada.
+         # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+        """
+        res = ()
+        for x in entrada:
+            if (x % 2 == 0):
+>               res.add(x)
+E               AttributeError: 'tuple' object has no attribute 'add'
+
+filtrar_impares_test.py:11: AttributeError
+__________________ test_filtrar_impares[11-input10-output10] ___________________
+
+testcase = 11, input = (1, 2, 3, 4, 5, 6, ...), output = [2, 4]
+
+    @pytest.mark.parametrize("testcase, input, output",[
+    (1, [2,4.2,3,4,6.5,5], (2,4,3)),
+    (2, [1,1,1,1], ()),
+    (3, (), ()),
+    (4, [5], ()),
+    (5, [4], (4)),
+    (6, [2,2,3,4,3,5,4,3], (2,4,7)),
+    (7, [1,1,1,1], ()),
+    (8, [], ()),
+    (9, [777.7], ()),
+    (10, [200], (200)),
+    (11, (1,2,3,4,5,6,7), [2,4])
+    ])
+    
+    def test_filtrar_impares(testcase, input, output):
+>       assert filtrar_impares(input) == output,\
+               "caso {0}".format(testcase)
+
+filtrar_impares_test.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+entrada = (1, 2, 3, 4, 5, 6, ...)
+
+    def filtrar_impares(entrada):
+        """
+         # Devuelve una tupla que consiste de los elementos pares de entrada.
+         # Solo funciona si entrada es una list, conjunto o tupla cuyos elementos son ints o floats.
+        """
+        res = ()
+        for x in entrada:
+            if (x % 2 == 0):
+>               res.add(x)
+E               AttributeError: 'tuple' object has no attribute 'add'
+
+filtrar_impares_test.py:11: AttributeError
+=========================== short test summary info ============================
+FAILED filtrar_impares_test.py::test_filtrar_impares[1-input0-output0] - Attr...
+FAILED filtrar_impares_test.py::test_filtrar_impares[5-input4-4] - AttributeE...
+FAILED filtrar_impares_test.py::test_filtrar_impares[6-input5-output5] - Attr...
+FAILED filtrar_impares_test.py::test_filtrar_impares[10-input9-200] - Attribu...
+FAILED filtrar_impares_test.py::test_filtrar_impares[11-input10-output10] - A...
+========================= 5 failed, 6 passed in 0.08s ==========================
