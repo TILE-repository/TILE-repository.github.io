@@ -1,7 +1,0 @@
-using pytest_file_to_test_parser.py
-testcase: (1, {2, 3, 4.2, 4, 6.5, 5}, [2, 3, 4], (3, 4, 5), 'OK!')
-testcase: (2, [], set(), (), 'this')
-testcase: (3, True, 4.5, (3, 4), 'hoi')
-testcase: (4, {5}, set(), '3.555', '3.67')
-testcase: (5, {4}, {4}, [2, 2, 3, 4, 3, 5, 4, 3], '{2,4,7}')
-testcase: (6, '', None, '', {2, 4, 7})
