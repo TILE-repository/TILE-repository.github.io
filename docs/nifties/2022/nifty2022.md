@@ -318,7 +318,7 @@ The possible solution (for lecturers only):
 
 Input and output files for step 3:
 
-- [union_test.py](pytests-for_testing_reports/union_test.py)
+- [union_test.py](files/pytests-for_testing_reports/union_test.py)
 - [min_max_list_test.py](files/pytests-for_testing_reports/min_max_list_test.py)
 - [interseccion_test.py](files/pytests-for_testing_reports/interseccion_test.py)
 - [filtrar_impares_test.py](files/pytests-for_testing_reports/filtrar_impares_test.py)
