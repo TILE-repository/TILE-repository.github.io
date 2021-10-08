@@ -367,7 +367,7 @@ To make the assignment complete, we also provide a possible solution and input- 
 ## Metadata
 
 | *Summary*      | Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways: *early* - introduce students to testing from the very first example program they see and write themselves in exercises; *seamless* - testing will be introduced in a smooth and continuous way as an inherent part of programming, and not as a separate activity; *subtle* - we will make use of clever and indirect methods to teach them testing knowledge and skills. This is a TILE based programming assignment that applies general applicable programming techniques such as file handling, parsing and data processing using a context related to testing. This way, students are not only learning those programming concepts, but they are learning testing concepts as well without the need to spend extra time. |
-| *Topics*       | Testing, programming, file handling, data processing, parsing, generatin reports. |
+| *Topics*       | Testing, programming, file handling, data processing, parsing, generating reports. |
 | *Audience*     | This assignment is appropriate for CS2 students. The TILE method itself can very well be used in CS1 assignments. |
 | *Difficulty*   | These are assignments for computer science students who completed a CS1 or similair course. |
 | *Strengths*    | TILE offers the potential of teaching testing "for free" and as early as possible without adding any additional strain on the course schedule. |
