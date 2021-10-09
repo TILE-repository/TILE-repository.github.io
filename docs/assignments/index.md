@@ -23,6 +23,10 @@ More information in working with forks can be found in the Github Docs on [worki
 
 ### Add one or more assignments
 
-Copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. 
+Copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the `index.md` the new folder and follow the instructions in this file.
 
 ### Create a pull request
+
+Commit and push the new file to your repository and create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+
+The maintainers of the TILE repository will be notified and will review your submission. If the submission is accepted, a link will be placed on the [assignments](../assignments/index.md) page.
