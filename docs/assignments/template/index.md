@@ -1,5 +1,4 @@
 ---
-# Please fill in this YAML block for the generated web page
 title: "This is a template for an assignment using Test Informed Learning with Examples"
 author:  Birger Keys, Shō Christian, Phoebe Schneijder
 ...
@@ -14,7 +13,7 @@ By [Birger Keys](https://birgerkeys.com), [Shō Christian](https://orcid.org/000
 
 ## How to use this template in five steps
 
-1. Replace everything in here with content related to the assignment. You can use markdown to structure and describe the assignment. It is possible to include images, code listings and links to files or other pages. If you are not familiar with markdown, please look at the [GitHub guide](https://guides.github.com/features/mastering-markdown/) on how to use markdown.
+1. Replace everything in here with content related to the assignment, starting with the `YAML` header. You can use markdown in the body to structure and describe the assignment. It is possible to include images, code listings and links to files or other pages. If you are not familiar with markdown, please look at the [GitHub guide](https://guides.github.com/features/mastering-markdown/) on how to use markdown.
 2. Describe the assignment as clearly as possible, provide examples and one or more solutions to be used as reference.
 3. Please fill in both the `Test Informed Learning with Examples aspects` and the `metadata` so that it is clear what the assignment is about and where it might fit in existing computer science programs.
 4. Put all related files in the folder together with this file. Make sure you link to the files from this markdown file.
