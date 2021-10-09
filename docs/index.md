@@ -6,7 +6,13 @@ title: "Test Informed Learning with Examples"
 
 By [Niels Doorn](https://research.nielsdoorn.nl/), [Tanja Vos](https://www.tanjavos.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
-## Introduction
+## The assignments
+
+All the assignments in this repository can be found on the [assignments](assignments/index.md) page.
+
+We welcome contributions to this repository. If you want to add your own TILED assignment to this repository, please follow these [instructions](contribute.md).
+
+## What is Test Informed Learning with Examples?
 
 Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways:
 
@@ -43,7 +49,7 @@ Test cases TILES
 Test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
 
-## Example assignments
+## Some example assignments
 
 Here we provide one assigments of each type of the approach.
 The assignments have different levels of difficulty and cover different programming concepts.
@@ -167,12 +173,6 @@ Try other inputs and try to come up with a funny phrase.
 This TILE contains the message that testing is important.
 </p>
 </div>
-
-## The assignments
-
-All the assignments in this repository can be found on the [assignments](assignments/index.md) page.
-
-We welcome contributions to this repository. If you want to add your own TILED assignment to this repository, please follow these [instructions](contribute.md).
 
 ## Acknowledgements
 
