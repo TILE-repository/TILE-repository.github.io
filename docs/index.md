@@ -10,6 +10,8 @@ By [Niels Doorn](https://research.nielsdoorn.nl/), [Tanja Vos](https://www.tanja
 
 All the assignments in this repository can be found on the [assignments](assignments/index.md) page.
 
+### How to contribute
+
 We welcome contributions to this repository. If you want to add your own TILED assignment to this repository, please follow these [instructions](contribute.md).
 
 ## What is Test Informed Learning with Examples?
