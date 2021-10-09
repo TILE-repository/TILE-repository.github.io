@@ -17,7 +17,7 @@ First of all, thank you for reading this. This means you are creating a TILED as
 
 1. Replace everything in here with content related to the assignment, starting with the `YAML` header. You can use markdown in the body to structure and describe the assignment. It is possible to include images, code listings and links to files or other pages. If you are not familiar with markdown, please look at the [GitHub guide](https://guides.github.com/features/mastering-markdown/) on how to use markdown.
 2. Describe the assignment as clearly as possible, provide examples and one or more solutions to be used as reference.
-3. Please fill in both the `Test Informed Learning with Examples aspects` and the `metadata` so that it is clear what the assignment is about and where it might fit in existing computer science programs.
+3. Please fill in the `metadata` so that it is clear what the assignment is about and where it might fit in existing computer science programs.
 4. Put all related files in the folder together with this file. Make sure you link to the files from this markdown file.
 5. Create pull request 
 
@@ -25,13 +25,10 @@ Once the pull request is incorporated in the repository, a link will be made to 
 
 If you need any help, do not hestitate to contact one of the maintainers of this repository.
 
-## Test Informed Learning with Examples aspects
-
-This exercise was TILED by providing/using/changing ...
-
 ## Metadata
 
 | *Summary*         | What this assignment is about. |
+| *TILE aspects*    | What are the TILE aspects in this assignment. |
 | *Topics*          | The topics covered by this assignment. |
 | *Audience*        | Who is this assigment for. |
 | *Learning goals*  | What are the learning goals. |
