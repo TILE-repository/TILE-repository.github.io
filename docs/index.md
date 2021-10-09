@@ -136,7 +136,7 @@ If we want our program not to calculate a PIN when the date is not valid, then w
 <div class="howTILEd">
 <strong>Test Informed Learning with Examples aspects</strong>
 <p>
-A table with test cases was added and the student were made aware of the test cases that not really contained valid dates but still calculated a PIN number.
+A table with test cases was added and the students were made aware of the test cases that not really contained valid dates but still calculated a PIN number.
 </p>
 </div>
 
