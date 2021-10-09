@@ -8,13 +8,15 @@ a {
     color: #87a7be;
 }
 
+.howTILEd {
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+
 .howTILEd, #test-informed-learning-with-examples-aspects, #test-informed-learning-with-examples-aspects + p {
     background-color: #0a4271;
     color: #87a7be;
-    border: 1px solid black;
-    padding: 1em 1em 0 1em;
-    margin-bottom: 1em;
-
+    padding: 1em 1em 0 0;
     strong {
         color: #87a7be;
     }
