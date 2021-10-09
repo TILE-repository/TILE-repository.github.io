@@ -11,6 +11,7 @@ a {
 .howTILEd {
     border: 1px solid black;
     margin-bottom: 1em;
+    padding-left: 1em;
 }
 
 #metadata {
@@ -18,7 +19,7 @@ a {
     padding-bottom: 1em;
 }
 
-.howTILEd, #metadata, #metadata + p {
+.howTILEd, #metadata, #metadata + table {
     background-color: #0a4271;
     color: #87a7be;
     padding: 1em 1em 0 0;
