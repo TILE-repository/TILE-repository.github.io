@@ -1,5 +1,4 @@
-![example workflow](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/<WORKFLOW_FILE>/badge.svg)
-![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-yellow.svg)
+[![DOI](https://zenodo.org/badge/404988709.svg)](https://zenodo.org/badge/latestdoi/404988709)
 
 # TILED Assignments
 
