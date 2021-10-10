@@ -168,10 +168,6 @@ This TILE contains the message that testing is important.
 </p>
 </div>
 
-## Acknowledgements
-
-This work was funded by the Erasmus+ project QPeD under contract number 2020-1-NL01-KA203-064626.
-
 ## References
 
 [^1]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)

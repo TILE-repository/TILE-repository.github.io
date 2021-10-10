@@ -1,3 +1,6 @@
+![example workflow](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-yellow.svg)
+
 # TILED Assignments
 
 ![TILE Logo](docs/TILE_logo.png "TILE logo")
