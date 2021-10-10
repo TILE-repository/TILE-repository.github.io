@@ -6,14 +6,6 @@ title: "Test Informed Learning with Examples"
 
 By [Niels Doorn](https://research.nielsdoorn.nl/), [Tanja Vos](https://www.tanjavos.nl) and [Beatriz Marín](mailto:bmarin@dsic.upv.es).
 
-## The assignments
-
-All the assignments in this repository can be found on the [assignments](assignments/index.md) page.
-
-### How to contribute
-
-We welcome contributions to this repository. If you want to add your own TILED assignment to this repository, please follow these [instructions](contribute.md).
-
 ## What is Test Informed Learning with Examples?
 
 Test Informed Learning with Examples (TILE), is a new approach to introduce software testing in introductory and advanced programming courses in the following ways:
