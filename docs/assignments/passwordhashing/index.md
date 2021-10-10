@@ -207,7 +207,7 @@ In this assignment, students have to count the occurrences of defective hashes. 
 
 ## References
 
-[^1] J. J. Hoch en A. Shamir, “On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak”, in Automata, Languages and Programming, 2008, bll 616–630.
-[^2] N. Mouha, M. S. Raunak, D. R. Kuhn, en R. Kacker, “Finding Bugs in Cryptographic Hash Function Implementations”, IEEE Transactions on Reliability, vol 67, no 3, bll 870–884, 9 2018.
-[^3] A. Rukhin, J. Soto, J. Nechvatal, M. Smid, en E. Barker, “A statistical test suite for random and pseudorandom number generators for cryptographic applications”, Booz-allen and hamilton inc mclean va, 2001.
-[^4] P. Gauravaram, “Security Analysis of salt||password Hashes”, in 2012 International Conference on Advanced Computer Science Applications and Technologies (ACSAT), 2012, bll 25–30.
+[^1]: J. J. Hoch en A. Shamir, “On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak”, in Automata, Languages and Programming, 2008, bll 616–630.
+[^2]: N. Mouha, M. S. Raunak, D. R. Kuhn, en R. Kacker, “Finding Bugs in Cryptographic Hash Function Implementations”, IEEE Transactions on Reliability, vol 67, no 3, bll 870–884, 9 2018.
+[^3]: A. Rukhin, J. Soto, J. Nechvatal, M. Smid, en E. Barker, “A statistical test suite for random and pseudorandom number generators for cryptographic applications”, Booz-allen and hamilton inc mclean va, 2001.
+[^4]: P. Gauravaram, “Security Analysis of salt||password Hashes”, in 2012 International Conference on Advanced Computer Science Applications and Technologies (ACSAT), 2012, bll 25–30.
