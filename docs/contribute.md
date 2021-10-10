@@ -13,11 +13,17 @@ Forking a repository is similar to copying a repository, with two major differen
 - You can use a pull request to suggest changes from your user-owned fork to the original repository, also known as the upstream repository.
 - You can bring changes from the upstream repository to your local fork by synchronizing your fork with the upstream repository.
 
-More information in working with forks can be found in the Github Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks)
+More information in working with forks can be found in the Github Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks).
+
+Once the repository is forked to your personal repository, you can create new assignments on your personal repository just as you would do with any other GitHub repository.
 
 ## Add one or more assignments
 
-Copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the `index.md` the new folder and follow the instructions in this file.
+To add assignments, copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the `index.md` the new folder and follow the instructions in this file.
+
+## Check for build errors
+
+This repository uses GitHub pages (Jekyll) to generate a static website. This is done automatically when changes are committed and pushed to your personal repository. If the build succeeds, a green checkmark appears on the GitHub repository page. If not, a red cross indicates that the build failed. By clicking on the red cross, details on the reasons for the failed build will be shown. Please fix any build errors before creating a pull request.
 
 ## Create a pull request
 

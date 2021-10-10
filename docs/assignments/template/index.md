@@ -27,5 +27,5 @@ First of all, thank you for reading this. This means you are creating a TILED as
 | *Topics*          | The topics covered by this assignment. |
 | *Audience*        | Who is this assigment for. |
 | *Learning goals*  | What are the learning goals. |
-| *prerequisites*   | Are there any prerequisites? For example, what should the student already know? |
+| *Prerequisites*   | Are there any prerequisites? For example, what should the student already know? |
 | *Variants*        | Optional possibilities for adaptations or varieties |
