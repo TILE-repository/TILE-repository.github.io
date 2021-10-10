@@ -96,7 +96,7 @@ import hashlib
 
 def testPasswordFile(): 
     # open the file for reading 
-    f = open(“hashes.txt”, “r”)
+    f = open("hashes.txt", "r")
 
     # read all lines except the first line, which contains the header, into a list of lines 
     lines = f.readlines()[1:]
@@ -113,13 +113,13 @@ def testPasswordFile():
     # process all lines with passwords, salts and hashes 
     for line in lines: 
         # seperate the fields for each line 
-        fields = line.split(’;’) 
+        fields = line.split(';') 
         password = fields[0] 
         salt = fields[1] 
         hash = fields[2].strip()
 
         # check if the salt was used to calculate the hash 
-        hashWithSalt = hashlib.md5((password+salt).encode(’utf-8’)).hexdigest() 
+        hashWithSalt = hashlib.md5((password+salt).encode('utf-8')).hexdigest() 
         if (hash == hashWithSalt): 
             hashedAndSalted += 1
 
@@ -148,14 +148,14 @@ import hashlib
 import random 
 from random_word import RandomWords
 
-f = open(“hashes.txt”, “w”)
+f = open("hashes.txt", "w")
 random.seed() 
 rw = RandomWords()
 
 listOfRandomWords = rw.get_random_words(limit=400)
 
 hashedAndSalted = 0 
-f.write(“password;salt;hash”) 
+f.write("password;salt;hash") 
 for i in range(100): 
     password = ''
     for j in range(0, 3): 
@@ -171,10 +171,10 @@ for i in range(100):
     else: 
         # oops, forgot to salt 
         hashValue = password
-    hash = hashlib.md5(hashValue.encode(’utf-8’)).hexdigest() 
-    f.write(password+“;”+salt+“;”+hash+“”)
+    hash = hashlib.md5(hashValue.encode('utf-8')).hexdigest() 
+    f.write(password+";"+salt+";"+hash+"")
 
-f.write(“Number of passwords that were hashed and salted: ”+str(hashedAndSalted))
+f.write("Number of passwords that were hashed and salted: "+str(hashedAndSalted))
 ```
 
 A generated password file looks like this:
@@ -210,4 +210,4 @@ In this assignment, students have to count the occurrences of defective hashes. 
 [^1]: J. J. Hoch en A. Shamir, “On the Strength of the Concatenated Hash Combiner When All the Hash Functions Are Weak”, in Automata, Languages and Programming, 2008, bll 616–630.
 [^2]: N. Mouha, M. S. Raunak, D. R. Kuhn, en R. Kacker, “Finding Bugs in Cryptographic Hash Function Implementations”, IEEE Transactions on Reliability, vol 67, no 3, bll 870–884, 9 2018.
 [^3]: A. Rukhin, J. Soto, J. Nechvatal, M. Smid, en E. Barker, “A statistical test suite for random and pseudorandom number generators for cryptographic applications”, Booz-allen and hamilton inc mclean va, 2001.
-[^4]: P. Gauravaram, “Security Analysis of salt||password Hashes”, in 2012 International Conference on Advanced Computer Science Applications and Technologies (ACSAT), 2012, bll 25–30.
+[^4]: P. Gauravaram, “Security Analysis of salt password Hashes”, in 2012 International Conference on Advanced Computer Science Applications and Technologies (ACSAT), 2012, bll 25–30.
