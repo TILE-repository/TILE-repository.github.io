@@ -66,16 +66,16 @@ However, the systems seems to be defective. Every now and then, the salt is **no
 
 The file contains example values separated by semicolons, the first line contains the value types. Here is an example of a few lines of the data of the file in a table:
 
-Password                             Salt           Hash
------------------------------------- -------------- ----------------------------------
-FiremanshipNoisyStirrup-shaped       Etiologic      d252f331a8924d54e1c352f88decccb4
-QuizzeryNonemotionallyPediments      Tenpins        83abc62b14f585636f547717c076b209
-UnguentariumZinciteStirrup-shaped    Unguentarium   27fed6fa4ae5c4ebc47468d51fc95f93
-HeardCuratoriallyRyegrasses          Dismayed       5961aa9c671f1d7d58d2f90ecfd143b8
-DraftsmenDecemberistImmoderate       Agentive       f94f1e45f8ccc708741d42aee4c10c1c
-NontheatricalWood-culverCavilling    Fusilladed     33609348393312bb584368cb60e3a5df
-QuizzeryBelligerencyUnchangingness   Cacophony      f4da2cc176a354e599f5abe2f3ff7f05
-OxbowsAllurementsField-kirk          Veray          64c934dd49db61abbc47a23a30d5011d
+| Password | Salt | Hash |
+|---|---|---|
+| FiremanshipNoisyStirrup-shaped | Etiologic | d252f331a8924d54e1c352f88decccb4 |
+| QuizzeryNonemotionallyPediments | Tenpins | 83abc62b14f585636f547717c076b209 |
+| UnguentariumZinciteStirrup-shaped | Unguentarium | 27fed6fa4ae5c4ebc47468d51fc95f93 |
+| HeardCuratoriallyRyegrasses | Dismayed | 5961aa9c671f1d7d58d2f90ecfd143b8 |
+| DraftsmenDecemberistImmoderate | Agentive | f94f1e45f8ccc708741d42aee4c10c1c |
+| NontheatricalWood-culverCavilling | Fusilladed | 33609348393312bb584368cb60e3a5df |
+| QuizzeryBelligerencyUnchangingness | Cacophony | f4da2cc176a354e599f5abe2f3ff7f05 |
+| OxbowsAllurementsField-kirk | Veray | 64c934dd49db61abbc47a23a30d5011d |
 
 The data of the file is structured as follows:
 
@@ -137,7 +137,7 @@ This file can be run using :
 1 passed in 0.01s
 ```
 
-### Generator for the password files
+## Generator for the password files
 
 This assignment can easily be used to create individual versions by using the generator below.
 
