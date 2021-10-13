@@ -28,10 +28,12 @@ If you need any help, don't hesitate to contact the repository maintainers.
 
 ## Metadata
 
-| *Summary*         | What this assignment is about. |
-| *TILE aspects*    | What are the TILE aspects in this assignment. |
-| *Topics*          | The topics covered by this assignment. |
-| *Audience*        | Who is this assigment for. |
-| *Learning goals*  | What are the learning goals. |
-| *Prerequisites*   | Are there any prerequisites? For example, what should the student already know? |
-| *Variants*        | Optional possibilities for adaptations or varieties |
+| *Summary*                     | What this assignment is about. |
+| *TILE aspects*                | What are the TILE aspects in this assignment. |
+| *Topics*                      | The topics covered by this assignment. |
+| *Technology used*             | For example, programming languages, frameworks. |
+| *Audience*                    | Who is this assigment for. |
+| *Programming learning goals*  | What are the learning goals. |
+| *Testing learning goals*      | What are the learning goals. |
+| *Prerequisites*               | Are there any prerequisites? For example, what should the student already know? |
+| *Variants*                    | Optional possibilities for adaptations or varieties |
