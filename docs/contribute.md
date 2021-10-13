@@ -15,6 +15,8 @@ Forking a repository is similar to copying a repository, with two major differen
 
 More information in working with forks can be found in the Github Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks).
 
+This is the repository that you need to fork if you want to contribute: [https://github.com/TILE-repository/TILE-repository.github.io](https://github.com/TILE-repository/TILE-repository.github.io).
+
 Once the repository is forked to your personal repository, you can create new assignments on your personal repository just as you would do with any other GitHub repository.
 
 ## Add one or more assignments
