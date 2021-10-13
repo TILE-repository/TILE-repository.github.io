@@ -4,7 +4,11 @@ title: "How to contribute"
 
 # How to contribute
 
-We welcome additions to this repository so we can all benefit from each others knowledge and material and improve software testing education one step at the time. Contributing can be done using the Fork and pull model. Anyone can fork this repository and push changes to their personal fork. You do not need permission to this repository to push to a user-owned fork. The changes can be pulled into the source repository by the project maintainer.
+We welcome additions to this repository so we can all benefit from each others knowledge and material and improve software testing education one step at the time. 
+Contributing can be done using the Fork and pull model. 
+Anyone can fork this repository and push changes to their personal fork. 
+You do not need permission to this repository to push to a user-owned fork. 
+The changes can be pulled into the source repository by the project maintainers.
 
 ## Forking this repository
 
@@ -15,7 +19,7 @@ Forking a repository is similar to copying a repository, with two major differen
 
 More information in working with forks can be found in the Github Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks).
 
-Forking can be done on GitHub with the fork button. 
+Forking can be done on GitHub with the 'fork' button. 
 This is the repository that you need to fork if you want to contribute: [https://github.com/TILE-repository/TILE-repository.github.io](https://github.com/TILE-repository/TILE-repository.github.io).
 
 Once the repository is forked to your personal repository, you can create new assignments on your personal repository just as you would do with any other GitHub repository.
