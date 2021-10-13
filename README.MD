@@ -8,7 +8,9 @@ This repository contains the webpage for TILED assignments.
 
 ## Project page
 
-You can visit the [project page](https://tile-repository.github.io/).
+You can visit the [project page](https://tile-repository.github.io/). 
+
+If you want to contribute with assignments? Please read this procedure on how to do this.
 
 ## Special assignments
 
