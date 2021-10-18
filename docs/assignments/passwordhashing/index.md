@@ -200,7 +200,7 @@ In this assignment, students have to count the occurrences of defective hashes. 
 | *Summary*         | Understanding hashing techniques |
 | *TILE aspects*    | What are the TILE aspects in this assignment. |
 | *Topics*          | Hashing. |
-| *Technology used* | For example, programming languages, frameworks. |
+| *Technology used* | Python. |
 | *Audience*        | CS1/CS2 |
 | *Programming learning goals* | Using random data, comma-separated values, strings and white space, using external libraries for hashing. |
 | *Testing learning goals* | Testing for security, intermittent problems. |
