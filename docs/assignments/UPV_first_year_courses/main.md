@@ -335,8 +335,8 @@ and/or **test cases**.
 
     ```python
     a = int(input("Enter a value for a = "))
-           a = a + 1
-           print("The value of the variable a is now ",a);
+    a = a + 1
+    print("The value of the variable a is now ",a);
     ```
 
     As can be seen, the same variable can appear both as an operand and
@@ -1483,6 +1483,7 @@ and/or **test cases**.
     $$\sum_{n = N}^{M} n$$
 
 
+    ```small
     >>> %Run 
       Enter a number: 0
       Enter a number: 3
@@ -1511,7 +1512,7 @@ and/or **test cases**.
     is entered, the program will display an error message and ask for
     the number again.
 
-
+    ```small
     >>> %Run 
       Enter a number: 4
       Enter a number: 5
@@ -1740,7 +1741,7 @@ and/or **test cases**.
     -   how many of them are people of working age, that is, their age
         is between 18 and 65 years old
 
-     ```small
+    ```small
     >>> %Run 
       Enter an age:50
       Enter an age:18
@@ -1959,15 +1960,10 @@ used. This means that pytest needs to be explained in class.
     In pytest these could be implemented like:
 
     ```python
-    @pytest.mark.parametrize("test_case_ID, test_input,
-    expected_output",[ (1, '0', True), #smallest digit (2, '9', True),
-    #largest digit (3, '5', True), #other digit (4, '12', False), #it is
-    not a digit between 0 and 9 (5, '-2', False), #negative digit (6,
-    'hello', False), #string ] )
+    @pytest.mark.parametrize("test_case_ID, test_input, expected_output",[ (1, '0', True), #smallest digit (2, '9', True), #largest digit (3, '5', True), #other digit (4, '12', False), #it is not a digit between 0 and 9 (5, '-2', False), #negative digit (6, 'hello', False), #string ] )
 
-    def test_is_digit(test_case_ID, test_input, expected_output): assert
-    is_digit(test_input) == expected_output, "case
-    0".format(test_case_ID)
+    def test_is_digit(test_case_ID, test_input, expected_output): 
+      assert is_digit(test_input) == expected_output, "case 0".format(test_case_ID)
     ```
 
     ```testruntile
@@ -2008,12 +2004,10 @@ used. This means that pytest needs to be explained in class.
     You can use the following pytest to test your function.
 
     ```python
-    @pytest.mark.parametrize("testcase, input, expected_output",[
-    (1, 0, False), (2, 1, False), (3, 2, True), (4, 25, False), (5, 23,
-    True), (6, 97, True) ] )
+    @pytest.mark.parametrize("testcase, input, expected_output",[(1, 0, False), (2, 1, False), (3, 2, True), (4, 25, False), (5, 23, True), (6, 97, True) ] )
 
-    def test_is_prime(testcase, input, expected_output): assert
-    is_prime(input) == expected_output, "case 0".format(testcase)
+    def test_is_prime(testcase, input, expected_output): 
+      assert is_prime(input) == expected_output, "case 0".format(testcase)
     ```
 
     ```testruntile
@@ -2077,13 +2071,10 @@ used. This means that pytest needs to be explained in class.
     test your function. From now on you will have to do it yourself.
 
     ```python
-    @pytest.mark.parametrize("testcase, input, expected_output",[
-    (1, 'a', 'A'), (2, 'z', 'Z'), (3, 'ñ', 'Ñ'), (4, '\*', '\*'), (5,
-    'Q', 'Q'), (6, ' ] )
+    @pytest.mark.parametrize("testcase, input, expected_output",[(1, 'a', 'A'), (2, 'z', 'Z'), (3, 'ñ', 'Ñ'), (4, '\*', '\*'), (5, 'Q', 'Q'), (6, ' ] )
 
-    def test_lower_to_upper(testcase, input, expected_output): assert
-    lower_to_upper(input) == expected_output, "case
-    0".format(testcase)
+    def test_lower_to_upper(testcase, input, expected_output): 
+      assert lower_to_upper(input) == expected_output, "case 0".format(testcase)
     ```
 
     ```testruntile
@@ -2367,7 +2358,7 @@ used. This means that pytest needs to be explained in class.
 
     For example by typing:
 
-    ```python
+    ```small
     >>> print(fib(0))
       [1]
     >>> print(fib(1))
@@ -2384,7 +2375,7 @@ used. This means that pytest needs to be explained in class.
     argument and returns the same list but without the negative
     elements.
 
-    ```python
+    ```small
     >>> delete_negatives([0,-1,-11,2,33,-100,5])
       [2, 33, 5]
     >>> delete_negatives([-1,-11,-3])
@@ -2426,7 +2417,7 @@ used. This means that pytest needs to be explained in class.
     repeating words. You can't use Python's default `split`. For
     example, with the string:
 
-    ```python
+    ```small
     >>> mySplit('A phrase made up of words. Another phrase with other words.')
       ['a', 'phrase', 'made', 'up', 'of', 'words', 'another', 'with', 'other']
     >>> mySplit('Hi! Helloooo HI')
@@ -2531,16 +2522,7 @@ used. This means that pytest needs to be explained in class.
     Your function must pass the following tests:
 
     ```python
-    @pytest.mark.parametrize("testcase, input1, input2, output",[
-    (1, [[12,7,3], [4, 5,6], [7, 8,9]], [[5,8,1,2],
-    [6,7,3,0], [4,5,9,1]], [[114, 160, 60, 27], [ 74, 97, 73,
-    14], [119, 157, 112, 23]] ), (2, [[12,7,3, 0], [ 4,5,6,12],
-    [ 6,7,8, 9] ], [[8,5,8,1,2], [6,9,7,3,0], [4,5,9,1,0],
-    [4,5,9,1,0] ], [[150, 138, 172, 36, 24], [134, 155, 229, 37,
-    8], [158, 178, 250, 44, 12] ] ), (3, [], [], [] ),
-    (4,[[]],[[]], "they cannot be multiplied" ), (5,
-    [[]],[[[]]], "they cannot be multiplied" ), (6,
-    [[[]]],[[]], [[]] ) ])
+    @pytest.mark.parametrize("testcase, input1, input2, output",[(1, [[12,7,3], [4, 5,6], [7, 8,9]], [[5,8,1,2],[6,7,3,0], [4,5,9,1]], [[114, 160, 60, 27], [ 74, 97, 73,14], [119, 157, 112, 23]] ), (2, [[12,7,3, 0], [ 4,5,6,12],[ 6,7,8, 9] ], [[8,5,8,1,2], [6,9,7,3,0], [4,5,9,1,0],[4,5,9,1,0] ], [[150, 138, 172, 36, 24], [134, 155, 229, 37,8], [158, 178, 250, 44, 12] ] ), (3, [], [], [] ),(4,[[]],[[]], "they cannot be multiplied" ), (5,[[]],[[[]]], "they cannot be multiplied" ), (6,[[[]]],[[]], [[]] ) ])
 
     def test_multiply(testcase, input1, input2, output): 
       assert multiply(input1, input2) == output, "case 0".format(testcase)
@@ -2639,8 +2621,7 @@ used. This means that pytest needs to be explained in class.
     >>> 
     ```
 
-4.  [[generate_files]]{#generate_files label="generate_files"} Write a
-    Python program that allows you to generate a certain number of files
+4.  Write a Python program that allows you to generate a certain number of files
     with a random number (between 1 and 10) of random real numbers
     (between 1.00 and 200.00). The numbers must be aligned to the right
     and with 2 decimal places. You can import `random` and use `randint`
@@ -2784,18 +2765,7 @@ used. This means that pytest needs to be explained in class.
     like the one below:
 
     ```python
-    @pytest.mark.parametrize("testcase, f_input,
-    f_expected_output",[ (1, "data1.txt",
-    "expected_output_data1_IVA.txt"), (2, "data2.txt",
-    "expected_output_data2_IVA.txt"), (3, "data3.txt",
-    "expected_output_data3_IVA.txt"), (4, "data4.txt",
-    "expected_output_data4_IVA.txt"), (5, "data5.txt",
-    "expected_output_data5_IVA.txt"), (6, "data6.txt",
-    "expected_output_data6_IVA.txt"), (7, "data7.txt",
-    "expected_output_data7_IVA.txt"), (8, "data8.txt",
-    "expected_output_data8_IVA.txt"), (9, "data9.txt",
-    "expected_output_data9_IVA.txt"), (10, "data10.txt",
-    "expected_output_data10_IVA.txt"), ])
+    @pytest.mark.parametrize("testcase, f_input, f_expected_output",[ (1, "data1.txt", "expected_output_data1_IVA.txt"), (2, "data2.txt", "expected_output_data2_IVA.txt"), (3, "data3.txt", "expected_output_data3_IVA.txt"), (4, "data4.txt", "expected_output_data4_IVA.txt"), (5, "data5.txt", "expected_output_data5_IVA.txt"), (6, "data6.txt", "expected_output_data6_IVA.txt"), (7, "data7.txt", "expected_output_data7_IVA.txt"), (8, "data8.txt", "expected_output_data8_IVA.txt"), (9, "data9.txt", "expected_output_data9_IVA.txt"), (10, "data10.txt", "expected_output_data10_IVA.txt"), ])
 
     def test_calculate_IVA(testcase, f_input, f_expected_output):
       f_output = calculate_IVA(f_input)
@@ -2805,7 +2775,7 @@ used. This means that pytest needs to be explained in class.
     NOTE: To compare the files we have used `read` because the size of
     the files that we are handling here is very small.
 
-8.  Write Python code that prompts the user for a 4-character word and
+1.  Write Python code that prompts the user for a 4-character word and
     creates the following heart in a heart.txt file.
 
             HART        HART
@@ -2855,9 +2825,7 @@ used. This means that pytest needs to be explained in class.
     file that contains the following dictionary:
 
     ```python
-    'Es': 13, 'un': 52, 'hecho': 13, 'hace': 11, 'tiempo': 8, 'que': 23,
-    'lector': 9, 'mira': 13, 'el': 11, 'de': 26, 'texto': 13, 'sitio':
-    11, 'mientras': 9, 'que.': 3, 'contenido': 10, 'mira.': 10
+    'Es': 13, 'un': 52, 'hecho': 13, 'hace': 11, 'tiempo': 8, 'que': 23, 'lector': 9, 'mira': 13, 'el': 11, 'de': 26, 'texto': 13, 'sitio': 11, 'mientras': 9, 'que.': 3, 'contenido': 10, 'mira.': 10
     ```
 
     A histogram is a graphical representation of a variable in the form
@@ -2873,7 +2841,7 @@ used. This means that pytest needs to be explained in class.
     returns an ASCII histogram that uses the Python output format. An
     example is below:
 
-    ```python
+    ```small
     >>> ascii_histogram(file_to_dic("text.txt"))
                  Es +++++++++++++
                  un ++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -2896,7 +2864,7 @@ used. This means that pytest needs to be explained in class.
     Create a test case to test the function `ascii_histogram` that
     returns as expected result:
 
-    ```python
+    ```small
     >>> ascii_histogram(dic)
                   0 
                   1 +
@@ -2912,7 +2880,7 @@ used. This means that pytest needs to be explained in class.
                  11 +
     ```
 
-3.  Write a program that creates a dictionary that simulates a shopping
+1.  Write a program that creates a dictionary that simulates a shopping
     cart. The program must ask for the item and its price, and add the
     pair to the dictionary, until the user decides to finish. Then, the
     shopping list and the total cost should be displayed, as in the
@@ -2950,7 +2918,7 @@ used. This means that pytest needs to be explained in class.
     You can assume that the user only adds 1 sample of each product.
     Your tests can be run through the shell manually.
 
-4.  In the Scrabble game, each letter has scores associated with them.
+2.  In the Scrabble game, each letter has scores associated with them.
     The total score of a word is the sum of its letter scores. The most
     common letters are worth less points, while the less common letters
     are worth more points. We are going to use a dictionary that maps
@@ -2958,11 +2926,7 @@ used. This means that pytest needs to be explained in class.
     are shown below:
 
     ```python
-    points = "A": 1, "B": 3, "C": 3, "D": 2, "E": 1, "F": 4,
-    "G": 2, "H": 4, "I": 1, "J": 2, "K": 5, "L": 1, "M":
-    3, "N": 1, "O": 1, "P": 3, "Q": 10, "R": 1, "S": 1,
-    "T": 1, "U": 1, "V": 4, "W": 4, "X": 8, "Y": 4, "Z":
-    10
+    points = "A": 1, "B": 3, "C": 3, "D": 2, "E": 1, "F": 4, "G": 2, "H": 4, "I": 1, "J": 2, "K": 5, "L": 1, "M": 3, "N": 1, "O": 1, "P": 3, "Q": 10, "R": 1, "S": 1, "T": 1, "U": 1, "V": 4, "W": 4, "X": 8, "Y": 4, "Z": 10
     ```
 
     Write a function that calculates and displays the Scrabble score for
@@ -2984,7 +2948,7 @@ used. This means that pytest needs to be explained in class.
       5                | `'1234'`              | 0
       6                | `'And with spaces?'`  | 24
 
-5.  In this exercise you must simulate 1000 rolls of two dice. First,
+1.  In this exercise you must simulate 1000 rolls of two dice. First,
     write a function called `twoDice()`, which simulates throwing 2
     six-sided dice. Your function won't take any parameter and will
     return the total that was rolled on two dice as the only result.
@@ -2999,8 +2963,7 @@ used. This means that pytest needs to be explained in class.
     probability theory for each total:
 
     ```python
-    expected_probability = 2: 1/36, 3: 2/36, 4: 3/36, 5: 4/36, 6: 5/36,
-    7: 6/36, 8: 5/36, 9: 4/36, 10: 3/36, 11: 2/36, 12: 1/36
+    expected_probability = 2: 1/36, 3: 2/36, 4: 3/36, 5: 4/36, 6: 5/36, 7: 6/36, 8: 5/36, 9: 4/36, 10: 3/36, 11: 2/36, 12: 1/36
     ```
 
     The frequency of each total as a percentage of the number of dice
@@ -3020,7 +2983,7 @@ used. This means that pytest needs to be explained in class.
         4     |  7.40                   |  8.33
         12    |  2.30                   |  2.78
 
-6.  Morse code is a coding scheme that uses hyphens and dots to
+1.  Morse code is a coding scheme that uses hyphens and dots to
     represent digits and letters. In this exercise, we are going to
     write a program that uses a dictionary to store the mapping between
     these symbols and Morse code. Use a dot to represent a Morse dot,
@@ -3043,7 +3006,7 @@ used. This means that pytest needs to be explained in class.
 
         .... . .-.. .-.. --- .-- --- .-. .-.. -..
 
-7.  Write a program that allows you to manage the customer data of a
+2.  Write a program that allows you to manage the customer data of a
     company. This should be stored in a dictionary in which:
 
     -   the key of each client will be their NIF, and
@@ -3147,7 +3110,7 @@ used. This means that pytest needs to be explained in class.
 
     :   end the program with `(6)`
 
-8.  The problem with the previous exercise is that each time the program
+3.  The problem with the previous exercise is that each time the program
     is launched, the data would have to be entered again. To avoid this,
     we are going to create two new options that allow us to use files as
     backup copies of the data in the dictionary. The menu for the user
@@ -3274,8 +3237,7 @@ used. This means that pytest needs to be explained in class.
     conference venue.
 
     ```python
-    speakers = [('Jeff', 'Offutt', 7.85), ('James', 'Bach', 3.626),
-    ('Lisa', 'Crispin', 10.603) ]
+    speakers = [('Jeff', 'Offutt', 7.85), ('James', 'Bach', 3.626), ('Lisa', 'Crispin', 10.603) ]
     ```
 
     Write a `format_sort_records` function in Python that allows
@@ -3294,19 +3256,16 @@ used. This means that pytest needs to be explained in class.
     printed in a 5-character field, with a padding space character
     between each of the columns.
 
-5.  Write a function that receives a text string and says whether it
+1.  Write a function that receives a text string and says whether it
     only has unique characters or not. This function should return True
     if it has no repeating characters and False otherwise. Write a
     pytest using the following parameterization:
 
     ```python
-    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
-    'Hello', True), (2, 'HelloO', False), (3, ", True), (4, 'cC',
-    False), (5, '0123', True), (6, '33&44', False), (7, '!+&/', True),
-    (8, '!++&/', False), ])
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1, 'Hello', True), (2, 'HelloO', False), (3, ", True), (4, 'cC', False), (5,'0123', True), (6, '33&44', False), (7, '!+&/', True), (8, '!++&/', False), ])
     ```
 
-6.  A famous syllogism says:
+1.  A famous syllogism says:
 
     All humans are mortal.
 
@@ -3338,7 +3297,7 @@ used. This means that pytest needs to be explained in class.
 
     \(e\) there are things that are not mortal.
 
-7.  Write a program that generates three sets of numbers between 1 and
+2.  Write a program that generates three sets of numbers between 1 and
     1000:
 
     the first set consists of all numbers that are divisible by 3,
@@ -3355,7 +3314,7 @@ used. This means that pytest needs to be explained in class.
 
     \(c\) that are neither divisible by 3, nor by 7, nor by 11.
 
-8.  Write a `generate_eratosthenes` function that, using the Sieve of
+3.  Write a `generate_eratosthenes` function that, using the Sieve of
     Eratosthenes [^4], obtains the prime numbers between 2 and 120. The
     algorithm is based on having in a set the numbers between 2 and 120,
     and then eliminate from that set the multiples of 2, then those of
