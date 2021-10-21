@@ -18,11 +18,11 @@ have been adapted by using Test Informed Learning with Examples (TILE)
 to integrate testing in programming education without it costing (much)
 more time. The coloured boxes indicate how they were TILEd.
 
-```{ .testdomaintile }
+```testdomaintile
 This colour box explains a TILE in the **test domain**.
 ```
 
-```{ .testruntile }
+```testruntile
 This colour box explains a TILE related to **test runs** and/or **test cases**.
 ```
 
@@ -88,7 +88,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     screen. To test our program to see whether is also works for other
     numbers, we could execute the following tests through the console:
 
-    ```{frame="single" label="\\em do more tests"}
+    ```
     >>> %Run 
     Enter a number: 0
     The square is 0
@@ -100,7 +100,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     The square is 1000000000000
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     UnTILEd this exercise said: When executing this program in the
     console, the user will give input through the keyboard en the
     results will be shown on the screen
@@ -141,7 +141,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     work for characters? Does it work for reals? Can `a` and `b` have
     different types? Should your program work for all these cases?
 
-    ```{ .testruntile}
+    ```testruntile
     This exercise was TILEd by adding the last paragraph. We explicitly
     ask the students to test for different types of values. Most
     students, because of the example execution convert the user input to
@@ -169,7 +169,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     it work for reals? Can `a`, `b` and `c` have different types? Should
     your program work for all these cases?
 
-    ```{ .testruntile}
+    ```testruntile
     This exercise was TILEd by adding the last paragraph. We explicitly
     ask the students to test for different types of values. Most
     students, because of the example execution convert the user input to
@@ -211,7 +211,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     What happens when you test your programs with two zeros? Why does
     that happen? What could we do about that?
 
-    ```{ .testruntile}
+    ```testruntile
     TILEd by adding example test executions for them to test.
     ```
 
@@ -238,7 +238,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       The modulus or remainder (4 % -100) is:  0
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     TILEd by adding example test executions for them to test.
     ```
 
@@ -262,7 +262,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     <https://www.metric-conversions.org/es/temperatura/fahrenheit-a-celsius.htm>
 
-    ```{ .testruntile}
+    ```testruntile
     We invite the student to test their program more and compare their
     outcomes with a parallel oracle that they can find on the web.
     ```
@@ -293,7 +293,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     -   Second, check the answers of your program with your expected
         outputs.
 
-    ```{ .testruntile}
+    ```testruntile
     We ask the students to do the calculations by hand such that they
     can use those to test their program. It makes them aware of the need
     for an oracle with which they need to check the outputs.
@@ -317,7 +317,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       4              -2000    45%      2     -5.0
       5              12.345   56.78%   900   17.0
 
-    ```{ .testruntile}
+    ```testruntile
     Instead of sample executions for them to check, we add a table with
     test cases. This teaches them what test cases are made up of:
 
@@ -341,7 +341,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     situation, so you should get used to it. Now replace the instruction
     *a = a + 1* by *a += 1*.
 
-    ```{ .testruntile}
+    ```testruntile
     This exercise would say: \"copy and execute the following program\",
     the change to \"copy and test the following program\" is a very
     subtle TILE.
@@ -376,7 +376,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       3              1 hour      25 euros/hour     0.1%    25.0 euros        24.975 euros    
       4              125 hours   20 euros/hour     0%      2500.0 euros      2500.00 euros   
 
-    ```{ .testruntile}
+    ```testruntile
     Add a table with test cases. Also added cases for values that are
     less obvious like 2.5 hours and 0.1%. So they test again their
     assumptions of the types of the variables.
@@ -389,7 +389,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     Look at the following example:
 
-    ```{ .center}
+    ```center
     ![image](images/MadLib-testing.jpg){width="75%"}
     ```
 
@@ -407,7 +407,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     Try other inputs and try to come up with a funny phrase.
 
-    ```{ .testdomaintile }
+    ```testdomaintile
     This TILE contains the message that testing is important.
     ```
 
@@ -461,7 +461,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     using the String module operator % to format, and another with the
     `str.format()`.
 
-    ```{ .testdomaintile }
+    ```testdomaintile
     This exercise is about creating strings that have certain patterns
     using string manipulation. It used to be about file names, it was
     TILEd by making it about test cases and their components.
@@ -517,7 +517,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     see how we can do it in the next thematic unit with decision
     statements like `if - then - else`.
 
-    ```{ .testruntile}
+    ```testruntile
     A table with test cases was added and the student were made aware of
     the test cases that not really contained valid dates but still
     calculated a PIN number.
@@ -564,7 +564,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
                                        ooO  Ooo                                                                               
     ```
 
-    ```{ .testdomaintile }
+    ```testdomaintile
     This TILE contains the message that testing is important.
     ```
 
@@ -599,7 +599,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     euros) and quantities ($<100$ units) to test that the layout is
     always aligned.
 
-    ```{ .testruntile}
+    ```testruntile
     We added one sentence explicitly asking the students to test with
     some values and check the output.
     ```
@@ -610,8 +610,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     minutes, and seconds. The output of your program must have the
     layout as in the following examples:
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Enter a number of seconds: 184
       The equivalent duration is 0:00:03:04.
@@ -621,7 +621,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     >>> %Run 
       Enter a number of seconds: -2
       Only positive values
-    ```
     ```
 
     To test your program, think about the inputs you want to use for the
@@ -641,7 +640,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     manual, the exercise description, or the specialist knowledge of the
     programmer, but it should not be the code.
 
-    ```{ .testruntile}
+    ```testruntile
     We invite the student to test their program more and compare their
     outcomes with a parallel oracle that they can find on the web.
     Moreover, we explain the terminology oracle.
@@ -658,8 +657,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     You have to test your program to see if it works well.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
     >>> %Run 
       Enter the number of day old loaves: 45
       -------------------------
@@ -680,9 +678,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Enter the number of day old loaves: -4
       You cannot buy negative amounts of bread
     ```
-    ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -700,7 +697,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       3              `"ab"`      `"ba"`
       4              `"ab ba"`   `"ab ba"`
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them a table
     of test cases.
     ```
@@ -709,8 +706,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     odd or even. Run the following examples to test that your program
     gives the same outputs:
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
     >>> %Run 
       Enter an integer number: 1
       The number 1 is odd
@@ -730,9 +726,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Enter an integer number: -11
       The number -11 is odd
     ```
-    ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -741,8 +736,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     screen the maximum and the minimum. Run the following examples to
     test that your program gives the same outputs:
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
     >>> %Run 
       Enter the first value: 3
       Enter the second value: 6
@@ -774,7 +768,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Enter the third value: 4.89
       The maximum is oh! and the minimum is 4
     ```
-    ```
 
     ```{  .testruntile}
     Insist that the students test their programs by giving them example
@@ -788,8 +781,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     entered number does not belong to the range \[1, 12\], an error
     message will be displayed.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Enter the number of the month: 5
       May
@@ -805,7 +798,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     >>> %Run 
       Enter the number of the month: 0
       Error: enter a number between 1 and 12
-    ```
     ```
 
     ```{  .testruntile}
@@ -834,8 +826,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     -   the first number is positive and the second is negative.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
     >>> %Run
       Enter the first integer number: 0
       Enter the second integer number: -1
@@ -865,9 +856,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Enter the second integer number: -6
       The product is negative
     ```
-    ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. Also pointing out that this way we try out all
     possible combinations to test.
@@ -891,7 +881,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Run tests and ensure that each of the possible outputs has occurred
     at least once.
 
-    ```{ .testruntile}
+    ```testruntile
     Add minimal line saying the should test such that each possible
     output has occurred.
     ```
@@ -908,8 +898,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Run the following examples to test that your program gives the same
     outputs.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       What do you want to calculate? (d, m, v):d
       Mass: 45
@@ -944,9 +934,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       What do you want to calculate? (d, m, v): z
       Enter only d, m or v
     ```
-    ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -972,7 +961,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       7              `<`        24           `"24K"`      `True`
       8              `>=`       `"email"`    `"correo"`   `True`
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table. Again the chosen values will make them aware
     that this is not only for numerical values.
@@ -1027,8 +1016,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Write a version of this program that shows the breakdown on the
     screen mentioning only the bills and coins we need.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Enter an amount of euros: 434
       2 bills of 200
@@ -1047,7 +1036,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     >>> %Run 
       Enter an amount of euros: 5
       1 bill of 5
-    ```
     ```
 
     What other tests could you run to ensure that your program has the
@@ -1077,7 +1065,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     -   etc.
 
-    ```{ .testruntile}
+    ```testruntile
     Insisting that the students test their programs and think about all
     possible combinations.
     ```
@@ -1093,8 +1081,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     minute plus 5 cents for the next 2 minutes. The remaining 40 seconds
     are free.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Enter the number of seconds the call has lasted: 0
       The call has a cost of 0 cents
@@ -1114,12 +1102,11 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Enter the number of seconds the call has lasted: -5
       Please enter a correct value
     ```
-    ```
 
     What other tests have you run to ensure that your program has the
     desired behaviour?
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions and ask them to think about more tests.
     ```
@@ -1139,8 +1126,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Write a program that calculates the water consumption of a family in
     a month given the number of litres used.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Enter the litres of water used: 0
       The expense is 6.00€
@@ -1153,7 +1140,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     >>> %Run 
       Enter the litres of water used: 55
       The expense is 6.00€
-    ```
     ```
 
     ```{  .testruntile}
@@ -1194,7 +1180,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     them, we first have to think of concrete values that meet the
     conditions of the test case.
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table. Also we introduce the concept of abstract vs
     concrete test cases.
@@ -1215,8 +1201,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     is correct, the program will display the message "Selected" or "Not
     selected".
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Sex M/F: Y
       Enter only the letters M or F
@@ -1240,13 +1226,12 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Time: 170
       Selected
     ```
-    ```
 
     What other tests do you have to run to ensure that you have tried
     all the possible combinations? (HINT: in the tests above we have
     never tested the outputs when the sex is `F`)
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. Add a comment on tests that might be missing and
     that they have to think about.
@@ -1275,7 +1260,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     e)  There is an additional charge depending on the number of
         accidents:
 
-    ```{ .center}
+    ```center
     ```{#tabla:sencilla}
       Accidents   Charge (euros)
       ----------- ----------------
@@ -1290,8 +1275,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     [\[tabla:sencilla\]]{#tabla:sencilla label="tabla:sencilla"}
     ```
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Age: 10
       You have to be 18 or over to have car insurance.
@@ -1315,7 +1300,6 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Number of accidents: -7
       Enter a positive number
     ```
-    ```
 
     What other tests have you run to ensure that your program has the
     desired behaviour?
@@ -1333,7 +1317,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     And how about different combinations of the cases mentioned above?
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. Moreover, guide them through a thinking process of
     what else needs to be tested.
@@ -1352,8 +1336,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     ![image](images/tree.png){width="85%"}
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Color (green/yellow/red): green
       Size (big/medium/small): big
@@ -1364,12 +1348,11 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Size (big/small): big
       Grapefruit
     ```
-    ```
 
     To test your program very well you should have a test case for each
     of the 9 fruits on the tree.
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions and ask them to add more tests such that each
     possible inputs occurs once.
@@ -1390,8 +1373,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     event that the specified option was not correct, the phrase
     "incorrect value\" would be displayed on the screen.
 
-    ```{ .small}
-    ```{frame="single" label="\\em examples of test executions"}
+    ```small
+
     >>> %Run 
       Area (square/triangle/rectangle): square
       Side: 3.56
@@ -1414,9 +1397,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Side: -4
       Wrong value
     ```
-    ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1430,7 +1412,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     possible 9 outputs (i.e. the 4 different pieces of axis, the origin
     and the 4 different quadrants).
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them hints on
     what to test to get all possible outputs.
     ```
@@ -1485,7 +1467,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Then for correct dates, calculate some serial numbers by hand such
     that you can test the output of your program.
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them hints on
     what to test.
     ```
@@ -1497,7 +1479,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     $M$, where $N$ and $M$ are values entered by the user. `result` =
     $\sum_{n = N}^{M} n$
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter a number: 0
       Enter a number: 3
@@ -1516,7 +1498,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       The sum from 4 to 4 is:  4
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1526,7 +1508,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     is entered, the program will display an error message and ask for
     the number again.
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter a number: 4
       Enter a number: 5
@@ -1572,7 +1554,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Sum of the odd numbers:  0
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1591,7 +1573,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       3      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0                  0
       4      12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   11.9327            -31.99
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table. Series with only positive numbers, series
     with only negative numbers, all zeros, and mix of positive/negative.
@@ -1610,7 +1592,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       5              18       7, 14                           
       6              57       7, 14, 21, 28, 35, 42, 49, 56   
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table. Again the chosen values will make them aware
     that there program should also work for negative numbers.
@@ -1629,7 +1611,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       5              18       7, 14                           
       6              77       7, 14, 28, 35, 49, 56, 70, 77   
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table.
     ```
@@ -1650,7 +1632,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     In the execution example below you can see how your program should
     handle negative numbers.
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter the number of bugs found by test 1: 3
       Enter the number of bugs found by test 2: 4
@@ -1674,7 +1656,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Number of tests that have found more than 4 errors:  5
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     Categorising series of inputs, where the inputs are related to test
     cases. Test cases can find errors!
     ```
@@ -1689,7 +1671,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       3         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0
       4         12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   32.4
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table.
     ```
@@ -1700,7 +1682,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     failed, and the average grade. Remember that a string can be
     converted to a float, by calling `float`. Test it:
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> s = "3.456"
     >>> float(s)
     3.456
@@ -1712,7 +1694,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Some examples of program executions are below. There you can see how
     your program should handle negative numbers.
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter a grade or 'exit': 3.5
       Enter a grade or 'exit': 0
@@ -1739,7 +1721,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Average grade: 2.3333333333333335  
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1755,7 +1737,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     -   how many of them are people of working age, that is, their age
         is between 18 and 65 years old
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter an age:50
       Enter an age:18
@@ -1782,7 +1764,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       People of working age: 4
     ```
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1800,7 +1782,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       5         -450    0
       6         45      10
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test cases in a table. We have explicitly added 0 and negative
     numbers to make sure these are tested.
@@ -1822,7 +1804,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     $407=4^3+0^3+7^3$
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them the
     expected outcome of their program.
     ```
@@ -1839,7 +1821,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     correctly. You should also test other numbers and check your program
     says they are not prime. Also try with negative numbers.
 
-    ```{ .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them ideas or
     pointers about the test data to use.
     ```
@@ -1858,7 +1840,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     Test your program with the following outputs:
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter an integer number: 0
       Enter another integer number: 0
@@ -1909,7 +1891,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     Test your program with the following outputs:
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Enter a positive integer number: 0
       Enter another positive integer number: 4
@@ -1973,7 +1955,7 @@ used. This means that pytest needs to be explained in class.
 
     In pytest these could be implemented like:
 
-    ```{ .small}
+    ```small
     ```python
     \@pytest.mark.parametrize(\"test_case_ID, test_input,
     expected_output\",\[ (1, '0', True), #smallest digit (2, '9', True),
@@ -1984,7 +1966,6 @@ used. This means that pytest needs to be explained in class.
     def test_is_digit(test_case_ID, test_input, expected_output): assert
     is_digit(test_input) == expected_output, \"case
     0\".format(test_case_ID)
-    ```
     ```
 
     ```{  .testruntile}
@@ -1999,7 +1980,7 @@ used. This means that pytest needs to be explained in class.
     way that it can be used to read several different characters from
     the keyboard until the user writes the word end.
 
-    ```{frame="single" label="\\em examples of test executions"}
+
     >>> %Run 
       Write a character or 'end' to finish: 4
       4 is a digit from 0 to 9
@@ -2148,12 +2129,11 @@ used. This means that pytest needs to be explained in class.
     comes out of our function and the math.exp is less than, for
     example, $10^{-7}$.
 
-    ```{ .small}
+    ```small
     ```python
     def test_my_exp(tc, input, expected_output): assert
     abs(my_exp(input) - expected_output)\<10\*\*-7, \"case
     0\".format(tc)
-    ```
     ```
 
     ```{  .testruntile}
@@ -2524,7 +2504,7 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ```{ .small}
+    ```small
     ```python
     \@pytest.mark.parametrize(\"testcase, input, output\",\[ (1,
     \[\[1,2,3\],\[4,5,6\],\[7,8,9\]\], 15), (2,
@@ -2534,7 +2514,6 @@ used. This means that pytest needs to be explained in class.
 
     def test_sum_of_diagonal(testcase, input, output): assert
     sum_of_diagonal(input) == output, \"case 0\".format(testcase)
-    ```
     ```
 
     2\) Next, we write a function (`create\_matrix`) that, given two
@@ -2558,7 +2537,7 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ```{ .small}
+    ```small
     ```python
     \@pytest.mark.parametrize(\"testcase, input1, input2, output\",\[
     (1, \[\[12,7,3\], \[4, 5,6\], \[7, 8,9\]\], \[\[5,8,1,2\],
@@ -2573,7 +2552,6 @@ used. This means that pytest needs to be explained in class.
 
     def test_multiply(testcase, input1, input2, output): assert
     multiply(input1, input2) == output, \"case 0\".format(testcase)
-    ```
     ```
 
 # Text files
@@ -2957,7 +2935,7 @@ used. This means that pytest needs to be explained in class.
     shopping list and the total cost should be displayed, as in the
     following example:
 
-    ```{ .small}
+    ```small
     ```python
     {\em example test run}
     >>> %Run 
@@ -2986,7 +2964,6 @@ used. This means that pytest needs to be explained in class.
       fruit          8.00€
       --------------------
       Total         15.00€
-    ```
     ```
 
     You can assume that the user only adds 1 sample of each product.
