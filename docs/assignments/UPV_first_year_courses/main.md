@@ -1,6 +1,6 @@
 ---
 title: "TILEd Python exercises for first year programming courses"
-author:  Tanja Vos
+author:  Tanja E.J. Vos
 ...
 
 # TILEd Python exercises for first year programming courses
@@ -493,7 +493,7 @@ and/or **test cases**.
 
     4.  p4 = (9 + 7)% 10 = 6.
 
-    ```
+    ```small
     >>> %Run 
       Enter your day of birth: 29
       Enter your month of birth: 9
@@ -531,7 +531,7 @@ and/or **test cases**.
     important to him and returns the following ASCII art
     (<https://en.wikipedia.org/wiki/ASCII_art>):
 
-    ```
+    ```small
     >>> %Run
      Name something important: Testing your own code
 
@@ -552,7 +552,7 @@ and/or **test cases**.
 
     Your program must work with any length name:
 
-    ```
+    ```small
     >>> %Run
      Name something important: Testing your program with all kinds of different input values
 
@@ -579,7 +579,7 @@ and/or **test cases**.
     always $$<100$$ units). The program must return the purchase itemized
     as follows:
 
-    ```
+    ```small
     >>> %Run 
       Beer price? 9.99
       Wine price? 1.05
@@ -905,7 +905,6 @@ and/or **test cases**.
     outputs.
 
     ```small
-
     >>> %Run 
       What do you want to calculate? (d, m, v):d
       Mass: 45
@@ -1342,7 +1341,6 @@ and/or **test cases**.
     ![image](images/tree.png)
 
     ```small
-
     >>> %Run 
       Color (green/yellow/red): green
       Size (big/medium/small): big
@@ -1379,7 +1377,6 @@ and/or **test cases**.
     "incorrect value" would be displayed on the screen.
 
     ```small
-
     >>> %Run 
       Area (square/triangle/rectangle): square
       Side: 3.56
@@ -2281,7 +2278,7 @@ used. This means that pytest needs to be explained in class.
     user for a number greater than zero through the keyboard that
     returns the following:
 
-    ```python
+    ```small
     >>> %Run 
       Type an integer greater than zero: 1
       There are no multiples of 3
@@ -3326,17 +3323,15 @@ used. This means that pytest needs to be explained in class.
 
     Therefore Socrates is mortal.
 
-    In the following code, you will see multiple sets. The first
-    contains all things (I know some are missing, but consider it
-    complete for this problem). The second is a set of all people
-    (assuming that the first set is really complete). The third contains
-    everything that is mortal (again, assuming that is complete).
+    In the following code, you will see multiple sets. 
+    The first contains all things (I know some are missing, but consider it complete for this problem). 
+    he second is a set of all people (assuming that the first set is really complete).
+    The third contains everything that is mortal (again, assuming that is complete).
 
     ```python
-    todas = "Socrates", "Plato", "Eratosthenes", "Zeus",
-    "Hera", "Athene", "Acropolis", "Cat", "Dog" personas =
-    "Socrates", "Plato", "Eratosthenes" mortales = "Socrates",
-    "Plato", "Eratosthenes", "Cat", "Dog"
+    all = "Socrates", "Plato", "Eratosthenes", "Zeus", "Hera", "Athene", "Acropolis", "Cat", "Dog" 
+    people = "Socrates", "Plato", "Eratosthenes" 
+    mortals = "Socrates", "Plato", "Eratosthenes", "Cat", "Dog"
     ```
 
     Use the set operators and their methods to show that it is true
