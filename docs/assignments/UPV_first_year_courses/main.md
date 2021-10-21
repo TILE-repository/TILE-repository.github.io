@@ -1,12 +1,12 @@
 ---
-title: "TILEd Python exercises used at the UPV for first year programming courses"
+title: "TILEd Python exercises for first year programming courses"
 author:  Tanja Vos
 ...
 
-# TILEd Python exercises used at the UPV for first year programming courses
+# TILEd Python exercises for first year programming courses
 {:.no_toc} 
 
-By [Tanja E.J. Vos](https://tanjavos.com).
+By [Tanja E.J. Vos](https://www.tanjavos.com).
 
 - Table of contents
 {:toc}
@@ -390,7 +390,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     Look at the following example:
 
     ```center
-    ![image](images/MadLib-testing.jpg){width="75%"}
+    ![image](images/MadLib-testing.jpg)
     ```
 
     We need to ask the player for the following words in English:
@@ -1334,7 +1334,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     figuring out the type of fruit on hand. Use the following decision
     tree to build the system:
 
-    ![image](images/tree.png){width="85%"}
+    ![image](images/tree.png)
 
     ```small
 
@@ -1406,7 +1406,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 20. Write a Python program to determine the quadrant of the Cartesian
     plane given the (x, y) coordinates of a point.
 
-    ![image](images/cuadrant.png){width="40%"}
+    ![image](images/cuadrant.png)
 
     To test this program try to execute a test case for each one of the
     possible 9 outputs (i.e. the 4 different pieces of axis, the origin
@@ -2108,7 +2108,7 @@ used. This means that pytest needs to be explained in class.
 
     Taylor Series Development:
 
-    ![image](images/Taylor.png){width="50%"}
+    ![image](images/Taylor.png)
 
     For example, when $$x = 1$$: $$e =  \sum_{n=0}^{\infty} \frac{1}{n!}$$
 
@@ -2143,7 +2143,7 @@ used. This means that pytest needs to be explained in class.
 
 8.  Write a function to calculate the greatest common divisor (`gcd`) of
     its two parameters $$x$$ and $$y$$, which are integers and greater than
-    0. Use Euclid's algorithm. Let $$x$$ e $$y$$ be the original values of
+    1. Use Euclid's algorithm. Let $$x$$ e $$y$$ be the original values of
     the variables $$a$$ and $$b$$, the algorithm says:
 
     As long as a and b are not equal, change the greater of the two for
@@ -2533,7 +2533,7 @@ used. This means that pytest needs to be explained in class.
     and $$m_2$$, returns $$m_1 \times m_2$$. Remember[^3] that we can only
     multiply 2 matrices if the number of columns in the $$m_1$$ matrix is
     equal to the number of rows in the $$m_2$$ matrix.\
-    ![image](images/mult-matrix.png){width="50%"}
+    ![image](images/mult-matrix.png)
 
     Your function must pass the following tests:
 
@@ -2937,7 +2937,7 @@ used. This means that pytest needs to be explained in class.
 
     ```small
     ```python
-    {\em example test run}
+    
     >>> %Run 
       Enter a product: beer
       Enter its price: 1.50
@@ -3046,7 +3046,7 @@ used. This means that pytest needs to be explained in class.
     and a hyphens to represent a Morse hyphens. The mapping of
     characters to hyphens and dots is shown in the table below:
 
-    ![image](images/morse.png){width="14cm"}
+    ![image](images/morse.png)
 
     First, you have to write a function that translates words written in
     capitalized English into Morse code. The function must ignore any
