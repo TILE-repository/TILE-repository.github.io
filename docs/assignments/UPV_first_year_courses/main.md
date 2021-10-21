@@ -309,14 +309,16 @@ and/or **test cases**.
 
     To test your program you can try with the following test cases:
 
-      test case ID   inputs                  expected output
-      -------------- -------- -------- ----- -----------------
-                     $$c$$      $$r$$      $$t$$   
-      1              10000    5.5%     360   550 euros
-      2              25000    60%      45    1875 euros
-      3              0        50%      200   0.0
-      4              -2000    45%      2     -5.0
-      5              12.345   56.78%   900   17.0
+    **test case ID** | **inputs** |         |       | **expected output** 
+    ------------------|------------|--------|-------|---------------------
+                      | $$c$$      | $$r$$  | $$t$$ |                     
+    1                | 10000      | 5.5%   | 360   | 550 euros           
+    2                | 25000      | 60%    | 45    | 1875 euros          
+    3                | 0          | 50%    | 200   | 0.0                 
+    4                | -2000      | 45%    | 2     | -5.0                
+    5                | 12.345     | 56.78% | 900   | 17.0                
+
+
 
     ```testruntile
     Instead of sample executions for them to check, we add a table with
@@ -369,13 +371,14 @@ and/or **test cases**.
 
     To test your program you can try with the following test cases:
 
-      test case ID   inputs                                expected output                   
-      -------------- ----------- ----------------- ------- ----------------- --------------- --
-                     $$nh$$        $$ph$$              $$w$$     gross salary      net salary      
-      1              56 hours    10 euros/hour     25%     560 euros         420 euros       
-      2              2.5 hours   20.4 euros/hour   25.6%   51.0 euros        37.944 euros    
-      3              1 hour      25 euros/hour     0.1%    25.0 euros        24.975 euros    
-      4              125 hours   20 euros/hour     0%      2500.0 euros      2500.00 euros   
+    | test case ID | inputs    |                 |       | expected output |               |
+    |--------------|-----------|-----------------|-------|-----------------|---------------|
+    |              | $$nh$$    | $$ph$$          | $$w$$ | gross salary    | net salary    |
+    | 1            | 56 hours  | 10 euros/hour   | 25%   | 560 euros       | 420 euros     |
+    | 2            | 2.5 hours | 20.4 euros/hour | 25.6% | 51.0 euros      | 37.944 euros  |
+    | 3            | 1 hour    | 25 euros/hour   | 0.1%  | 25.0 euros      | 24.975 euros  |
+    | 4            | 125 hours | 20 euros/hour   | 0%    | 2500.0 euros    | 2500.00 euros |
+
 
     ```testruntile
     Add a table with test cases. Also added cases for values that are
@@ -498,14 +501,16 @@ and/or **test cases**.
       Your PIN is 1 9 6 6 
     ```
 
-      test case ID   inputs                  expected output (PIN)
-      -------------- -------- ------- ------ -----------------------
-                     day      month   year   
-      1              10       12      1522   1 3 7 2
-      2              1        1       1      1 1 1 0
-      3              27       3       1978   9 3 9 6
-      4              55       28      300    0 0 0 3
-      5              356      903     1568   1 3 9 1
+    **test case ID** | **inputs** | ****  | **** | **expected output (PIN)** 
+    ------------------|------------|-------|------|---------------------------
+                      | day        | month | year |                           
+    1                | 10         | 12    | 1522 | 1 3 7 2                   
+    2                | 1          | 1     | 1    | 1 1 1 0                   
+    3                | 27         | 3     | 1978 | 9 3 9 6                   
+    4                | 55         | 28    | 300  | 0 0 0 3                   
+    5                | 356        | 903   | 1568 | 1 3 9 1                   
+
+
 
     Look at test cases 4 and 5. Are they valid? Inputs 55 and 356 are
     not valid numbers for a day of birth. However, our program works and
@@ -689,12 +694,14 @@ and/or **test cases**.
     operator. Run the following tests to test the operation of your
     program:
 
-      test case ID   input       expected output
-      -------------- ----------- -----------------
-      1              `""`        `""`
-      2              `"a"`       `"a"`
-      3              `"ab"`      `"ba"`
-      4              `"ab ba"`   `"ab ba"`
+    **test case ID** | **input** | **expected output** 
+    ------------------|-----------|---------------------
+    1                | `""`      | `""`                
+    2                | `"a"`     | `"a"`               
+    3                | `"ab"`    | `"ba"`              
+    4                | `"ab ba"` | `"ab ba"`           
+
+
 
     ```testruntile
     Insist that the students test their programs by giving them a table
@@ -777,7 +784,7 @@ and/or **test cases**.
 
 6.  Implement a program that reads an integer corresponding to a month
     of the year and displays the name of the corresponding month. If the
-    entered number does not belong to the range \[1, 12\], an error
+    entered number does not belong to the range [1, 12], an error
     message will be displayed.
 
     ```small
@@ -947,18 +954,19 @@ and/or **test cases**.
     You can design the layout of the input and output of your program as
     you want. Run the following test cases to test the operation of your
     program:
+    **test case ID** | **inputs** | ****       | ****       | **expected output** 
+    ------------------|------------|------------|------------|---------------------
+                      | operator   | value1     | value2     |                     
+    1                | `<`        | 12         | 4          | `False`             
+    2                | `>`        | 100        | 40         | `True`              
+    3                | `==`       | `"Hello!"` | 40         | `False`             
+    4                | `!=`       | 100        | `"Python"` | `True`              
+    5                | `>=`       | 98.67      | 0.45       | `True`              
+    6                | `<=`       | -100       | 40         | `True`              
+    7                | `<`        | 24         | `"24K"`    | `True`              
+    8                | `>=`       | `"email"`  | `"correo"` | `True`              
 
-      test case ID   inputs                               expected output
-      -------------- ---------- ------------ ------------ -----------------
-                     operator   value1       value2       
-      1              `<`        12           4            `False`
-      2              `>`        100          40           `True`
-      3              `==`       `"Hello!"`   40           `False`
-      4              `!=`       100          `"Python"`   `True`
-      5              `>=`       98.67        0.45         `True`
-      6              `<=`       -100         40           `True`
-      7              `<`        24           `"24K"`      `True`
-      8              `>=`       `"email"`    `"correo"`   `True`
+
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -984,22 +992,24 @@ and/or **test cases**.
 
     Test your program with the set of test cases proposed below:
 
-      test case ID   inputs               expected output
-      -------------- -------- ----- ----- -----------------
-                     `a`      `b`   `c`   
-      1              1        50    50    Isosceles
-      2              2        50    50    Isosceles
-      3              99       50    50    Isosceles
-      4              100      50    50    Not a Traingle
-      5              50       50    50    Equilateral
-      6              50       1     50    Isosceles
-      7              50       2     50    Isosceles
-      8              50       99    50    Isosceles
-      9              50       100   50    Not a Triangle
-      10             50       50    1     Isosceles
-      11             50       50    2     Isosceles
-      12             50       50    99    Isosceles
-      13             50       50    100   Not a Triangle
+    **test case ID** | **inputs** | **** | **** | **expected output** 
+    ------------------|------------|------|------|---------------------
+                      | `a`        | `b`  | `c`  |                     
+    1                | 1          | 50   | 50   | Isosceles           
+    2                | 2          | 50   | 50   | Isosceles           
+    3                | 99         | 50   | 50   | Isosceles           
+    4                | 100        | 50   | 50   | Not a Traingle      
+    5                | 50         | 50   | 50   | Equilateral         
+    6                | 50         | 1    | 50   | Isosceles           
+    7                | 50         | 2    | 50   | Isosceles           
+    8                | 50         | 99   | 50   | Isosceles           
+    9                | 50         | 100  | 50   | Not a Triangle      
+    10               | 50         | 50   | 1    | Isosceles           
+    11               | 50         | 50   | 2    | Isosceles           
+    12               | 50         | 50   | 99   | Isosceles           
+    13               | 50         | 50   | 100  | Not a Triangle      
+
+
 
     ```testruntile
     Insist that the students test their programs by giving them test
@@ -1166,14 +1176,16 @@ and/or **test cases**.
     Run the following test cases to ensure that the program works
     correctly:
 
-      ID   abstract test case                                 expected result
-      ---- -------------------------------------------------- -----------------
-      1    member with purchase under 10 euros                discount 0%
-      2    non-member with purchase below 10 euros            discount 0%
-      3    member with purchase between 10 and 20 euros       discount 5%
-      4    non-member with purchase between 10 and 20 euros   discount 0%
-      5    member with purchase over 20 euros                 discount 12%
-      6    non-member with purchase over 20 euros             discount 6%
+    **ID** | **abstract test case**                           | **expected result** 
+    --------|--------------------------------------------------|---------------------
+    1      | member with purchase under 10 euros              | discount 0%         
+    2      | non-member with purchase below 10 euros          | discount 0%         
+    3      | member with purchase between 10 and 20 euros     | discount 5%         
+    4      | non-member with purchase between 10 and 20 euros | discount 0%         
+    5      | member with purchase over 20 euros               | discount 12%        
+    6      | non-member with purchase over 20 euros           | discount 6%         
+
+
 
     We call these test cases *abstract* because, in order to execute
     them, we first have to think of concrete values that meet the
@@ -1259,23 +1271,17 @@ and/or **test cases**.
     e)  There is an additional charge depending on the number of
         accidents:
 
-    ```center
-    ```{#tabla:sencilla}
-      Accidents   Charge (euros)
-      ----------- ----------------
-      1           50
-      2           125
-      3           225
-      4           375
-      5           575
-      6 or more   Not insured
-    ```
 
-    [\[tabla:sencilla\]]{#tabla:sencilla label="tabla:sencilla"}
-    ```
+    **Accidents** | **Charge (euros)** 
+    ---------------|--------------------
+    1             | 50                 
+    2             | 125                
+    3             | 225                
+    4             | 375                
+    5             | 575                
+    6 or more     | Not insured        
 
     ```small
-
     >>> %Run 
       Age: 10
       You have to be 18 or over to have car insurance.
@@ -1563,14 +1569,14 @@ and/or **test cases**.
     must be displayed to a maximum of 4 decimal places. Run the
     following test cases to test your program:
 
-      test   inputs                                                                  expected outputs   
-      ------ ----------------------------------------------------------------------- ------------------ -----------
-      case                                                                           mean of            mean of
-      ID                                                                             positives          negatives
-      1      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12                                   6.5                0
-      2      -1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12                       0                  -6.5
-      3      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0                  0
-      4      12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   11.9327            -31.99
+    **test case ID** | **inputs**                                                            | ****              | **expected outputs** 
+    ------------------|-----------------------------------------------------------------------|-------------------|----------------------
+                      |                                                                       | mean of positives | mean of negatives    
+    1                | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12                                 | 6.5               | 0                    
+    2                | -1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12                     | 0                 | -6.5                 
+    3                | 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                    | 0                 | 0                    
+    4                | 12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1 | 11.9327           | -31.99               
+
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -1582,14 +1588,14 @@ and/or **test cases**.
     multiples of 7 between 1 and $$N$$. Run the following test cases to
     test your program:
 
-      test case ID   inputs   expected outputs                
-      -------------- -------- ------------------------------- --
-      1              0        there are no multiples of 7     
-      2              3        there are no multiples of 7     
-      3              -5       there are no multiples of 7     
-      4              -15      -7, -14                         
-      5              18       7, 14                           
-      6              57       7, 14, 21, 28, 35, 42, 49, 56   
+      **test case ID**  | **inputs** |  **expected outputs**              
+      --------------| --------| -------------------------------
+      1          |    0     |   there are no multiples of 7     
+      2          |    3     |   there are no multiples of 7     
+      3           |   -5   |    there are no multiples of 7     
+      4           |   -15   |   -7, -14                         
+      5           |   18   |    7, 14                           
+      6           |   57    |   7, 14, 21, 28, 35, 42, 49, 56   
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -1601,14 +1607,14 @@ and/or **test cases**.
     of 7 between 1 and $$N$$ that are not divisible by 3. Execute the
     following test cases to test your program:
 
-      test case ID   inputs   expected outputs                
-      -------------- -------- ------------------------------- --
-      1              0        there are no multiples of 7     
-      2              3        there are no multiples of 7     
-      3              -5       there are no multiples of 7     
-      4              -65      -7, -14, -28, -35, -49, -56     
-      5              18       7, 14                           
-      6              77       7, 14, 28, 35, 49, 56, 70, 77   
+      **test case ID**   |**inputs**   |**expected outputs**                
+      -------------- |-------- ------------------------------- --
+      1              |0       | there are no multiples of 7     
+      2              |3        |there are no multiples of 7     
+      3             | -5     |  there are no multiples of 7     
+      4             | -65     | -7, -14, -28, -35, -49, -56     
+      5             | 18     |  7, 14                           
+      6             | 77      | 7, 14, 28, 35, 49, 56, 70, 77   
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -1663,12 +1669,12 @@ and/or **test cases**.
 7.  Implement a program that reads 12 real numbers and calculates the
     maximum. Run the following test cases to test your program:
 
-      test ID   inputs                                                                  expected outputs
-      --------- ----------------------------------------------------------------------- ------------------
-      1         12.2, 6.0, 3.3, 4, 5, 6.5, 7, 8, 9, 3.3, 11, 12.2                       12.2
-      2         -1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12                       -1
-      3         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0
-      4         12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   32.4
+      **test case ID** | **inputs**                                                   | expected outputs
+      --------- -----------------------------------------------------------------------| ------------------
+      1      |   12.2, 6.0, 3.3, 4, 5, 6.5, 7, 8, 9, 3.3, 11, 12.2                      | 12.2
+      2      |   -1, -2, -3, -4, -5, -6, -7, -8, -9, -10, -11, -12                     |  -1
+      3      |   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                    |  0
+      4      |   12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1  | 32.4
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -1681,7 +1687,7 @@ and/or **test cases**.
     failed, and the average grade. Remember that a string can be
     converted to a float, by calling `float`. Test it:
 
-
+    ```small
     >>> s = "3.456"
     >>> float(s)
     3.456
@@ -1693,7 +1699,7 @@ and/or **test cases**.
     Some examples of program executions are below. There you can see how
     your program should handle negative numbers.
 
-
+    ```small
     >>> %Run 
       Enter a grade or 'exit': 3.5
       Enter a grade or 'exit': 0
@@ -1736,7 +1742,7 @@ and/or **test cases**.
     -   how many of them are people of working age, that is, their age
         is between 18 and 65 years old
 
-
+     ```small
     >>> %Run 
       Enter an age:50
       Enter an age:18
@@ -1772,14 +1778,14 @@ and/or **test cases**.
     $$0 + 1 + 2 + 3 + ... + N$$ exceeds a LIMIT value that is entered by
     keyboard. Run the following test cases to test your program:
 
-      test ID   input   expected output
-      --------- ------- -----------------
-      1         0       1
-      2         1       2
-      3         25      7
-      4         -5      0
-      5         -450    0
-      6         45      10
+      **test case ID**  | **input**  | **expected output**
+      ---------| -------| -----------------
+      1    |    0    |   1
+      2    |     1    |   2
+      3    |     25   |   7
+      4    |     -5  |    0
+      5    |    -450  |  0
+      6     |    45   |   10
 
     ```testruntile
     Insist that the students test their programs by giving them example
@@ -1839,7 +1845,7 @@ and/or **test cases**.
 
     Test your program with the following outputs:
 
-
+    ```small
     >>> %Run 
       Enter an integer number: 0
       Enter another integer number: 0
@@ -1890,7 +1896,7 @@ and/or **test cases**.
 
     Test your program with the following outputs:
 
-
+    ```small
     >>> %Run 
       Enter a positive integer number: 0
       Enter another positive integer number: 4
@@ -1954,13 +1960,12 @@ used. This means that pytest needs to be explained in class.
 
     In pytest these could be implemented like:
 
-    ```small
     ```python
-    \@pytest.mark.parametrize("test_case_ID, test_input,
-    expected_output",\[ (1, '0', True), #smallest digit (2, '9', True),
+    @pytest.mark.parametrize("test_case_ID, test_input,
+    expected_output",[ (1, '0', True), #smallest digit (2, '9', True),
     #largest digit (3, '5', True), #other digit (4, '12', False), #it is
     not a digit between 0 and 9 (5, '-2', False), #negative digit (6,
-    'hello', False), #string \] )
+    'hello', False), #string ] )
 
     def test_is_digit(test_case_ID, test_input, expected_output): assert
     is_digit(test_input) == expected_output, "case
@@ -1979,7 +1984,7 @@ used. This means that pytest needs to be explained in class.
     way that it can be used to read several different characters from
     the keyboard until the user writes the word end.
 
-
+    ```small
     >>> %Run 
       Write a character or 'end' to finish: 4
       4 is a digit from 0 to 9
@@ -2005,9 +2010,9 @@ used. This means that pytest needs to be explained in class.
     You can use the following pytest to test your function.
 
     ```python
-    \@pytest.mark.parametrize("testcase, input, expected_output",\[
+    @pytest.mark.parametrize("testcase, input, expected_output",[
     (1, 0, False), (2, 1, False), (3, 2, True), (4, 25, False), (5, 23,
-    True), (6, 97, True) \] )
+    True), (6, 97, True) ] )
 
     def test_is_prime(testcase, input, expected_output): assert
     is_prime(input) == expected_output, "case 0".format(testcase)
@@ -2028,7 +2033,7 @@ used. This means that pytest needs to be explained in class.
 
     You can test your program with the following tests:
 
-    ```
+    ```small
     >>> %Run 
       Write an integer number, or 'end' to finish: end
     >>> %Run 
@@ -2074,9 +2079,9 @@ used. This means that pytest needs to be explained in class.
     test your function. From now on you will have to do it yourself.
 
     ```python
-    \@pytest.mark.parametrize("testcase, input, expected_output",\[
+    @pytest.mark.parametrize("testcase, input, expected_output",[
     (1, 'a', 'A'), (2, 'z', 'Z'), (3, 'ñ', 'Ñ'), (4, '\*', '\*'), (5,
-    'Q', 'Q'), (6, ' \] )
+    'Q', 'Q'), (6, ' ] )
 
     def test_lower_to_upper(testcase, input, expected_output): assert
     lower_to_upper(input) == expected_output, "case
@@ -2128,7 +2133,6 @@ used. This means that pytest needs to be explained in class.
     comes out of our function and the math.exp is less than, for
     example, $$10^{-7}$$.
 
-    ```small
     ```python
     def test_my_exp(tc, input, expected_output): assert
     abs(my_exp(input) - expected_output)\<10\*\*-7, "case
@@ -2187,13 +2191,13 @@ used. This means that pytest needs to be explained in class.
     of $$N1$$. Note: If $$N1$$ has 2 digits or only one, then $$N2$$ must
     be 0. Examples of test cases that you can automate with pytest are:
 
-      testcase number   input ($$N1$$)   expected output ($$N2$$)
-      ----------------- -------------- ------------------------
-      1                 42635          263
-      2                 23             0
-      3                 5              0
-      4                 0              0
-      5                 -3456          -45
+      **testcase number**   |**input ($$N1$$)**   |**expected output ($$N2$$)**
+      -----------------|-------------- |------------------------
+      1              |   42635    |      263
+      2             |    23       |      0
+      3              |   5        |      0
+      4             |    0         |     0
+      5             |    -3456     |     -45
 
     ```testruntile
     Insist that the students test their programs by giving them a table
@@ -2206,12 +2210,12 @@ used. This means that pytest needs to be explained in class.
 
     Examples of test cases that you can automate with pytest are:
 
-      testcase number   input ($$N$$)   expected output
-      ----------------- ------------- -----------------------------------
-      1                 4             "1, 1, 2, 1, 2, 3, 1, 2, 3, 4"@
-      2                 1             "1"@
-      3                 0             ""@
-      4                 -3            "-1, -1, -2, -1, -2, -3"@
+      **testcase number** |  **input ($$N$$)**  | **expected output**
+      ----------------- |------------- |-----------------------------------
+      1              |   4         |    "1, 1, 2, 1, 2, 3, 1, 2, 3, 4"@
+      2            |     1       |      "1"@
+      3            |     0       |      ""@
+      4             |    -3      |      "-1, -1, -2, -1, -2, -3"@
 
     ```testruntile
     Insist that the students test their programs by giving them a table
@@ -2238,9 +2242,9 @@ used. This means that pytest needs to be explained in class.
     Remember that in theory class we have seen the following predefined
     functions in Python:
 
-    \- `isdigit`, to check if a string has digits.
+    - `isdigit`, to check if a string has digits.
 
-    \- `isalpha` to check if a string only contains characters of the
+    - `isalpha` to check if a string only contains characters of the
     alphabet.
 
     To test your function well, how many test cases have you run? Have
@@ -2260,15 +2264,15 @@ used. This means that pytest needs to be explained in class.
     pytest, for example:
 
     ```python
-    \@pytest.mark.parametrize('testcase, input, expected_output',\[ (1,
-    10, \[3, 6, 9\]), (2, 0, \[\]), (3, 1, \[\]), (4, -5, \[\]), (5, 12,
-    \[3, 6, 9, 12\]), (6, 3, \[3\]) \]) def
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
+    10, [3, 6, 9]), (2, 0, []), (3, 1, []), (4, -5, []), (5, 12,
+    [3, 6, 9, 12]), (6, 3, [3]) ]) def
     test_multiples_of_3(testcase, input, expected_output): assert
     multiples_of_3(input)==expected_output, 'case 0'.format(testcase)
 
-    \@pytest.mark.parametrize('testcase, input, expected_output',\[ (1,
-    10, \[1, 2, 5, 10\]), (2, 18, \[1, 2, 3, 6, 9, 18\]), (3, 1, \[1\]),
-    (4, -5, \[\]), (5, 12, \[1, 2, 3, 4, 6, 12\]), (6, 0, \[\]) \]) def
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
+    10, [1, 2, 5, 10]), (2, 18, [1, 2, 3, 6, 9, 18]), (3, 1, [1]),
+    (4, -5, []), (5, 12, [1, 2, 3, 4, 6, 12]), (6, 0, []) ]) def
     test_divisors_of(testcase, input, expected_output): assert
     divisors_of(input)==expected_output, 'case 0'.format(testcase)
     ```
@@ -2305,31 +2309,31 @@ used. This means that pytest needs to be explained in class.
     -   The letter is obtained using the remainder as index of the
         following table:
 
-           REMAINDER   0   1   2   3   4   5   6   7   8   9   10   11
-          ----------- --- --- --- --- --- --- --- --- --- --- ---- ----
-            LETTER     T   R   W   A   G   M   Y   F   P   D   X    B
+           REMAINDER  | 0  | 1  | 2  | 3  | 4 |  5 |  6 |  7 |  8 |  9 |  10  | 11
+          -----------| ---| ---| ---| ---| ---| ---| ---| ---| ---| --- |---- |----
+            LETTER   |  T |  R  | W  | A |  G |  M |  Y |  F  | P |  D  | X  |  B
 
-           REMAINDER   12   13   14   15   16   17   18   19   20   21   22
-          ----------- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
-            LETTER     N    J    Z    S    Q    V    H    L    C    K    E
+           REMAINDER |  12 |  13 |  14 |  15  | 16  | 17  | 18 |  19 |  20  | 21 |  22
+          -----------| ----| ----| ----| ----| ----| ----| ----| ---- |----|----| ----
+            LETTER   |  N  |  J  |  Z   | S  |  Q  |  V  |  H   | L  |  C  |  K  |  E
 
     Complete the table with the number of rows you consider necessary to
     design your test set and run the automatic tests with pytest.\
 
-      test case number   input   expected output
-      ------------------ ------- -----------------
-      1                  @       @
-      2                          
-      3                          
-      4                          
-      5                          
-      6                          
+      **test case number**  |**input** |  **expected output**
+      ------------------ |------- |-----------------
+      1                 | @     |  @
+      2                 ||         
+      3                 ||         
+      4                  ||        
+      5                 ||         
+      6                 ||         
 
 3.  Design a function that given a text string, returns the numbers that
     appear in the string. For example, the string 'a 1, a 201, and 2
     ones' contains 3 numbers: 1, 201, and 2.
 
-    ```
+    ```small
     >>> nums_in_string("a 1, a 201 and 2 ones")
       3
     >>> nums_in_string("without numbers")
@@ -2404,24 +2408,23 @@ used. This means that pytest needs to be explained in class.
     not necessary to test the empty list, because the statement clearly
     says that your function only has to work for a non-empty list.\
 
-      test case number   input   expected output
-      ------------------ ------- -----------------
-      1                  @       @
-      2                          
-      3                          
-      \....                      
-
+      test case number |  input  | expected output
+      ------------------| -------|-----------------
+      1          |        @    |   @
+      2          | |               
+      3          ||                
+      ... ||
 8.  Write a function that, given a list of words and a word, returns the
     number of times that word appears in the list. Then, complete the
     table with the number of rows that you see necessary to design your
     test set and run the automatic tests with pytest.\
 
-      test case number   input   expected output
-      ------------------ ------- -----------------
-      1                  @       @
-      2                          
-      3                          
-      \....                      
+      test case number   |input  | expected output
+      ------------------ |-------| -----------------
+      1               |   @      | @
+      2                  ||        
+      3                 ||         
+      ....            ||         
 
 9.  Design a function (`mySplit`) that gets a string and returns a list
     of all its words in lowercase. The returned list must not contain
@@ -2458,26 +2461,26 @@ used. This means that pytest needs to be explained in class.
 10. Write a function that, given a list of numbers, returns another list
     without the odd numbers. Then complete the table with the number of
     rows you see necessary to design your test set and run the automatic
-    tests with pytest.\
+    tests with pytest.
 
-      test case number   input   expected output
-      ------------------ ------- -----------------
-      1                  @       @
-      2                          
-      3                          
-      \....                      
+      test case number  | input |  expected output
+      ------------------ |------- |-----------------
+      1                 | @ |      @
+      2                  ||        
+      3                  ||        
+      ....                ||      
 
 11. Write a function that, given a list of numbers, returns another list
     without repeating elements. Then complete the table with the number
     of rows you see necessary to design your test set and run the
-    automatic tests with pytest.\
+    automatic tests with pytest.
 
-      test case number   input   expected output
-      ------------------ ------- -----------------
-      1                  @       @
-      2                          
-      3                          
-      \....                      
+      test case number  | input |  expected output
+      ------------------ |------- |-----------------
+      1                 | @ |      @
+      2                  ||        
+      3                  ||        
+      ....                ||                     
 
 12. Write a module with three functions about matrices, and their
     pytests: `sum_of_diagonal`, `create_matrix` and `multiply`.
@@ -2503,13 +2506,12 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ```small
     ```python
-    \@pytest.mark.parametrize("testcase, input, output",\[ (1,
-    \[\[1,2,3\],\[4,5,6\],\[7,8,9\]\], 15), (2,
-    \[\[1,0,1\],\[1,1,0\],\[1,1,1\]\], 3), (3, \[\[2,0\],\[0,2\]\], 4),
-    (4, \[\[2,0\],\[0,2,3\]\], "the matrix is not square"), (5, \[\],
-    0)\]
+    @pytest.mark.parametrize("testcase, input, output",[ (1,
+    [[1,2,3],[4,5,6],[7,8,9]], 15), (2,
+    [[1,0,1],[1,1,0],[1,1,1]], 3), (3, [[2,0],[0,2]], 4),
+    (4, [[2,0],[0,2,3]], "the matrix is not square"), (5, [],
+    0)]
 
     def test_sum_of_diagonal(testcase, input, output): assert
     sum_of_diagonal(input) == output, "case 0".format(testcase)
@@ -2536,18 +2538,17 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ```small
     ```python
-    \@pytest.mark.parametrize("testcase, input1, input2, output",\[
-    (1, \[\[12,7,3\], \[4, 5,6\], \[7, 8,9\]\], \[\[5,8,1,2\],
-    \[6,7,3,0\], \[4,5,9,1\]\], \[\[114, 160, 60, 27\], \[ 74, 97, 73,
-    14\], \[119, 157, 112, 23\]\] ), (2, \[\[12,7,3, 0\], \[ 4,5,6,12\],
-    \[ 6,7,8, 9\] \], \[\[8,5,8,1,2\], \[6,9,7,3,0\], \[4,5,9,1,0\],
-    \[4,5,9,1,0\] \], \[\[150, 138, 172, 36, 24\], \[134, 155, 229, 37,
-    8\], \[158, 178, 250, 44, 12\] \] ), (3, \[\], \[\], \[\] ),
-    (4,\[\[\]\],\[\[\]\], "they cannot be multiplied" ), (5,
-    \[\[\]\],\[\[\[\]\]\], "they cannot be multiplied" ), (6,
-    \[\[\[\]\]\],\[\[\]\], \[\[\]\] ) \])
+    @pytest.mark.parametrize("testcase, input1, input2, output",[
+    (1, [[12,7,3], [4, 5,6], [7, 8,9]], [[5,8,1,2],
+    [6,7,3,0], [4,5,9,1]], [[114, 160, 60, 27], [ 74, 97, 73,
+    14], [119, 157, 112, 23]] ), (2, [[12,7,3, 0], [ 4,5,6,12],
+    [ 6,7,8, 9] ], [[8,5,8,1,2], [6,9,7,3,0], [4,5,9,1,0],
+    [4,5,9,1,0] ], [[150, 138, 172, 36, 24], [134, 155, 229, 37,
+    8], [158, 178, 250, 44, 12] ] ), (3, [], [], [] ),
+    (4,[[]],[[]], "they cannot be multiplied" ), (5,
+    [[]],[[[]]], "they cannot be multiplied" ), (6,
+    [[[]]],[[]], [[]] ) ])
 
     def test_multiply(testcase, input1, input2, output): assert
     multiply(input1, input2) == output, "case 0".format(testcase)
@@ -2561,7 +2562,7 @@ used. This means that pytest needs to be explained in class.
     of the person (String). Then it must store it in a file called
     `"dates.txt"` with the following format:
 
-    ```
+    ```small
     12 03 1996 | Hira Sadler
         16 05 1997 | Roman Connelly
         08 10 1976 | Alexandre Bullock
@@ -2570,7 +2571,7 @@ used. This means that pytest needs to be explained in class.
 
     The above file has resulted from the following interactive session:\
 
-    ```
+    ```small
     >>> %Run 
       Number of people to store: 4
       
@@ -2612,9 +2613,9 @@ used. This means that pytest needs to be explained in class.
 
     -   a file `"dates.txt"` which has more than one person born in May
 
-3.  We have the following format for a text file:\
+3.  We have the following format for a text file:
 
-    ```
+    ```small
     23 2.5 3.0 1.1
         34 2.0 1.0 1.0
         17 1.0 1.0 1.1
@@ -2639,14 +2640,14 @@ used. This means that pytest needs to be explained in class.
     to have passed when the sum of his three grades is greater than or
     equal to 5.\
 
-    ```
+    ```small
     >>> calculate_grades("threegrades.txt")
       number of students: 5
       number of students who have passed: 3
     >>> 
     ```
 
-4.  [\[generate_files\]]{#generate_files label="generate_files"} Write a
+4.  [[generate_files]]{#generate_files label="generate_files"} Write a
     Python program that allows you to generate a certain number of files
     with a random number (between 1 and 10) of random real numbers
     (between 1.00 and 200.00). The numbers must be aligned to the right
@@ -2666,7 +2667,7 @@ used. This means that pytest needs to be explained in class.
 
     For example:
 
-    ```
+    ```small
     >>> %Run 
       How many files?: 4
       What is the base name?: file
@@ -2675,29 +2676,30 @@ used. This means that pytest needs to be explained in class.
 
     It can generate for example:
 
-    +:---------------+:---------------+:---------------+:---------------+
-    | 133.25         | 29.92          | 50.08          | 6.64           |
-    |  159.93        |  199.44        |   59.34        |  136.33        |
-    |  162.02        |  158.01        |  109.88        |   32.02        |
-    |   23.26        | ```            |  153.48        |   56.16        |
-    |  147.50        |                |  195.16        |   97.67        |
-    | ```            |                |   51.95        |  160.56        |
-    |                |                |   86.55        | ```            |
-    |                |                |  153.28        |                |
-    |                |                | ```            |                |
-    +----------------+----------------+----------------+----------------+
+    | **file1** | **file2** | **file3** | **file4** |
+    |-----------|-----------|-----------|-----------|
+    | 133.25    | 29.92     | 50.08     | 6.64      |
+    | 159.93    | 199.44    | 59.34     | 136.33    |
+    | 162.02    | 158.01    | 109.88    | 32.02     |
+    | 23.26     | ...       | 153.48    | 56.16     |
+    | 147.50    |           | 195.16    | 97.67     |
+    | ...       |           | 51.95     | 160.56    |
+    |           |           | 86.55     | ...       |
+    |           |           | 153.28    |           |
+    |           |           | ...       |           |
+
 
 5.  Write a function `calculate_variance` in Python that receives the
     name of a file and reads a number of real numbers from this file,
     storing them in a list. Then it shows the variance of these data on
     the screen. The variance is calculated as the sum of the squared
-    differences between each element in the list, v\[i\], and the mean,
+    differences between each element in the list, v[i], and the mean,
     all divided by the number of elements (N):
     $$w = \frac{\sum_{i=1}{n} (x[i]-mean)^{2}}{N}$$
 
     For example, imagine we have:
 
-    ```
+    ```small
     6.64 
      136.33 
       32.02 
@@ -2706,13 +2708,13 @@ used. This means that pytest needs to be explained in class.
      160.56 
     ```
 
-    ```
+    ```small
     >>> calculate_variance("numbers.txt")
       3035.443822222222
     ```
 
     To test your function we are going to use Exercise
-    [\[generate_files\]](#generate_files){reference-type="ref"
+    [[generate_files]](#generate_files){reference-type="ref"
     reference="generate_files"} to generate a number of files (eg 5
     files `numbers1.txt`, `numbers2.txt`, `numbers3.txt`, `numbers4.txt`
     and `numbers5.txt`).
@@ -2728,9 +2730,9 @@ used. This means that pytest needs to be explained in class.
     ```python
     import pytest
 
-    \@pytest.mark.parametrize("testcase, f_input, expected_output",\[
+    @pytest.mark.parametrize("testcase, f_input, expected_output",[
     (1, "numbers1.txt", 3713.1622346939), (2, "numbers2.txt", \...
-    (3, (4, (5, \])
+    (3, (4, (5, ])
 
     def test_calculate_variance(testcase, f_input, expected_output):
     assert abs(calculate_variance(f_input) - expected_output) \<
@@ -2753,7 +2755,8 @@ used. This means that pytest needs to be explained in class.
     For example: `calculate_IVA("data1.txt")` returns the string
     `"data1_IVA.txt"` which is the name of the generated file:
 
-    +:------------------------+:--------------+:------------------------+
+    |||
+    |------------------------|--------------|------------------------|
     | 12.05                   |               |                         |
     |   6.70                  |     generates | 14.58                   |
     | 123.10                  |               |    8.11                 |
@@ -2762,7 +2765,7 @@ used. This means that pytest needs to be explained in class.
     | 100                     |               |   30.86                 |
     |   9.95                  |               |  121.00                 |
     |                         |               |   12.04                 |
-    +-------------------------+---------------+-------------------------+
+    |-------------------------+---------------+-------------------------|
 
 7.  To test a function like `calculate_IVA`, which generates a file,
     you have to open the file it has generated to check that it has the
@@ -2773,7 +2776,7 @@ used. This means that pytest needs to be explained in class.
     Doing that manually is tedious. Imagine doing it for 10 data files,
     from `data1.txt` to `data10.txt`, that we can generate for example
     with the Exercise
-    [\[generate_files\]](#generate_files){reference-type="ref"
+    [[generate_files]](#generate_files){reference-type="ref"
     reference="generate_files"}. We would have to manually generate the
     10 files from `data1_IVA.txt` to `data10_IVA.txt`, with
     `calculate_IVA`, and then open them one by one to check their
@@ -2790,8 +2793,8 @@ used. This means that pytest needs to be explained in class.
     like the one below:
 
     ```python
-    \@pytest.mark.parametrize("testcase, f_input,
-    f_expected_output",\[ (1, "data1.txt",
+    @pytest.mark.parametrize("testcase, f_input,
+    f_expected_output",[ (1, "data1.txt",
     "expected_output_data1_IVA.txt"), (2, "data2.txt",
     "expected_output_data2_IVA.txt"), (3, "data3.txt",
     "expected_output_data3_IVA.txt"), (4, "data4.txt",
@@ -2801,7 +2804,7 @@ used. This means that pytest needs to be explained in class.
     "expected_output_data7_IVA.txt"), (8, "data8.txt",
     "expected_output_data8_IVA.txt"), (9, "data9.txt",
     "expected_output_data9_IVA.txt"), (10, "data10.txt",
-    "expected_output_data10_IVA.txt"), \])
+    "expected_output_data10_IVA.txt"), ])
 
     def test_calculate_IVA(testcase, f_input, f_expected_output):
 
@@ -2815,7 +2818,7 @@ used. This means that pytest needs to be explained in class.
     the files that we are handling here is very small.
 
 8.  Write Python code that prompts the user for a 4-character word and
-    creates the following heart in a heart.txt file.\
+    creates the following heart in a heart.txt file.
 
             HART        HART
          HART HART  HART HART
@@ -2836,7 +2839,7 @@ used. This means that pytest needs to be explained in class.
     It should ask the user for a currency and display its symbol or a
     warning message if the currency is not in the dictionary.
 
-    ```
+    ```small
     >>> %Run 
       Enter a currency: Euro
       €
@@ -2928,8 +2931,6 @@ used. This means that pytest needs to be explained in class.
     following example:
 
     ```small
-    ```python
-    
     >>> %Run 
       Enter a product: beer
       Enter its price: 1.50
@@ -2986,14 +2987,14 @@ used. This means that pytest needs to be explained in class.
     Write pytests to test your function, for example for the following
     test cases:
 
-      testcase number   input                  expected output
-      ----------------- ---------------------- -----------------
-      1                 `''`                   0
-      2                 `'Hello!'`             8
-      3                 `'zzz'`                30
-      4                 `'Surprise'`           10
-      5                 `'1234'`               0
-      6                 `'And with spaces?'`   24
+      **testcase number**   |**input**                |  **expected output**
+      -----------------| ---------------------- |-----------------
+      1                | `''`                  | 0
+      2                | `'Hello!'`            | 8
+      3                | `'zzz'`               | 30
+      4                | `'Surprise'`          | 10
+      5                | `'1234'`              | 0
+      6                | `'And with spaces?'`  | 24
 
 5.  In this exercise you must simulate 1000 rolls of two dice. First,
     write a function called `twoDice()`, which simulates throwing 2
@@ -3017,19 +3018,19 @@ used. This means that pytest needs to be explained in class.
     The frequency of each total as a percentage of the number of dice
     rolls made. The output is shown below.
 
-        Total   Simulated Percentage     Expected Percentage
-        ----------------------------------------------------
-        6       14.20                    13.89
-        8       13.70                    13.89
-        3       5.50                     5.56
-        7       18.00                    16.67
-        2       2.40                     2.78
-        10      8.00                     8.33
-        5       10.70                    11.11
-        9       11.50                    11.11
-        11      6.30                     5.56
-        4       7.40                     8.33
-        12      2.30                     2.78
+        **Total**  | **Simulated Percentage**   |  **Expected Percentage**
+        -------|------------------------|---------------------
+        6     |  14.20                  |  13.89
+        8     |  13.70                  |  13.89
+        3     |  5.50                   |  5.56
+        7     |  18.00                  |  16.67
+        2     |  2.40                   |  2.78
+        10    |  8.00                   |  8.33
+        5     |  10.70                  |  11.11
+        9     |  11.50                  |  11.11
+        11    |  6.30                   |  5.56
+        4     |  7.40                   |  8.33
+        12    |  2.30                   |  2.78
 
 6.  Morse code is a coding scheme that uses hyphens and dots to
     represent digits and letters. In this exercise, we are going to
@@ -3177,10 +3178,11 @@ used. This means that pytest needs to be explained in class.
     option will save the current dictionary data in the customer.txt
     file in the following format:
 
-    nif; name; address; telephone; email; vip for example:
-
-        1234;Michael Myers;2704 Hickman Street;203-355-7551;mm@f.com;True
-        2345;Marilyn Scott;2834 Washington Street;361-346-8703:ms@f.com:False
+    ```small
+    nif; name; address; telephone; email; vip
+    1234;Michael Myers;2704 Hickman Street;203-355-7551;mm@f.com;True
+    2345;Marilyn Scott;2834 Washington Street;361-346-8703:ms@f.com:False
+    ```
 
     The option `(7)` will do the opposite operation. It will read the
     data from the customer.txt file and store it in the dictionary
@@ -3199,7 +3201,7 @@ used. This means that pytest needs to be explained in class.
     of the even-indexed numbers and the sum of the odd-numbered numbers.
     Example:
 
-    ```
+    ```small
     >>> odd_even_sum([2,4,6,1,12,3,4])
       (24, 8)
     >>> odd_even_sum([0,2,4,6,1,12,3,4])
@@ -3284,8 +3286,8 @@ used. This means that pytest needs to be explained in class.
     conference venue.
 
     ```python
-    speakers = \[('Jeff', 'Offutt', 7.85), ('James', 'Bach', 3.626),
-    ('Lisa', 'Crispin', 10.603) \]
+    speakers = [('Jeff', 'Offutt', 7.85), ('James', 'Bach', 3.626),
+    ('Lisa', 'Crispin', 10.603) ]
     ```
 
     Write a `format_sort_records` function in Python that allows
@@ -3310,10 +3312,10 @@ used. This means that pytest needs to be explained in class.
     pytest using the following parameterization:
 
     ```python
-    \@pytest.mark.parametrize('testcase, input, expected_output',\[ (1,
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
     'Hello', True), (2, 'HelloO', False), (3, ", True), (4, 'cC',
     False), (5, '0123', True), (6, '33&44', False), (7, '!+&/', True),
-    (8, '!++&/', False), \])
+    (8, '!++&/', False), ])
     ```
 
 6.  A famous syllogism says:
