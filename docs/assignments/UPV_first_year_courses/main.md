@@ -501,7 +501,7 @@ and/or **test cases**.
       Your PIN is 1 9 6 6 
     ```
 
-    **test case ID** | **inputs** | ****  | **** | **expected output (PIN)** 
+    **test case ID** | **inputs** |    |   | **expected output (PIN)** 
     ------------------|------------|-------|------|---------------------------
                       | day        | month | year |                           
     1                | 10         | 12    | 1522 | 1 3 7 2                   
@@ -953,7 +953,8 @@ and/or **test cases**.
     You can design the layout of the input and output of your program as
     you want. Run the following test cases to test the operation of your
     program:
-    **test case ID** | **inputs** | ****       | ****       | **expected output** 
+
+    **test case ID** | **inputs** |         |         | **expected output** 
     ------------------|------------|------------|------------|---------------------
                       | operator   | value1     | value2     |                     
     1                | `<`        | 12         | 4          | `False`             
@@ -991,7 +992,7 @@ and/or **test cases**.
 
     Test your program with the set of test cases proposed below:
 
-    **test case ID** | **inputs** | **** | **** | **expected output** 
+    **test case ID** | **inputs** |   |   | **expected output** 
     ------------------|------------|------|------|---------------------
                       | `a`        | `b`  | `c`  |                     
     1                | 1          | 50   | 50   | Isosceles           
@@ -1566,7 +1567,7 @@ and/or **test cases**.
     must be displayed to a maximum of 4 decimal places. Run the
     following test cases to test your program:
 
-    **test case ID** | **inputs**                                                            | ****              | **expected outputs** 
+    **test case ID** | **inputs**                                                            |                | **expected outputs** 
     ------------------|-----------------------------------------------------------------------|-------------------|----------------------
                       |                                                                       | mean of positives | mean of negatives    
     1                | 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12                                 | 6.5               | 0                    
@@ -1634,7 +1635,7 @@ and/or **test cases**.
     In the execution example below you can see how your program should
     handle negative numbers.
 
-
+    ```small
     >>> %Run 
       Enter the number of bugs found by test 1: 3
       Enter the number of bugs found by test 2: 4
@@ -1946,14 +1947,14 @@ used. This means that pytest needs to be explained in class.
 
     You can use the following test cases to test your function:
 
-      test_case_ID   test_input   expected_output   reason for testing this
-      -------------- ------------ ----------------- -----------------------------------
-      1              `'0'`        `True`            smallest digit
-      2              `'9'`        `True`            largest digit
-      3              `'5'`        `True`            other digit
-      4              `'12'`       `False`           it is not a digit between 0 and 9
-      5              `'-2'`       `False`           negative digit
-      6              `'hello'`    `False`           string
+      test_case_ID  | test_input  | expected_output  | reason for testing this
+      --------------| ------------| ----------------- |-----------------------------------
+      1          |    `'0'`      |  `True`          |  smallest digit
+      2            |  `'9'`      |  `True`         |   largest digit
+      3            |  `'5'`      |  `True`         |   other digit
+      4            |  `'12'`    |   `False`        |   it is not a digit between 0 and 9
+      5            |  `'-2'`     |  `False`        |  negative digit
+      6           |   `'hello'`  |  `False`        |  string
 
     In pytest these could be implemented like:
 
@@ -2131,9 +2132,8 @@ used. This means that pytest needs to be explained in class.
     example, $$10^{-7}$$.
 
     ```python
-    def test_my_exp(tc, input, expected_output): assert
-    abs(my_exp(input) - expected_output)\<10\*\*-7, "case
-    0".format(tc)
+    def test_my_exp(tc, input, expected_output): 
+      assert abs(my_exp(input) - expected_output) < 10 ** -7, "case 0".format(tc)
     ```
 
     ```testruntile
@@ -2203,16 +2203,16 @@ used. This means that pytest needs to be explained in class.
 
 11. Write a function that receives a number $$N$$ as a parameter and
     generates a string with the numbers: $$1, 1, 2,
-    1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, . \-. . , 1, 2, 3, . . . , N$$
+    1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, ... , 1, 2, 3, ... , N$$
 
     Examples of test cases that you can automate with pytest are:
 
       **testcase number** |  **input ($$N$$)**  | **expected output**
       ----------------- |------------- |-----------------------------------
-      1              |   4         |    "1, 1, 2, 1, 2, 3, 1, 2, 3, 4"@
-      2            |     1       |      "1"@
-      3            |     0       |      ""@
-      4             |    -3      |      "-1, -1, -2, -1, -2, -3"@
+      1              |   4         |    "1, 1, 2, 1, 2, 3, 1, 2, 3, 4"
+      2            |     1       |      "1"
+      3            |     0       |      ""
+      4             |    -3      |      "-1, -1, -2, -1, -2, -3"
 
     ```testruntile
     Insist that the students test their programs by giving them a table
@@ -2261,17 +2261,15 @@ used. This means that pytest needs to be explained in class.
     pytest, for example:
 
     ```python
-    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
-    10, [3, 6, 9]), (2, 0, []), (3, 1, []), (4, -5, []), (5, 12,
-    [3, 6, 9, 12]), (6, 3, [3]) ]) def
-    test_multiples_of_3(testcase, input, expected_output): assert
-    multiples_of_3(input)==expected_output, 'case 0'.format(testcase)
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1, 10, [3, 6, 9]), (2, 0, []), (3, 1, []), (4, -5, []), (5, 12, [3, 6, 9, 12]), (6, 3, [3]) ]) 
+    
+    def test_multiples_of_3(testcase, input, expected_output): 
+      assert multiples_of_3(input) == expected_output, 'case 0'.format(testcase)
 
-    @pytest.mark.parametrize('testcase, input, expected_output',[ (1,
-    10, [1, 2, 5, 10]), (2, 18, [1, 2, 3, 6, 9, 18]), (3, 1, [1]),
-    (4, -5, []), (5, 12, [1, 2, 3, 4, 6, 12]), (6, 0, []) ]) def
-    test_divisors_of(testcase, input, expected_output): assert
-    divisors_of(input)==expected_output, 'case 0'.format(testcase)
+    @pytest.mark.parametrize('testcase, input, expected_output',[ (1, 10, [1, 2, 5, 10]), (2, 18, [1, 2, 3, 6, 9, 18]), (3, 1, [1]), (4, -5, []), (5, 12, [1, 2, 3, 4, 6, 12]), (6, 0, []) ]) 
+    
+    def test_divisors_of(testcase, input, expected_output): 
+      assert divisors_of(input) == expected_output, 'case 0'.format(testcase)
     ```
 
     Now, use these functions to write a `main` program that asks the
@@ -2319,7 +2317,7 @@ used. This means that pytest needs to be explained in class.
 
       **test case number**  |**input** |  **expected output**
       ------------------ |------- |-----------------
-      1                 | @     |  @
+      1                 |      |  
       2                 ||         
       3                 ||         
       4                  ||        
@@ -2387,11 +2385,11 @@ used. This means that pytest needs to be explained in class.
     elements.
 
     ```python
-    >>> borrar_negativos([0,-1,-11,2,33,-100,5])
+    >>> delete_negatives([0,-1,-11,2,33,-100,5])
       [2, 33, 5]
-    >>> borrar_negativos([-1,-11,-3])
+    >>> delete_negatives([-1,-11,-3])
       []
-    >>> borrar_negativos([4,68,111])
+    >>> delete_negatives([4,68,111])
       [4, 68, 111]
     ```
 
@@ -2407,7 +2405,7 @@ used. This means that pytest needs to be explained in class.
 
       test case number |  input  | expected output
       ------------------| -------|-----------------
-      1          |        @    |   @
+      1          |            |   
       2          | |               
       3          ||                
       ... ||
@@ -2418,7 +2416,7 @@ used. This means that pytest needs to be explained in class.
 
       test case number   |input  | expected output
       ------------------ |-------| -----------------
-      1               |   @      | @
+      1               |        |
       2                  ||        
       3                 ||         
       ....            ||         
@@ -2462,7 +2460,7 @@ used. This means that pytest needs to be explained in class.
 
       test case number  | input |  expected output
       ------------------ |------- |-----------------
-      1                 | @ |      @
+      1                 |  |     
       2                  ||        
       3                  ||        
       ....                ||      
@@ -2474,7 +2472,7 @@ used. This means that pytest needs to be explained in class.
 
       test case number  | input |  expected output
       ------------------ |------- |-----------------
-      1                 | @ |      @
+      1                 | |      
       2                  ||        
       3                  ||        
       ....                ||                     
@@ -2487,14 +2485,14 @@ used. This means that pytest needs to be explained in class.
     the diagonal. Your function has to check that the matrix is square
     and does indeed have a diagonal to add. For example:
 
-    $${\tt sum_of_diagonal}(
+    $${\tt sum of diagonal}(
     \begin{bmatrix}
         1 & 2 & 3 & 4 \\
         2 & 4 & 6 & 1 \\
         0 & 5 & 8 & 2 \\
         2 & 9 & 6 & 3 \\
     \end{bmatrix})
-     = 16$$, $$\;\;$$ $${\tt sum_of_diagonal}(
+     = 16$$, $$\;\;$$ $${\tt sum of diagonal}(
     \begin{bmatrix}
         1 & 5   \\
         3 & 4  \\
@@ -2504,21 +2502,17 @@ used. This means that pytest needs to be explained in class.
     Your function must pass the following tests:
 
     ```python
-    @pytest.mark.parametrize("testcase, input, output",[ (1,
-    [[1,2,3],[4,5,6],[7,8,9]], 15), (2,
-    [[1,0,1],[1,1,0],[1,1,1]], 3), (3, [[2,0],[0,2]], 4),
-    (4, [[2,0],[0,2,3]], "the matrix is not square"), (5, [],
-    0)]
+    @pytest.mark.parametrize("testcase, input, output",[ (1, [[1,2,3],[4,5,6],[7,8,9]], 15), (2, [[1,0,1],[1,1,0],[1,1,1]], 3), (3, [[2,0],[0,2]], 4), (4, [[2,0],[0,2,3]], "the matrix is not square"), (5, [], 0)]
 
-    def test_sum_of_diagonal(testcase, input, output): assert
-    sum_of_diagonal(input) == output, "case 0".format(testcase)
+    def test_sum_of_diagonal(testcase, input, output): 
+      assert sum_of_diagonal(input) == output, "case 0".format(testcase)
     ```
 
     2\) Next, we write a function (`create_matrix`) that, given two
     numbers $$n$$ and $$m$$, returns a list that represents a matrix with
     $$n$$ rows and $$m$$ columns, all values being 0.
 
-    $${\tt create_matrix}(3,4) = 
+    $${\tt create matrix}(3,4) = 
     \begin{bmatrix}
         0 & 0 & 0 & 0 \\
         0 & 0 & 0 & 0 \\
@@ -2530,7 +2524,8 @@ used. This means that pytest needs to be explained in class.
     3\) The third function is for (`multiply`). Given two matrices $$m_1$$
     and $$m_2$$, returns $$m_1 \times m_2$$. Remember[^3] that we can only
     multiply 2 matrices if the number of columns in the $$m_1$$ matrix is
-    equal to the number of rows in the $$m_2$$ matrix.\
+    equal to the number of rows in the $$m_2$$ matrix.
+    
     ![image](images/mult-matrix.png)
 
     Your function must pass the following tests:
@@ -2547,8 +2542,8 @@ used. This means that pytest needs to be explained in class.
     [[]],[[[]]], "they cannot be multiplied" ), (6,
     [[[]]],[[]], [[]] ) ])
 
-    def test_multiply(testcase, input1, input2, output): assert
-    multiply(input1, input2) == output, "case 0".format(testcase)
+    def test_multiply(testcase, input1, input2, output): 
+      assert multiply(input1, input2) == output, "case 0".format(testcase)
     ```
 
 # Text files
@@ -2566,7 +2561,7 @@ used. This means that pytest needs to be explained in class.
         04 03 2010 | Tracy Kendall
     ```
 
-    The above file has resulted from the following interactive session:\
+    The above file has resulted from the following interactive session:
 
     ```small
     >>> %Run 
@@ -2635,7 +2630,7 @@ used. This means that pytest needs to be explained in class.
     `tresnotas.txt`, and writes on the screen the total number of
     students and how many of them have passed. A student will be deemed
     to have passed when the sum of his three grades is greater than or
-    equal to 5.\
+    equal to 5.
 
     ```small
     >>> calculate_grades("threegrades.txt")
@@ -2728,12 +2723,11 @@ used. This means that pytest needs to be explained in class.
     import pytest
 
     @pytest.mark.parametrize("testcase, f_input, expected_output",[
-    (1, "numbers1.txt", 3713.1622346939), (2, "numbers2.txt", \...
+    (1, "numbers1.txt", 3713.1622346939), (2, "numbers2.txt", ...
     (3, (4, (5, ])
 
     def test_calculate_variance(testcase, f_input, expected_output):
-    assert abs(calculate_variance(f_input) - expected_output) \<
-    10\*\*-7 , "case 0".format(testcase)
+      assert abs(calculate_variance(f_input) - expected_output) < 10**-7 , "case 0".format(testcase)
     ```
 
     Remember to keep in mind that comparing floats for equality has
@@ -2804,11 +2798,8 @@ used. This means that pytest needs to be explained in class.
     "expected_output_data10_IVA.txt"), ])
 
     def test_calculate_IVA(testcase, f_input, f_expected_output):
-
-    f_output = calculate_IVA(f_input)
-
-    assert (open(f_output).read() ==
-    open(f_expected_output).read()), "case 0".format(testcase)
+      f_output = calculate_IVA(f_input)
+      assert (open(f_output).read() == open(f_expected_output).read()), "case 0".format(testcase)
     ```
 
     NOTE: To compare the files we have used `read` because the size of
@@ -3219,7 +3210,7 @@ used. This means that pytest needs to be explained in class.
 
     This example zips a string and a list:
 
-    ```python
+    ```small
     >>> s = 'abc'
     >>> t = [0, 1, 2]
     >>> zip(s, t)
@@ -3229,7 +3220,7 @@ used. This means that pytest needs to be explained in class.
     The result is a **zip object** that contains pairs that can be
     iterated over. The most common use of `zip` is in a `for` loop:
 
-    ```python
+    ```small
     >>> for pair in zip(s, t):
     ...     print(pair)
     ...
@@ -3242,7 +3233,7 @@ used. This means that pytest needs to be explained in class.
     object, but directly the list with the tuples. You can assume that
     the two sequences it receives have the same number of elements:
 
-    ```python
+    ```small
     >>> s = 'abc'
     >>> t = [0, 1, 2]
     >>> mi_zip(s,t)
@@ -3261,7 +3252,7 @@ used. This means that pytest needs to be explained in class.
 
     For example you can test your function with:
 
-    ```python
+    ```small
     >>> firstSet  = {23, 42, 65, 57, 78, 83, 29}
     >>> secondSet = {57, 83, 29, 67, 73, 43, 48}
 
