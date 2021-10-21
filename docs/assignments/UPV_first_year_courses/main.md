@@ -343,8 +343,8 @@ and/or **test cases**.
     *a = a + 1* by *a += 1*.
 
     ```testruntile
-    This exercise would say: \"copy and execute the following program\",
-    the change to \"copy and test the following program\" is a very
+    This exercise would say: "copy and execute the following program",
+    the change to "copy and test the following program" is a very
     subtle TILE.
     ```
 
@@ -526,7 +526,7 @@ and/or **test cases**.
     important to him and returns the following ASCII art
     (<https://en.wikipedia.org/wiki/ASCII_art>):
 
-    ```{frame="none"}
+    ```
     >>> %Run
      Name something important: Testing your own code
 
@@ -547,7 +547,7 @@ and/or **test cases**.
 
     Your program must work with any length name:
 
-    ```{frame="none"}
+    ```
     >>> %Run
      Name something important: Testing your program with all kinds of different input values
 
@@ -1370,7 +1370,7 @@ and/or **test cases**.
     Once the option has been chosen, the necessary data will be
     requested and the corresponding result will be presented. In the
     event that the specified option was not correct, the phrase
-    "incorrect value\" would be displayed on the screen.
+    "incorrect value" would be displayed on the screen.
 
     ```small
 
@@ -1936,7 +1936,7 @@ and/or **test cases**.
 Note that this section contains the first exercises where pytests are
 used. This means that pytest needs to be explained in class.
 
-1.  Write a function `is\_digit` which receives a character as a
+1.  Write a function `is_digit` which receives a character as a
     parameter and returns a boolean. The function will return `True`
     when the character is a digit from 0 to 9, otherwise it will return
     `False`).
@@ -1956,15 +1956,15 @@ used. This means that pytest needs to be explained in class.
 
     ```small
     ```python
-    \@pytest.mark.parametrize(\"test_case_ID, test_input,
-    expected_output\",\[ (1, '0', True), #smallest digit (2, '9', True),
+    \@pytest.mark.parametrize("test_case_ID, test_input,
+    expected_output",\[ (1, '0', True), #smallest digit (2, '9', True),
     #largest digit (3, '5', True), #other digit (4, '12', False), #it is
     not a digit between 0 and 9 (5, '-2', False), #negative digit (6,
     'hello', False), #string \] )
 
     def test_is_digit(test_case_ID, test_input, expected_output): assert
-    is_digit(test_input) == expected_output, \"case
-    0\".format(test_case_ID)
+    is_digit(test_input) == expected_output, "case
+    0".format(test_case_ID)
     ```
 
     ```testruntile
@@ -2005,12 +2005,12 @@ used. This means that pytest needs to be explained in class.
     You can use the following pytest to test your function.
 
     ```python
-    \@pytest.mark.parametrize(\"testcase, input, expected_output\",\[
+    \@pytest.mark.parametrize("testcase, input, expected_output",\[
     (1, 0, False), (2, 1, False), (3, 2, True), (4, 25, False), (5, 23,
     True), (6, 97, True) \] )
 
     def test_is_prime(testcase, input, expected_output): assert
-    is_prime(input) == expected_output, \"case 0\".format(testcase)
+    is_prime(input) == expected_output, "case 0".format(testcase)
     ```
 
     ```testruntile
@@ -2028,7 +2028,7 @@ used. This means that pytest needs to be explained in class.
 
     You can test your program with the following tests:
 
-    ```{frame="single" label="\\em ejemlos de test ejecuciones"}
+    ```
     >>> %Run 
       Write an integer number, or 'end' to finish: end
     >>> %Run 
@@ -2074,13 +2074,13 @@ used. This means that pytest needs to be explained in class.
     test your function. From now on you will have to do it yourself.
 
     ```python
-    \@pytest.mark.parametrize(\"testcase, input, expected_output\",\[
+    \@pytest.mark.parametrize("testcase, input, expected_output",\[
     (1, 'a', 'A'), (2, 'z', 'Z'), (3, 'ñ', 'Ñ'), (4, '\*', '\*'), (5,
     'Q', 'Q'), (6, ' \] )
 
     def test_lower_to_upper(testcase, input, expected_output): assert
-    lower_to_upper(input) == expected_output, \"case
-    0\".format(testcase)
+    lower_to_upper(input) == expected_output, "case
+    0".format(testcase)
     ```
 
     ```testruntile
@@ -2131,8 +2131,8 @@ used. This means that pytest needs to be explained in class.
     ```small
     ```python
     def test_my_exp(tc, input, expected_output): assert
-    abs(my_exp(input) - expected_output)\<10\*\*-7, \"case
-    0\".format(tc)
+    abs(my_exp(input) - expected_output)\<10\*\*-7, "case
+    0".format(tc)
     ```
 
     ```testruntile
@@ -2208,10 +2208,10 @@ used. This means that pytest needs to be explained in class.
 
       testcase number   input ($$N$$)   expected output
       ----------------- ------------- -----------------------------------
-      1                 4             \"1, 1, 2, 1, 2, 3, 1, 2, 3, 4\"@
-      2                 1             \"1\"@
-      3                 0             \"\"@
-      4                 -3            \"-1, -1, -2, -1, -2, -3\"@
+      1                 4             "1, 1, 2, 1, 2, 3, 1, 2, 3, 4"@
+      2                 1             "1"@
+      3                 0             ""@
+      4                 -3            "-1, -1, -2, -1, -2, -3"@
 
     ```testruntile
     Insist that the students test their programs by giving them a table
@@ -2329,7 +2329,7 @@ used. This means that pytest needs to be explained in class.
     appear in the string. For example, the string 'a 1, a 201, and 2
     ones' contains 3 numbers: 1, 201, and 2.
 
-    ```{frame="single" label="\\em example of executions"}
+    ```
     >>> nums_in_string("a 1, a 201 and 2 ones")
       3
     >>> nums_in_string("without numbers")
@@ -2480,21 +2480,21 @@ used. This means that pytest needs to be explained in class.
       \....                      
 
 12. Write a module with three functions about matrices, and their
-    pytests: `sum\_of\_diagonal`, `create\_matrix` and `multiply`.
+    pytests: `sum_of_diagonal`, `create_matrix` and `multiply`.
 
-    1\) The first function is (`sum\_of\_diagonal`) that, given a $$m$$
+    1\) The first function is (`sum_of_diagonal`) that, given a $$m$$
     matrix of integers, calculates the sum of the integers that are on
     the diagonal. Your function has to check that the matrix is square
     and does indeed have a diagonal to add. For example:
 
-    $${\tt sum\_of\_diagonal}(
+    $${\tt sum_of_diagonal}(
     \begin{bmatrix}
         1 & 2 & 3 & 4 \\
         2 & 4 & 6 & 1 \\
         0 & 5 & 8 & 2 \\
         2 & 9 & 6 & 3 \\
     \end{bmatrix})
-     = 16$$, $$\;\;$$ $${\tt sum\_of\_diagonal}(
+     = 16$$, $$\;\;$$ $${\tt sum_of_diagonal}(
     \begin{bmatrix}
         1 & 5   \\
         3 & 4  \\
@@ -2505,21 +2505,21 @@ used. This means that pytest needs to be explained in class.
 
     ```small
     ```python
-    \@pytest.mark.parametrize(\"testcase, input, output\",\[ (1,
+    \@pytest.mark.parametrize("testcase, input, output",\[ (1,
     \[\[1,2,3\],\[4,5,6\],\[7,8,9\]\], 15), (2,
     \[\[1,0,1\],\[1,1,0\],\[1,1,1\]\], 3), (3, \[\[2,0\],\[0,2\]\], 4),
-    (4, \[\[2,0\],\[0,2,3\]\], \"the matrix is not square\"), (5, \[\],
+    (4, \[\[2,0\],\[0,2,3\]\], "the matrix is not square"), (5, \[\],
     0)\]
 
     def test_sum_of_diagonal(testcase, input, output): assert
-    sum_of_diagonal(input) == output, \"case 0\".format(testcase)
+    sum_of_diagonal(input) == output, "case 0".format(testcase)
     ```
 
-    2\) Next, we write a function (`create\_matrix`) that, given two
+    2\) Next, we write a function (`create_matrix`) that, given two
     numbers $$n$$ and $$m$$, returns a list that represents a matrix with
     $$n$$ rows and $$m$$ columns, all values being 0.
 
-    $${\tt create\_matrix}(3,4) = 
+    $${\tt create_matrix}(3,4) = 
     \begin{bmatrix}
         0 & 0 & 0 & 0 \\
         0 & 0 & 0 & 0 \\
@@ -2538,19 +2538,19 @@ used. This means that pytest needs to be explained in class.
 
     ```small
     ```python
-    \@pytest.mark.parametrize(\"testcase, input1, input2, output\",\[
+    \@pytest.mark.parametrize("testcase, input1, input2, output",\[
     (1, \[\[12,7,3\], \[4, 5,6\], \[7, 8,9\]\], \[\[5,8,1,2\],
     \[6,7,3,0\], \[4,5,9,1\]\], \[\[114, 160, 60, 27\], \[ 74, 97, 73,
     14\], \[119, 157, 112, 23\]\] ), (2, \[\[12,7,3, 0\], \[ 4,5,6,12\],
     \[ 6,7,8, 9\] \], \[\[8,5,8,1,2\], \[6,9,7,3,0\], \[4,5,9,1,0\],
     \[4,5,9,1,0\] \], \[\[150, 138, 172, 36, 24\], \[134, 155, 229, 37,
     8\], \[158, 178, 250, 44, 12\] \] ), (3, \[\], \[\], \[\] ),
-    (4,\[\[\]\],\[\[\]\], \"they cannot be multiplied\" ), (5,
-    \[\[\]\],\[\[\[\]\]\], \"they cannot be multiplied\" ), (6,
+    (4,\[\[\]\],\[\[\]\], "they cannot be multiplied" ), (5,
+    \[\[\]\],\[\[\[\]\]\], "they cannot be multiplied" ), (6,
     \[\[\[\]\]\],\[\[\]\], \[\[\]\] ) \])
 
     def test_multiply(testcase, input1, input2, output): assert
-    multiply(input1, input2) == output, \"case 0\".format(testcase)
+    multiply(input1, input2) == output, "case 0".format(testcase)
     ```
 
 # Text files
@@ -2561,7 +2561,7 @@ used. This means that pytest needs to be explained in class.
     of the person (String). Then it must store it in a file called
     `"dates.txt"` with the following format:
 
-    ```{frame="single" label="\\em dates.txt"}
+    ```
     12 03 1996 | Hira Sadler
         16 05 1997 | Roman Connelly
         08 10 1976 | Alexandre Bullock
@@ -2570,7 +2570,7 @@ used. This means that pytest needs to be explained in class.
 
     The above file has resulted from the following interactive session:\
 
-    ```{frame="single" label="\\em example with 4 people"}
+    ```
     >>> %Run 
       Number of people to store: 4
       
@@ -2614,7 +2614,7 @@ used. This means that pytest needs to be explained in class.
 
 3.  We have the following format for a text file:\
 
-    ```{frame="single" label="\\em threegrades.txt"}
+    ```
     23 2.5 3.0 1.1
         34 2.0 1.0 1.0
         17 1.0 1.0 1.1
@@ -2632,14 +2632,14 @@ used. This means that pytest needs to be explained in class.
 
     -   the attendance grade, a real value
 
-    Write a function `calculate\_notes` in Python that receives as a
+    Write a function `calculate_notes` in Python that receives as a
     parameter the name of a text file that has the format as
     `tresnotas.txt`, and writes on the screen the total number of
     students and how many of them have passed. A student will be deemed
     to have passed when the sum of his three grades is greater than or
     equal to 5.\
 
-    ```{frame="single" label="\\em example of calling the function calculate\\_grades"}
+    ```
     >>> calculate_grades("threegrades.txt")
       number of students: 5
       number of students who have passed: 3
@@ -2666,7 +2666,7 @@ used. This means that pytest needs to be explained in class.
 
     For example:
 
-    ```{frame="single" label="\\em interactive session example"}
+    ```
     >>> %Run 
       How many files?: 4
       What is the base name?: file
@@ -2676,10 +2676,6 @@ used. This means that pytest needs to be explained in class.
     It can generate for example:
 
     +:---------------+:---------------+:---------------+:---------------+
-    | `              | `              | `              | `              |
-    | `` {frame="sin | `` {frame="sin | `` {frame="sin | `` {frame="sin |
-    | gle" label="\\ | gle" label="\\ | gle" label="\\ | gle" label="\\ |
-    | em file1.txt"} | em file2.txt"} | em file3.txt"} | em file4.txt"} |
     | 133.25         | 29.92          | 50.08          | 6.64           |
     |  159.93        |  199.44        |   59.34        |  136.33        |
     |  162.02        |  158.01        |  109.88        |   32.02        |
@@ -2691,7 +2687,7 @@ used. This means that pytest needs to be explained in class.
     |                |                | ```            |                |
     +----------------+----------------+----------------+----------------+
 
-5.  Write a function `calculate\_variance` in Python that receives the
+5.  Write a function `calculate_variance` in Python that receives the
     name of a file and reads a number of real numbers from this file,
     storing them in a list. Then it shows the variance of these data on
     the screen. The variance is calculated as the sum of the squared
@@ -2701,7 +2697,7 @@ used. This means that pytest needs to be explained in class.
 
     For example, imagine we have:
 
-    ```{frame="single" label="\\em numbers.txt"}
+    ```
     6.64 
      136.33 
       32.02 
@@ -2710,7 +2706,7 @@ used. This means that pytest needs to be explained in class.
      160.56 
     ```
 
-    ```{frame="single" label="\\em function call example"}
+    ```
     >>> calculate_variance("numbers.txt")
       3035.443822222222
     ```
@@ -2732,13 +2728,13 @@ used. This means that pytest needs to be explained in class.
     ```python
     import pytest
 
-    \@pytest.mark.parametrize(\"testcase, f_input, expected_output\",\[
-    (1, \"numbers1.txt\", 3713.1622346939), (2, \"numbers2.txt\", \...
+    \@pytest.mark.parametrize("testcase, f_input, expected_output",\[
+    (1, "numbers1.txt", 3713.1622346939), (2, "numbers2.txt", \...
     (3, (4, (5, \])
 
     def test_calculate_variance(testcase, f_input, expected_output):
     assert abs(calculate_variance(f_input) - expected_output) \<
-    10\*\*-7 , \"case 0\".format(testcase)
+    10\*\*-7 , "case 0".format(testcase)
     ```
 
     Remember to keep in mind that comparing floats for equality has
@@ -2746,7 +2742,7 @@ used. This means that pytest needs to be explained in class.
     the difference between what comes out of our function and what we
     expect is less than, for example, $$10^{-7}$$.
 
-6.  Implement a `calculate\_IVA` function in Python that receives a name
+6.  Implement a `calculate_IVA` function in Python that receives a name
     from a text file (for example `data.txt`) where the prices without
     IVA of some items are found. Your function must read these prices,
     apply IVA (21 $$\%$$) to them and save the values with VAT in a file
@@ -2754,24 +2750,21 @@ used. This means that pytest needs to be explained in class.
     the right and with 2 decimal places. In addition to generating the
     file, your function has to return the name of the generated file.
 
-    For example: `calculate\_IVA("data1.txt")` returns the string
+    For example: `calculate_IVA("data1.txt")` returns the string
     `"data1_IVA.txt"` which is the name of the generated file:
 
     +:------------------------+:--------------+:------------------------+
-    | ```{frame="single"     |               | ```{frame=             |
-    | label="\\em data1.txt"} |               | "single" label="the exp |
-    | 12.05                   |               | ected content of file"} |
+    | 12.05                   |               |                         |
     |   6.70                  |     generates | 14.58                   |
     | 123.10                  |               |    8.11                 |
     | 333.33                  |               |  148.95                 |
     |  25.50                  |               |  403.33                 |
     | 100                     |               |   30.86                 |
     |   9.95                  |               |  121.00                 |
-    | ```                     |               |   12.04                 |
-    |                         |               | ```                     |
+    |                         |               |   12.04                 |
     +-------------------------+---------------+-------------------------+
 
-7.  To test a function like `calculate\_IVA`, which generates a file,
+7.  To test a function like `calculate_IVA`, which generates a file,
     you have to open the file it has generated to check that it has the
     content you expected. For example, if you used the file `data1.txt`
     as input, you would expect a file with name `data1_IVA.txt` that has
@@ -2783,12 +2776,12 @@ used. This means that pytest needs to be explained in class.
     [\[generate_files\]](#generate_files){reference-type="ref"
     reference="generate_files"}. We would have to manually generate the
     10 files from `data1_IVA.txt` to `data10_IVA.txt`, with
-    `calculate\_IVA`, and then open them one by one to check their
+    `calculate_IVA`, and then open them one by one to check their
     content to see if it is what we expect.
 
     We can automate it with pytest. However, the output of the function
     is not just a value as we have seen so far. The output of the
-    `calculate\_IVA` function is a file. So the expected output can also
+    `calculate_IVA` function is a file. So the expected output can also
     be a file, and the test simply compares that what comes out is equal
     to what we expect!
 
@@ -2797,25 +2790,25 @@ used. This means that pytest needs to be explained in class.
     like the one below:
 
     ```python
-    \@pytest.mark.parametrize(\"testcase, f_input,
-    f_expected_output\",\[ (1, \"data1.txt\",
-    \"expected_output_data1_IVA.txt\"), (2, \"data2.txt\",
-    \"expected_output_data2_IVA.txt\"), (3, \"data3.txt\",
-    \"expected_output_data3_IVA.txt\"), (4, \"data4.txt\",
-    \"expected_output_data4_IVA.txt\"), (5, \"data5.txt\",
-    \"expected_output_data5_IVA.txt\"), (6, \"data6.txt\",
-    \"expected_output_data6_IVA.txt\"), (7, \"data7.txt\",
-    \"expected_output_data7_IVA.txt\"), (8, \"data8.txt\",
-    \"expected_output_data8_IVA.txt\"), (9, \"data9.txt\",
-    \"expected_output_data9_IVA.txt\"), (10, \"data10.txt\",
-    \"expected_output_data10_IVA.txt\"), \])
+    \@pytest.mark.parametrize("testcase, f_input,
+    f_expected_output",\[ (1, "data1.txt",
+    "expected_output_data1_IVA.txt"), (2, "data2.txt",
+    "expected_output_data2_IVA.txt"), (3, "data3.txt",
+    "expected_output_data3_IVA.txt"), (4, "data4.txt",
+    "expected_output_data4_IVA.txt"), (5, "data5.txt",
+    "expected_output_data5_IVA.txt"), (6, "data6.txt",
+    "expected_output_data6_IVA.txt"), (7, "data7.txt",
+    "expected_output_data7_IVA.txt"), (8, "data8.txt",
+    "expected_output_data8_IVA.txt"), (9, "data9.txt",
+    "expected_output_data9_IVA.txt"), (10, "data10.txt",
+    "expected_output_data10_IVA.txt"), \])
 
     def test_calculate_IVA(testcase, f_input, f_expected_output):
 
     f_output = calculate_IVA(f_input)
 
     assert (open(f_output).read() ==
-    open(f_expected_output).read()), \"case 0\".format(testcase)
+    open(f_expected_output).read()), "case 0".format(testcase)
     ```
 
     NOTE: To compare the files we have used `read` because the size of
@@ -2855,13 +2848,13 @@ used. This means that pytest needs to be explained in class.
       That currency is not in the dictionary
     ```
 
-2.  Write a function called `text\_to\_dic` that receives a text as an
+2.  Write a function called `text_to_dic` that receives a text as an
     argument. It must create and return a dictionary where the keys are
     the words in the text, and their values are the number of
     occurrences of each of these in the text.
 
     Use the function you just wrote to define a function called
-    `file\_to\_dic` that receives the name of a text file and returns a
+    `file_to_dic` that receives the name of a text file and returns a
     dictionary where the keys are the words of the text in the file and
     its values the number of appearances of each of these in the text of
     the file.
@@ -2878,13 +2871,13 @@ used. This means that pytest needs to be explained in class.
 
     A histogram is a graphical representation of a variable in the form
     of bars, where the area of each bar is proportional to the frequency
-    of the values represented. They are used to obtain a general \"first
-    view\" or panorama of the distribution of the population, or of the
+    of the values represented. They are used to obtain a general "first
+    view" or panorama of the distribution of the population, or of the
     sample, regarding a characteristic, quantitative and continuous
     (such as length or weight) (see
     <https://es.wikipedia.org/wiki/Histograma>).
 
-    Write a function `ascii\_histogram` that receives as an argument a
+    Write a function `ascii_histogram` that receives as an argument a
     dictionary with keys of type string and values of type int, and
     returns an ASCII histogram that uses the Python output format. An
     example is below:
@@ -2909,7 +2902,7 @@ used. This means that pytest needs to be explained in class.
               mira. ++++++++++
     ```
 
-    Create a test case to test the function `ascii\_histogram` that
+    Create a test case to test the function `ascii_histogram` that
     returns as expected result:
 
     ```python
@@ -2976,10 +2969,10 @@ used. This means that pytest needs to be explained in class.
     are shown below:
 
     ```python
-    points = \"A\": 1, \"B\": 3, \"C\": 3, \"D\": 2, \"E\": 1, \"F\": 4,
-    \"G\": 2, \"H\": 4, \"I\": 1, \"J\": 2, \"K\": 5, \"L\": 1, \"M\":
-    3, \"N\": 1, \"O\": 1, \"P\": 3, \"Q\": 10, \"R\": 1, \"S\": 1,
-    \"T\": 1, \"U\": 1, \"V\": 4, \"W\": 4, \"X\": 8, \"Y\": 4, \"Z\":
+    points = "A": 1, "B": 3, "C": 3, "D": 2, "E": 1, "F": 4,
+    "G": 2, "H": 4, "I": 1, "J": 2, "K": 5, "L": 1, "M":
+    3, "N": 1, "O": 1, "P": 3, "Q": 10, "R": 1, "S": 1,
+    "T": 1, "U": 1, "V": 4, "W": 4, "X": 8, "Y": 4, "Z":
     10
     ```
 
@@ -3206,7 +3199,7 @@ used. This means that pytest needs to be explained in class.
     of the even-indexed numbers and the sum of the odd-numbered numbers.
     Example:
 
-    ```{frame="single" label="\\em tests example"}
+    ```
     >>> odd_even_sum([2,4,6,1,12,3,4])
       (24, 8)
     >>> odd_even_sum([0,2,4,6,1,12,3,4])
@@ -3338,10 +3331,10 @@ used. This means that pytest needs to be explained in class.
     everything that is mortal (again, assuming that is complete).
 
     ```python
-    todas = \"Socrates\", \"Plato\", \"Eratosthenes\", \"Zeus\",
-    \"Hera\", \"Athene\", \"Acropolis\", \"Cat\", \"Dog\" personas =
-    \"Socrates\", \"Plato\", \"Eratosthenes\" mortales = \"Socrates\",
-    \"Plato\", \"Eratosthenes\", \"Cat\", \"Dog\"
+    todas = "Socrates", "Plato", "Eratosthenes", "Zeus",
+    "Hera", "Athene", "Acropolis", "Cat", "Dog" personas =
+    "Socrates", "Plato", "Eratosthenes" mortales = "Socrates",
+    "Plato", "Eratosthenes", "Cat", "Dog"
     ```
 
     Use the set operators and their methods to show that it is true
