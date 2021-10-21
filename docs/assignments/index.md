@@ -10,3 +10,4 @@ Here are the TILED assignments of the repository:
 |---|---|---|
 | [Generating test reports](../nifties/2022/nifty2022.md) | File handling, data processing, parsing, generating reports. | CS2/CS50 |
 | [Password hashing](passwordhashing/index.md) | Hashing. | CS1/CS2 |
+| [Python exercises for first year programming courses](UPV_first_year_courses/main.md) | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets | CS1 |
