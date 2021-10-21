@@ -6,7 +6,7 @@ author:  Tanja Vos
 # TILEd Python exercises used at the UPV for first year programming courses
 {:.no_toc} 
 
-By [Tanja Vos](https://tanjavos.com).
+By [Tanja E.J. Vos](https://tanjavos.com).
 
 - Table of contents
 {:toc}
@@ -18,20 +18,17 @@ have been adapted by using Test Informed Learning with Examples (TILE)
 to integrate testing in programming education without it costing (much)
 more time. The coloured boxes indicate how they were TILEd.
 
-::: mdframed
+``` { .testdomaintile }
 This colour box explains a TILE in the **test domain**.
-:::
+```
 
-::: mdframed
-This colour box explains a TILE related to **test runs** and/or **test
-cases**.
-:::
+``` { .testruntile }
+This colour box explains a TILE related to **test runs** and/or **test cases**.
+```
 
 ------------------------------------------------------------------------
 
-::: {#boletin2}
 # Variables, assignments, expressions, basic types {#section.var-assign-expr-types}
-:::
 
 1.  Most of the programs that we implement:
 
@@ -48,7 +45,7 @@ cases**.
     1\. Input data entry is carried out by using the instruction `input`
     such as in the following example:
 
-    ``` {frame="single"}
+    ```python
     n = int(input("Enter a number: "))
     ```
 
@@ -61,7 +58,7 @@ cases**.
     2\. Calculate the square of the given number is an example of a
     computation:
 
-    ``` {frame="single"}
+    ```python
     square = n * n
     ```
 
@@ -71,7 +68,7 @@ cases**.
     3\. Displaying data is done by using the instruction `print` such as
     in the following example:
 
-    ``` {frame="single"}
+    ```python
     print("The square is", square)
     ```
 
@@ -103,7 +100,7 @@ cases**.
     The square is 1000000000000
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     UnTILEd this exercise said: When executing this program in the
     console, the user will give input through the keyboard en the
     results will be shown on the screen
@@ -121,7 +118,7 @@ cases**.
 
     Then with sample executions we invite then to do more tests. And all
     of this in one of the very first exercises.
-    :::
+    ```
 
 2.  Given two variables `a` and `b`, write a Python program that allows
     the user to enter two values for them, swap their values and display
@@ -144,7 +141,7 @@ cases**.
     work for characters? Does it work for reals? Can `a` and `b` have
     different types? Should your program work for all these cases?
 
-    ::: mdframed
+    ``` { .testruntile}
     This exercise was TILEd by adding the last paragraph. We explicitly
     ask the students to test for different types of values. Most
     students, because of the example execution convert the user input to
@@ -152,7 +149,7 @@ cases**.
     swappped. Asking them to test with all kinds of values makes them
     aware of the assumptions they made when reading the exercises and
     hence how testing is good to find errors.
-    :::
+    ```
 
 3.  Make a program in Python that receive values for three variables
     `a`, `b` and `c`, and interchange their values as follows:
@@ -172,7 +169,7 @@ cases**.
     it work for reals? Can `a`, `b` and `c` have different types? Should
     your program work for all these cases?
 
-    ::: mdframed
+    ``` { .testruntile}
     This exercise was TILEd by adding the last paragraph. We explicitly
     ask the students to test for different types of values. Most
     students, because of the example execution convert the user input to
@@ -180,7 +177,7 @@ cases**.
     swappped. Asking them to test with all kinds of values makes them
     aware of the assumptions they made when reading the exercises and
     hence how testing is good to find errors.
-    :::
+    ```
 
 4.  The expressions on the right of the assignment can be all complex
     that we want. Implement a program that reads two real numbers,
@@ -214,9 +211,9 @@ cases**.
     What happens when you test your programs with two zeros? Why does
     that happen? What could we do about that?
 
-    ::: mdframed
+    ``` { .testruntile}
     TILEd by adding example test executions for them to test.
-    :::
+    ```
 
 5.  Implement a program that reads two integer numbers, calculates and
     prints their addition, subtraction, product, division and modulus or
@@ -241,9 +238,9 @@ cases**.
       The modulus or remainder (4 % -100) is:  0
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     TILEd by adding example test executions for them to test.
-    :::
+    ```
 
 6.  Implement a program that calculates the temperature in degrees
     Celsius from the temperature in degrees Fahrenheit. The formula is
@@ -265,10 +262,10 @@ cases**.
 
     <https://www.metric-conversions.org/es/temperatura/fahrenheit-a-celsius.htm>
 
-    ::: mdframed
+    ``` { .testruntile}
     We invite the student to test their program more and compare their
     outcomes with a parallel oracle that they can find on the web.
-    :::
+    ```
 
 7.  Let us practice a bit with writing expressions. Implement a program
     that asks the user for two numbers, $x$ and $y$ and calculates the
@@ -296,11 +293,11 @@ cases**.
     -   Second, check the answers of your program with your expected
         outputs.
 
-    ::: mdframed
+    ``` { .testruntile}
     We ask the students to do the calculations by hand such that they
     can use those to test their program. It makes them aware of the need
     for an oracle with which they need to check the outputs.
-    :::
+    ```
 
 8.  Implement a program that calculates the interest produced from a
     total accumulated capital of an amount c, invested at an interest r
@@ -320,7 +317,7 @@ cases**.
       4              -2000    45%      2     -5.0
       5              12.345   56.78%   900   17.0
 
-    ::: mdframed
+    ``` { .testruntile}
     Instead of sample executions for them to check, we add a table with
     test cases. This teaches them what test cases are made up of:
 
@@ -329,11 +326,11 @@ cases**.
     -   inputs
 
     -   expected outputs
-    :::
+    ```
 
 9.  Copy and test the following program:
 
-    ``` {frame="single"}
+    ```python
     a = int(input("Enter a value for a = "))
            a = a + 1
            print("The value of the variable a is now ",a);
@@ -344,11 +341,11 @@ cases**.
     situation, so you should get used to it. Now replace the instruction
     *a = a + 1* by *a += 1*.
 
-    ::: mdframed
+    ``` { .testruntile}
     This exercise would say: \"copy and execute the following program\",
     the change to \"copy and test the following program\" is a very
     subtle TILE.
-    :::
+    ```
 
 10. Implement a program that calculates the gross and net salary of an
     employee. The program will request as data: the number of hours
@@ -379,11 +376,11 @@ cases**.
       3              1 hour      25 euros/hour     0.1%    25.0 euros        24.975 euros    
       4              125 hours   20 euros/hour     0%      2500.0 euros      2500.00 euros   
 
-    ::: mdframed
+    ``` { .testruntile}
     Add a table with test cases. Also added cases for values that are
     less obvious like 2.5 hours and 0.1%. So they test again their
     assumptions of the types of the variables.
-    :::
+    ```
 
 11. Mad Libs is a phrase template word game where a player asks others
     for a list of words to substitute for blanks in a story, often
@@ -392,9 +389,9 @@ cases**.
 
     Look at the following example:
 
-    ::: center
+    ``` { .center}
     ![image](images/MadLib-testing.jpg){width="75%"}
-    :::
+    ```
 
     We need to ask the player for the following words in English:
 
@@ -410,9 +407,9 @@ cases**.
 
     Try other inputs and try to come up with a funny phrase.
 
-    ::: mdframed
+    ``` { .testdomaintile }
     This TILE contains the message that testing is important.
-    :::
+    ```
 
 12. Suppose you need to test a program that takes two floats as input
     and produces a boolean as the result. A test case for this program
@@ -464,11 +461,11 @@ cases**.
     using the String module operator % to format, and another with the
     `str.format()`.
 
-    ::: mdframed
+    ``` { .testdomaintile }
     This exercise is about creating strings that have certain patterns
     using string manipulation. It used to be about file names, it was
     TILEd by making it about test cases and their components.
-    :::
+    ```
 
 13. Implement a program that reads three integer values: day, month, and
     year of a person's birth. Using this data, the program should show a
@@ -520,11 +517,11 @@ cases**.
     see how we can do it in the next thematic unit with decision
     statements like `if - then - else`.
 
-    ::: mdframed
+    ``` { .testruntile}
     A table with test cases was added and the student were made aware of
     the test cases that not really contained valid dates but still
     calculated a PIN number.
-    :::
+    ```
 
 14. Write a Python program that asks the user for something that seems
     important to him and returns the following ASCII art
@@ -567,9 +564,9 @@ cases**.
                                        ooO  Ooo                                                                               
     ```
 
-    ::: mdframed
+    ``` { .testdomaintile }
     This TILE contains the message that testing is important.
-    :::
+    ```
 
 15. We want to format a shopping list for a party with the following
     products: beer, wine and chips. You have to ask the user for the
@@ -602,20 +599,18 @@ cases**.
     euros) and quantities ($<100$ units) to test that the layout is
     always aligned.
 
-    ::: mdframed
+    ``` { .testruntile}
     We added one sentence explicitly asking the students to test with
     some values and check the output.
-    :::
+    ```
 
-::: {#boletin3}
 # Conditionals: If-then-else {#section.if-then-else}
-:::
 
 1.  Write a program that converts a number of seconds into days, hours,
     minutes, and seconds. The output of your program must have the
     layout as in the following examples:
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter a number of seconds: 184
@@ -627,7 +622,7 @@ cases**.
       Enter a number of seconds: -2
       Only positive values
     ```
-    :::
+    ```
 
     To test your program, think about the inputs you want to use for the
     test cases and check the output by using the following converter:
@@ -646,11 +641,11 @@ cases**.
     manual, the exercise description, or the specialist knowledge of the
     programmer, but it should not be the code.
 
-    ::: mdframed
+    ``` { .testruntile}
     We invite the student to test their program more and compare their
     outcomes with a parallel oracle that they can find on the web.
     Moreover, we explain the terminology oracle.
-    :::
+    ```
 
 2.  A bakery sells slices of bread for 3.49 euros each. A day old bread
     gets a discount of 60 percent. Write a program that asks the user
@@ -663,7 +658,7 @@ cases**.
 
     You have to test your program to see if it works well.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter the number of day old loaves: 45
@@ -685,12 +680,12 @@ cases**.
       Enter the number of day old loaves: -4
       You cannot buy negative amounts of bread
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 3.  Write a Python program that asks the user for a word $p$ and it
     returns in the output another word in which the first and last
@@ -705,16 +700,16 @@ cases**.
       3              `"ab"`      `"ba"`
       4              `"ab ba"`   `"ab ba"`
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them a table
     of test cases.
-    :::
+    ```
 
 4.  Write a program that reads an integer number and tells whether it is
     odd or even. Run the following examples to test that your program
     gives the same outputs:
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter an integer number: 1
@@ -735,18 +730,18 @@ cases**.
       Enter an integer number: -11
       The number -11 is odd
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 5.  Implement a program that reads three values and displays on the
     screen the maximum and the minimum. Run the following examples to
     test that your program gives the same outputs:
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter the first value: 3
@@ -779,21 +774,21 @@ cases**.
       Enter the third value: 4.89
       The maximum is oh! and the minimum is 4
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test executions. The values used in the example test executions will
     make then aware that the program was not only for numerical values
     but for any value.
-    :::
+    ```
 
 6.  Implement a program that reads an integer corresponding to a month
     of the year and displays the name of the corresponding month. If the
     entered number does not belong to the range \[1, 12\], an error
     message will be displayed.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter the number of the month: 5
@@ -811,12 +806,12 @@ cases**.
       Enter the number of the month: 0
       Error: enter a number between 1 and 12
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 7.  Implement a program that reads two integer numbers and says if their
     product is positive, negative, or zero **without** doing the
@@ -839,7 +834,7 @@ cases**.
 
     -   the first number is positive and the second is negative.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run
       Enter the first integer number: 0
@@ -870,13 +865,13 @@ cases**.
       Enter the second integer number: -6
       The product is negative
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions. Also pointing out that this way we try out all
     possible combinations to test.
-    :::
+    ```
 
 8.  Write a program that reads an age, and finds out if someone is in
     their babyhood, childhood, adolescence, initial adulthood, mature
@@ -896,10 +891,10 @@ cases**.
     Run tests and ensure that each of the possible outputs has occurred
     at least once.
 
-    ::: mdframed
+    ``` { .testruntile}
     Add minimal line saying the should test such that each possible
     output has occurred.
-    :::
+    ```
 
 9.  The density (d) of a substance is defined as the amount of mass (m)
     it has per volume unit (v). Then:
@@ -913,7 +908,7 @@ cases**.
     Run the following examples to test that your program gives the same
     outputs.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       What do you want to calculate? (d, m, v):d
@@ -949,12 +944,12 @@ cases**.
       What do you want to calculate? (d, m, v): z
       Enter only d, m or v
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 10. Implement a program that asks the user for a relational operator
     (`<, <=, >, >=, ==, !=`) and 2 values. Your program has to display
@@ -977,11 +972,11 @@ cases**.
       7              `<`        24           `"24K"`      `True`
       8              `>=`       `"email"`    `"correo"`   `True`
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table. Again the chosen values will make them aware
     that this is not only for numerical values.
-    :::
+    ```
 
 11. Implement a program that reads three integer numbers: `a`, `b` and
     `c`. The program must indicate whether the numbers can represent the
@@ -1018,11 +1013,11 @@ cases**.
       12             50       50    99    Isosceles
       13             50       50    100   Not a Triangle
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them test
     cases. Also include a bit of anecdotal history on the triangle
     program and first book on software testing.
-    :::
+    ```
 
 12. Read an amount of euros and display the minimum breakdown in bills
     and coins for that amount on the screen. This means that the minimum
@@ -1032,7 +1027,7 @@ cases**.
     Write a version of this program that shows the breakdown on the
     screen mentioning only the bills and coins we need.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter an amount of euros: 434
@@ -1053,7 +1048,7 @@ cases**.
       Enter an amount of euros: 5
       1 bill of 5
     ```
-    :::
+    ```
 
     What other tests could you run to ensure that your program has the
     desired behaviour? Have you tried, for example, entering different
@@ -1082,10 +1077,10 @@ cases**.
 
     -   etc.
 
-    ::: mdframed
+    ``` { .testruntile}
     Insisting that the students test their programs and think about all
     possible combinations.
-    :::
+    ```
 
 13. Implement a program that reads the duration in seconds of a phone
     call and determines the total amount to be paid. The business rule
@@ -1098,7 +1093,7 @@ cases**.
     minute plus 5 cents for the next 2 minutes. The remaining 40 seconds
     are free.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter the number of seconds the call has lasted: 0
@@ -1119,15 +1114,15 @@ cases**.
       Enter the number of seconds the call has lasted: -5
       Please enter a correct value
     ```
-    :::
+    ```
 
     What other tests have you run to ensure that your program has the
     desired behaviour?
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions and ask them to think about more tests.
-    :::
+    ```
 
 14. The water company is implementing a new billing system. For each
     house, the invoice is made as follows:
@@ -1144,7 +1139,7 @@ cases**.
     Write a program that calculates the water consumption of a family in
     a month given the number of litres used.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Enter the litres of water used: 0
@@ -1159,12 +1154,12 @@ cases**.
       Enter the litres of water used: 55
       The expense is 6.00€
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 15. A book store gives discounts to its customers depending on whether
     the customer has the membership card and the price of the purchase
@@ -1199,11 +1194,11 @@ cases**.
     them, we first have to think of concrete values that meet the
     conditions of the test case.
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table. Also we introduce the concept of abstract vs
     concrete test cases.
-    :::
+    ```
 
 16. Write a program that determines if an athlete is selected to run a
     marathon. To be selected, the qualifying times are:
@@ -1220,7 +1215,7 @@ cases**.
     is correct, the program will display the message "Selected" or "Not
     selected".
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Sex M/F: Y
@@ -1245,17 +1240,17 @@ cases**.
       Time: 170
       Selected
     ```
-    :::
+    ```
 
     What other tests do you have to run to ensure that you have tried
     all the possible combinations? (HINT: in the tests above we have
     never tested the outputs when the sex is `F`)
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions. Add a comment on tests that might be missing and
     that they have to think about.
-    :::
+    ```
 
 17. Write a Python program that determines the cost of a car insurance
     depending on: the age of the person to be insured, and the number of
@@ -1280,8 +1275,8 @@ cases**.
     e)  There is an additional charge depending on the number of
         accidents:
 
-    ::: center
-    ::: {#tabla:sencilla}
+    ``` { .center}
+    ``` {#tabla:sencilla}
       Accidents   Charge (euros)
       ----------- ----------------
       1           50
@@ -1290,12 +1285,12 @@ cases**.
       4           375
       5           575
       6 or more   Not insured
-    :::
+    ```
 
     [\[tabla:sencilla\]]{#tabla:sencilla label="tabla:sencilla"}
-    :::
+    ```
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Age: 10
@@ -1320,7 +1315,7 @@ cases**.
       Number of accidents: -7
       Enter a positive number
     ```
-    :::
+    ```
 
     What other tests have you run to ensure that your program has the
     desired behaviour?
@@ -1338,11 +1333,11 @@ cases**.
 
     And how about different combinations of the cases mentioned above?
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions. Moreover, guide them through a thinking process of
     what else needs to be tested.
-    :::
+    ```
 
 18. An expert system is a type of artificial intelligence program that
     uses a knowledge base and a set of rules to perform a task that a
@@ -1357,7 +1352,7 @@ cases**.
 
     ![image](images/tree.png){width="85%"}
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Color (green/yellow/red): green
@@ -1369,16 +1364,16 @@ cases**.
       Size (big/small): big
       Grapefruit
     ```
-    :::
+    ```
 
     To test your program very well you should have a test case for each
     of the 9 fruits on the tree.
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions and ask them to add more tests such that each
     possible inputs occurs once.
-    :::
+    ```
 
 19. You want to create a Python program to calculate different areas. To
     do this, the program will present the option of area to be
@@ -1395,7 +1390,7 @@ cases**.
     event that the specified option was not correct, the phrase
     "incorrect value\" would be displayed on the screen.
 
-    ::: small
+    ``` { .small}
     ``` {frame="single" label="\\em examples of test executions"}
     >>> %Run 
       Area (square/triangle/rectangle): square
@@ -1419,12 +1414,12 @@ cases**.
       Side: -4
       Wrong value
     ```
-    :::
+    ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 20. Write a Python program to determine the quadrant of the Cartesian
     plane given the (x, y) coordinates of a point.
@@ -1435,10 +1430,10 @@ cases**.
     possible 9 outputs (i.e. the 4 different pieces of axis, the origin
     and the 4 different quadrants).
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them hints on
     what to test to get all possible outputs.
-    :::
+    ```
 
 21. Implement a Python program that asks the user for four inputs: a
     serial number, a day, a month, and a year of production date. First
@@ -1490,14 +1485,13 @@ cases**.
     Then for correct dates, calculate some serial numbers by hand such
     that you can test the output of your program.
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them hints on
     what to test.
-    :::
+    ```
 
-::: {#boletin4}
+
 # Loops {#section.loops}
-:::
 
 1.  Write a program to calculate the sum of the integers between $N$ and
     $M$, where $N$ and $M$ are values entered by the user. `result` =
@@ -1522,10 +1516,10 @@ cases**.
       The sum from 4 to 4 is:  4
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 2.  Implement a program to read 10 positive numbers and independently
     calculate the sum of the odd and even numbers. If a negative number
@@ -1578,10 +1572,10 @@ cases**.
       Sum of the odd numbers:  0
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 3.  Implement a program that reads 12 real numbers and calculates the
     mean of the positive and negative numbers. Afterwards, the result
@@ -1597,11 +1591,11 @@ cases**.
       3      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0                  0
       4      12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   11.9327            -31.99
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table. Series with only positive numbers, series
     with only negative numbers, all zeros, and mix of positive/negative.
-    :::
+    ```
 
 4.  Write a program that receives an integer $N$ and generates all the
     multiples of 7 between 1 and $N$. Run the following test cases to
@@ -1616,11 +1610,11 @@ cases**.
       5              18       7, 14                           
       6              57       7, 14, 21, 28, 35, 42, 49, 56   
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table. Again the chosen values will make them aware
     that there program should also work for negative numbers.
-    :::
+    ```
 
 5.  Modify the previous program so that it displays only those multiples
     of 7 between 1 and $N$ that are not divisible by 3. Execute the
@@ -1635,10 +1629,10 @@ cases**.
       5              18       7, 14                           
       6              77       7, 14, 28, 35, 49, 56, 70, 77   
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table.
-    :::
+    ```
 
 6.  We have a total of 15 test cases of a Python program. From each test
     we run, we take note of the number of failures that finds. So at the
@@ -1680,10 +1674,10 @@ cases**.
       Number of tests that have found more than 4 errors:  5
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Categorising series of inputs, where the inputs are related to test
     cases. Test cases can find errors!
-    :::
+    ```
 
 7.  Implement a program that reads 12 real numbers and calculates the
     maximum. Run the following test cases to test your program:
@@ -1695,10 +1689,10 @@ cases**.
       3         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                      0
       4         12.4, 21.005, -3.67, 4.43, 5.56, 4.2, 7, 8.3, -91.3, -1.0, 32.4, 12.1   32.4
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table.
-    :::
+    ```
 
 8.  Write a program that reads the grades of the students of a certain
     subject until the user enters the word "exit". The exit of your
@@ -1745,10 +1739,10 @@ cases**.
       Average grade: 2.3333333333333335  
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 9.  Write a program that reads the age (an integer) of a set of people.
     Data entry will end when a negative value is entered. Your program
@@ -1788,10 +1782,10 @@ cases**.
       People of working age: 4
     ```
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test executions.
-    :::
+    ```
 
 10. Write a program that finds the first value $N$ for which the sum
     $0 + 1 + 2 + 3 + ... + N$ exceeds a LIMIT value that is entered by
@@ -1806,11 +1800,11 @@ cases**.
       5         -450    0
       6         45      10
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them example
     test cases in a table. We have explicitly added 0 and negative
     numbers to make sure these are tested.
-    :::
+    ```
 
 11. A three-digit number is called an Armstrong number if the sum of the
     cube of its digits equals the number itself. For example, 153 is an
@@ -1828,10 +1822,10 @@ cases**.
 
     $407=4^3+0^3+7^3$
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them the
     expected outcome of their program.
-    :::
+    ```
 
 12. Write a program to determine whether an integer is prime or not. A
     prime number is a natural number greater than 1 that has only two
@@ -1845,10 +1839,10 @@ cases**.
     correctly. You should also test other numbers and check your program
     says they are not prime. Also try with negative numbers.
 
-    ::: mdframed
+    ``` { .testruntile}
     Insist that the students test their programs by giving them ideas or
     pointers about the test data to use.
-    :::
+    ```
 
 13. Implement a program that, given two integers, returns if one is a
     divisor of the other. To do this, you must detect which is the
@@ -1903,11 +1897,11 @@ cases**.
       4 is not a divisor of 17
     ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test executions. Note that the test cases have been chosen carefully
     to make sure we cover a lot of combinations and take 0 into account.
-    :::
+    ```
 
 14. Write a program to calculate the quotient and remainder of the
     integer division of two positive integers, using only the
@@ -1950,11 +1944,11 @@ cases**.
       Only positive integers
     ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test executions. Note that the test cases have been chosen carefully
     to make sure we cover a lot of combinations and take 0 into account.
-    :::
+    ```
 
 # Defining and testing functions
 
@@ -1979,8 +1973,8 @@ used. This means that pytest needs to be explained in class.
 
     In pytest these could be implemented like:
 
-    ::: small
-    ::: python
+    ``` { .small}
+    ```python
     \@pytest.mark.parametrize(\"test_case_ID, test_input,
     expected_output\",\[ (1, '0', True), #smallest digit (2, '9', True),
     #largest digit (3, '5', True), #other digit (4, '12', False), #it is
@@ -1990,14 +1984,14 @@ used. This means that pytest needs to be explained in class.
     def test_is_digit(test_case_ID, test_input, expected_output): assert
     is_digit(test_input) == expected_output, \"case
     0\".format(test_case_ID)
-    :::
-    :::
+    ```
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     pytests. And make the connection to the tables with test cases they
     have seen before.
-    :::
+    ```
 
 2.  Write a program that reads a character from the keyboard and
     determines with the function `is_digit` from the previous exercise
@@ -2019,10 +2013,10 @@ used. This means that pytest needs to be explained in class.
     >>>    
     ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test runs.
-    :::
+    ```
 
 3.  Write a function `is_prime` which receives an integer as a parameter
     and returns a boolean. The function will return `True` when the
@@ -2030,19 +2024,19 @@ used. This means that pytest needs to be explained in class.
 
     You can use the following pytest to test your function.
 
-    ::: python
+    ```python
     \@pytest.mark.parametrize(\"testcase, input, expected_output\",\[
     (1, 0, False), (2, 1, False), (3, 2, True), (4, 25, False), (5, 23,
     True), (6, 97, True) \] )
 
     def test_is_prime(testcase, input, expected_output): assert
     is_prime(input) == expected_output, \"case 0\".format(testcase)
-    :::
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     pytests.
-    :::
+    ```
 
 4.  Write a program that reads an integer number from the keyboard and
     determines with the function `is_prime` from the previous exercise
@@ -2072,10 +2066,10 @@ used. This means that pytest needs to be explained in class.
     >>> 
     ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     test runs.
-    :::
+    ```
 
 5.  Write a function `lower_to_upper` which receives as a parameter a
     lowercase `letter` and returns that same character, uppercase. To do
@@ -2099,7 +2093,7 @@ used. This means that pytest needs to be explained in class.
     This is the last time we give you the pytests that you can use to
     test your function. From now on you will have to do it yourself.
 
-    ::: python
+    ```python
     \@pytest.mark.parametrize(\"testcase, input, expected_output\",\[
     (1, 'a', 'A'), (2, 'z', 'Z'), (3, 'ñ', 'Ñ'), (4, '\*', '\*'), (5,
     'Q', 'Q'), (6, ' \] )
@@ -2107,12 +2101,12 @@ used. This means that pytest needs to be explained in class.
     def test_lower_to_upper(testcase, input, expected_output): assert
     lower_to_upper(input) == expected_output, \"case
     0\".format(testcase)
-    :::
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them example
     pytests.
-    :::
+    ```
 
 6.  Write a function `factorial` that given a positive integer `n`
     calculates the factorial. Remember that the factorial of `n` is
@@ -2124,10 +2118,10 @@ used. This means that pytest needs to be explained in class.
     Write pytests to test your implementation. Remember that $0! = 1$ y
     $1! = 1$.
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by adding a line
     telling them to do it.
-    :::
+    ```
 
 7.  The exponential function $e^x$ can be defined as a series of powers.
 
@@ -2154,18 +2148,18 @@ used. This means that pytest needs to be explained in class.
     comes out of our function and the math.exp is less than, for
     example, $10^{-7}$.
 
-    ::: small
-    ::: python
+    ``` { .small}
+    ```python
     def test_my_exp(tc, input, expected_output): assert
     abs(my_exp(input) - expected_output)\<10\*\*-7, \"case
     0\".format(tc)
-    :::
-    :::
+    ```
+    ```
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by providing them a
     parallel oracle and a pytest on how to use it.
-    :::
+    ```
 
 8.  Write a function to calculate the greatest common divisor (`gcd`) of
     its two parameters $x$ and $y$, which are integers and greater than
@@ -2192,11 +2186,11 @@ used. This means that pytest needs to be explained in class.
     description of the exercise well, we see that the function does not
     have to work for numbers that are not greater than 0.
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by adding a line
     telling them to do it and make sure they read well what the function
     is supposed to do.
-    :::
+    ```
 
 9.  Write a function `gcd_3num` that calculates the greatest common
     divisor of more than 2 numbers. To do this, use the function `gcd`
@@ -2204,10 +2198,10 @@ used. This means that pytest needs to be explained in class.
 
     Write pytests to test your implementation.
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by adding a line
     telling them to do it.
-    :::
+    ```
 
 10. Write a function that, given an integer $N1$, returns another
     integer $N2$ that is the result of removing the first and last digit
@@ -2222,10 +2216,10 @@ used. This means that pytest needs to be explained in class.
       4                 0              0
       5                 -3456          -45
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them a table
     of test cases.
-    :::
+    ```
 
 11. Write a function that receives a number $N$ as a parameter and
     generates a string with the numbers: $$1, 1, 2,
@@ -2240,10 +2234,10 @@ used. This means that pytest needs to be explained in class.
       3                 0             \"\"@
       4                 -3            \"-1, -1, -2, -1, -2, -3\"@
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by giving them a table
     of test cases.
-    :::
+    ```
 
 12. Write a function that receives a password as a parameter and
     determines its complexity, according to these rules:
@@ -2273,10 +2267,10 @@ used. This means that pytest needs to be explained in class.
     To test your function well, how many test cases have you run? Have
     you thought about both lowercase and uppercase?
 
-    ::: mdframed
+    ``` {  .testruntile}
     Insist that the students test their programs by asking them
     questions on what would be good test cases.
-    :::
+    ```
 
 # Lists
 
@@ -2286,7 +2280,7 @@ used. This means that pytest needs to be explained in class.
     returns a list of the divisors of $n$. Test your functions with
     pytest, for example:
 
-    ::: python
+    ```python
     \@pytest.mark.parametrize('testcase, input, expected_output',\[ (1,
     10, \[3, 6, 9\]), (2, 0, \[\]), (3, 1, \[\]), (4, -5, \[\]), (5, 12,
     \[3, 6, 9, 12\]), (6, 3, \[3\]) \]) def
@@ -2298,13 +2292,13 @@ used. This means that pytest needs to be explained in class.
     (4, -5, \[\]), (5, 12, \[1, 2, 3, 4, 6, 12\]), (6, 0, \[\]) \]) def
     test_divisors_of(testcase, input, expected_output): assert
     divisors_of(input)==expected_output, 'case 0'.format(testcase)
-    :::
+    ```
 
     Now, use these functions to write a `main` program that asks the
     user for a number greater than zero through the keyboard that
     returns the following:
 
-    ``` {frame="single"}
+    ```python
     >>> %Run 
       Type an integer greater than zero: 1
       There are no multiples of 3
@@ -2395,7 +2389,7 @@ used. This means that pytest needs to be explained in class.
 
     For example by typing:
 
-    ``` {frame="single"}
+    ```python
     >>> print(fib(0))
       [1]
     >>> print(fib(1))
@@ -2412,7 +2406,7 @@ used. This means that pytest needs to be explained in class.
     argument and returns the same list but without the negative
     elements.
 
-    ``` {frame="single"}
+    ```python
     >>> borrar_negativos([0,-1,-11,2,33,-100,5])
       [2, 33, 5]
     >>> borrar_negativos([-1,-11,-3])
@@ -2455,7 +2449,7 @@ used. This means that pytest needs to be explained in class.
     repeating words. You can't use Python's default `split`. For
     example, with the string:
 
-    ``` {frame="single"}
+    ```python
     >>> mySplit('A phrase made up of words. Another phrase with other words.')
       ['a', 'phrase', 'made', 'up', 'of', 'words', 'another', 'with', 'other']
     >>> mySplit('Hi! Helloooo HI')
@@ -2530,8 +2524,8 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ::: small
-    ::: python
+    ``` { .small}
+    ```python
     \@pytest.mark.parametrize(\"testcase, input, output\",\[ (1,
     \[\[1,2,3\],\[4,5,6\],\[7,8,9\]\], 15), (2,
     \[\[1,0,1\],\[1,1,0\],\[1,1,1\]\], 3), (3, \[\[2,0\],\[0,2\]\], 4),
@@ -2540,8 +2534,8 @@ used. This means that pytest needs to be explained in class.
 
     def test_sum_of_diagonal(testcase, input, output): assert
     sum_of_diagonal(input) == output, \"case 0\".format(testcase)
-    :::
-    :::
+    ```
+    ```
 
     2\) Next, we write a function (`create\_matrix`) that, given two
     numbers $n$ and $m$, returns a list that represents a matrix with
@@ -2564,8 +2558,8 @@ used. This means that pytest needs to be explained in class.
 
     Your function must pass the following tests:
 
-    ::: small
-    ::: python
+    ``` { .small}
+    ```python
     \@pytest.mark.parametrize(\"testcase, input1, input2, output\",\[
     (1, \[\[12,7,3\], \[4, 5,6\], \[7, 8,9\]\], \[\[5,8,1,2\],
     \[6,7,3,0\], \[4,5,9,1\]\], \[\[114, 160, 60, 27\], \[ 74, 97, 73,
@@ -2579,8 +2573,8 @@ used. This means that pytest needs to be explained in class.
 
     def test_multiply(testcase, input1, input2, output): assert
     multiply(input1, input2) == output, \"case 0\".format(testcase)
-    :::
-    :::
+    ```
+    ```
 
 # Text files
 
@@ -2758,7 +2752,7 @@ used. This means that pytest needs to be explained in class.
     Then finish the following pytest code to run your tests
     automatically:
 
-    ::: python
+    ```python
     import pytest
 
     \@pytest.mark.parametrize(\"testcase, f_input, expected_output\",\[
@@ -2768,7 +2762,7 @@ used. This means that pytest needs to be explained in class.
     def test_calculate_variance(testcase, f_input, expected_output):
     assert abs(calculate_variance(f_input) - expected_output) \<
     10\*\*-7 , \"case 0\".format(testcase)
-    :::
+    ```
 
     Remember to keep in mind that comparing floats for equality has
     rounding and precision problems. That is why we must compare that
@@ -2825,7 +2819,7 @@ used. This means that pytest needs to be explained in class.
     expected outputs of our tests: from to . Then we create a pytest
     like the one below:
 
-    ::: python
+    ```python
     \@pytest.mark.parametrize(\"testcase, f_input,
     f_expected_output\",\[ (1, \"data1.txt\",
     \"expected_output_data1_IVA.txt\"), (2, \"data2.txt\",
@@ -2845,7 +2839,7 @@ used. This means that pytest needs to be explained in class.
 
     assert (open(f_output).read() ==
     open(f_expected_output).read()), \"case 0\".format(testcase)
-    :::
+    ```
 
     NOTE: To compare the files we have used `read` because the size of
     the files that we are handling here is very small.
@@ -2899,11 +2893,11 @@ used. This means that pytest needs to be explained in class.
     creation of your test cases, in Poliformat there is a `text.txt`
     file that contains the following dictionary:
 
-    ::: python
+    ```python
     'Es': 13, 'un': 52, 'hecho': 13, 'hace': 11, 'tiempo': 8, 'que': 23,
     'lector': 9, 'mira': 13, 'el': 11, 'de': 26, 'texto': 13, 'sitio':
     11, 'mientras': 9, 'que.': 3, 'contenido': 10, 'mira.': 10
-    :::
+    ```
 
     A histogram is a graphical representation of a variable in the form
     of bars, where the area of each bar is proportional to the frequency
@@ -2918,7 +2912,7 @@ used. This means that pytest needs to be explained in class.
     returns an ASCII histogram that uses the Python output format. An
     example is below:
 
-    ``` {frame="single"}
+    ```python
     >>> ascii_histogram(file_to_dic("text.txt"))
                  Es +++++++++++++
                  un ++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -2941,7 +2935,7 @@ used. This means that pytest needs to be explained in class.
     Create a test case to test the function `ascii\_histogram` that
     returns as expected result:
 
-    ``` {frame="single"}
+    ```python
     >>> ascii_histogram(dic)
                   0 
                   1 +
@@ -2963,8 +2957,8 @@ used. This means that pytest needs to be explained in class.
     shopping list and the total cost should be displayed, as in the
     following example:
 
-    ::: small
-    ``` {frame="single"}
+    ``` { .small}
+    ```python
     {\em example test run}
     >>> %Run 
       Enter a product: beer
@@ -2993,7 +2987,7 @@ used. This means that pytest needs to be explained in class.
       --------------------
       Total         15.00€
     ```
-    :::
+    ```
 
     You can assume that the user only adds 1 sample of each product.
     Your tests can be run through the shell manually.
@@ -3005,13 +2999,13 @@ used. This means that pytest needs to be explained in class.
     from letters to point values. The points associated with each letter
     are shown below:
 
-    ::: python
+    ```python
     points = \"A\": 1, \"B\": 3, \"C\": 3, \"D\": 2, \"E\": 1, \"F\": 4,
     \"G\": 2, \"H\": 4, \"I\": 1, \"J\": 2, \"K\": 5, \"L\": 1, \"M\":
     3, \"N\": 1, \"O\": 1, \"P\": 3, \"Q\": 10, \"R\": 1, \"S\": 1,
     \"T\": 1, \"U\": 1, \"V\": 4, \"W\": 4, \"X\": 8, \"Y\": 4, \"Z\":
     10
-    :::
+    ```
 
     Write a function that calculates and displays the Scrabble score for
     a given word. Use the dictionary to calculate the score.
@@ -3046,10 +3040,10 @@ used. This means that pytest needs to be explained in class.
     On the one hand you have to show the percentage expected by the
     probability theory for each total:
 
-    ::: python
+    ```python
     expected_probability = 2: 1/36, 3: 2/36, 4: 3/36, 5: 4/36, 6: 5/36,
     7: 6/36, 8: 5/36, 9: 4/36, 10: 3/36, 11: 2/36, 12: 1/36
-    :::
+    ```
 
     The frequency of each total as a percentage of the number of dice
     rolls made. The output is shown below.
@@ -3257,7 +3251,7 @@ used. This means that pytest needs to be explained in class.
 
     This example zips a string and a list:
 
-    ``` {frame="single"}
+    ```python
     >>> s = 'abc'
     >>> t = [0, 1, 2]
     >>> zip(s, t)
@@ -3267,7 +3261,7 @@ used. This means that pytest needs to be explained in class.
     The result is a **zip object** that contains pairs that can be
     iterated over. The most common use of `zip` is in a `for` loop:
 
-    ``` {frame="single"}
+    ```python
     >>> for pair in zip(s, t):
     ...     print(pair)
     ...
@@ -3280,7 +3274,7 @@ used. This means that pytest needs to be explained in class.
     object, but directly the list with the tuples. You can assume that
     the two sequences it receives have the same number of elements:
 
-    ``` {frame="single"}
+    ```python
     >>> s = 'abc'
     >>> t = [0, 1, 2]
     >>> mi_zip(s,t)
@@ -3299,7 +3293,7 @@ used. This means that pytest needs to be explained in class.
 
     For example you can test your function with:
 
-    ``` {frame="single"}
+    ```python
     >>> firstSet  = {23, 42, 65, 57, 78, 83, 29}
     >>> secondSet = {57, 83, 29, 67, 73, 43, 48}
 
@@ -3320,10 +3314,10 @@ used. This means that pytest needs to be explained in class.
     each speaker her name and the time he needs to travel to the
     conference venue.
 
-    ::: python
+    ```python
     speakers = \[('Jeff', 'Offutt', 7.85), ('James', 'Bach', 3.626),
     ('Lisa', 'Crispin', 10.603) \]
-    :::
+    ```
 
     Write a `format_sort_records` function in Python that allows
     scheduling and returns the following table:
@@ -3346,12 +3340,12 @@ used. This means that pytest needs to be explained in class.
     if it has no repeating characters and False otherwise. Write a
     pytest using the following parameterization:
 
-    ::: python
+    ```python
     \@pytest.mark.parametrize('testcase, input, expected_output',\[ (1,
     'Hello', True), (2, 'HelloO', False), (3, ", True), (4, 'cC',
     False), (5, '0123', True), (6, '33&44', False), (7, '!+&/', True),
     (8, '!++&/', False), \])
-    :::
+    ```
 
 6.  A famous syllogism says:
 
@@ -3367,12 +3361,12 @@ used. This means that pytest needs to be explained in class.
     (assuming that the first set is really complete). The third contains
     everything that is mortal (again, assuming that is complete).
 
-    ::: python
+    ```python
     todas = \"Socrates\", \"Plato\", \"Eratosthenes\", \"Zeus\",
     \"Hera\", \"Athene\", \"Acropolis\", \"Cat\", \"Dog\" personas =
     \"Socrates\", \"Plato\", \"Eratosthenes\" mortales = \"Socrates\",
     \"Plato\", \"Eratosthenes\", \"Cat\", \"Dog\"
-    :::
+    ```
 
     Use the set operators and their methods to show that it is true
     that:
@@ -3426,10 +3420,10 @@ used. This means that pytest needs to be explained in class.
     those that appear below:
 
 
-## Metadata
+# Metadata
 
 | *Summary*                     | Python exercises used at the UPV for first year programming courses that have been adapted by using Test Informed Learning with Examples (TILE) to integrate testing in programming education without it costing (much) more time.  |
-| *TILE aspects*                | Test domain and Test run TILE-ing has been applied. |
+| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
 | *Topics*                      | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets |
 | *Technology used*             | Python, pytest |
 | *Audience*                    | CS1 |
