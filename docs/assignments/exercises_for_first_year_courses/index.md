@@ -19,12 +19,12 @@ to integrate testing in programming education without it costing (much)
 more time. The coloured boxes indicate how they were TILEd.
 
 ```testdomaintile
-This colour box explains a TILE in the <strong>test domain</strong>.
+This colour box explains a TILE in the test domain.
 ```
 
 ```testruntile
-This colour box explains a TILE related to <strong>test runs</strong> 
-and/or <strong>test cases</strong>.
+This colour box explains a TILE related to test runs 
+and/or test cases.
 ```
 
 ------------------------------------------------------------------------
