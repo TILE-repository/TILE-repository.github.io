@@ -23,7 +23,8 @@ This colour box explains a TILE in the **test domain**.
 ```
 
 ```testruntile
-This colour box explains a TILE related to **test runs** and/or **test cases**.
+This colour box explains a TILE related to **test runs** 
+and/or **test cases**.
 ```
 
 ------------------------------------------------------------------------
@@ -389,9 +390,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     Look at the following example:
 
-    ```center
     ![image](images/MadLib-testing.jpg)
-    ```
 
     We need to ask the player for the following words in English:
 
@@ -2844,7 +2843,7 @@ used. This means that pytest needs to be explained in class.
     It should ask the user for a currency and display its symbol or a
     warning message if the currency is not in the dictionary.
 
-    ```{frame="single" label="\\em example test runs"}
+    ```
     >>> %Run 
       Enter a currency: Euro
       €
