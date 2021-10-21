@@ -75,7 +75,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     When we test this program by executing it in the console, we can
     obtain for example:
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter a number: 5
       The square is 25
@@ -125,7 +125,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     them on the screen. The execution of the program should result in
     the following:
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run
       Enter the value of the variable a: 4
       Enter the value of the variable b: 2
@@ -184,7 +184,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     calculates and prints their sum (`+`), subtraction (`-`), product
     (`*`) and division (`/`).
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter a real number: 2.5
       Enter another real number: 34.903
@@ -219,7 +219,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     prints their addition, subtraction, product, division and modulus or
     remainder (`%`).
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter a integer number: 4
       Enter another integer number: 6
@@ -251,7 +251,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     variable, for example `C`. The last step will consist of printing
     the result for the user.
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter the degrees Fahrenheit: 84
       84.0 degrees Fahrenheit are 28.9 degrees Celsius
@@ -268,26 +268,26 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     ```
 
 7.  Let us practice a bit with writing expressions. Implement a program
-    that asks the user for two numbers, $x$ and $y$ and calculates the
+    that asks the user for two numbers, $$x$$ and $$y$$ and calculates the
     following:
 
-    1.  $x+y$
+    1.  $$x+y$$
 
-    2.  $(x+y)x$
+    2.  $$(x+y)x$$
 
-    3.  $xx + yy$
+    3.  $$xx + yy$$
 
-    4.  $x^{5y}$
+    4.  $$x^{5y}$$
 
-    5.  $3x^5-5x^3+2x-7$
+    5.  $$3x^5-5x^3+2x-7$$
 
-    6.  $yx^5-(y+1)x^3+5x-y$
+    6.  $$yx^5-(y+1)x^3+5x-y$$
 
-    7.  $x^{yy+2^y}$
+    7.  $$x^{yy+2^y}$$
 
     Test your program (and your math skills) by:
 
-    -   First doing he exercises by hand for $x=4$ and $y=6$ to obtain
+    -   First doing he exercises by hand for $$x=4$$ and $$y=6$$ to obtain
         the expected outputs.
 
     -   Second, check the answers of your program with your expected
@@ -310,7 +310,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
       test case ID   inputs                  expected output
       -------------- -------- -------- ----- -----------------
-                     $c$      $r$      $t$   
+                     $$c$$      $$r$$      $$t$$   
       1              10000    5.5%     360   550 euros
       2              25000    60%      45    1875 euros
       3              0        50%      200   0.0
@@ -353,11 +353,11 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     withholding as a percentage (w). The gross (GS) and net (NS) salary
     is calculated as:
 
-    1.  $GS = nh * ph$
+    1.  $$GS = nh * ph$$
 
-    2.  $NS = GS - (w/100*GS)$
+    2.  $$NS = GS - (w/100*GS)$$
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter the number of hours worked: 56
       Enter the price of the hour: 10
@@ -370,7 +370,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
       test case ID   inputs                                expected output                   
       -------------- ----------- ----------------- ------- ----------------- --------------- --
-                     $nh$        $ph$              $w$     gross salary      net salary      
+                     $$nh$$        $$ph$$              $$w$$     gross salary      net salary      
       1              56 hours    10 euros/hour     25%     560 euros         420 euros       
       2              2.5 hours   20.4 euros/hour   25.6%   51.0 euros        37.944 euros    
       3              1 hour      25 euros/hour     0.1%    25.0 euros        24.975 euros    
@@ -491,7 +491,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     4.  p4 = (9 + 7)% 10 = 6.
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Enter your day of birth: 29
       Enter your month of birth: 9
@@ -570,12 +570,12 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
 15. We want to format a shopping list for a party with the following
     products: beer, wine and chips. You have to ask the user for the
-    prices of the 3 products (we assume that they are always $< 10$
+    prices of the 3 products (we assume that they are always $$< 10$$
     euros), and the quantities they want to buy (we assume that they are
-    always $<100$ units). The program must return the purchase itemized
+    always $$<100$$ units). The program must return the purchase itemized
     as follows:
 
-    ```{frame="single" label="\\em example test execution of the program"}
+    ```
     >>> %Run 
       Beer price? 9.99
       Wine price? 1.05
@@ -595,8 +595,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
     You have to do 2 different implementations of your program. One
     using the String module operator % to format, and another with the
-    `str.format()`. Test your program with different prices ($<10$
-    euros) and quantities ($<100$ units) to test that the layout is
+    `str.format()`. Test your program with different prices ($$<10$$
+    euros) and quantities ($$<100$$ units) to test that the layout is
     always aligned.
 
     ```testruntile
@@ -684,9 +684,9 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     test executions.
     ```
 
-3.  Write a Python program that asks the user for a word $p$ and it
+3.  Write a Python program that asks the user for a word $$p$$ and it
     returns in the output another word in which the first and last
-    characters of $p$ have been exchanged. Use the chain cutter
+    characters of $$p$$ have been exchanged. Use the chain cutter
     operator. Run the following tests to test the operation of your
     program:
 
@@ -769,7 +769,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       The maximum is oh! and the minimum is 4
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. The values used in the example test executions will
     make then aware that the program was not only for numerical values
@@ -800,7 +800,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Error: enter a number between 1 and 12
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1002,7 +1002,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       12             50       50    99    Isosceles
       13             50       50    100   Not a Triangle
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them test
     cases. Also include a bit of anecdotal history on the triangle
     program and first book on software testing.
@@ -1142,7 +1142,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       The expense is 6.00€
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions.
     ```
@@ -1452,15 +1452,15 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     behaviour? Note that dates can be incorrect in many ways, make sure
     your program detects them all and stops when you enter:
 
-    -   day that is $\leq 0$
+    -   day that is $$\leq 0$$
 
-    -   month that is $\leq 0$
+    -   month that is $$\leq 0$$
 
-    -   year that is $< 0$ (do we accept the year 0?)
+    -   year that is $$< 0$$ (do we accept the year 0?)
 
-    -   days $>=31$ for months that only have 30 days
+    -   days $$>=31$$ for months that only have 30 days
 
-    -   days $>=32$ for months that only have 31 days
+    -   days $$>=32$$ for months that only have 31 days
 
     -   29th of February when it is not a leap year
 
@@ -1475,9 +1475,9 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
 # Loops {#section.loops}
 
-1.  Write a program to calculate the sum of the integers between $N$ and
-    $M$, where $N$ and $M$ are values entered by the user. `result` =
-    $\sum_{n = N}^{M} n$
+1.  Write a program to calculate the sum of the integers between $$N$$ and
+    $$M$$, where $$N$$ and $$M$$ are values entered by the user. `result` =
+    $$\sum_{n = N}^{M} n$$
 
 
     >>> %Run 
@@ -1579,8 +1579,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     with only negative numbers, all zeros, and mix of positive/negative.
     ```
 
-4.  Write a program that receives an integer $N$ and generates all the
-    multiples of 7 between 1 and $N$. Run the following test cases to
+4.  Write a program that receives an integer $$N$$ and generates all the
+    multiples of 7 between 1 and $$N$$. Run the following test cases to
     test your program:
 
       test case ID   inputs   expected outputs                
@@ -1599,7 +1599,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     ```
 
 5.  Modify the previous program so that it displays only those multiples
-    of 7 between 1 and $N$ that are not divisible by 3. Execute the
+    of 7 between 1 and $$N$$ that are not divisible by 3. Execute the
     following test cases to test your program:
 
       test case ID   inputs   expected outputs                
@@ -1618,7 +1618,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
 6.  We have a total of 15 test cases of a Python program. From each test
     we run, we take note of the number of failures that finds. So at the
-    end we have a set of 15 natural numbers: From $n_1$ to $n_{15}$.
+    end we have a set of 15 natural numbers: From $$n_1$$ to $$n_{15}$$.
 
     We are going to write a program that asks for these 15 natural
     numbers through the keyboard and determines:
@@ -1769,8 +1769,8 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
     test executions.
     ```
 
-10. Write a program that finds the first value $N$ for which the sum
-    $0 + 1 + 2 + 3 + ... + N$ exceeds a LIMIT value that is entered by
+10. Write a program that finds the first value $$N$$ for which the sum
+    $$0 + 1 + 2 + 3 + ... + N$$ exceeds a LIMIT value that is entered by
     keyboard. Run the following test cases to test your program:
 
       test ID   input   expected output
@@ -1790,19 +1790,19 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
 
 11. A three-digit number is called an Armstrong number if the sum of the
     cube of its digits equals the number itself. For example, 153 is an
-    Armstrong number because ($1 ^ 3$) + ($5 ^ 3$) + ($3 ^ 3$) = 153.
+    Armstrong number because ($$1 ^ 3$$) + ($$5 ^ 3$$) + ($$3 ^ 3$$) = 153.
     Write all Armstrong numbers between 100 and 500.
 
     To test your program consider these numbers, which are the only
     Armstrong numbers:
 
-    $153=1^3+5^3+3^3$
+    $$153=1^3+5^3+3^3$$
 
-    $370=3^3+7^3+0^3$
+    $$370=3^3+7^3+0^3$$
 
-    $371=3^3+7^3+1^3$
+    $$371=3^3+7^3+1^3$$
 
-    $407=4^3+0^3+7^3$
+    $$407=4^3+0^3+7^3$$
 
     ```testruntile
     Insist that the students test their programs by giving them the
@@ -1879,7 +1879,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       4 is not a divisor of 17
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. Note that the test cases have been chosen carefully
     to make sure we cover a lot of combinations and take 0 into account.
@@ -1926,7 +1926,7 @@ This colour box explains a TILE related to **test runs** and/or **test cases**.
       Only positive integers
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test executions. Note that the test cases have been chosen carefully
     to make sure we cover a lot of combinations and take 0 into account.
@@ -1968,7 +1968,7 @@ used. This means that pytest needs to be explained in class.
     0\".format(test_case_ID)
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     pytests. And make the connection to the tables with test cases they
     have seen before.
@@ -1994,7 +1994,7 @@ used. This means that pytest needs to be explained in class.
     >>>    
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test runs.
     ```
@@ -2014,7 +2014,7 @@ used. This means that pytest needs to be explained in class.
     is_prime(input) == expected_output, \"case 0\".format(testcase)
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     pytests.
     ```
@@ -2047,7 +2047,7 @@ used. This means that pytest needs to be explained in class.
     >>> 
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     test runs.
     ```
@@ -2084,7 +2084,7 @@ used. This means that pytest needs to be explained in class.
     0\".format(testcase)
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them example
     pytests.
     ```
@@ -2096,30 +2096,30 @@ used. This means that pytest needs to be explained in class.
 
     $$5! = 5\ x\ 4\ x\ 3\ x\ 2\ x\ 1$$
 
-    Write pytests to test your implementation. Remember that $0! = 1$ y
-    $1! = 1$.
+    Write pytests to test your implementation. Remember that $$0! = 1$$ y
+    $$1! = 1$$.
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by adding a line
     telling them to do it.
     ```
 
-7.  The exponential function $e^x$ can be defined as a series of powers.
+7.  The exponential function $$e^x$$ can be defined as a series of powers.
 
     Taylor Series Development:
 
     ![image](images/Taylor.png){width="50%"}
 
-    For example, when $x = 1$: $e =  \sum_{n=0}^{\infty} \frac{1}{n!}$
+    For example, when $$x = 1$$: $$e =  \sum_{n=0}^{\infty} \frac{1}{n!}$$
 
     then:
 
-    $e = \frac{1}{0!} +  \frac{1}{1!} + \frac{1}{2!} +  \dots$
+    $$e = \frac{1}{0!} +  \frac{1}{1!} + \frac{1}{2!} +  \dots$$
 
-    Write a function `my_exp` that receives the value of $x$ as a
-    parameter and uses an iteration to calculate the $n$-th term of the
+    Write a function `my_exp` that receives the value of $$x$$ as a
+    parameter and uses an iteration to calculate the $$n$$-th term of the
     series, and adding these terms obtains an approximation to the value
-    of $e^x$. You can use your `factorial` function from the previous
+    of $$e^x$$. You can use your `factorial` function from the previous
     exercise.
 
     You can use `math.exp` as the expected result in your parameterized
@@ -2127,7 +2127,7 @@ used. This means that pytest needs to be explained in class.
     to keep in mind that comparing floats for equality has rounding and
     precision problems. We can compare that the difference between what
     comes out of our function and the math.exp is less than, for
-    example, $10^{-7}$.
+    example, $$10^{-7}$$.
 
     ```small
     ```python
@@ -2136,37 +2136,37 @@ used. This means that pytest needs to be explained in class.
     0\".format(tc)
     ```
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by providing them a
     parallel oracle and a pytest on how to use it.
     ```
 
 8.  Write a function to calculate the greatest common divisor (`gcd`) of
-    its two parameters $x$ and $y$, which are integers and greater than
-    0. Use Euclid's algorithm. Let $x$ e $y$ be the original values of
-    the variables $a$ and $b$, the algorithm says:
+    its two parameters $$x$$ and $$y$$, which are integers and greater than
+    0. Use Euclid's algorithm. Let $$x$$ e $$y$$ be the original values of
+    the variables $$a$$ and $$b$$, the algorithm says:
 
     As long as a and b are not equal, change the greater of the two for
     the difference between the greater and the lesser. When they have
-    the same value, that's the `gcd` of $x$ and $y$.
+    the same value, that's the `gcd` of $$x$$ and $$y$$.
 
     Properties on which the Euclid algorithm is based:
 
-    -   At the end of each iteration: `gcd`($x$, $y$)= `gcd`($a$, $b$)
+    -   At the end of each iteration: `gcd`($$x$$, $$y$$)= `gcd`($$a$$, $$b$$)
 
     -   This property is a consequence of the mathematical property:
 
-        -   `gcd`($a$, $b$) = `gcd`($a - b$, $b$) when $a > b$
+        -   `gcd`($$a$$, $$b$$) = `gcd`($$a - b$$, $$b$$) when $$a > b$$
 
-        -   `gcd`($a$, $b$) = `gcd`($a$, $b - a$) when $b > a$
+        -   `gcd`($$a$$, $$b$$) = `gcd`($$a$$, $$b - a$$) when $$b > a$$
 
-    -   When finally $a = b$, `gcd`($x$, $y$) = `gcd`($a$, $b$)
+    -   When finally $$a = b$$, `gcd`($$x$$, $$y$$) = `gcd`($$a$$, $$b$$)
 
     Write pytests to test your implementation. If we read the
     description of the exercise well, we see that the function does not
     have to work for numbers that are not greater than 0.
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by adding a line
     telling them to do it and make sure they read well what the function
     is supposed to do.
@@ -2178,17 +2178,17 @@ used. This means that pytest needs to be explained in class.
 
     Write pytests to test your implementation.
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by adding a line
     telling them to do it.
     ```
 
-10. Write a function that, given an integer $N1$, returns another
-    integer $N2$ that is the result of removing the first and last digit
-    of $N1$. Note: If $N1$ has 2 digits or only one, then $N2$ must
+10. Write a function that, given an integer $$N1$$, returns another
+    integer $$N2$$ that is the result of removing the first and last digit
+    of $$N1$$. Note: If $$N1$$ has 2 digits or only one, then $$N2$$ must
     be 0. Examples of test cases that you can automate with pytest are:
 
-      testcase number   input ($N1$)   expected output ($N2$)
+      testcase number   input ($$N1$$)   expected output ($$N2$$)
       ----------------- -------------- ------------------------
       1                 42635          263
       2                 23             0
@@ -2196,25 +2196,25 @@ used. This means that pytest needs to be explained in class.
       4                 0              0
       5                 -3456          -45
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them a table
     of test cases.
     ```
 
-11. Write a function that receives a number $N$ as a parameter and
+11. Write a function that receives a number $$N$$ as a parameter and
     generates a string with the numbers: $$1, 1, 2,
     1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, . \-. . , 1, 2, 3, . . . , N$$
 
     Examples of test cases that you can automate with pytest are:
 
-      testcase number   input ($N$)   expected output
+      testcase number   input ($$N$$)   expected output
       ----------------- ------------- -----------------------------------
       1                 4             \"1, 1, 2, 1, 2, 3, 1, 2, 3, 4\"@
       2                 1             \"1\"@
       3                 0             \"\"@
       4                 -3            \"-1, -1, -2, -1, -2, -3\"@
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by giving them a table
     of test cases.
     ```
@@ -2247,17 +2247,17 @@ used. This means that pytest needs to be explained in class.
     To test your function well, how many test cases have you run? Have
     you thought about both lowercase and uppercase?
 
-    ```{  .testruntile}
+    ```testruntile
     Insist that the students test their programs by asking them
     questions on what would be good test cases.
     ```
 
 # Lists
 
-1.  Write a function that, given an integer $n$ greater than zero,
-    returns a list of the multiples of 3 that exist between 3 and $n$.
-    Write another function that, given an integer $n$ greater than zero,
-    returns a list of the divisors of $n$. Test your functions with
+1.  Write a function that, given an integer $$n$$ greater than zero,
+    returns a list of the multiples of 3 that exist between 3 and $$n$$.
+    Write another function that, given an integer $$n$$ greater than zero,
+    returns a list of the divisors of $$n$$. Test your functions with
     pytest, for example:
 
     ```python
@@ -2483,24 +2483,24 @@ used. This means that pytest needs to be explained in class.
 12. Write a module with three functions about matrices, and their
     pytests: `sum\_of\_diagonal`, `create\_matrix` and `multiply`.
 
-    1\) The first function is (`sum\_of\_diagonal`) that, given a $m$
+    1\) The first function is (`sum\_of\_diagonal`) that, given a $$m$$
     matrix of integers, calculates the sum of the integers that are on
     the diagonal. Your function has to check that the matrix is square
     and does indeed have a diagonal to add. For example:
 
-    ${\tt sum\_of\_diagonal}(
+    $${\tt sum\_of\_diagonal}(
     \begin{bmatrix}
         1 & 2 & 3 & 4 \\
         2 & 4 & 6 & 1 \\
         0 & 5 & 8 & 2 \\
         2 & 9 & 6 & 3 \\
     \end{bmatrix})
-     = 16$, $\;\;$ ${\tt sum\_of\_diagonal}(
+     = 16$$, $$\;\;$$ $${\tt sum\_of\_diagonal}(
     \begin{bmatrix}
         1 & 5   \\
         3 & 4  \\
     \end{bmatrix})
-     = 5$
+     = 5$$
 
     Your function must pass the following tests:
 
@@ -2517,22 +2517,22 @@ used. This means that pytest needs to be explained in class.
     ```
 
     2\) Next, we write a function (`create\_matrix`) that, given two
-    numbers $n$ and $m$, returns a list that represents a matrix with
-    $n$ rows and $m$ columns, all values being 0.
+    numbers $$n$$ and $$m$$, returns a list that represents a matrix with
+    $$n$$ rows and $$m$$ columns, all values being 0.
 
-    ${\tt create\_matrix}(3,4) = 
+    $${\tt create\_matrix}(3,4) = 
     \begin{bmatrix}
         0 & 0 & 0 & 0 \\
         0 & 0 & 0 & 0 \\
         0 & 0 & 0 & 0 \\
-    \end{bmatrix})$
+    \end{bmatrix})$$
 
     Design a set of test cases and automate them with the pytest.
 
-    3\) The third function is for (`multiply`). Given two matrices $m_1$
-    and $m_2$, returns $m_1 \times m_2$. Remember[^3] that we can only
-    multiply 2 matrices if the number of columns in the $m_1$ matrix is
-    equal to the number of rows in the $m_2$ matrix.\
+    3\) The third function is for (`multiply`). Given two matrices $$m_1$$
+    and $$m_2$$, returns $$m_1 \times m_2$$. Remember[^3] that we can only
+    multiply 2 matrices if the number of columns in the $$m_1$$ matrix is
+    equal to the number of rows in the $$m_2$$ matrix.\
     ![image](images/mult-matrix.png){width="50%"}
 
     Your function must pass the following tests:
@@ -2745,12 +2745,12 @@ used. This means that pytest needs to be explained in class.
     Remember to keep in mind that comparing floats for equality has
     rounding and precision problems. That is why we must compare that
     the difference between what comes out of our function and what we
-    expect is less than, for example, $10^{-7}$.
+    expect is less than, for example, $$10^{-7}$$.
 
 6.  Implement a `calculate\_IVA` function in Python that receives a name
     from a text file (for example `data.txt`) where the prices without
     IVA of some items are found. Your function must read these prices,
-    apply IVA (21 $\%$) to them and save the values with VAT in a file
+    apply IVA (21 $$\%$$) to them and save the values with VAT in a file
     named `data_IVA.txt`. The data in `data_IVA.txt` must be aligned to
     the right and with 2 decimal places. In addition to generating the
     file, your function has to return the name of the generated file.
