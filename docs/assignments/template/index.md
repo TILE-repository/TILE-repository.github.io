@@ -26,6 +26,40 @@ These are the steps you need to take to do this:
 
 If you need any help, don't hesitate to contact the repository maintainers.
 
+## Topics
+
+The assignments will be accessable based on the topics. We use the following taxonomy:
+
+- Variables, expressions, types
+- Assignment statements
+- Strings
+  - Indexation
+  - Slicing
+  - Build-in functions and methods
+- Console input/output
+- Conditionals (if-elif-else)
+- Exceptions
+- Errors
+- Loops/iterations (while/for)
+- Functions
+- Unit tests
+- Modules/libraries
+- Structured types
+  - Tuples
+  - Lists
+  - Dictionaries
+  - Sets
+- File input/output
+- GUI
+- Object oriented programming
+- Advanced topics
+  - Recursion
+  - Functional programming (lambda expressions)
+- Algorithms
+  - Hashing
+
+If you use one or more of these topics in your metadata, we will index the assignment under those topics.
+
 ## Metadata
 
 | *Summary*                     | What this assignment is about. |
