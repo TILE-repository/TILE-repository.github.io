@@ -1,5 +1,5 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author: Tanja E.J. Vos
 ...
 
@@ -126,4 +126,4 @@ of this in one of the very first exercises.
 | _Programming learning goals_ | command line in-/output. |
 | _Testing learning goals_ | Creating test awareness |
 | _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ | n/a |
+| _Variants_ |  Many options are possible, including porting to other programming languages. |

@@ -1,5 +1,5 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
@@ -93,4 +93,4 @@ TILEd by making it about test cases and their components.
 | _Programming learning goals_ | Strings, replacing strings, formatting strings. |
 | _Testing learning goals_ | Creating test awareness and applying test cases. |
 | _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ | n/a |
+| _Variants_ |  Many options are possible, including porting to other programming languages. |

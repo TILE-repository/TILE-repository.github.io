@@ -18,19 +18,27 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Working with expressions](exercises_for_first_year_courses/assignment-7.md)
   - [Interest calculator](exercises_for_first_year_courses/assignment-8.md)
   - [Gross / net salary calculator](exercises_for_first_year_courses/assignment-10.md)
+  - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
+  - [Converting time](exercises_for_first_year_courses/assignment-16.md)
+  - [Calculating discounts](exercises_for_first_year_courses/assignment-17.md)
 - Assignment statements
   - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
   - [Variables as operator and operand](exercises_for_first_year_courses/assignment-9.md)
 - Strings
   - Indexation
+    - [Letter exchanger](exercises_for_first_year_courses/assignment-18.md)
   - Slicing
   - Build-in functions and methods
     - [MadLibs](exercises_for_first_year_courses/assignment-11.md)
     - [String formatting using test case data](exercises_for_first_year_courses/assignment-12.md)
+    - [ASCII art generator](exercises_for_first_year_courses/assignment-14.md)
+    - [Shopping calculator](exercises_for_first_year_courses/assignment-15.md)
+    - [Calculating discounts](exercises_for_first_year_courses/assignment-17.md)
 - Console input/output
   - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
 - Conditionals (if-elif-else)
+  - [Shopping calculator](exercises_for_first_year_courses/assignment-15.md)
 - Exceptions
 - Errors
 - Loops/iterations (while/for)
@@ -51,5 +59,7 @@ The assignments are grouped based on their topics so educators can easily find a
   - Recursion
   - Functional programming (lambda expressions)
 - Algorithms
+  - Cryptography
+    - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
   - Hashing
     - [Password hashing](passwordhashing/index.md)

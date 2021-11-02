@@ -1,5 +1,5 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
@@ -72,4 +72,4 @@ assumptions of the types of the variables.
 | _Programming learning goals_ | Arithmetics |
 | _Testing learning goals_ | Applying test cases. |
 | _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ | n/a |
+| _Variants_ |  Many options are possible, including porting to other programming languages. |

@@ -1,9 +1,9 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
-# Python exercises for first year programming courses
+# Letter exchanger
 
 By [Tanja E.J. Vos](https://www.tanjavos.com).
 
@@ -27,17 +27,34 @@ and/or test cases.
 # Assignment
 
 
+Write a Python program that asks the user for a word $$p$$ and it
+returns in the output another word in which the first and last
+characters of $$p$$ have been exchanged. Use the chain cutter
+operator. Run the following tests to test the operation of your
+program:
 
+**test case ID** | **input** | **expected output** 
+------------------|-----------|---------------------
+1                | `""`      | `""`                
+2                | `"a"`     | `"a"`               
+3                | `"ab"`    | `"ba"`              
+4                | `"ab ba"` | `"ab ba"`           
+
+
+```testruntile
+Insist that the students test their programs by giving them a table
+of test cases.
+```
 
 # Metadata
 
-| *Summary*                     |  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
+| *Summary*                     | Exchange letters of the input. |
+| *TILE aspects*                | Test case TILE-ing is applied. |
+| *Topics*                      | String idexation |
 | *Technology used*             | Python |
 | *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
+| *Programming learning goals*  | Accessing elements of strings. |
+| *Testing learning goals*      | Designing test cases. |
 | *Prerequisites*               | Basic programming constructs. |
 | *Variants*                    | Many options are possible, including porting to other programming languages. |    
 

@@ -1,9 +1,9 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
-# Python exercises for first year programming courses
+# Test Informed Learning with Examples assignment
 
 By [Tanja E.J. Vos](https://www.tanjavos.com).
 

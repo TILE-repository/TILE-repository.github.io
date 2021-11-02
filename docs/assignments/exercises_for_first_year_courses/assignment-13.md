@@ -1,5 +1,5 @@
 ---
-title: "Python exercises for first year programming courses"
+title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
@@ -67,8 +67,6 @@ For example, if the date entered is 29 9 1975, the PIN would be 1 9
 4                | 55         | 28    | 300  | 0 0 0 3                   
 5                | 356        | 903   | 1568 | 1 3 9 1                   
 
-
-
 Look at test cases 4 and 5. Are they valid? Inputs 55 and 356 are
 not valid numbers for a day of birth. However, our program works and
 calculates a PIN. Python does not know what birthdays are and when
@@ -88,11 +86,11 @@ calculated a PIN number.
 # Metadata
 
 | _Summary_ | Basic cryptography |
-| _TILE aspects_ | Test case TILE-ing is applied. |
+| _TILE aspects_ | Test run TILE-ing is applied. |
 | _Topics_ | Using modulo operator |
 | _Technology used_ | Python. |
 | _Audience_ | CS1 |
-| _Programming learning goals_ | Strings, replacing strings, formatting strings. |
+| _Programming learning goals_ | Using modulo to do basic cryptography. |
 | _Testing learning goals_ | Applying test cases, input validation. |
 | _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ | n/a |
+| _Variants_ |  Many options are possible, including porting to other programming languages. |
