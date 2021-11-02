@@ -3,7 +3,7 @@ title: "Python exercises for first year programming courses"
 author:  Tanja E.J. Vos
 ...
 
-# Python exercises for first year programming courses
+# MadLibs
 
 By [Tanja E.J. Vos](https://www.tanjavos.com).
 
@@ -26,18 +26,41 @@ and/or test cases.
 
 # Assignment
 
+Mad Libs is a phrase template word game where a player asks others
+for a list of words to substitute for blanks in a story, often
+comical or nonsensical, and which will be read aloud later. We are
+going to make a little Mad Libs.
 
+Look at the following example:
 
+![image](images/MadLib-testing.jpg)
+
+We need to ask the player for the following words in English:
+
+-   verb, for example: `write`
+
+-   plural noun, for example: `problems`
+
+-   adjective, for example: `fun`
+
+So for these examples, our program returns:
+
+`Whether you write computer programs to solve problems or just for fun, it is very important that you ALWAYS TEST your code for bugs. `
+
+Try other inputs and try to come up with a funny phrase.
+
+```testdomaintile
+This TILE contains the message that testing is important.
+```
 
 # Metadata
 
-| *Summary*                     | Python exercises used for first year programming courses that have been adapted by using Test Informed Learning with Examples (TILE) to integrate testing in programming education without it costing (much) more time.  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets |
-| *Technology used*             | Python, pytest |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Basic programming concepts, datatypes, file in-/output. |
-| *Testing learning goals*      | Unit testing techniques. |
-| *Prerequisites*               | None. |
-| *Variants*                    | Numerous options are possible, including porting to other programming languages. |    
-
+| _Summary_ | MadLib game with test related content. |
+| _TILE aspects_ | Test domain TILE-ing is applied. |
+| _Topics_ | Input output, variables, strings. |
+| _Technology used_ | Python. |
+| _Audience_ | CS1 |
+| _Programming learning goals_ | Strings, replacing strings. |
+| _Testing learning goals_ | Creating test awareness |
+| _Prerequisites_ | None. |
+| _Variants_ | n/a |

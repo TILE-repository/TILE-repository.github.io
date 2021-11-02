@@ -3,7 +3,7 @@ title: "Python exercises for first year programming courses"
 author:  Tanja E.J. Vos
 ...
 
-# Python exercises for first year programming courses
+# Simple calculator
 
 By [Tanja E.J. Vos](https://www.tanjavos.com).
 
@@ -26,18 +26,49 @@ and/or test cases.
 
 # Assignment
 
+The expressions on the right of the assignment can be all complex that we want. 
+Implement a program that reads two real numbers, calculates and prints their sum (`+`), subtraction (`-`), product (`*`) and division (`/`).
 
+```
+>>> %Run 
+    Enter a real number: 2.5
+    Enter another real number: 34.903
+    The sum is: 37.403
+    The subtraction is: -32.403
+    The product is: 87.2575
+    The division is: 0.07162708076669627
+>>> %Run 
+    Enter a real number: 0
+    Enter another real number: 4
+    The sum is: 4.0
+    The subtraction is: -4.0
+    The product is: 0.0
+    The division is: 0.0
+>>> %Run 
+    Enter a real number: 2000
+    Enter another real number: 45.88
+    The sum is: 2045.88
+    The subtraction is: 1954.12
+    The product is: 91760.0
+    The division is: 43.59197907585004
+```
+
+What happens when you test your programs with two zeros? Why does
+that happen? What could we do about that?
+
+```testruntile
+TILEd by adding example test executions for them to test.
+```
 
 
 # Metadata
 
-| *Summary*                     | Python exercises used for first year programming courses that have been adapted by using Test Informed Learning with Examples (TILE) to integrate testing in programming education without it costing (much) more time.  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets |
-| *Technology used*             | Python, pytest |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Basic programming concepts, datatypes, file in-/output. |
-| *Testing learning goals*      | Unit testing techniques. |
-| *Prerequisites*               | None. |
-| *Variants*                    | Numerous options are possible, including porting to other programming languages. |    
-
+| _Summary_ | Simple calculator. |
+| _TILE aspects_ |Test run TILE-ing is applied. |
+| _Topics_ | Input output, variables. |
+| _Technology used_ | Python. |
+| _Audience_ | CS1 |
+| _Programming learning goals_ | command line in-/output, variables. |
+| _Testing learning goals_ | Creating test awareness |
+| _Prerequisites_ | None. |
+| _Variants_ | n/a |
