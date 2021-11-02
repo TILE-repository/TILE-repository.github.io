@@ -4,6 +4,14 @@
 
 @import "{{ site.theme }}";
 
+.wrapper {
+    width: 1024px; // was 860 px
+}
+
+section {
+    width: 666px; // was 500 px
+}
+
 a {
     color: #87a7be;
 }
@@ -26,14 +34,6 @@ a {
     strong {
         color: #87a7be;
     }
-}
-
-.wrapper {
-    width: 1024px; // was 860 px
-}
-
-section {
-    width: 666px; // was 500 px
 }
 
 .highlight {
