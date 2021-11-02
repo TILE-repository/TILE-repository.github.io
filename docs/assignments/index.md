@@ -2,17 +2,9 @@
 title: "The assignments"
 ...
 
-# TILED Assignments
+# TILED Assignments 
 
-Here are the TILED assignments of the repository:
-
-| **Title** | **Topics** | **Audience** |
-|---|---|---|
-| [Generating test reports](../nifties/2022/nifty2022.md) | File handling, data processing, parsing, generating reports. | CS2/CS50 |
-| [Password hashing](passwordhashing/index.md) | Hashing. | CS1/CS2 |
-| [Python exercises for first year programming courses](exercises_for_first_year_courses/index.md) | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets | CS1 |
-
-# TILED Assignments
+The assignments are grouped based on their topics so educators can easily find assignments that match with the topics of their own program.
 
 - Variables, expressions, types
 - Assignment statements
@@ -25,7 +17,7 @@ Here are the TILED assignments of the repository:
 - Exceptions
 - Errors
 - Loops/iterations (while/for)
-- Functions
+- Functions 
 - Unit tests
 - Modules/libraries
 - Structured types
