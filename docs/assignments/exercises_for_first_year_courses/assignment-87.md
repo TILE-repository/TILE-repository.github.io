@@ -31,13 +31,12 @@ and/or test cases.
 
 # Metadata
 
-| *Summary*                     | Python exercises used for first year programming courses that have been adapted by using Test Informed Learning with Examples (TILE) to integrate testing in programming education without it costing (much) more time.  |
+| *Summary*                     |  |
 | *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets |
-| *Technology used*             | Python, pytest |
+| *Topics*                      |  |
+| *Technology used*             | Python |
 | *Audience*                    | CS1 |
-| *Programming learning goals*  | Basic programming concepts, datatypes, file in-/output. |
-| *Testing learning goals*      | Unit testing techniques. |
-| *Prerequisites*               | None. |
-| *Variants*                    | Numerous options are possible, including porting to other programming languages. |    
-
+| *Programming learning goals*  |  |
+| *Testing learning goals*      |  |
+| *Prerequisites*               | Basic programming constructs. |
+| *Variants*                    | Many options are possible, including porting to other programming languages. |    

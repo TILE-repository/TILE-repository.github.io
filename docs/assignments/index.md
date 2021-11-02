@@ -27,6 +27,7 @@ The assignments are grouped based on their topics so educators can easily find a
   - Slicing
   - Build-in functions and methods
     - [MadLibs](exercises_for_first_year_courses/assignment-11.md)
+    - [String formatting using test case data](exercises_for_first_year_courses/assignment-12.md)
 - Console input/output
   - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
 - Conditionals (if-elif-else)

@@ -58,5 +58,5 @@ outcomes with a parallel oracle that they can find on the web.
 | _Audience_ | CS1 |
 | _Programming learning goals_ | command line in-/output, variables. |
 | _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |

@@ -70,5 +70,5 @@ TILEd by adding example test executions for them to test.
 | _Audience_ | CS1 |
 | _Programming learning goals_ | command line in-/output, variables. |
 | _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |

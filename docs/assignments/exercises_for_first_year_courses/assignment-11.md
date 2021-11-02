@@ -62,5 +62,5 @@ This TILE contains the message that testing is important.
 | _Audience_ | CS1 |
 | _Programming learning goals_ | Strings, replacing strings. |
 | _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |

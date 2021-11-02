@@ -438,6 +438,8 @@
     TILEd by making it about test cases and their components.
     ```
 
+---
+
 13. Implement a program that reads three integer values: day, month, and
     year of a person's birth. Using this data, the program should show a
     four-digit PIN associated with the date of birth. The PIN is

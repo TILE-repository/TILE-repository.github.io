@@ -54,5 +54,5 @@ subtle TILE.
 | _Audience_ | CS1 |
 | _Programming learning goals_ | Arithmetics |
 | _Testing learning goals_ | Test awareness |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |

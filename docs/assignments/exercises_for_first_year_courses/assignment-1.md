@@ -125,5 +125,5 @@ of this in one of the very first exercises.
 | _Audience_ | CS1 |
 | _Programming learning goals_ | command line in-/output. |
 | _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |

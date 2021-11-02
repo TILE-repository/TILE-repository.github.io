@@ -65,5 +65,5 @@ test cases. This teaches them what test cases are made up of:
 | _Audience_ | CS1 |
 | _Programming learning goals_ | Arithmetics |
 | _Testing learning goals_ | Applying test cases. |
-| _Prerequisites_ | None. |
+| _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ | n/a |
