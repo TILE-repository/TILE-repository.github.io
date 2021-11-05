@@ -64,10 +64,11 @@ If you use one or more of these topics in your metadata, we will index the assig
 
 | *Summary*                     | What this assignment is about. |
 | *TILE aspects*                | What are the TILE aspects in this assignment. |
-| *Topics*                      | The topics covered by this assignment. |
+| *Topics*                      | The topics covered by this assignment (see taxonomy). |
 | *Technology used*             | For example, programming languages, frameworks. |
-| *Audience*                    | Who is this assigment for. |
-| *Programming learning goals*  | What are the learning goals. |
-| *Testing learning goals*      | What are the learning goals. |
+| *Audience*                    | Who is this assignment for. |
+| *Programming learning goals*  | What are the programming learning goals. |
+| *Testing learning goals*      | What are the testing learning goals. |
 | *Prerequisites*               | Are there any prerequisites? For example, what should the student already know? |
 | *Variants*                    | Optional possibilities for adaptations or varieties |
+| _Added by_                    | Your name |  
