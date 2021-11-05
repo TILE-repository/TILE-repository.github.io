@@ -3,7 +3,7 @@ title: "Test Informed Learning with Examples assignment"
 author:  Tanja E.J. Vos
 ...
 
-# Test Informed Learning with Examples assignment
+# Multiples of 7 not divisible by 3
 
 By [Tanja E.J. Vos](https://www.tanjavos.com).
 
@@ -26,18 +26,32 @@ and/or test cases.
 
 # Assignment
 
+Modify the previous program so that it displays only those multiples
+of 7 between 1 and $$N$$ that are not divisible by 3. Execute the
+following test cases to test your program:
 
+**test case ID**   |**inputs**   |**expected outputs**                
+-------------- |-------- ------------------------------- --
+1              |0       | there are no multiples of 7     
+2              |3        |there are no multiples of 7     
+3             | -5     |  there are no multiples of 7     
+4             | -65     | -7, -14, -28, -35, -49, -56     
+5             | 18     |  7, 14                           
+6             | 77      | 7, 14, 28, 35, 49, 56, 70, 77   
 
+```testruntile
+Insist that the students test their programs by giving them example
+test cases in a table.
+```
 
 # Metadata
 
-| *Summary*                     |  |
+| *Summary*                     | Multiples of 7 not divisible by 3 |
 | *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
+| *Topics*                      | Loops, conditionals, arithmetics. |
 | *Technology used*             | Python |
 | *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
+| *Programming learning goals*  | Working with positive and negative numbers, calculation multiples of seven, determining the remainder of a division. |
+| *Testing learning goals*      | Create awareness of test cases. |
 | *Prerequisites*               | Basic programming constructs. |
 | *Variants*                    | Many options are possible, including porting to other programming languages. |    
-

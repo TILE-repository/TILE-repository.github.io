@@ -32,6 +32,16 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Marathon selection](exercises_for_first_year_courses/assignment-31.md)
   - [Calculate areas](exercises_for_first_year_courses/assignment-34.md)
   - [Calculating and verifying serial numbers based on dates](exercises_for_first_year_courses/assignment-36.md)
+  - [Calculating the mean of postive and negative numbers](exercises_for_first_year_courses/assignment-39.md)
+  - [Multiples of seven](exercises_for_first_year_courses/assignment-40.md)
+  - [Multiples of 7 not divisible by 3](exercises_for_first_year_courses/assignment-41.md)
+  - [Counting test case failures](exercises_for_first_year_courses/assignment-42.md)
+  - [Calculate the maximum of real numbers](exercises_for_first_year_courses/assignment-43.md)
+  - [Grading statistics](exercises_for_first_year_courses/assignment-44.md)
+  - [Age statistics](exercises_for_first_year_courses/assignment-45.md)
+  - [Prime or not](exercises_for_first_year_courses/assignment-48.md)
+  - [Determine dividers](exercises_for_first_year_courses/assignment-49.md)
+  - [Quotient and remainder](exercises_for_first_year_courses/assignment-50.md)
 - Assignment statements
   - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
@@ -63,13 +73,29 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Calculate areas](exercises_for_first_year_courses/assignment-34.md)
   - [Determine the quadrant of the Cartesian plane](exercises_for_first_year_courses/assignment-35.md)
   - [Calculating and verifying serial numbers based on dates](exercises_for_first_year_courses/assignment-36.md)
+  - [Calculating the mean of postive and negative numbers](exercises_for_first_year_courses/assignment-39.md)
+  - [Multiples of seven](exercises_for_first_year_courses/assignment-40.md)
+  - [Multiples of 7 not divisible by 3](exercises_for_first_year_courses/assignment-41.md)
+  - [Counting test case failures](exercises_for_first_year_courses/assignment-42.md)
+  - [Calculate the maximum of real numbers](exercises_for_first_year_courses/assignment-43.md)
 - Exceptions
 - Errors
 - Loops/iterations (while/for)
   - [Calculating the sum of the integers](exercises_for_first_year_courses/assignment-37.md)
   - [The sum of the odds and even numbers](exercises_for_first_year_courses/assignment-38.md)
-- Functions 
+  - [Calculating the mean of postive and negative numbers](exercises_for_first_year_courses/assignment-39.md)
+  - [Multiples of seven](exercises_for_first_year_courses/assignment-40.md)
+  - [Multiples of 7 not divisible by 3](exercises_for_first_year_courses/assignment-41.md)
+  - [Counting test case failures](exercises_for_first_year_courses/assignment-42.md)
+  - [Calculate the maximum of real numbers](exercises_for_first_year_courses/assignment-43.md)
+  - [Grading statistics](exercises_for_first_year_courses/assignment-44.md)
+  - [Age statistics](exercises_for_first_year_courses/assignment-45.md)
+  - [Limit exceeding sum](exercises_for_first_year_courses/assignment-46.md)
+- Functions
+  - [Is this character a digit?](exercises_for_first_year_courses/assignment-51.md)
+  - [Is this character a digit? - part two](exercises_for_first_year_courses/assignment-52.md)
 - Unit tests
+  - [Is this character a digit?](exercises_for_first_year_courses/assignment-51.md)
 - Modules/libraries
 - Structured types
   - Tuples
@@ -88,5 +114,6 @@ The assignments are grouped based on their topics so educators can easily find a
 - Algorithms
   - Cryptography
     - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
+    - [Prime or not](exercises_for_first_year_courses/assignment-48.md)
   - Hashing
     - [Password hashing](passwordhashing/index.md)
