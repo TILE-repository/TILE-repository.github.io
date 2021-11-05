@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Quotient and remainder
@@ -83,5 +83,6 @@ to make sure we cover a lot of combinations and take 0 into account.
 | *Programming learning goals*  | Calculating quotient and remainder |
 | *Testing learning goals*      | Test completeness. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

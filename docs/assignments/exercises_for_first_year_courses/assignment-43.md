@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Calculate the maximum of real numbers
@@ -51,5 +51,6 @@ test cases in a table.
 | *Programming learning goals*  | Determine the max of numbers using a loop, logical operators and conditional statements. |
 | *Testing learning goals*      | Testing all relevant combinations of input. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

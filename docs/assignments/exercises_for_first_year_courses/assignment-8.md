@@ -67,3 +67,4 @@ test cases. This teaches them what test cases are made up of:
 | _Testing learning goals_ | Applying test cases. |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  

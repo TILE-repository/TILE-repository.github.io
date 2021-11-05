@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Age statistics
@@ -79,4 +79,5 @@ test executions.
 | *Programming learning goals*  | Calculating statistical properties of a set of values. |
 | *Testing learning goals*      | Input validation, test case design for robustness. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   

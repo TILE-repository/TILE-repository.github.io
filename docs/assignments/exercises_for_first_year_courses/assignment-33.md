@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Fruit classification using Artificial Intelligence
@@ -70,5 +70,6 @@ possible inputs occurs once.
 | *Programming learning goals*  | Following paths in a tree. |
 | *Testing learning goals*      | Designing test cases, path coverage. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

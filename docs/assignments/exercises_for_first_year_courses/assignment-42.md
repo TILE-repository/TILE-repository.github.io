@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Counting test case failures
@@ -81,4 +81,5 @@ cases. Test cases can find errors!
 | *Programming learning goals*  | Basic calculations, loops and conditionals. Basic statistical analysis. |
 | *Testing learning goals*      | Creating awareness of test failures. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   

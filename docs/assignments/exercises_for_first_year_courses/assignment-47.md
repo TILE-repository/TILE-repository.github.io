@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Armstrong numbers
@@ -57,5 +57,6 @@ expected outcome of their program.
 | *Programming learning goals*  | Working with individual digits of numbers, calculating the power of a number. |
 | *Testing learning goals*      | Test completeness |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Triangle classification
@@ -78,7 +78,8 @@ program and first book on software testing.
 | *Programming learning goals*  | Problem solving, applying algorithms. |
 | *Testing learning goals*      | Applying more abstract test cases. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 
 [^1]: <https://en.wikipedia.org/wiki/Gerald_Weinberg>
 

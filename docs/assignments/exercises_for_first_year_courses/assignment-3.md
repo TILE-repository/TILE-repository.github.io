@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Three way value swapping
@@ -66,3 +66,4 @@ hence how testing is good to find errors.
 | _Testing learning goals_ | Creating test awareness |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  

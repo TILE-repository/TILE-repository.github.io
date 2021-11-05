@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Variables as operator and operand
@@ -56,3 +56,4 @@ subtle TILE.
 | _Testing learning goals_ | Test awareness |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  

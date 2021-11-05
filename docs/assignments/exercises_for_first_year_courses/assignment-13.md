@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Calculating PIN codes
@@ -94,3 +94,4 @@ calculated a PIN number.
 | _Testing learning goals_ | Applying test cases, input validation. |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  

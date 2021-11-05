@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Multiples of 7 not divisible by 3
@@ -54,4 +54,5 @@ test cases in a table.
 | *Programming learning goals*  | Working with positive and negative numbers, calculation multiples of seven, determining the remainder of a division. |
 | *Testing learning goals*      | Create awareness of test cases. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   

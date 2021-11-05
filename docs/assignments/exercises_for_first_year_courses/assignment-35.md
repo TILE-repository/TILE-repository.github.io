@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Determine the quadrant of the Cartesian plane
@@ -50,5 +50,6 @@ what to test to get all possible outputs.
 | *Programming learning goals*  | Conditional statements. |
 | *Testing learning goals*      | Designing test cases for path coverage |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

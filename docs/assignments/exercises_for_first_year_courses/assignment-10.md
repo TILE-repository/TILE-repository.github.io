@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Gross / net salary calculator
@@ -73,3 +73,4 @@ assumptions of the types of the variables.
 | _Testing learning goals_ | Applying test cases. |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  

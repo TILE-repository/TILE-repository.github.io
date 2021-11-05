@@ -1,6 +1,6 @@
 ---
 title: "Python exercises for first year programming courses"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Python exercises for first year programming courses

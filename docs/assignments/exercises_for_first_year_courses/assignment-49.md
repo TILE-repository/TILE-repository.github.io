@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Determine dividers
@@ -95,5 +95,6 @@ to make sure we cover a lot of combinations and take 0 into account.
 | *Programming learning goals*  | Remainder of devisions, using build-in functions. |
 | *Testing learning goals*      | Test completeness |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

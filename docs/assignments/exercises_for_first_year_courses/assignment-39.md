@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Test Informed Learning with Examples assignment
@@ -56,5 +56,6 @@ with only negative numbers, all zeros, and mix of positive/negative.
 | *Programming learning goals*  | Calculating mean of positive and negative numbers, rounding real numbers, conditionals and loops. |
 | *Testing learning goals*      | Testing for robustness |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

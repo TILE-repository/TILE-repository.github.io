@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Calculating and verifying serial numbers based on dates
@@ -91,4 +91,5 @@ what to test.
 | *Programming learning goals*  | Applying an algorithm on the input to verify the input. Working with dates. |
 | *Testing learning goals*      | Input validation. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   

@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Determine if a product is positive, negative or zero without calculating it
@@ -95,5 +95,6 @@ possible combinations to test.
 | *Programming learning goals*  | Conditionals and problems solving. |
 | *Testing learning goals*      | Testing completeness. |
 | *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 

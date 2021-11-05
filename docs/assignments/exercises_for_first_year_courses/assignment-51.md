@@ -1,6 +1,6 @@
 ---
 title: "Test Informed Learning with Examples assignment"
-author:  Tanja E.J. Vos
+author: TILEd by Tanja E.J. Vos
 ...
 
 # Is this character a digit?
@@ -67,4 +67,5 @@ have seen before.
 | *Programming learning goals*  | Using functions that return booleans, working with digits in strings. |
 | *Testing learning goals*      | Structured design of test cases |
 | *Prerequisites*               | Basic programming constructs and pytest |
-| *Variants*                    | Many options are possible, including porting to other programming languages. |    
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   

@@ -127,3 +127,4 @@ of this in one of the very first exercises.
 | _Testing learning goals_ | Creating test awareness |
 | _Prerequisites_ |  Basic programming constructs.  |
 | _Variants_ |  Many options are possible, including porting to other programming languages. |
+| _Added by_                    | Tanja E.J. Vos |  
