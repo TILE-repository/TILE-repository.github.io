@@ -5,7 +5,7 @@ author: Tanja E.J. Vos
 
 # Celsius to Fahrentheit converter
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ---
 

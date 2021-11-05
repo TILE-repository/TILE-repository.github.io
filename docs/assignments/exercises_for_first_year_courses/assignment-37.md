@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Calculating the sum of the integers
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

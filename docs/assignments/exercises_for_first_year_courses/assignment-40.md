@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Multiples of seven
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

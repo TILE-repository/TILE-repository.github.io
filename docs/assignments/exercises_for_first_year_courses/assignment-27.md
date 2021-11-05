@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Money breakdown in bills and coins
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

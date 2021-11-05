@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Shopping calculator
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

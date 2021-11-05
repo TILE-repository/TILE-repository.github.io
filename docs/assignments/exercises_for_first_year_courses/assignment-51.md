@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Is this character a digit?
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

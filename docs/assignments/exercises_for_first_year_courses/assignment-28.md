@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Phone costs calculator
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Variables as operator and operand
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

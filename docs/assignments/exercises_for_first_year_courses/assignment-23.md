@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Determine phase of life
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Density, mass or volume calculator
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

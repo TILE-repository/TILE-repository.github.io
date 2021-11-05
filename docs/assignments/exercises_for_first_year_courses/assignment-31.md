@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Marathon selection
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

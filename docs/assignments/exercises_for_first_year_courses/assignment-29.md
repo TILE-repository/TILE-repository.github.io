@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Water company billing system
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

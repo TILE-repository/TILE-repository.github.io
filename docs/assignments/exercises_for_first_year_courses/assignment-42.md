@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Counting test case failures
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

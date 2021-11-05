@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # The sum of the odds and even numbers
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

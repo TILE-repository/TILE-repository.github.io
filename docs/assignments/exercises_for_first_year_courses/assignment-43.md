@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Calculate the maximum of real numbers
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

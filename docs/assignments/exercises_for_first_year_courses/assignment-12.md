@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # String formatting using test case data
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Working with relational operators
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Calculating and verifying serial numbers based on dates
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

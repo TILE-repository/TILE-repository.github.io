@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Quotient and remainder
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

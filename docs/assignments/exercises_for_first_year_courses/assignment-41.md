@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Multiples of 7 not divisible by 3
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

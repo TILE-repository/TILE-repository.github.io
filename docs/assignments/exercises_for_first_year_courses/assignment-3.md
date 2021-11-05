@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Three way value swapping
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

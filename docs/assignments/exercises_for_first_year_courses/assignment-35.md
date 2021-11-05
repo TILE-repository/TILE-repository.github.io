@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Determine the quadrant of the Cartesian plane
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

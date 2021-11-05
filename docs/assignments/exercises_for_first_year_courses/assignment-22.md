@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Determine if a product is positive, negative or zero without calculating it
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Odd or even
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

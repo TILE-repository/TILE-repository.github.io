@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # Test Informed Learning with Examples assignment
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 

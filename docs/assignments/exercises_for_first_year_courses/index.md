@@ -6,7 +6,7 @@ author:  Tanja E.J. Vos
 # Python exercises for first year programming courses
 {:.no_toc} 
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 - Table of contents
 {:toc}

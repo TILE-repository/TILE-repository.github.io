@@ -5,7 +5,7 @@ author:  Tanja E.J. Vos
 
 # ASCII art generator
 
-By [Tanja E.J. Vos](https://www.tanjavos.com).
+
 
 ------------------------------------------------------------------------
 
