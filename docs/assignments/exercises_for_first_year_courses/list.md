@@ -1,4 +1,4 @@
-# List of all first year assignments UPV
+# List of all first year Python assignments 
 
 - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
 - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
@@ -98,4 +98,3 @@
 - [Exercise 96](exercises_for_first_year_courses/assignment-96.md)
 - [Exercise 97](exercises_for_first_year_courses/assignment-97.md)
 - [Exercise 98](exercises_for_first_year_courses/assignment-98.md)
-- 
