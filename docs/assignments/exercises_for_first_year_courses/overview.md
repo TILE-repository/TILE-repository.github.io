@@ -676,7 +676,7 @@
     Insist that the students test their programs by giving them a table
     of test cases.
     ```
----
+
 4.  Write a program that reads an integer number and tells whether it is
     odd or even. Run the following examples to test that your program
     gives the same outputs:
@@ -1531,6 +1531,9 @@
     Insist that the students test their programs by giving them example
     test executions.
     ```
+
+
+---
 
 3.  Implement a program that reads 12 real numbers and calculates the
     mean of the positive and negative numbers. Afterwards, the result
@@ -3303,3 +3306,12 @@ used. This means that pytest needs to be explained in class.
 
     To test your function, you can compare the numbers you obtain with
     those that appear below:
+
+
+[^1]: <https://en.wikipedia.org/wiki/Gerald_Weinberg>
+
+[^2]: <https://onlinelibrary.wiley.com/doi/book/10.1002/9781119202486>
+
+[^3]: [https://es.wikipedia.org/wiki/Multiplicación_de_matrices](https://es.wikipedia.org/wiki/Multiplicación_de_matrices)
+
+[^4]: <https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes>

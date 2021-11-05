@@ -11,6 +11,7 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
   - [Working with expressions](exercises_for_first_year_courses/assignment-7.md)
   - [Variables as operator and operand](exercises_for_first_year_courses/assignment-9.md)
+  - [Working with relational operators](exercises_for_first_year_courses/assignment-25.md)
 - Arithmetic operations
   - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
   - [Simple calculator](exercises_for_first_year_courses/assignment-4.md)
@@ -21,14 +22,24 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
   - [Converting time](exercises_for_first_year_courses/assignment-16.md)
   - [Calculating discounts](exercises_for_first_year_courses/assignment-17.md)
+  - [Odd or even](exercises_for_first_year_courses/assignment-19.md)
+  - [Maximum and minumum](exercises_for_first_year_courses/assignment-20.md)
+  - [Density, mass or volume calculator](exercises_for_first_year_courses/assignment-24.md)
+  - [Money breakdown in bills and coins](exercises_for_first_year_courses/assignment-27.md)
+  - [Phone costs calculator](exercises_for_first_year_courses/assignment-28.md)
+  - [Water company billing system](exercises_for_first_year_courses/assignment-29.md)
+  - [Membership card discounts](exercises_for_first_year_courses/assignment-30.md)
+  - [Marathon selection](exercises_for_first_year_courses/assignment-31.md)
+  - [Calculate areas](exercises_for_first_year_courses/assignment-34.md)
+  - [Calculating and verifying serial numbers based on dates](exercises_for_first_year_courses/assignment-36.md)
 - Assignment statements
   - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
   - [Variables as operator and operand](exercises_for_first_year_courses/assignment-9.md)
 - Strings
   - Indexation
-    - [Letter exchanger](exercises_for_first_year_courses/assignment-18.md)
   - Slicing
+    - [Letter exchanger](exercises_for_first_year_courses/assignment-18.md)
   - Build-in functions and methods
     - [MadLibs](exercises_for_first_year_courses/assignment-11.md)
     - [String formatting using test case data](exercises_for_first_year_courses/assignment-12.md)
@@ -39,9 +50,24 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
 - Conditionals (if-elif-else)
   - [Shopping calculator](exercises_for_first_year_courses/assignment-15.md)
+  - [Determine if a product is positive, negative or zero without calculating it](exercises_for_first_year_courses/assignment-22.md)
+  - [Determine phase of life](exercises_for_first_year_courses/assignment-23.md)
+  - [Density, mass or volume calculator](exercises_for_first_year_courses/assignment-24.md)
+  - [Triangle classification](exercises_for_first_year_courses/assignment-26.md)
+  - [Money breakdown in bills and coins](exercises_for_first_year_courses/assignment-27.md)
+  - [Water company billing system](exercises_for_first_year_courses/assignment-29.md)
+  - [Membership card discounts](exercises_for_first_year_courses/assignment-30.md)
+  - [Marathon selection](exercises_for_first_year_courses/assignment-31.md)
+  - [Car insurance calculator](exercises_for_first_year_courses/assignment-32.md)
+  - [Fruit classification using Artificial Intelligence](exercises_for_first_year_courses/assignment-33.md)
+  - [Calculate areas](exercises_for_first_year_courses/assignment-34.md)
+  - [Determine the quadrant of the Cartesian plane](exercises_for_first_year_courses/assignment-35.md)
+  - [Calculating and verifying serial numbers based on dates](exercises_for_first_year_courses/assignment-36.md)
 - Exceptions
 - Errors
 - Loops/iterations (while/for)
+  - [Calculating the sum of the integers](exercises_for_first_year_courses/assignment-37.md)
+  - [The sum of the odds and even numbers](exercises_for_first_year_courses/assignment-38.md)
 - Functions 
 - Unit tests
 - Modules/libraries
@@ -49,6 +75,7 @@ The assignments are grouped based on their topics so educators can easily find a
   - Tuples
   - Lists
   - Dictionaries
+    - [Months by number](exercises_for_first_year_courses/assignment-21.md)
   - Sets
 - File input/output
   - [Generating test reports](../nifties/2022/nifty2022.md)
