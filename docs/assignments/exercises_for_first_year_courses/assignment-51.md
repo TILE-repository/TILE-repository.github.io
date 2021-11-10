@@ -3,7 +3,7 @@ title: "Test Informed Learning with Examples assignment"
 author: TILEd by Tanja E.J. Vos
 ...
 
-# Is this character a digit?
+# Is this a digit?
 
 
 
@@ -26,9 +26,9 @@ and/or test cases.
 
 # Assignment
 
-Write a function `is_digit` which receives a character as a
+Write a function `is_digit` which receives a string as a
 parameter and returns a boolean. The function will return `True`
-when the character is a digit from 0 to 9, otherwise it will return
+when the parameter coincides with a character that is a digit from 0 to 9, otherwise it will return
 `False`).
 
 You can use the following test cases to test your function:
@@ -41,11 +41,23 @@ You can use the following test cases to test your function:
     4            |  `'12'`    |   `False`        |   it is not a digit between 0 and 9
     5            |  `'-2'`     |  `False`        |  negative digit
     6           |   `'hello'`  |  `False`        |  string
+    7           |   `'r'`      |  `False`        |  a character
+    8           |   `'O'`      |  `False`        |  letter O, not 0
 
 In pytest these could be implemented like:
 
 ```python
-@pytest.mark.parametrize("test_case_ID, test_input, expected_output",[ (1, '0', True), #smallest digit (2, '9', True), #largest digit (3, '5', True), #other digit (4, '12', False), #it is not a digit between 0 and 9 (5, '-2', False), #negative digit (6, 'hello', False), #string ] )
+@pytest.mark.parametrize("testcase, entrada, salida_esperada",[
+    (1, '0', True),     # smallest digit
+    (2, '9', True),     # largest digit
+    (3, '5', True),     # other digit
+    (4, '12', False),    # it is not a digit between 0 and 9 
+    (5, '-2', False),    # negative digit
+    (6, 'hello', False),# string
+    (7, 'r', False), #character
+    (8, 'O', False), #character
+    ]
+)
 
 def test_is_digit(test_case_ID, test_input, expected_output): 
     assert is_digit(test_input) == expected_output, "case 0".format(test_case_ID)
