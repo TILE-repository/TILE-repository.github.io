@@ -11,6 +11,8 @@ if it is one of the digits from 0 to 9. Write the program in such a
 way that it can be used to read several different characters from
 the keyboard until the user writes the word end.
 
+An example of a test session you can execute manualy via the shell could be:
+
 ```small
 >>> %Run 
     Write a character or 'end' to finish: 4
