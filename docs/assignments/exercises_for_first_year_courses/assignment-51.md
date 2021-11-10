@@ -34,15 +34,15 @@ when the parameter coincides with a character that is a digit from 0 to 9, other
 You can use the following test cases to test your function:
 
     test_case_ID  | test_input  | expected_output  | reason for testing this
-    --------------| ------------| ----------------- |-----------------------------------
-    1          |    `'0'`      |  `True`          |  smallest digit
-    2            |  `'9'`      |  `True`         |   largest digit
-    3            |  `'5'`      |  `True`         |   other digit
-    4            |  `'12'`    |   `False`        |   it is not a digit between 0 and 9
-    5            |  `'-2'`     |  `False`        |  negative digit
-    6           |   `'hello'`  |  `False`        |  string
-    7           |   `'r'`      |  `False`        |  a character
-    8           |   `'O'`      |  `False`        |  letter O, not 0
+    --------------| ------------| -----------------|-----------------------------------
+    1             |    `'0'`    |  `True`          |  smallest digit
+    2             |  `'9'`      |  `True`          |   largest digit
+    3             |  `'5'`      |  `True`          |   other digit
+    4             |  `'12'`     |   `False`        |   it is not a digit between 0 and 9
+    5             |  `'-2'`     |  `False`         |  negative digit
+    6             |   `'hello'` |  `False`         |  string
+    7             |   `'r'`     |  `False`         |  a character
+    8             |   `'O'`     |  `False`         |  letter O, not 0
 
 In pytest these could be implemented like:
 
