@@ -7,24 +7,7 @@ author: TILEd by Tanja E.J. Vos
 
 
 
-------------------------------------------------------------------------
 
-Python exercises used for first year programming courses that
-have been adapted by using Test Informed Learning with Examples (TILE)
-to integrate testing in programming education without it costing (much)
-more time. The coloured boxes indicate how they were TILEd.
-
-```testdomaintile
-This colour box explains a TILE in the test domain.
-```
-
-```testruntile
-This colour box explains a TILE related to test runs 
-and/or test cases.
-```
-------------------------------------------------------------------------
-
-# Assignment
 
 Write a program to calculate the sum of the integers between $$N$$ and
 $$M$$, where $$N$$ and $$M$$ are values entered by the user. `result` =

@@ -7,24 +7,7 @@ author: TILEd by Tanja E.J. Vos
 
 
 
-------------------------------------------------------------------------
 
-Python exercises used for first year programming courses that
-have been adapted by using Test Informed Learning with Examples (TILE)
-to integrate testing in programming education without it costing (much)
-more time. The coloured boxes indicate how they were TILEd.
-
-```testdomaintile
-This colour box explains a TILE in the test domain.
-```
-
-```testruntile
-This colour box explains a TILE related to test runs 
-and/or test cases.
-```
-------------------------------------------------------------------------
-
-# Assignment
 
 We have a total of 15 test cases of a Python program. From each test
 we run, we take note of the number of failures that it finds. So at the

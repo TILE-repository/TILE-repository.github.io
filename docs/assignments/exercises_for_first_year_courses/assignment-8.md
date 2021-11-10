@@ -6,27 +6,6 @@ author: Tanja E.J. Vos
 # Interest calculator
 
 
-
----
-
-Python exercises used for first year programming courses that
-have been adapted by using Test Informed Learning with Examples (TILE)
-to integrate testing in programming education without it costing (much)
-more time. The coloured boxes indicate how they were TILEd.
-
-```testdomaintile
-This colour box explains a TILE in the test domain.
-```
-
-```testruntile
-This colour box explains a TILE related to test runs
-and/or test cases.
-```
-
----
-
-# Assignment
-
 Implement a program that calculates the interest produced from a
 total accumulated capital of an amount _c_, invested at an interest _r_
 (as a percentage) during _t_ days. The formula used to calculate
