@@ -111,6 +111,7 @@ The assignments are grouped based on their topics so educators can easily find a
 - Advanced topics
   - Recursion
   - Functional programming (lambda expressions)
+  - [Parsers](../nifties/2022/nifty2022.md)
 - Algorithms
   - Cryptography
     - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
