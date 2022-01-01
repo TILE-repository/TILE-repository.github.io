@@ -1,20 +1,25 @@
 ---
-title: "Test Informed Learning with Examples assignment"
+title: "The greatest common divisor of more than 2 numbers"
 author: TILEd by Tanja E.J. Vos
 ...
 
-# Test Informed Learning with Examples assignment
+# The greatest common divisor of more than 2 numbers
 
+Write a function `gcd_3num` that calculates the greatest common divisor of more than 2 numbers. To do this, use the function `gcd` (greatest common divisor of 2 numbers).
 
+Write pytests to test your implementation.
 
-
+```testruntile
+Insist that the students test their programs by adding a line
+telling them to do it.
+```
 
 
 
 
 # Metadata
 
-| *Summary*                     |  |
+| *Summary*                     | The greatest common divisor of more than 2 numbers |
 | *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
 | *Topics*                      |  |
 | *Technology used*             | Python |

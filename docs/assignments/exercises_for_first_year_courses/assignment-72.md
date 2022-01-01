@@ -1,20 +1,23 @@
 ---
-title: "Test Informed Learning with Examples assignment"
+title: "Remove odd numbers from a list of numbers"
 author: TILEd by Tanja E.J. Vos
 ...
 
-# Test Informed Learning with Examples assignment
+# Remove odd numbers from a list of numbers
 
+Write a function that, given a list of numbers, returns another list without the odd numbers. Then complete the table with the number of rows you see necessary to design your test set and run the automatic tests with pytest.
 
-
-
-
-
+    | test case number | input | expected output |
+    | ---------------- | ----- | --------------- |
+    | 1                |       |
+    | 2                |       |
+    | 3                |       |
+    | ....             |       |
 
 
 # Metadata
 
-| *Summary*                     |  |
+| *Summary*                     | Remove odd numbers from a list of numbers |
 | *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
 | *Topics*                      |  |
 | *Technology used*             | Python |

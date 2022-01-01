@@ -1,20 +1,27 @@
 ---
-title: "Test Informed Learning with Examples assignment"
+title: "ASCII Art of a HEART"
 author: TILEd by Tanja E.J. Vos
 ...
 
-# Test Informed Learning with Examples assignment
+# ASCII Art of a HEART
 
+Write Python code that prompts the user for a 4-character word and
+    creates the following heart in a heart.txt file.
 
-
-
-
-
+            HEART        HEART
+         HEART HEART  HEART HEART
+        HEART     HEART     HEART
+        HEART              HEART
+         HEART            HEART
+          HEART          HEART
+            HEART      HEART
+              HEART  HEART
+                 HEART
 
 
 # Metadata
 
-| *Summary*                     |  |
+| *Summary*                     | ASCII Art of a HEART |
 | *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
 | *Topics*                      |  |
 | *Technology used*             | Python |

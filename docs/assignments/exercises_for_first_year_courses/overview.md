@@ -1968,7 +1968,6 @@ used. This means that pytest needs to be explained in class.
     Insist that the students test their programs by giving them example
     test runs.
     ```
---- HIER GEBLEVEN - 53
 3.  Write a function `is_prime` which receives an integer as a parameter
     and returns a boolean. The function will return `True` when the
     number is a prime, otherwise it will return `False`).

@@ -42,20 +42,32 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Prime or not](exercises_for_first_year_courses/assignment-48.md)
   - [Determine dividers](exercises_for_first_year_courses/assignment-49.md)
   - [Quotient and remainder](exercises_for_first_year_courses/assignment-50.md)
+  - [Checking if a number is prime](exercises_for_first_year_courses/assignment-53.md)
+  - [Testing if a number is prime - part two](exercises_for_first_year_courses/assignment-54.md)
+  - [Calculate factorials](exercises_for_first_year_courses/assignment-56.md)
+  - [Taylor series](exercises_for_first_year_courses/assignment-57.md)
+  - [Greatest common divisor using Euclid's algorithm](exercises_for_first_year_courses/assignment-58.md)
+  - [The greatest common divisor of more than 2 numbers](exercises_for_first_year_courses/assignment-59.md)
+  - [Multiples of three](exercises_for_first_year_courses/assignment-63.md)
+  - [Binary to decimal converter](exercises_for_first_year_courses/assignment-66.md)
+  - [Fibonacci sequences](exercises_for_first_year_courses/assignment-67.md)
 - Assignment statements
   - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
   - [Variables as operator and operand](exercises_for_first_year_courses/assignment-9.md)
 - Strings
-  - Indexation
-  - Slicing
-    - [Letter exchanger](exercises_for_first_year_courses/assignment-18.md)
-  - Build-in functions and methods
-    - [MadLibs](exercises_for_first_year_courses/assignment-11.md)
-    - [String formatting using test case data](exercises_for_first_year_courses/assignment-12.md)
-    - [ASCII art generator](exercises_for_first_year_courses/assignment-14.md)
-    - [Shopping calculator](exercises_for_first_year_courses/assignment-15.md)
-    - [Calculating discounts](exercises_for_first_year_courses/assignment-17.md)
+  - [Letter exchanger](exercises_for_first_year_courses/assignment-18.md)
+  - [Removing first and last digits from and interger](exercises_for_first_year_courses/assignment-60.md)
+  - [Split a string into a list of unique words](exercises_for_first_year_courses/assignment-71.md)
+  - [MadLibs](exercises_for_first_year_courses/assignment-11.md)
+  - [String formatting using test case data](exercises_for_first_year_courses/assignment-12.md)
+  - [ASCII art generator](exercises_for_first_year_courses/assignment-14.md)
+  - [Shopping calculator](exercises_for_first_year_courses/assignment-15.md)
+  - [Calculating discounts](exercises_for_first_year_courses/assignment-17.md)
+  - [Convert a letter to upper case](exercises_for_first_year_courses/assignment-55.md)
+  - [Counting numbers in a String](exercises_for_first_year_courses/assignment-65.md)
+  - [Binary to decimal converter](exercises_for_first_year_courses/assignment-66.md)
+  - [Determining if a string only contains unique characters](exercises_for_first_year_courses/assignment-95.md)
 - Console input/output
   - [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
 - Conditionals (if-elif-else)
@@ -78,6 +90,7 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Multiples of 7 not divisible by 3](exercises_for_first_year_courses/assignment-41.md)
   - [Counting test case failures](exercises_for_first_year_courses/assignment-42.md)
   - [Calculate the maximum of real numbers](exercises_for_first_year_courses/assignment-43.md)
+  - [Sieve of Eratosthenes](exercises_for_first_year_courses/assignment-98.md)
 - Exceptions
 - Errors
 - Loops/iterations (while/for)
@@ -98,14 +111,47 @@ The assignments are grouped based on their topics so educators can easily find a
   - [Is this character a digit?](exercises_for_first_year_courses/assignment-51.md)
 - Modules/libraries
 - Structured types
-  - Tuples
   - Lists
+    - [Multiples of three](exercises_for_first_year_courses/assignment-63.md)
+    - [DNI number calculation](exercises_for_first_year_courses/assignment-64.md)
+    - [Delete negative values from a list](exercises_for_first_year_courses/assignment-68.md)
+    - [Maximum value in a non-empty list](exercises_for_first_year_courses/assignment-69.md)
+    - [Counting word appearances in a list of words](exercises_for_first_year_courses/assignment-70.md)
+    - [Split a string into a list of unique words](exercises_for_first_year_courses/assignment-71.md)
+    - [Remove odd numbers from a list of numbers](exercises_for_first_year_courses/assignment-72.md)
+    - [Remove duplicate numbers from a list](exercises_for_first_year_courses/assignment-73.md)
+    - [Working with matrices](exercises_for_first_year_courses/assignment-74.md)
   - Dictionaries
     - [Months by number](exercises_for_first_year_courses/assignment-21.md)
-  - Sets
+    - [Currency symbol lookup](exercises_for_first_year_courses/assignment-83.md)
+    - [Convert a text to a dictionary of words](exercises_for_first_year_courses/assignment-84.md)
+    - [Shopping cart](exercises_for_first_year_courses/assignment-85.md)
+    - [Scrabble game score calculator](exercises_for_first_year_courses/assignment-86.md)
+    - [Simulating 1000 roles of two dices and calculating the probability percentage](exercises_for_first_year_courses/assignment-87.md)
+    - [Morse code converter](exercises_for_first_year_courses/assignment-88.md)
+    - [Storing customer data](exercises_for_first_year_courses/assignment-89.md)
+    - [Storing customer data - part two](exercises_for_first_year_courses/assignment-90.md)
+    - [Calculating sums of the even- and the odd-indexed numbers](exercises_for_first_year_courses/assignment-91.md)
+  - Tuples and Sets
+    - [Calculating sums of the even- and the odd-indexed numbers](exercises_for_first_year_courses/assignment-91.md)
+    - [Zipping sequences into tuples](exercises_for_first_year_courses/assignment-92.md)
+    - [Intersecting two sets](exercises_for_first_year_courses/assignment-93.md)
+    - [Travel times for conference speakers](exercises_for_first_year_courses/assignment-94.md)
+    - [Determining if a string only contains unique characters](exercises_for_first_year_courses/assignment-95.md)
+    - [Mortal set theory](exercises_for_first_year_courses/assignment-96.md)
+    - [Sets with numbers based on divisibility](exercises_for_first_year_courses/assignment-97.md)
+    - [Sieve of Eratosthenes](exercises_for_first_year_courses/assignment-98.md)
 - File input/output
   - [Generating test reports](../nifties/2022/nifty2022.md)
   - [Password hashing](passwordhashing/index.md)
+  - [Saving names and birth dates to a file](exercises_for_first_year_courses/assignment-75.md)
+  - [Reading and filtering names and birth dates from a file](exercises_for_first_year_courses/assignment-76.md)
+  - [Determine if a student has passed based on input from a file](exercises_for_first_year_courses/assignment-77.md)
+  - [Creating files with a random number of random numbers](exercises_for_first_year_courses/assignment-78.md)
+  - [Calculate the variance of the numbers from a file](exercises_for_first_year_courses/assignment-79.md)
+  - [Process prices from a file and calculate the VAT](exercises_for_first_year_courses/assignment-80.md)
+  - [Automating testing of functions that use files](exercises_for_first_year_courses/assignment-81.md)
+  - [ASCII Art of a HEART](exercises_for_first_year_courses/assignment-82.md)
 - GUI
 - Object oriented programming
 - Advanced topics
@@ -113,8 +159,11 @@ The assignments are grouped based on their topics so educators can easily find a
   - Functional programming (lambda expressions)
   - [Parsers](../nifties/2022/nifty2022.md)
 - Algorithms
-  - Cryptography
+  - Cryptography, security
     - [Calculating PIN codes](exercises_for_first_year_courses/assignment-13.md)
     - [Prime or not](exercises_for_first_year_courses/assignment-48.md)
+    - [Password complexity checker](exercises_for_first_year_courses/assignment-62.md)
   - Hashing
     - [Password hashing](passwordhashing/index.md)
+  - Series
+    - [Integer series](exercises_for_first_year_courses/assignment-61.md)
