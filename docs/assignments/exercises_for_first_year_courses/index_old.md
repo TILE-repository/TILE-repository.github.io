@@ -1,4 +1,35 @@
-# Variables, assignments, expressions, basic types
+---
+title: "Python exercises for first year programming courses"
+author: TILEd by Tanja E.J. Vos
+...
+
+# Python exercises for first year programming courses
+{:.no_toc} 
+
+
+
+- Table of contents
+{:toc}
+
+------------------------------------------------------------------------
+
+Python exercises used at the UPV for first year programming courses that
+have been adapted by using Test Informed Learning with Examples (TILE)
+to integrate testing in programming education without it costing (much)
+more time. The coloured boxes indicate how they were TILEd.
+
+```testdomaintile
+This colour box explains a TILE in the test domain.
+```
+
+```testruntile
+This colour box explains a TILE related to test runs 
+and/or test cases.
+```
+
+------------------------------------------------------------------------
+
+# Variables, assignments, expressions, basic types {#section.var-assign-expr-types}
 
 1.  Most of the programs that we implement:
 
@@ -1532,9 +1563,6 @@
     test executions.
     ```
 
-
----
-
 3.  Implement a program that reads 12 real numbers and calculates the
     mean of the positive and negative numbers. Afterwards, the result
     must be displayed to a maximum of 4 decimal places. Run the
@@ -1968,6 +1996,7 @@ used. This means that pytest needs to be explained in class.
     Insist that the students test their programs by giving them example
     test runs.
     ```
+
 3.  Write a function `is_prime` which receives an integer as a parameter
     and returns a boolean. The function will return `True` when the
     number is a prime, otherwise it will return `False`).
@@ -2746,7 +2775,7 @@ used. This means that pytest needs to be explained in class.
     NOTE: To compare the files we have used `read` because the size of
     the files that we are handling here is very small.
 
-8.  Write Python code that prompts the user for a 4-character word and
+1.  Write Python code that prompts the user for a 4-character word and
     creates the following heart in a heart.txt file.
 
             HART        HART
@@ -2851,7 +2880,7 @@ used. This means that pytest needs to be explained in class.
                  11 +
     ```
 
-3.  Write a program that creates a dictionary that simulates a shopping
+1.  Write a program that creates a dictionary that simulates a shopping
     cart. The program must ask for the item and its price, and add the
     pair to the dictionary, until the user decides to finish. Then, the
     shopping list and the total cost should be displayed, as in the
@@ -2889,7 +2918,7 @@ used. This means that pytest needs to be explained in class.
     You can assume that the user only adds 1 sample of each product.
     Your tests can be run through the shell manually.
 
-4.  In the Scrabble game, each letter has scores associated with them.
+2.  In the Scrabble game, each letter has scores associated with them.
     The total score of a word is the sum of its letter scores. The most
     common letters are worth less points, while the less common letters
     are worth more points. We are going to use a dictionary that maps
@@ -2919,7 +2948,7 @@ used. This means that pytest needs to be explained in class.
       5                | `'1234'`              | 0
       6                | `'And with spaces?'`  | 24
 
-5.  In this exercise you must simulate 1000 rolls of two dice. First,
+1.  In this exercise you must simulate 1000 rolls of two dice. First,
     write a function called `twoDice()`, which simulates throwing 2
     six-sided dice. Your function won't take any parameter and will
     return the total that was rolled on two dice as the only result.
@@ -2954,7 +2983,7 @@ used. This means that pytest needs to be explained in class.
         4     |  7.40                   |  8.33
         12    |  2.30                   |  2.78
 
-6.  Morse code is a coding scheme that uses hyphens and dots to
+1.  Morse code is a coding scheme that uses hyphens and dots to
     represent digits and letters. In this exercise, we are going to
     write a program that uses a dictionary to store the mapping between
     these symbols and Morse code. Use a dot to represent a Morse dot,
@@ -2977,7 +3006,7 @@ used. This means that pytest needs to be explained in class.
 
         .... . .-.. .-.. --- .-- --- .-. .-.. -..
 
-7.  Write a program that allows you to manage the customer data of a
+2.  Write a program that allows you to manage the customer data of a
     company. This should be stored in a dictionary in which:
 
     -   the key of each client will be their NIF, and
@@ -3081,7 +3110,7 @@ used. This means that pytest needs to be explained in class.
 
     :   end the program with `(6)`
 
-8.  The problem with the previous exercise is that each time the program
+3.  The problem with the previous exercise is that each time the program
     is launched, the data would have to be entered again. To avoid this,
     we are going to create two new options that allow us to use files as
     backup copies of the data in the dictionary. The menu for the user
@@ -3227,7 +3256,7 @@ used. This means that pytest needs to be explained in class.
     printed in a 5-character field, with a padding space character
     between each of the columns.
 
-5.  Write a function that receives a text string and says whether it
+1.  Write a function that receives a text string and says whether it
     only has unique characters or not. This function should return True
     if it has no repeating characters and False otherwise. Write a
     pytest using the following parameterization:
@@ -3236,7 +3265,7 @@ used. This means that pytest needs to be explained in class.
     @pytest.mark.parametrize('testcase, input, expected_output',[ (1, 'Hello', True), (2, 'HelloO', False), (3, ", True), (4, 'cC', False), (5,'0123', True), (6, '33&44', False), (7, '!+&/', True), (8, '!++&/', False), ])
     ```
 
-6.  A famous syllogism says:
+1.  A famous syllogism says:
 
     All humans are mortal.
 
@@ -3268,7 +3297,7 @@ used. This means that pytest needs to be explained in class.
 
     \(e\) there are things that are not mortal.
 
-7.  Write a program that generates three sets of numbers between 1 and
+2.  Write a program that generates three sets of numbers between 1 and
     1000:
 
     the first set consists of all numbers that are divisible by 3,
@@ -3285,7 +3314,7 @@ used. This means that pytest needs to be explained in class.
 
     \(c\) that are neither divisible by 3, nor by 7, nor by 11.
 
-8.  Write a `generate_eratosthenes` function that, using the Sieve of
+3.  Write a `generate_eratosthenes` function that, using the Sieve of
     Eratosthenes [^4], obtains the prime numbers between 2 and 120. The
     algorithm is based on having in a set the numbers between 2 and 120,
     and then eliminate from that set the multiples of 2, then those of
@@ -3305,6 +3334,19 @@ used. This means that pytest needs to be explained in class.
 
     To test your function, you can compare the numbers you obtain with
     those that appear below:
+
+
+# Metadata
+
+| *Summary*                     | Python exercises used at the UPV for first year programming courses that have been adapted by using Test Informed Learning with Examples (TILE) to integrate testing in programming education without it costing (much) more time.  |
+| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
+| *Topics*                      | CLI input, CLI output, variables, assignments, expressions, basic types, conditionals, loops, function, dictionaries, file in-/output, tuples, sets |
+| *Technology used*             | Python, pytest |
+| *Audience*                    | CS1 |
+| *Programming learning goals*  | Basic programming concepts, datatypes, file in-/output. |
+| *Testing learning goals*      | Unit testing techniques. |
+| *Prerequisites*               | None. |
+| *Variants*                    | Numerous options are possible, including porting to other programming languages. |    
 
 
 [^1]: <https://en.wikipedia.org/wiki/Gerald_Weinberg>
