@@ -38,6 +38,9 @@ Test run TILES
 Test cases TILES
 :	If we ask students to test their programs, they often only test happy path execution [^4] and hence do not really get that awareness we want about the importance of testing. A better way to TILE exercises would be to add more concrete examples of, or ideas about, possible *test cases* that the student should use to check the workings of their code. These example test cases should not just include the happy tests, but also make sure that their code is challenged on some corner cases and other less happy tests.
 
+Test message TILES
+:	TILES of this type hide a subliminal message about the importance of testing.
+
 Test domain TILES
 :	TILES of this type require a bit more creativity than the previous ones. In some programming exercises we use examples from a well known domain. For example, in explainations of Object Oriented Programming one might use the concept of shapes with classes such as `Rectangle` and `Circle` as a domain. If the domain does not influence the concepts we are teaching, then it can be replaced with examples from the testing domain directly.
 
@@ -138,7 +141,7 @@ A table with test cases was added and the students were made aware of the test c
 </p>
 </div>
 
-### A *test domain* TILE assignment
+### A *test message* TILE assignment
 
 Mad Libs is a phrase template word game where a player asks others for a list of words to substitute for blanks in a story, often comical or nonsensical, and which will be read aloud later. 
 We are going to make a little Mad Libs.
@@ -165,6 +168,35 @@ Try other inputs and try to come up with a funny phrase.
 This TILE contains the message that testing is important.
 </p>
 </div>
+
+
+### A *test domain* TILE assignment
+
+Imagine you just wrote a program that sorts a list of numbers and evidently now you need to test it. Write a program that helps you test your software.
+The program should ask you whether you took care of all the special cases and you answer yes or no.  At the end, the program tells you how well you did.  Below is an example of the output your program should produce. Try to extend the possible cases with other important things to test (there are at least two that are useful to add).
+
+```
+Hello! I'm gonna help you improve your sorting program!
+  
+Did you check a basic case like:
+ [3, 1, 8] is sorted into [1, 3, 8]? (y/n) y
+Excellent!
+  
+Did you check what happens when the list is empty? (y/n) y
+Nice.
+  
+Did you check what happens for a list with a single
+element, like [3]? (y/n) y
+Well done!
+  
+Did you verify it also works with negative numbers, 
+like [4, -8, 10]? (y/n) n
+You’d better try that right now!
+  
+That was my last question! 
+You took care of 75% of the cases. Well done!
+```
+
 
 ## References
 
