@@ -2,15 +2,25 @@
 title: "Test Informed Learning with Examples assignment"
 author: TILEd by Tanja E.J. Vos
 
-Summary: 
-Type of TILE: 
-Topics:
-Prerequisite topics: 
-Audience level: 
-programming languages:
-Testing: manual or automated with {pytest, unites, etc}
-Authors:
-
+Summary: >
+    This is just a simple example of the possible use of the
+    summary field. As you can see, it can be
+    more than just one line of text.
+type of TILE: ['test run', 'test case', 'test message', 'test domain']
+# topics can be multiple topics from the taxonomy
+topics:
+# prerequisite topics can be multiple topics from the taxonomy
+prerequisite topics: 
+# Audience level van be multiple CS0, CS1, CS2, CS3, CS4
+audience level: ['CS0', 'CS1', 'CS2', 'CS3', 'CS4']
+programming languages: ['Java', 'JavaScript', 'Python', 'C#']
+# Either manual or automated
+testing: manual / automated
+# One or more authors
+authors:
+    - Tanja E.J. Vos
+    - Beatriz Marin
+    - Niels Doorn
 ...
 
 # Gross / net salary calculator
