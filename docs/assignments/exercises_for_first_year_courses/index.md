@@ -2,7 +2,7 @@
 
 ## Variables, assignments, expressions, basic types
 
-1. [Calculating squares](exercises_for_first_year_courses/assignment-1.md)
+1. [Calculating squares](assignment-1.md)
 2. [Swapping values](exercises_for_first_year_courses/assignment-2.md)
 3. [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
 4. [Simple calculator](exercises_for_first_year_courses/assignment-4.md)
