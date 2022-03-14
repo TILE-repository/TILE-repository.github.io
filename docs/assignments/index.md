@@ -4,10 +4,10 @@ title: "The assignments"
 
 # TILED Assignments 
 
-The assignments are grouped based on their topics so educators can easily find assignments that match with the topics of their own program.
+The assignments are grouped based on their topics, so educators can easily find assignments that match with the topics of their own program.
 
 - Variables, expressions, types
-  - [Swapping values](exercises_for_first_year_courses/assignment-2.md)
+  - [Swapping values](./exercises_for_first_year_courses/assignment-2.md)
   - [Three way value swapping](exercises_for_first_year_courses/assignment-3.md)
   - [Working with expressions](exercises_for_first_year_courses/assignment-7.md)
   - [Variables as operator and operand](exercises_for_first_year_courses/assignment-9.md)

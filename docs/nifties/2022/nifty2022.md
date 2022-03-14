@@ -76,7 +76,7 @@ We approach this assignment in three steps:
 
 Write a function `get_test_cases(filename)` that, given a .py file with pytests, generates a list with the test cases that are defined in a Python file containing pytests. 
 
-The function should have the folowing signature and specification:
+The function should have the following signature and specification:
 
 ```python
 def get_test_cases(filename):
@@ -175,7 +175,7 @@ They can be saved in a text file redirecting it as follows:
 >>> pytest union_test.py > union_test_pytest_output.txt
 ```
 
-For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parameterized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [output_union_test.txt](files/output_union_test.md) that contains the results of the test cases.
+For example, let us consider the program in [union_test.py](files/union_test.md) that contains the definition of the function `union`, together with 8 parametrized test cases and a test driver `test_union`. Running pytest and redirecting the results in a file like above will give us the txt file [output_union_test.txt](files/output_union_test.md) that contains the results of the test cases.
 
 As we can see, it contains enough information to deduce that the testcase with identifier 4 failed because our function returned `[1,1]` but we expected `[1]`. 
 The testcases 7 and 8 also failed.
@@ -288,7 +288,7 @@ def generate_JSON_test_report(filenameTest, filenameTestRes):
     """
 ```
 
-Both these functions use the functions from the first two steps to collect the data for the reports, and of course can use other functions if good craftmanship requires as well.
+Both these functions use the functions from the first two steps to collect the data for the reports, and of course can use other functions if good craftsmanship requires as well.
 
 You can test your functions using the following Python files containing pytests:
 
@@ -340,7 +340,7 @@ Generated JSON and Excel files:
 - [min_max_list_testtest_case_report.json](files/pytests-for_testing_reports/min_max_list_testtest_case_report.json)
 - [min_max_list_testTestReport.xls](files/pytests-for_testing_reports/min_max_list_testTestReport.xls)
 
-The Lark grammer as a seperate file:
+The Lark grammer as a separate file:
 
 - [grammar.lark](files/grammar.lark)
 
@@ -357,7 +357,7 @@ We can use this assignment to teach students about extracting data from differen
 The main learning goal is to work with different types of files to extract the data from and to write the information to.
 In this assignment, the students need to extract all the test cases from an existing Python test file and the results of these test cases from an existing text file to combine these in new Excel and JSON files.
 Depending on the prior knowledge of the students, learning to work with parsers and grammars can be achieved as a possible positive side effect.
-This happens when students themselves realise the limitations of using basic programming constructs while extracting data from python files containing test cases.
+This happens when students themselves realize the limitations of using basic programming constructs while extracting data from python files containing test cases.
 The context free grammer parser Lark is used for this.
 During this assignment, students learn new programming concepts and techniques using data related to software testing, thus refreshing and possibly expanding their testing knowledge at the same time.
 We provide exercises and suggestions on a didactic approach to use this assignment in the classroom.
