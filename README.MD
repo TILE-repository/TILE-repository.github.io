@@ -10,7 +10,7 @@ This repository contains the webpage for TILEd assignments.
 
 You can visit the [project page](https://tile-repository.github.io/). 
 
-If you want to contribute with your own assignments? Please read this procedure on how to do this.
+If you want to contribute with your own assignments? Please read this [procedure](https://tile-repository.github.io/contribute.html) on how to do this.
 
 ## Special assignments
 
