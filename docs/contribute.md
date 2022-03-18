@@ -26,7 +26,7 @@ Once the repository is forked to your personal repository, you can create new as
 
 ## Add one or more assignments
 
-To add assignments, copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the `index.md` the new folder and follow the instructions in this file.
+To add assignments, copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the [index.md](assignments/template/index.md) the new folder and follow the instructions in this file.
 
 ## Check for build errors
 
