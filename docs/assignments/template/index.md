@@ -58,10 +58,3 @@ Target audience
 
 License
 : The license property provides the name of the license under which rights to use this assignment are granted. If omitted, the default is the least restrictive Creative Commons license, the Attribution or CC-BY.
-
-
-## The blueprint
-
-The [blueprint](blueprint.md) is a hierarchical structure describing common concepts in programming languages.
-
-![The blueprint](../../images/Blueprint.png)

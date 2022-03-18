@@ -17,7 +17,7 @@ Forking a repository is similar to copying a repository, with two major differen
 - You can use a pull request to suggest changes from your user-owned fork to the original repository, also known as the upstream repository.
 - You can bring changes from the upstream repository to your local fork by synchronizing your fork with the upstream repository.
 
-More information in working with forks can be found in the Github Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks).
+More information in working with forks can be found in the GitHub Docs on [working with forks](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/about-forks).
 
 Forking can be done on GitHub with the 'fork' button. 
 This is the repository that you need to fork if you want to contribute: [https://github.com/TILE-repository/TILE-repository.github.io](https://github.com/TILE-repository/TILE-repository.github.io).
@@ -27,6 +27,12 @@ Once the repository is forked to your personal repository, you can create new as
 ## Add one or more assignments
 
 To add assignments, copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the [index.md](assignments/template/index.md) the new folder and follow the instructions in this file.
+
+## The Blueprint
+
+The [blueprint](assignments/template/blueprint.md) is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. 
+
+![The blueprint](images/Blueprint.png)
 
 ## Check for build errors
 
@@ -40,4 +46,4 @@ The maintainers of the TILE repository will be notified and will review your sub
 
 ## Support
 
-If you need any help, do not hestitate to contact one of the maintainers of this repository.
+If you need any help, do not hesitate to contact one of the maintainers of this repository.
