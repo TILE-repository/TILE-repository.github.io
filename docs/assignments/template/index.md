@@ -57,4 +57,4 @@ Target audience
 : This can be described in terms of typical undergraduate courses, such as CS1 or CS50. 
 
 License
-: The license property provides the name of the license under which rights to use this assignment are granted. If omitted, the default is the least restrictive Creative Commons license, the Attribution or CC-BY.
+: The license property provides the name of the license under which rights to use this assignment are granted. If omitted, the default is the least restrictive [Creative Commons license](https://creativecommons.org/licenses/?lang=en), the Attribution (or CC-BY).
