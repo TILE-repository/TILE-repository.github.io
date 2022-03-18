@@ -28,7 +28,7 @@ Once the repository is forked to your personal repository, you can create new as
 
 To add assignments, copy the `template` folder in `/docs/assignments/` and rename it into something suitable for the assignment. Open the [index.md](assignments/template/index.md) the new folder and follow the instructions in this file.
 
-## The Blueprint
+### The Blueprint
 
 The [blueprint](assignments/template/blueprint.md) is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. 
 
