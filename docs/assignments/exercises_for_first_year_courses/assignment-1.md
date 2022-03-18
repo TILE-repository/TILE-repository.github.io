@@ -3,7 +3,7 @@ title: "Test Informed Learning with Examples assignment"
 author: Tanja E.J. Vos
 ...
 
-# Calculating many squares
+# Calculating squares
 
 
 Most of the programs that we implement:
