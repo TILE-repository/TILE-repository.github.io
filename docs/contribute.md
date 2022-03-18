@@ -4,7 +4,7 @@ title: "How to contribute"
 
 # How to contribute
 
-We welcome additions to this repository so we can all benefit from each others knowledge and material and improve software testing education one step at the time. 
+We welcome additions to this repository, so we can all benefit from each other's knowledge and material and improve software testing education one step at the time. 
 Contributing can be done using the Fork and pull model. 
 Anyone can fork this repository and push changes to their personal fork. 
 You do not need permission to this repository to push to a user-owned fork. 

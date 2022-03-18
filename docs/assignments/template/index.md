@@ -1,6 +1,13 @@
 ---
 title: "This is a template for an assignment using Test Informed Learning with Examples"
 author:  Birger Keys, Shō Christian, Phoebe Schneijder
+summary: >
+	Write a good summary for your assignment here.
+  You can use multiple lines of text if you want to.
+prerequisites: ['object orientation (OO) > objects > instantiation']
+concept practised: ['expressions > operators > logical operators', 'data > user-defined structures > graphs', 'object orientation (OO) > Inheritance > duck typing (polymorphism)']
+target audience: ['CS0', 'CS1']
+license: "CC-BY"
 ...
 
 # This is a template for an assignment using Test Informed Learning with Examples
@@ -13,62 +20,48 @@ By [Birger Keys](https://birgerkeys.com), [Shō Christian](https://orcid.org/000
 
 ## How to use this template
 
-First of all, thank you for reading this. This means you are creating a TILED assignment for the repository. Great! We welcome additions so we can all benefit from each others knowledge and improve software testing education one step at the time! 
+First, thank you for reading this. This means you are creating a TILEd assignment for the repository. Great! We welcome additions so that we can all benefit from each other's knowledge and improve software testing education one step at the time! 
 
-Please fill in this template with all the information about you and your assignment. You can describe the assignment, add for example handouts, source code, images, instructions for the lecturer et cetera. This will be transformed into a webpage with your assignment and put on the repository website.
+Please use this template with all the information about you and your assignment. You can describe the assignment, add for example handouts, source code, images, instructions for the lecturer et cetera. This will be transformed into a webpage with your assignment and put on the repository website.
 
 These are the steps you need to take to do this:
 
-1. Replace everything in here with content related to the assignment, starting with the `YAML` header on the top of the page. You can use markdown in the body to structure and describe the assignment. It is possible to include images, code listings and links to files or other pages. If you are not familiar with markdown, please look at the [GitHub guide](https://guides.github.com/features/mastering-markdown/) on how to use markdown.
+1. Replace everything in here with content related to the assignment, starting with the `YAML` header on the top of the page. You can use Markdown in the body to structure and describe the assignment. It is possible to include images, code listings and links to files or other pages. If you are not familiar with Markdown, please look at the [GitHub guide](https://guides.github.com/features/mastering-markdown/) on how to use Markdown.
 2. Describe the assignment as clearly as possible, provide examples and one or more solutions to be used as reference.
-3. Please fill in the `metadata` so that it is clear what the assignment is about and where it might fit in existing computer science programs.
-4. Put all related files in the folder together with this file. Make sure you link to the files from this markdown file.
+3. Put all related files in the folder together with this file. Make sure you link to the files from this markdown file.
 
 If you need any help, don't hesitate to contact the repository maintainers.
 
-## Topics
+## YAML Header
 
-The assignments will be accessable based on the topics. We use the following taxonomy:
+The [YAML](https://yaml.org/spec/1.2.2/) header on top of the file provides metadata information about the assignment. It is used to make the assignment easier to be found in automatically generated indexes and search engines.
 
-- Variables, expressions, types
-- Assignment statements
-- Strings
-  - Indexation
-  - Slicing
-  - Build-in functions and methods
-- Console input/output
-- Conditionals (if-elif-else)
-- Exceptions
-- Errors
-- Loops/iterations (while/for)
-- Functions
-- Unit tests
-- Modules/libraries
-- Structured types
-  - Tuples
-  - Lists
-  - Dictionaries
-  - Sets
-- File input/output
-- GUI
-- Object oriented programming
-- Advanced topics
-  - Recursion
-  - Functional programming (lambda expressions)
-- Algorithms
-  - Hashing
+The header consists of the following fields:
 
-If you use one or more of these topics in your metadata, we will index the assignment under those topics.
+Title
+: A Markdown-superset converter
 
-## Metadata
+Author
+: One or more authors of the assignment, preferably with their e-mail addresses.
 
-| *Summary*                     | What this assignment is about. |
-| *TILE aspects*                | What are the TILE aspects in this assignment. |
-| *Topics*                      | The topics covered by this assignment (see taxonomy). |
-| *Technology used*             | For example, programming languages, frameworks. |
-| *Audience*                    | Who is this assignment for. |
-| *Programming learning goals*  | What are the programming learning goals. |
-| *Testing learning goals*      | What are the testing learning goals. |
-| *Prerequisites*               | Are there any prerequisites? For example, what should the student already know? |
-| *Variants*                    | Optional possibilities for adaptations or varieties |
-| _Added by_                    | Your name |  
+Summary
+: A clear and concise summary of the assignment. This can be multiple lines of text.
+
+Prerequisites
+: A list of zero or more concepts that describe the prior knowledge that students need to have in order to complete the assignments. We insist that tags from the [blueprint](blueprint.md) are used such that exercises are findable, and it is easier to evaluate whether they fit into a specific phase of a course. Since the taxonomy is hierarchical, it is important to specify the whole path to the concept in the taxonomy, separating each step with a `>` character. For example: `data > type conversion > casting` instead of `casting`.
+
+Concepts practiced
+: A list of one or more concepts that students will practice with in this exercise. Again we insist on using the tags from the [blueprint](blueprint.md). Since the taxonomy is hierarchical, it is important to specify the whole path to the concept in the taxonomy, separating each step with a `>` character. For example: `data > type conversion > casting` instead of `casting`.
+
+Target audience
+: This can be described in terms of typical undergraduate courses, such as CS1 or CS50. 
+
+License
+: The license property provides the name of the license under which rights to use this assignment are granted. If omitted, the default is the least restrictive Creative Commons license, the Attribution or CC-BY.
+
+
+## The blueprint
+
+The [blueprint](blueprint.md) is a hierarchical structure describing common concepts in programming languages.
+
+![The blueprint](../../images/Blueprint.png)
