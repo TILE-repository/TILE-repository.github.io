@@ -1,34 +1,44 @@
-# **Blueprint**
+---
+title: "The Blueprint"
+...
 
-## expressions
+# The Blueprint
+The Blueprint is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. Below is a mind map of the blueprint and a textual representation.
 
-### operators
+
+<a href="images/Blueprint.png"><img src="images/Blueprint.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
+
+# Textual representation
+
+## Expressions
+
+### Operators
 
 - relational operators
 - logical operators
 - arithmetic operators
 - bit operators
 
-### evaluation
+### Evaluation
 
 - precedence
 - lazy evaluation
 
-## data
+## Data
 
-### user-defined structures
+### User-defined structures
 
 - trees
 - stacks
 - queues
 - graphs
 
-### type conversion
+### Type conversion
 
 - coercion
 - casting
 
-### **types(built-in)**
+### Types (built-in)
 
 - primitive
 
@@ -54,19 +64,19 @@
 
 	- array
 
-## multi-threading
+## Multi-threading
 
-### synchronization
+### Synchronization
 
 ## Design principles
 
-### top-down
+### Top-down
 
-### bottom-up
+### Bottom-up
 
-## object orientation (OO)
+## Object orientation (OO)
 
-### objects
+### Objects
 
 - instantiation
 
@@ -115,22 +125,22 @@
 - final class
 - constructors
 
-## testing
+## Testing
 
-### manual testing
+### Manual testing
 
-### automated testing
+### Automated testing
 
-## coding conventions
+## Coding conventions
 
-### naming conventions
+### Naming conventions
 
 - PEP 8
 - Java Code Conventions
 
-### comments
+### Comments
 
-### documentation
+### Documentation
 
 - JavaDoc
 - Docstring
@@ -143,17 +153,17 @@
 - editor
 - compiler
 
-### version control
+### Version control
 
 - git
 
-### build management tools
+### Build management tools
 
 - maven
 - pip
 - gradle
 
-### libraries
+### Libraries
 
 - guizero
 - numpy
@@ -161,18 +171,18 @@
 - pandas
 - java.util.stream
 
-### testing frameworks
+### Testing frameworks
 
 - JUnit
 - pytest
 
-### packaging
+### Packaging
 
 - JAR-files
 
 ## IO
 
-### files
+### Files
 
 - text
 
@@ -183,14 +193,14 @@
 
 	- excel
 
-### standard
+### Standard
 
 - input
 - print
 
-## imperative programming
+## Imperative programming
 
-### functions
+### Functions
 
 - signature
 
@@ -228,7 +238,7 @@
 
 - creating/defining
 
-### variables
+### Variables
 
 - constants
 - scope
@@ -239,23 +249,22 @@
 - assignment
 - variable declaration
 
-## control flow
+## Control flow
 
-### conditionals
+### Conditionals
 
 - switch
 - if
 
-### loops
+### Loops
 
 - for
 - while
 - foreach
 
-### exceptions
+### Exceptions
 
-### jumping
+### Jumping
 
 - break
 - continue
-
