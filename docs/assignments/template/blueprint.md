@@ -6,7 +6,7 @@ title: "The Blueprint"
 The Blueprint is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. Below is a mind map of the blueprint and a textual representation.
 
 
-<a href="../images/Blueprint.png"><img src="../images/Blueprint.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
+<a href="../../images/Blueprint.png"><img src="../../images/Blueprint.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
 
 # Textual representation
 
