@@ -1,5 +1,9 @@
 [![DOI](https://zenodo.org/badge/404988709.svg)](https://zenodo.org/badge/latestdoi/404988709)
 
+[![pages-build-deployment](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/pages/pages-build-deployment)
+
+[![process meta data](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/process_meta_data.yml/badge.svg)](https://github.com/TILE-repository/TILE-repository.github.io/actions/workflows/process_meta_data.yml)
+
 # TILEd Assignments
 
 ![TILE Logo](docs/TILE_logo.png "TILE logo")
