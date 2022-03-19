@@ -32,7 +32,7 @@ To add assignments, copy the `template` folder in `/docs/assignments/` and renam
 
 The [blueprint](assignments/template/blueprint.md) is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. 
 
-<a href="images/Bluepring.png"><img src="images/Bluepring.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
+<a href="images/Blueprint.png"><img src="images/Blueprint.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
 
 
 ## Check for build errors
