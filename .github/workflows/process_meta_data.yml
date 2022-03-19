@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow produces an index and pushes it to the repository.
 
 name: process meta data
 
