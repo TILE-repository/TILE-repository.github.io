@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Shopping calculator"
+summary: "Shopping calculator."
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > sequences > strings', 'control flow > conditionals > if']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Shopping calculator
@@ -44,18 +49,3 @@ always aligned.
 ```testruntile
 We added one sentence explicitly asking the students to test with
 some values and check the output.
-```
-
-
-# Metadata
-
-| *Summary*                     | Shopping calculator |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Conditional statements, string formatting, number formatting. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Conditional statements. |
-| *Testing learning goals*      | Test case design to test the layout. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

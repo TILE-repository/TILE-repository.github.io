@@ -1,7 +1,12 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
-...
+title: "Calculating discounts"
+summary: "Calculating discounts."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
+... 
 
 # Calculating discounts
 
@@ -46,18 +51,3 @@ You have to test your program to see if it works well.
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Calculating discounts. |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | String formatting, number formatting. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | String formatting, number formatting. |
-| *Testing learning goals*      | Applying and designing test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

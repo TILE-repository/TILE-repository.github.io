@@ -1,7 +1,26 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Money breakdown in bills and coins"
+summary: "Money breakdown in bills and coins."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+# Metadata
+
+| *Summary*                     | Money breakdown in bills and coins |
+| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
+| *Topics*                      | Applying an algorithm. |
+| *Technology used*             | Python |
+| *Audience*                    | CS1 |
+| *Programming learning goals*  | Problem solving.  |
+| *Testing learning goals*      | Designing test cases. |
+| *Prerequisites*               | Basic programming constructs. |
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
+
 
 # Money breakdown in bills and coins
 
@@ -70,17 +89,3 @@ combinations of bills and coins? For example:
 Insisting that the students test their programs and think about all
 possible combinations.
 ```
-
-# Metadata
-
-| *Summary*                     | Money breakdown in bills and coins |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Applying an algorithm. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Problem solving.  |
-| *Testing learning goals*      | Designing test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

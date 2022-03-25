@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "String formatting using test case data"
+summary: "String formatting with test related content."
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # String formatting using test case data
@@ -64,17 +69,3 @@ This exercise is about creating strings that have certain patterns
 using string manipulation. It used to be about file names, it was
 TILEd by making it about test cases and their components.
 ```
-
-
-# Metadata
-
-| _Summary_ | String formatting with test related content. |
-| _TILE aspects_ | Test domain TILE-ing is applied. |
-| _Topics_ | String formatting. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | Strings, replacing strings, formatting strings. |
-| _Testing learning goals_ | Creating test awareness and applying test cases. |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

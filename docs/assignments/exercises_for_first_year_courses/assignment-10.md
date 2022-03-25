@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Gross / net salary calculator"
+summary: "Calculating gross / net salary."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Gross / net salary calculator
@@ -44,16 +49,3 @@ Add a table with test cases. Also added cases for values that are
 less obvious like 2.5 hours and 0.1%. So they test again their
 assumptions of the types of the variables.
 ```
-
-# Metadata
-
-| _Summary_ | Calculating gross / net salary |
-| _TILE aspects_ | Test cases TILE-ing is applied. |
-| _Topics_ | Input output, variables. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | Arithmetics |
-| _Testing learning goals_ | Applying test cases. |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

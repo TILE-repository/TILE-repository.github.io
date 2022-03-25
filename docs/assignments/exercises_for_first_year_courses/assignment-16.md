@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Converting time"
+summary: "Convert a number of seconds into days, hours,..."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Converting time
@@ -48,19 +53,3 @@ We invite the student to test their program more and compare their
 outcomes with a parallel oracle that they can find on the web.
 Moreover, we explain the terminology oracle.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Convert a number of seconds into days, hours,
-minutes, and seconds |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Working with date and time. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Using date and time. |
-| *Testing learning goals*      | Running tests and comparing it with oracles. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

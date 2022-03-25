@@ -1,7 +1,25 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Calculating and verifying serial numbers based on dates"
+summary: "Calculating and verifying serial numbers based on dates."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'imperative programming > functions > algorithms']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+# Metadata
+
+| *Summary*                     | Calculating and verifying serial numbers based on dates. |
+| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
+| *Topics*                      | Applying an algorithm on the input to verify the input. |
+| *Technology used*             | Python |
+| *Audience*                    | CS1 |
+| *Programming learning goals*  | Applying an algorithm on the input to verify the input. Working with dates. |
+| *Testing learning goals*      | Input validation. |
+| *Prerequisites*               | Basic programming constructs. |
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
 
 # Calculating and verifying serial numbers based on dates
 
@@ -63,16 +81,3 @@ that you can test the output of your program.
 Insist that the students test their programs by giving them hints on
 what to test.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculating and verifying serial numbers based on dates. |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Applying an algorithm on the input to verify the input. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Applying an algorithm on the input to verify the input. Working with dates. |
-| *Testing learning goals*      | Input validation. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

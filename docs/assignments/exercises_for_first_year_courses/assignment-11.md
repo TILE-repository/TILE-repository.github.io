@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "MadLibs"
+summary: "MadLib game with test related content."
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # MadLibs
@@ -35,16 +40,3 @@ Try other inputs and try to come up with a funny phrase.
 ```testdomaintile
 This TILE contains the message that testing is important.
 ```
-
-# Metadata
-
-| _Summary_ | MadLib game with test related content. |
-| _TILE aspects_ | Test domain TILE-ing is applied. |
-| _Topics_ | Input output, variables, strings. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | Strings, replacing strings. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

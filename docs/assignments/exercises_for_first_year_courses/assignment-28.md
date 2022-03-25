@@ -1,7 +1,24 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Phone costs calculator"
+summary: "Phone costs calculator."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+# Metadata
+
+| *Summary*                     | Phone costs calculator |
+| *TILE aspects*                | Test run TILE-ing is applied |
+| *Topics*                      | Converting time into money |
+| *Technology used*             | Python |
+| *Audience*                    | CS1 |
+| *Programming learning goals*  | Converting numbers, rounding |
+| *Testing learning goals*      | Test case design |
+| *Prerequisites*               | Basic programming constructs |
+| *Variants*                    | Many options are possible, including porting to other programming languages |   
 
 # Phone costs calculator
 
@@ -49,15 +66,4 @@ desired behaviour?
 Insist that the students test their programs by giving them example
 test executions and ask them to think about more tests.
 ```
-
-# Metadata
-
-| *Summary*                     | Phone costs calculator |
-| *TILE aspects*                | Test run TILE-ing is applied |
-| *Topics*                      | Converting time into money |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Converting numbers, rounding |
-| *Testing learning goals*      | Test case design |
-| *Prerequisites*               | Basic programming constructs |
-| *Variants*                    | Many options are possible, including porting to other programming languages |    
+ 

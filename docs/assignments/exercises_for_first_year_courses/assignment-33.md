@@ -1,7 +1,26 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Fruit classification using Artificial Intelligence"
+summary: "Fruit classification using Artificial Intelligence."
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'data > user-defined structures > trees']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+# Metadata
+
+| *Summary*                     | Fruit classification using Artificial Intelligence |
+| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
+| *Topics*                      | Artificial Intelligence, trees |
+| *Technology used*             | Python |
+| *Audience*                    | CS1 |
+| *Programming learning goals*  | Following paths in a tree. |
+| *Testing learning goals*      | Designing test cases, path coverage. |
+| *Prerequisites*               | Basic programming constructs. |
+| *Variants*                    | Many options are possible, including porting to other programming languages. | 
+| *Added by*                    | Tanja E.J. Vos |   
+
 
 # Fruit classification using Artificial Intelligence
 
@@ -42,17 +61,3 @@ Insist that the students test their programs by giving them example
 test executions and ask them to add more tests such that each
 possible inputs occurs once.
 ```
-
-# Metadata
-
-| *Summary*                     | Fruit classification using Artificial Intelligence |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Artificial Intelligence, trees |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Following paths in a tree. |
-| *Testing learning goals*      | Designing test cases, path coverage. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

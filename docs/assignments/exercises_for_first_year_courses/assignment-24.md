@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Density, mass or volume calculator"
+summary: "Caluclator for different physic properties."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Density, mass or volume calculator
@@ -61,16 +66,3 @@ outputs.
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-# Metadata
-
-| *Summary*                     | Caluclator for different physic properties |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | User interaction, calculation, control flow |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Control flow, arithmetics |
-| *Testing learning goals*      | Applying test cases |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

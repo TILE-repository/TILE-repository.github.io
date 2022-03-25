@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Determine if a product is positive, negative or zero without calculating it"
+summary: "Determine if a product of two numbers is positive, negative or zero without calculating it."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Determine if a product is positive, negative or zero without calculating it
@@ -66,18 +71,3 @@ Insist that the students test their programs by giving them example
 test executions. Also pointing out that this way we try out all
 possible combinations to test.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Determine if a product of two numbers is positive, negative or zero without calculating it. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Programming puzzle with an arithmetic theme. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Conditionals and problems solving. |
-| *Testing learning goals*      | Testing completeness. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

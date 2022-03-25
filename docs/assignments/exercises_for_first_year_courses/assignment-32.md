@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Membership card discounts"
+summary: "Applying discount rules on purchases."
+prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
+concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'imperative programming > functions > algorithms']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Car insurance calculator
@@ -88,17 +93,3 @@ Insist that the students test their programs by giving them example
 test executions. Moreover, guide them through a thinking process of
 what else needs to be tested.
 ```
-
-# Metadata
-
-| *Summary*                     | Car insurance calculator |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Calculating insurance with multiple factors. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Applying an algorithm which has different variables. |
-| *Testing learning goals*      | Designing testcases for a somewhat complicated algorithm. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-
