@@ -1,8 +1,8 @@
 ---
 title: "Determine the quadrant of the Cartesian plane"
 summary: "Determine the quadrant of the Cartesian plane based on a coordinate."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sets', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'data > types (built-in) > composite > sets', 'expressions > operators > relational operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

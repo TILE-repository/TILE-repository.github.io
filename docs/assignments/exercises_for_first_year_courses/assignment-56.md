@@ -1,7 +1,13 @@
 ---
 title: "Calculate factorials"
-author: TILEd by Tanja E.J. Vos
+summary: "Calculate factorials."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Calculate factorials
 
@@ -16,18 +22,3 @@ Write pytests to test your implementation. Remember that $$0! = 1$$ and $$1! = 1
 Insist that the students test their programs by adding a line
 telling them to do it.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Calculate factorials |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

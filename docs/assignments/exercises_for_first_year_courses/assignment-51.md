@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Is this a digit?"
+summary: "Determine if a given character is a digit and using pytest to test it."
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > primitive > boolean']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Is this a digit?
@@ -46,17 +51,4 @@ def test_is_digit(test_case_ID, test_input, expected_output):
 Insist that the students test their programs by giving them example
 pytests. And make the connection to the tables with test cases they
 have seen before.
-```
-
-# Metadata
-
-| *Summary*                     | Determine if a given character is a digit and using pytest to test it. |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | strings, functions |
-| *Technology used*             | Python, pytest |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Using functions that return booleans, working with digits in strings. |
-| *Testing learning goals*      | Structured design of test cases |
-| *Prerequisites*               | Basic programming constructs and pytest |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
+```  

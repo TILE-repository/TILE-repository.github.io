@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Multiples of 7 not divisible by 3"
+summary: "Multiples of 7 not divisible by 3."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > relational operators']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Multiples of 7 not divisible by 3
@@ -26,16 +31,3 @@ following test cases to test your program:
 Insist that the students test their programs by giving them example
 test cases in a table.
 ```
-
-# Metadata
-
-| *Summary*                     | Multiples of 7 not divisible by 3 |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Loops, conditionals, arithmetics. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with positive and negative numbers, calculation multiples of seven, determining the remainder of a division. |
-| *Testing learning goals*      | Create awareness of test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

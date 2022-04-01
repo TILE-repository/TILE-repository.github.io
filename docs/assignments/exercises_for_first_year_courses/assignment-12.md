@@ -1,8 +1,8 @@
 ---
 title: "String formatting using test case data"
 summary: "String formatting with test related content."
-prerequisites: "['data > types (built-in) > composite > sequences > strings', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > sequences > strings']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

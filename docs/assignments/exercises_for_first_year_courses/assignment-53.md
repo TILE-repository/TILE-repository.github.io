@@ -1,7 +1,14 @@
 ---
 title: "Checking if a number is prime"
-author: TILEd by Tanja E.J. Vos
+summary: "Testing if a number is prime."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > primitive > boolean']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+
 
 # Checking if a number is prime
 
@@ -20,17 +27,3 @@ def test_is_prime(testcase, input, expected_output):
 Insist that the students test their programs by giving them example
 pytests.
 ```
-
-# Metadata
-
-| *Summary*                     | Testing if a number is prime |
-| *TILE aspects*                | Test cases TILE-ing is applied. |
-| *Topics*                      | Arithmetic |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

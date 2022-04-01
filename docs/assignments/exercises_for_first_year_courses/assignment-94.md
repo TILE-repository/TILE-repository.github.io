@@ -1,6 +1,11 @@
 ---
 title: "Travel times for conference speakers"
-author: TILEd by Tanja E.J. Vos
+summary: "Travel times for conference speakers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > tuples', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > primitive > numeric', 'control flow > loops', 'data > types (built-in) > composite > sequences > tuples']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Travel times for conference speakers
@@ -33,18 +38,3 @@ each proponent will take to arrive in increasing order. Each name
 must be printed in a 10-character field, and the time must be
 printed in a 5-character field, with a padding space character
 between each of the columns.
-
-
-# Metadata
-
-| *Summary*                     | Travel times for conference speakers |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

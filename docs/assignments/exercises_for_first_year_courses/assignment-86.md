@@ -1,6 +1,11 @@
 ---
 title: "Scrabble game score calculator"
-author: TILEd by Tanja E.J. Vos
+summary: "Scrabble game score calculator."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > dictionaries', 'control flow > conditionals', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Scrabble game score calculator
@@ -34,20 +39,4 @@ test cases:
     4                | `'Surprise'`          | 10
     5                | `'1234'`              | 0
     6                | `'And with spaces?'`  | 24
-
-
-
-
-# Metadata
-
-| *Summary*                     | Scrabble game score calculator |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 

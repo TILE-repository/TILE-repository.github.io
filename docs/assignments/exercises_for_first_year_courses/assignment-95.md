@@ -1,6 +1,11 @@
 ---
 title: "Determining if a string only contains unique characters"
-author: TILEd by Tanja E.J. Vos
+summary: "Determining if a string only contains unique characters."
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > primitive > boolean', 'data > types (built-in) > composite > sequences > strings', 'control flow > conditionals', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Determining if a string only contains unique characters
@@ -13,17 +18,3 @@ pytest using the following parameterization:
 ```python
 @pytest.mark.parametrize('testcase, input, expected_output',[ (1, 'Hola', True), (2, 'HolaO', False), (3, ", True), (4, 'cC', False), (5,'0123', True), (6, '33&44', False), (7, '!+&/', True), (8, '!++&/', False), ])
 ```
-
-# Metadata
-
-| *Summary*                     | Determining if a string only contains unique characters |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

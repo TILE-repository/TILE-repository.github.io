@@ -1,24 +1,12 @@
 ---
 title: "Simple calculator"
 summary: "Simple calculator."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > arithmetic operators']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"
 ...
-
-| _Summary_ | Simple calculator. |
-| _TILE aspects_ |Test run TILE-ing is applied. |
-| _Topics_ | Input output, variables. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | command line in-/output, variables. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  
-
 
 # Simple calculator
 

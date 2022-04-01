@@ -1,26 +1,12 @@
 ---
 title: "Calculating the mean of positive and negative numbers"
 summary: "Calculating the mean of positive and negative numbers."
-prerequisites: "['data > types (built-in) > primitive > boolean', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'control flow > loops']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"
 ...
-
-# Metadata
-
-| *Summary*                     | Calculating the mean of positive and negative numbers. |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Loops, conditionals, arithmetics.  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Calculating mean of positive and negative numbers, rounding real numbers, conditionals and loops. |
-| *Testing learning goals*      | Testing for robustness |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-
 
 # Calculating the mean of positive and negative numbers
 

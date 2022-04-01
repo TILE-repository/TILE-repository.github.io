@@ -1,6 +1,11 @@
 ---
 title: "Storing customer data - part two"
-author: TILEd by Tanja E.J. Vos
+summary: "Storing customer data - part two."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > dictionaries', 'control flow > conditionals', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Storing customer data - part two
@@ -38,18 +43,3 @@ Now, the option to terminate will be the `(8)`.
 To test your program, run the tests from the previous exercise, but
 before ending the program choose the option `(7)`. Then, open the
 saved file to check that the content matches the clients.
-
-
-# Metadata
-
-| *Summary*                     | Storing customer data |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

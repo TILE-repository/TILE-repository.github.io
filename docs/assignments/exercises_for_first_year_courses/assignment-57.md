@@ -1,7 +1,13 @@
 ---
 title: "Taylor series"
-author: TILEd by Tanja E.J. Vos
+summary: "Taylor series."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Taylor series
 
@@ -39,19 +45,3 @@ def test_my_exp(tc, input, expected_output):
 Insist that the students test their programs by providing them a
 parallel oracle and a pytest on how to use it.
 ```
-
-
-
-# Metadata
-
-| *Summary*                     | Taylor series |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

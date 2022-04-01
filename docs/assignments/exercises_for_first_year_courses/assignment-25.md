@@ -1,8 +1,8 @@
 ---
 title: "Relational operators"
 summary: "Working with relational operators."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > primitive > boolean', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'data > types (built-in) > primitive > boolean', 'expressions > operators > relational operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

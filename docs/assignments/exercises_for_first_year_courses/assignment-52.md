@@ -1,7 +1,12 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
-...
+title: "Is this character a digit? - part two"
+summary: "Calling another function to determine if a character is a digit."
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > primitive > boolean']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
+... 
 
 # Is this character a digit? - part two
 
@@ -33,17 +38,3 @@ An example of a test session you can execute manualy via the shell could be:
 Insist that the students test their programs by giving them example
 test runs.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Calling another function to determine if a character is a digit. |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | functions, strings |
-| *Technology used*             | Python, pytest |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Using functions that return booleans, working with digits in strings. |
-| *Testing learning goals*      | Structured design of test cases |
-| *Prerequisites*               | Basic programming constructs and pytest |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

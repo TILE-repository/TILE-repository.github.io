@@ -1,8 +1,8 @@
 ---
-title: "Membership card discounts"
-summary: "Applying discount rules on purchases."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'imperative programming > functions > algorithms']"
+title: "Car insurance calculator"
+summary: "Car insurance calculator."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > conditionals', 'imperative programming > functions > algorithms', 'expressions > operators > relational operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

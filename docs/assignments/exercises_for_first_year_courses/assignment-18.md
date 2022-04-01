@@ -1,8 +1,8 @@
 ---
 title: "Letter exchanger"
 summary: "Exchange letters of the input."
-prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > sequences > strings']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

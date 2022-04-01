@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Limit exceeding sum"
+summary: "Limit exceeding sum."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Limit exceeding sum
@@ -27,17 +32,3 @@ Insist that the students test their programs by giving them example
 test cases in a table. We have explicitly added 0 and negative
 numbers to make sure these are tested.
 ```
-
-# Metadata
-
-| *Summary*                     | Limit exceeding sum |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Loops |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with while loops. |
-| *Testing learning goals*      | Testing for robustness. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

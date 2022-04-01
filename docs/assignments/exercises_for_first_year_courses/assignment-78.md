@@ -1,6 +1,11 @@
 ---
 title: "Creating files with a random number of random numbers"
-author: TILEd by Tanja E.J. Vos
+summary: "Creating files with a random number of random numbers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings', 'io > files > text > plain']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Creating files with a random number of random numbers
@@ -39,20 +44,3 @@ It can generate for example:
 |           |           | 86.55     | ...       |
 |           |           | 153.28    |           |
 |           |           | ...       |           |
-
-
-
-
-# Metadata
-
-| *Summary*                     |  Creating files with a random number of random numbers|
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

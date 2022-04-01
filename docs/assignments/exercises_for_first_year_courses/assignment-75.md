@@ -1,6 +1,11 @@
 ---
 title: "Saving names and birth dates to a file"
-author: TILEd by Tanja E.J. Vos
+summary: "Saving names and birth dates to a file."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops', 'io > files > text > plain']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Saving names and birth dates to a file
@@ -47,18 +52,3 @@ The above file has resulted from the following interactive session:
     The file "dates.txt" has been generated.
 >>>
 ```
-
-# Metadata
-
-title: "Saving names and birth dates to a file"
-| *Summary*                     |  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

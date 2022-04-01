@@ -1,8 +1,8 @@
 ---
 title: "Triangle classification"
 summary: "Triangle classification."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > primitive > boolean', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'imperative programming > funtions > algorithms']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > conditionals', 'imperative programming > functions > algorithms']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

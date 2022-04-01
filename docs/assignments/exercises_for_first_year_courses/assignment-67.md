@@ -1,6 +1,11 @@
 ---
-title: "TFibonacci sequences"
-author: TILEd by Tanja E.J. Vos
+title: "Fibonacci sequences"
+summary: "Fibonacci sequences."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals', 'data > types (built-in) > composite > sequences > lists']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Fibonacci sequences
@@ -21,18 +26,3 @@ For example by typing:
 ```
 
 Don't forget your pytests to automate the tests!
-
-
-# Metadata
-
-| *Summary*                     | Fibonacci sequences |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

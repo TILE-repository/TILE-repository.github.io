@@ -1,8 +1,8 @@
 ---
 title: "Multiples of seven"
 summary: "Calculating the multiples of 7 of a given number."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > loops']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > relational operators']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

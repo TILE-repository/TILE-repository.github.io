@@ -1,7 +1,14 @@
 ---
 title: "Convert a letter to upper case"
-author: TILEd by Tanja E.J. Vos
+summary: "Convert a letter to upper case."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
+
 
 # Convert a letter to upper case
 
@@ -34,18 +41,3 @@ def test_lower_to_upper(testcase, input, expected_output):
 Insist that the students test their programs by giving them example
 pytests.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Convert a letter to upper case |
-| *TILE aspects*                | Test cases TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

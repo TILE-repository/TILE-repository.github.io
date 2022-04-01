@@ -1,8 +1,8 @@
 ---
 title: "Calculating squares"
 summary: "Calculating squares from the command line interface."
-prerequisites: "['data > types (built-in) > primitive > numeric', 'expressions > operators > arithmetic operators']"
-concepts practised: "['data > types (built-in) > primitive > numeric > int', 'expressions > operators > arithmetic operators']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric > int', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

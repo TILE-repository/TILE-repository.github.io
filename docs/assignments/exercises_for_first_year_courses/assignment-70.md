@@ -1,6 +1,11 @@
 ---
 title: "Counting word appearances in a list of words"
-author: TILEd by Tanja E.J. Vos
+summary: "Counting word appearances in a list of words."
+prerequisites: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > loops', 'control flow > conditionals', 'data > types (built-in) > composite > sequences > lists', 'data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Counting word appearances in a list of words
@@ -13,18 +18,4 @@ Write a function that, given a list of words and a word, returns the number of t
     2                  ||        
     3                 ||         
     ....            || 
-
-
-# Metadata
-
-| *Summary*                     | Counting word appearances in a list of words |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 

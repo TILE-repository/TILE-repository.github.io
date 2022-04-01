@@ -1,6 +1,11 @@
 ---
 title: "Shopping cart"
-author: TILEd by Tanja E.J. Vos
+summary: "Shopping cart."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > dictionaries', 'control flow > conditionals', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Shopping cart
@@ -42,22 +47,3 @@ following example:
 
 You can assume that the user only adds 1 sample of each product.
 Your tests can be run through the shell manually.
-
-
-
-
-
-
-# Metadata
-
-| *Summary*                     | Shopping cart |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

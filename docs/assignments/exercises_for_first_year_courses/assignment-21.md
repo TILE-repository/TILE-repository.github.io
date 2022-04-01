@@ -1,8 +1,8 @@
 ---
 title: "Months by number"
 summary: "Determine the name of the month based on the number."
-prerequisites: "['data > types (built-in) > composite > dictionaires', 'imperative programming > variables > variable declaration']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'data > types (built-in) > composite > dictionaires']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'data > types (built-in) > composite > dictionaires']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

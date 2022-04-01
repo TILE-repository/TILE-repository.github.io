@@ -1,6 +1,11 @@
 ---
 title: "Mortal set theory"
-author: TILEd by Tanja E.J. Vos
+summary: "Mortal set theory."
+prerequisites: "['data > types (built-in) > composite > sets', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > primitive > boolean', 'data > types (built-in) > composite > sets', 'control flow > conditionals', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Mortal set theory
@@ -36,18 +41,3 @@ c\) Socrates is mortal.
 \(d\) there are mortal things that are not human, and
 
 \(e\) there are things that are not mortal.
-
-
-# Metadata
-
-| *Summary*                     | Mortal set theory |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

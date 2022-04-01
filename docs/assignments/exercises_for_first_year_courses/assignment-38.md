@@ -1,8 +1,8 @@
 ---
 title: "The sum of the odds and even numbers"
 summary: "Calculating the sum of the odds and of the even numbers."
-prerequisites: "['data > types (built-in) > primitive > boolean', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'expressions > operators > arithmetic operators']"
-concepts practised: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'control flow > conditionals', 'control flow > loops']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

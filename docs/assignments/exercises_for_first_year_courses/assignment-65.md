@@ -1,7 +1,13 @@
 ---
 title: "Counting numbers in a String"
-author: TILEd by Tanja E.J. Vos
+summary: "Counting numbers in a String."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Counting numbers in a String
 
@@ -18,18 +24,4 @@ Design a function that given a text string, returns the numbers that appear in t
 ```
 
 Write pytests to test your function in an automated way.
-
-
-# Metadata
-
-| *Summary*                     | Counting numbers in a String |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 

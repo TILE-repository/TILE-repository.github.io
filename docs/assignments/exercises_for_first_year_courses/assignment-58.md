@@ -1,7 +1,13 @@
 ---
-title: "Greatest common divisor using Euclid's algorithm"
-author: TILEd by Tanja E.J. Vos
+title: "Greatest common divisor"
+summary: "Greatest common divisor using Euclid's algorithm."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Greatest common divisor
 
@@ -34,18 +40,3 @@ Insist that the students test their programs by adding a line
 telling them to do it and make sure they read well what the function
 is supposed to do.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Greatest common divisor using Euclid's algorithm |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

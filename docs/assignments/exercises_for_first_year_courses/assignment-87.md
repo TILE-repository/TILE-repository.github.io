@@ -1,6 +1,11 @@
 ---
 title: "Simulating 1000 roles of two dices and calculating the probability percentage"
-author: TILEd by Tanja E.J. Vos
+summary: "Simulating 1000 roles of two dices and calculating the probability percentage."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > dictionaries', 'control flow > conditionals', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Simulating 1000 roles of two dices and calculating the probability percentage
@@ -40,16 +45,3 @@ rolls made. The output is shown below.
     11    |  6.30                   |  5.56
     4     |  7.40                   |  8.33
     12    |  2.30                   |  2.78
-
-# Metadata
-
-| *Summary*                     | Simulating 1000 roles of two dices and calculating the probability percentage |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
