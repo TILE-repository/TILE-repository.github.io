@@ -1,8 +1,8 @@
 ---
 title: "Sieve of Eratosthenes"
 summary: "Sieve of Eratosthenes."
-prerequisites: "['data > types (built-in) > composite > sets', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
-concepts practised: "['data > types (built-in) > composite > sets', 'control flow > conditionals', 'control flow > loops't,  'imperative programming > functions > algorithms']"
+prerequisites: "['data > types (built-in) > composite > sets', 'data > types (built-in) > primitive > sets', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sets', 'control flow > conditionals', 'control flow > loops']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"
@@ -31,6 +31,5 @@ below:
 To test your function, you can compare the numbers you obtain with
 those that appear below on this [website](https://www.transum.org/Software/Sieve_of_Eratosthenes/).
 
-| *Added by*                    | Tanja E.J. Vos |   
 
 [^4]: <https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes>
