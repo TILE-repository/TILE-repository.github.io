@@ -17,6 +17,7 @@ and then eliminate from that set the multiples of 2, then those of
 3, then those of 5, and so on. Pseudocode would be as can be seen
 below:
 
+```
     Create a set and initialize it with the numbers between 2 and 120
     Initialize p to 2
     As long as p is between 2 and 120
@@ -27,6 +28,7 @@ below:
             Eliminate k from the set
             Update k to k + p
         Increase p
+```
 
 To test your function, you can compare the numbers you obtain with
 those that appear below on this [website](https://www.transum.org/Software/Sieve_of_Eratosthenes/).
