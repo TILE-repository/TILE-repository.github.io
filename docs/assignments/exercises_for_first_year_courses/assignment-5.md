@@ -11,10 +11,6 @@ license: "CC-BY"
 
 # More advanced calculator
 
-
-
-
-
 Implement a program that reads two integer numbers, calculates and prints their addition, subtraction, product, division and modulus or remainder (`%`).
 
 ```

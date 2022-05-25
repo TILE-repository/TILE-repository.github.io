@@ -10,10 +10,6 @@ license: "CC-BY"
 
 # Simple calculator
 
-
-
-
-
 The expressions on the right of the assignment can be all complex that we want. 
 Implement a program that reads two real numbers, calculates and prints their sum (`+`), subtraction (`-`), product (`*`) and division (`/`).
 

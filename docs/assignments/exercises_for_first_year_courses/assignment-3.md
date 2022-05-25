@@ -8,11 +8,7 @@ author: Tanja E.J. Vos
 license: "CC-BY"
 ...
 
-# Three way value swapping
-
-
-
-
+# Three-way value swapping
 
 Make a program in Python that receive values for three variables
 

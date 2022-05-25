@@ -10,7 +10,6 @@ license: "CC-BY"
 
 # Calculating squares
 
-
 Most of the programs that we implement:
 
 1.  obtain input data (for example through the keyboard),
@@ -99,16 +98,3 @@ students with the terminology:
 Then with sample executions we invite then to do more tests. And all
 of this in one of the very first exercises.
 ```
-
-# Metadata
-
-| _Summary_ |Calculating squares from the command line interface. |
-| _TILE aspects_ | Test run TILE-ing is applied. |
-| _Topics_ | Input output |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | command line in-/output. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  
