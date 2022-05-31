@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Triangle classification"
+summary: "Triangle classification."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > conditionals', 'imperative programming > functions > algorithms']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Triangle classification
@@ -50,19 +55,6 @@ Insist that the students test their programs by giving them test
 cases. Also include a bit of anecdotal history on the triangle
 program and first book on software testing.
 ```
-
-# Metadata
-
-| *Summary*                     | Triangle classification |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Classic assignment to classify triangles.  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Problem solving, applying algorithms. |
-| *Testing learning goals*      | Applying more abstract test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 
 [^1]: <https://en.wikipedia.org/wiki/Gerald_Weinberg>
 

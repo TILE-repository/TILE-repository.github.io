@@ -1,9 +1,14 @@
 ---
 title: "Sets with numbers based on divisibility"
-author: TILEd by Tanja E.J. Vos
+summary: "Sets with numbers based on divisibility."
+prerequisites: "['data > types (built-in) > composite > sets', 'imperative programming > variables']"
+concepts practised: "['data > types (built-in) > composite > sets', 'control flow > conditionals', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
-# Sets with numbers based on divisibility 
+# Sets with numbers based on divisibility
 
 Write a program that generates three sets of numbers between 1 and 1000:
 
@@ -14,18 +19,3 @@ the first set consists of all numbers that are divisible by 3, the second consis
 \(b\) that are divisible by 3 and 7, but not by 11, and
 
 \(c\) that are neither divisible by 3, nor by 7, nor by 11.
-
-
-# Metadata
-
-| *Summary*                     | Sets with numbers based on divisibility  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

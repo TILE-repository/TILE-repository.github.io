@@ -1,6 +1,11 @@
 ---
 title: "Process prices from a file and calculate the VAT"
-author: TILEd by Tanja E.J. Vos
+summary: "Process prices from a file and calculate the VAT."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables]"
+concepts practised: "['data > types (built-in) > primitive > numeric', 'io > files > text > plain', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Process prices from a file and calculate the VAT
@@ -21,18 +26,3 @@ For example: `calculate_VAT("data1.txt")` returns the string
 |   9.95                  |               |  121.00                 |
 |                         |               |   12.04                 |
 |-------------------------+---------------+-------------------------|
-
-
-# Metadata
-
-| *Summary*                     |  Process prices from a file and calculate the VAT|
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

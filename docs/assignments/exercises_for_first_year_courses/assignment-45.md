@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Age statistics"
+summary: "Calculating the age statistics."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Age statistics
@@ -51,16 +56,3 @@ has to calculate and display on the screen:
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculating the age statistics. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Conditionals, arithmetics. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Calculating statistical properties of a set of values. |
-| *Testing learning goals*      | Input validation, test case design for robustness. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "The sum of the odds and even numbers"
+summary: "Calculating the sum of the odds and of the even numbers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # The sum of the odds and even numbers
@@ -64,17 +69,3 @@ the number again.
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculating the sum of the odds and of the even numbers. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Determining odd and even numbers numbers |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Loops |
-| *Testing learning goals*      | Testing for robustness |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

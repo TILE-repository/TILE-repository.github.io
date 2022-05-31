@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Grading statistics"
+summary: "Calculate basic grading statistics."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > composite > sequences > string']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Grading statistics
@@ -58,16 +63,3 @@ your program should handle negative numbers.
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculate basic grading statistics. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Loops, conditionals. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with do..while |
-| *Testing learning goals*      | Input validation |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

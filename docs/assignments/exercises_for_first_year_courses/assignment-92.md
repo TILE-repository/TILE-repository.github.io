@@ -1,6 +1,11 @@
 ---
 title: "Zipping sequences into tuples"
-author: TILEd by Tanja E.J. Vos
+summary: "Zipping sequences into tuples."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'imperative programming > variables']"
+concepts practised: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Zipping sequences into tuples
@@ -46,17 +51,3 @@ the two sequences it receives have the same number of elements:
 ```
 
 Don't forget to test your function with pytests.
-
-# Metadata
-
-| *Summary*                     | Zipping sequences into tuples |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

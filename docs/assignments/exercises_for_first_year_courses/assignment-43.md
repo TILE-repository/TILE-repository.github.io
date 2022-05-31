@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Calculate the maximum of twelve real numbers"
+summary: "Calculate the maximum of twelve real numbers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Calculate the maximum of real numbers
@@ -23,17 +28,3 @@ maximum. Run the following test cases to test your program:
 Insist that the students test their programs by giving them example
 test cases in a table.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculate the maximum of twelve real numbers. |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Arithmetics, loops, conditionals. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Determine the max of numbers using a loop, logical operators and conditional statements. |
-| *Testing learning goals*      | Testing all relevant combinations of input. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

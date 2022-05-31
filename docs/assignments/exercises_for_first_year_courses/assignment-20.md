@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Maximum and minumum"
+summary: "Determine minimum and maximum of three values."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'expressions > operators > relational operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Maximum and minumum
@@ -52,18 +57,3 @@ test executions. The values used in the example test executions will
 make then aware that the program was not only for numerical values
 but for any value.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Determine minimum and maximum of three values. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Comparing numbers. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Comparing numbers. |
-| *Testing learning goals*      | Determine usefull test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

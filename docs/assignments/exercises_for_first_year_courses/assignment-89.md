@@ -1,6 +1,11 @@
 ---
 title: "Storing customer data"
-author: TILEd by Tanja E.J. Vos
+summary: "Storing customer data."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
+concepts practised: "['data > types (built-in) > composite > dictionaries', 'control flow > conditionals', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Storing customer data
@@ -108,22 +113,3 @@ example, you can do the following interactions:
 \-
 
 :   end the program with `(6)`
-
-
-
-
-
-
-# Metadata
-
-| *Summary*                     | Storing customer data |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

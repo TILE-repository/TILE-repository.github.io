@@ -1,10 +1,14 @@
 ---
-title: "Test Informed Learning with Examples assignment"
+title: "Calculating squares"
+summary: "Calculating squares from the command line interface."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric > int', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
+target audience: "CS1"
 author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Calculating squares
-
 
 Most of the programs that we implement:
 
@@ -94,16 +98,3 @@ students with the terminology:
 Then with sample executions we invite then to do more tests. And all
 of this in one of the very first exercises.
 ```
-
-# Metadata
-
-| _Summary_ |Calculating squares from the command line interface. |
-| _TILE aspects_ | Test run TILE-ing is applied. |
-| _Topics_ | Input output |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | command line in-/output. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

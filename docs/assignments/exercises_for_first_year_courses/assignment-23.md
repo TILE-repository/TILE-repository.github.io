@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Determine phase of life"
+summary: "Determine the phase of life based on age."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'expressions > operators > logical operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Determine phase of life
@@ -31,17 +36,3 @@ at least once.
 Add minimal line saying the should test such that each possible
 output has occurred.
 ```
-
-# Metadata
-
-| *Summary*                     | Determine the phase of life based on age |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Working with boundary values and ranges. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with ranges. |
-| *Testing learning goals*      | Testing boundary values. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

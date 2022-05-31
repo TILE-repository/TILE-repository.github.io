@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Prime or not"
+summary: "Prime numbers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Prime or not
@@ -26,17 +31,4 @@ says they are not prime. Also try with negative numbers.
 Insist that the students test their programs by giving them ideas or
 pointers about the test data to use.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Prime numbers |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Arithmetic. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Determine prime numbers. |
-| *Testing learning goals*      | Test case design. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
+  

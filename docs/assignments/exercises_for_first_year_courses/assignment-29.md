@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Water company billing system"
+summary: "Water company billing system with conditional discounts."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > conditionals', 'expressions > operators > relational operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Water company billing system
@@ -45,18 +50,3 @@ a month given the number of litres used.
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-
-# Metadata
-
-| *Summary*                     | Water company billing system with conditional discounts. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Conditional application of rules. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Conditional statements, calculating percentages. |
-| *Testing learning goals*      | Boundary value testing. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

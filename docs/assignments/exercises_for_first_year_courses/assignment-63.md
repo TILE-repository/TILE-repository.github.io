@@ -1,7 +1,13 @@
 ---
 title: "Multiples of three"
-author: TILEd by Tanja E.J. Vos
+summary: "Multiples of three."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Multiples of three
 
@@ -39,22 +45,3 @@ Now, use these functions to write a `main` program that asks the user for a numb
     multiple = 12, divisors of 12 = [1, 2, 3, 4, 6, 12]
 >>> 
 ```
-
-
-
-
-
-
-# Metadata
-
-| *Summary*                     |  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

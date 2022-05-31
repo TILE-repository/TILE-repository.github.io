@@ -1,7 +1,13 @@
 ---
-title: "Test Informed Learning with Examples assignment"
+title: "Celsius to fahrenheit converter"
+summary: "Celsius to fahrenheit converter."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
+target audience: "CS1"
 author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Celsius to Fahrentheit converter
 
@@ -27,16 +33,3 @@ converter to check the outputs of your program:
 We invite the student to test their program more and compare their
 outcomes with a parallel oracle that they can find on the web.
 ```
-
-# Metadata
-
-| _Summary_ | Celsius to fahrenheit converter. |
-| _TILE aspects_ |Test run TILE-ing is applied. |
-| _Topics_ | Input output, variables. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | command line in-/output, variables. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "ASCII art generator"
+summary: "ASCII Art generator using test domain."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # ASCII art generator
@@ -53,19 +58,3 @@ Your program must work with any length name:
 ```testdomaintile
 This TILE contains the message that testing is important.
 ```
-
-
-
-# Metadata
-
-| *Summary*                     | ASCII Art generator using test domain. |
-| *TILE aspects*                | Test domain TILE-ing is applied. |
-| *Topics*                      | String formatting. |
-| *Technology used*             | Python. |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | String formatting. |
-| *Testing learning goals*      | Test awareness. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

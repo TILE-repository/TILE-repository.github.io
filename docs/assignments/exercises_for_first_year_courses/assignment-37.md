@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Calculating the sum of the integers"
+summary: "Calculating the sum of the integers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment', 'expressions > operators > relational operators']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Calculating the sum of the integers
@@ -37,17 +42,3 @@ $$\sum_{n = N}^{M} n$$
 Insist that the students test their programs by giving them example
 test executions.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculating the sum of the integers |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Calculating the sum of integers between two values. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Loops and assigning values to a variable multiple times. |
-| *Testing learning goals*      | Robustness testing. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

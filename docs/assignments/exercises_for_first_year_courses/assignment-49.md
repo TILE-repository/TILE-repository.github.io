@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Determine dividers"
+summary: "Determine if one or bothe of two numbers are dividers of each other."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Determine dividers
@@ -67,17 +72,3 @@ Insist that the students test their programs by giving them example
 test executions. Note that the test cases have been chosen carefully
 to make sure we cover a lot of combinations and take 0 into account.
 ```
-
-# Metadata
-
-| *Summary*                     | Determine if one or bothe of two numbers are dividers of each other. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Arithmetic. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Remainder of devisions, using build-in functions. |
-| *Testing learning goals*      | Test completeness |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Letter exchanger"
+summary: "Exchange letters of the input."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Letter exchanger
@@ -28,17 +33,3 @@ program:
 Insist that the students test their programs by giving them a table
 of test cases.
 ```
-
-# Metadata
-
-| *Summary*                     | Exchange letters of the input. |
-| *TILE aspects*                | Test case TILE-ing is applied. |
-| *Topics*                      | String idexation |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Accessing elements of strings. |
-| *Testing learning goals*      | Designing test cases. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-
