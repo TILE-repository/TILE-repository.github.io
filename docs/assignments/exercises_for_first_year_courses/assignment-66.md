@@ -1,7 +1,7 @@
 ---
 title: "Binary to decimal converter"
 summary: "Binary to decimal converter."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings', 'expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos

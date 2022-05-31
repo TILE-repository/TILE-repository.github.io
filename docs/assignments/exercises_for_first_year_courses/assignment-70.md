@@ -1,8 +1,8 @@
 ---
 title: "Counting word appearances in a list of words"
 summary: "Counting word appearances in a list of words."
-prerequisites: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
-concepts practised: "['control flow > loops', 'control flow > conditionals', 'data > types (built-in) > composite > sequences > lists', 'data > types (built-in) > composite > sequences > strings']"
+prerequisites: "['io > standard > input', 'imperative programming > variables']"
+concepts practised: "['control flow > loops', 'data > types (built-in) > composite > sequences > lists', 'data > types (built-in) > composite > sequences > strings']"
 target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"

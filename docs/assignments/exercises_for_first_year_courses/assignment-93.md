@@ -1,7 +1,7 @@
 ---
 title: "Intersecting two sets"
 summary: "Intersecting two sets."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'control flow > loops', 'data > types (built-in) > composite > sequences > tuples']"
 target audience: "CS1"
 author: Tanja E.J. Vos

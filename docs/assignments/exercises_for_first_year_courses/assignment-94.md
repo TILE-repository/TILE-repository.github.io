@@ -1,7 +1,7 @@
 ---
 title: "Travel times for conference speakers"
 summary: "Travel times for conference speakers."
-prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > tuples', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > tuples', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > primitive > numeric', 'control flow > loops', 'data > types (built-in) > composite > sequences > tuples']"
 target audience: "CS1"
 author: Tanja E.J. Vos

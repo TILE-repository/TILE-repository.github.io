@@ -1,7 +1,7 @@
 ---
 title: "Saving names and birth dates to a file"
 summary: "Saving names and birth dates to a file."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops', 'io > files > text > plain']"
 target audience: "CS1"
 author: Tanja E.J. Vos

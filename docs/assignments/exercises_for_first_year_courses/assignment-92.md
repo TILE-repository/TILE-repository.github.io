@@ -1,7 +1,7 @@
 ---
 title: "Zipping sequences into tuples"
 summary: "Zipping sequences into tuples."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite', 'control flow > loops']"
 target audience: "CS1"
 author: Tanja E.J. Vos

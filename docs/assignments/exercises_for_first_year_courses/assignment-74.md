@@ -1,7 +1,7 @@
 ---
 title: "Working with matrices"
 summary: "Working with matrices."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'data > types (built-in) > composite > array']"
 target audience: "CS1"
 author: Tanja E.J. Vos

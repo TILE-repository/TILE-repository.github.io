@@ -7,26 +7,8 @@ target audience: "CS1"
 author: Tanja E.J. Vos
 license: "CC-BY"
 ...
-# Metadata
-
-| *Summary*                     | Calculate the quotient and the remainder of two positive numbers. |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Arithmetic. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Calculating quotient and remainder |
-| *Testing learning goals*      | Test completeness. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-
-
 
 # Quotient and remainder
-
-
-
-
 
 Write a program to calculate the quotient and remainder of the
 integer division of two positive integers, using only the
@@ -67,10 +49,4 @@ Test your program with the following outputs:
     Enter a positive integer number: 10
     Enter another positive integer number: -4
     Only positive integers
-```
-
-```testruntile
-Insist that the students test their programs by giving them example
-test executions. Note that the test cases have been chosen carefully
-to make sure we cover a lot of combinations and take 0 into account.
 ```

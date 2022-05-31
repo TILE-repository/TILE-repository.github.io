@@ -1,7 +1,7 @@
 ---
 title: "Checking if a number is prime"
 summary: "Testing if a number is prime."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > primitive > boolean']"
 target audience: "CS1"
 author: Tanja E.J. Vos

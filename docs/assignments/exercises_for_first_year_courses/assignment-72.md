@@ -1,7 +1,7 @@
 ---
 title: "Remove odd numbers from a list of numbers"
 summary: "Remove odd numbers from a list of numbers."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['control flow > loops', 'data > types (built-in) > composite > sequences > lists', 'expressions > operators > arithmetic operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos

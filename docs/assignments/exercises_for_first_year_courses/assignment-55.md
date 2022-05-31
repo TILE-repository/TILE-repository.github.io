@@ -1,7 +1,7 @@
 ---
 title: "Convert a letter to upper case"
 summary: "Convert a letter to upper case."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings']"
 target audience: "CS1"
 author: Tanja E.J. Vos

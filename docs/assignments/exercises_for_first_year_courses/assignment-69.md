@@ -1,7 +1,7 @@
 ---
 title: "Maximum value in a non-empty list"
 summary: "Maximum value in a non-empty list."
-prerequisites: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'imperative programming > variables']"
 concepts practised: "['expressions > operators > relational operators', 'control flow > loops', 'data > types (built-in) > composite > sequences > lists']"
 target audience: "CS1"
 author: Tanja E.J. Vos

@@ -1,7 +1,7 @@
 ---
 title: "Removing first and last digits from and interger"
 summary: "Removing first and last digits from and interger."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos

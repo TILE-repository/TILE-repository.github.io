@@ -1,7 +1,7 @@
 ---
 title: "Reading and filtering names and birth dates from a file"
 summary: "Reading and filtering names and birth dates from a file."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops', 'io > files > text > plain']"
 target audience: "CS1"
 author: Tanja E.J. Vos
@@ -14,6 +14,5 @@ From the [Saving names and birth dates to a file](exercises_for_first_year_cours
 files `"dates.txt"`:
 
 -   a file `"dates.txt"` which has no one born in May
-
 -   a file `"dates.txt"` which has more than one person born in May
 

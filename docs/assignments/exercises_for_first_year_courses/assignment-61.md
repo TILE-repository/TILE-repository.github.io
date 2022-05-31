@@ -1,7 +1,7 @@
 ---
 title: "Integer series"
 summary: "Integer series."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
 concepts practised: "['control flow > loops', 'data > types (built-in) > composite > sequence > strings']"
 target audience: "CS1"
 author: Tanja E.J. Vos

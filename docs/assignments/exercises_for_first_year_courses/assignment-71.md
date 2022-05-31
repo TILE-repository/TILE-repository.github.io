@@ -1,7 +1,7 @@
 ---
 title: "Split a string into a list of unique words"
 summary: "Split a string into a list of unique words."
-prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops', 'data > types (built-in) > composite > sequences > lists']"
 target audience: "CS1"
 author: Tanja E.J. Vos

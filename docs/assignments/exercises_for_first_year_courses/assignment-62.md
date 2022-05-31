@@ -1,7 +1,7 @@
 ---
 title: "Password complexity checker"
 summary: "Password complexity checker."
-prerequisites: "['io > standard > input', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'imperative programming > variables']"
 concepts practised: "[, 'data > types (built-in) > composite > sequence > strings', 'expressions > operators > relational operators', 'control flow > loops', 'control flow > conditionals']"
 target audience: "CS1"
 author: Tanja E.J. Vos

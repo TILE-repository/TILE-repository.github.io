@@ -1,7 +1,7 @@
 ---
 title: "ASCII Art of a HEART"
 summary: "ASCII Art of a HEART."
-prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops']"
 target audience: "CS1"
 author: Tanja E.J. Vos

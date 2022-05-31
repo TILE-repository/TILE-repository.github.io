@@ -1,7 +1,7 @@
 ---
 title: "Is this character a digit? - part two"
 summary: "Calling another function to determine if a character is a digit."
-prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
 concepts practised: "['expressions > operators > relational operators', 'control flow > conditionals', 'data > types (built-in) > primitive > boolean']"
 target audience: "CS1"
 author: Tanja E.J. Vos

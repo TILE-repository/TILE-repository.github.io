@@ -1,7 +1,7 @@
 ---
 title: "Mortal set theory"
 summary: "Mortal set theory."
-prerequisites: "['data > types (built-in) > composite > sets', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['data > types (built-in) > composite > sets', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > primitive > boolean', 'data > types (built-in) > composite > sets', 'control flow > conditionals', 'control flow > loops']"
 target audience: "CS1"
 author: Tanja E.J. Vos

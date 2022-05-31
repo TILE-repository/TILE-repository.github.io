@@ -1,7 +1,7 @@
 ---
 title: "Process prices from a file and calculate the VAT"
 summary: "Process prices from a file and calculate the VAT."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables]"
 concepts practised: "['data > types (built-in) > primitive > numeric', 'io > files > text > plain', 'expressions > operators > arithmetic operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos

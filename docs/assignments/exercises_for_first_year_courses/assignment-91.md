@@ -1,7 +1,7 @@
 ---
 title: "Calculating sums of the even- and the odd-indexed numbers"
 summary: "Calculating sums of the even- and the odd-indexed numbers."
-prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > tuples', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > tuples', 'imperative programming > variables']"
 concepts practised: "['data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > tuples', 'control flow > conditionals', 'control flow > loops', 'expressions > operators > arithmetic operators']"
 target audience: "CS1"
 author: Tanja E.J. Vos
