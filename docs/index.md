@@ -30,7 +30,7 @@ To fill this gap, we developed TILE, Test Informed Learning with Examples.
 
 ## Types of TILES
 
-We disthinghuish different types of TILES:
+We distinguish different types of TILES:
 
 Test run TILES
 :	When we show (or asks) our students what happens when we run (or execute) a piece of programming code, we can, with a minor change of the wording make a TILE out of the example. For example, we can ask the students to *test* the program, or ask them to *assert* the right output instead of asking them to *run* the program.
