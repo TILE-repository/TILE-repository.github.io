@@ -197,7 +197,6 @@ That was my last question!
 You took care of 75% of the cases. Well done!
 ```
 
-
 ## References
 
 [^1]: [Test-driven learning: intrinsic integration of testing into the CS/SE curriculum](http://dl.acm.org/citation.cfm?id=1121419)
