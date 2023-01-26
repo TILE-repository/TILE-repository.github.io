@@ -47,4 +47,4 @@ The maintainers of the TILE repository will be notified and will review your sub
 
 ## Support
 
-If you need any help, do not hesitate to contact one of the maintainers of this repository.
+If you need any help, do not hesitate to contact one of the maintainers of this repository. We are always willing to help!
