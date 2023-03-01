@@ -32,9 +32,7 @@ To add assignments, copy the `template` folder in `/docs/assignments/` and renam
 
 The [blueprint](assignments/template/blueprint.md) is a hierarchical structure describing common concepts in programming languages. These concepts are used to describe the prerequisites of assignments and the concepts that can be practiced with the assignment. 
 
-![The blueprint](images/Blueprint.png)
-
-You can find the blueprint as a larger image [here](images/Blueprint.png).
+<a href="images/Blueprint.png"><img src="images/Blueprint.png" alt="A mindmap of the blueprint describing common concepts in programming languages"></a>
 
 
 ## Check for build errors
@@ -49,4 +47,4 @@ The maintainers of the TILE repository will be notified and will review your sub
 
 ## Support
 
-If you need any help, do not hesitate to contact one of the maintainers of this repository.
+If you need any help, do not hesitate to contact one of the maintainers of this repository. We are always willing to help!
