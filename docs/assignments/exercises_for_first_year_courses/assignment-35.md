@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Determine the quadrant of the Cartesian plane"
+summary: "Determine the quadrant of the Cartesian plane based on a coordinate."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'data > types (built-in) > composite > sets', 'expressions > operators > relational operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Determine the quadrant of the Cartesian plane
@@ -22,17 +27,3 @@ and the 4 different quadrants).
 Insist that the students test their programs by giving them hints on
 what to test to get all possible outputs.
 ```
-
-# Metadata
-
-| *Summary*                     | Determine the quadrant of the Cartesian plane based on a coordinate. |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      | Determine the quadrant of the Cartesian plane. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Conditional statements. |
-| *Testing learning goals*      | Designing test cases for path coverage |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

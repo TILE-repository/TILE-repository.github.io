@@ -1,6 +1,11 @@
 ---
 title: "Working with matrices"
-author: TILEd by Tanja E.J. Vos
+summary: "Working with matrices."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'data > types (built-in) > composite > array']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Working with matrices
@@ -64,17 +69,5 @@ def test_multiply(testcase, input1, input2, output):
     assert multiply(input1, input2) == output, "case 0".format(testcase)
 ```
 
-# Metadata
-
-| *Summary*                     | Working with matrices |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 
 [^3]: [https://es.wikipedia.org/wiki/Multiplicación_de_matrices](https://es.wikipedia.org/wiki/Multiplicación_de_matrices)

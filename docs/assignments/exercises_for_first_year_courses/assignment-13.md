@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Calculating PIN codes"
+summary: "Basic cryptography."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Calculating PIN codes
@@ -61,17 +66,3 @@ A table with test cases was added and the student were made aware of
 the test cases that not really contained valid dates but still
 calculated a PIN number.
 ```
-
-
-# Metadata
-
-| _Summary_ | Basic cryptography |
-| _TILE aspects_ | Test run TILE-ing is applied. |
-| _Topics_ | Using modulo operator |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | Using modulo to do basic cryptography. |
-| _Testing learning goals_ | Applying test cases, input validation. |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

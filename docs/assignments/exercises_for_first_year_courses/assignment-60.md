@@ -1,7 +1,13 @@
 ---
 title: "Removing first and last digits from and interger"
-author: TILEd by Tanja E.J. Vos
+summary: "Removing first and last digits from and interger."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
+concepts practised: "['expressions > operators > relational operators', 'expressions > operators > arithmetic operators', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Removing first and last digits from and interger
 
@@ -19,18 +25,3 @@ Write a function that, given an integer $$N1$$, returns another integer $$N2$$ t
 Insist that the students test their programs by giving them a table
 of test cases.
 ```
-
-
-# Metadata
-
-| *Summary*                     |  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

@@ -1,6 +1,11 @@
 ---
 title: "DNI number calculation"
-author: TILEd by Tanja E.J. Vos
+summary: "DNI number calculation."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # DNI number calculation
@@ -30,17 +35,4 @@ Complete the table with the number of rows you consider necessary to design your
 5                 ||         
 6                 ||   
 
-
-# Metadata
-
-| *Summary*                     |  |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 

@@ -1,7 +1,13 @@
 ---
 title: "Password complexity checker"
-author: TILEd by Tanja E.J. Vos
+summary: "Password complexity checker."
+prerequisites: "['io > standard > input', 'imperative programming > variables']"
+concepts practised: "[, 'data > types (built-in) > composite > sequence > strings', 'expressions > operators > relational operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
+
 
 # Password complexity checker
 
@@ -36,17 +42,3 @@ you thought about both lowercase and uppercase?
 Insist that the students test their programs by asking them
 questions on what would be good test cases.
 ```
-
-# Metadata
-
-| *Summary*                     | Password complexity checker |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

@@ -1,6 +1,11 @@
 ---
 title: "Calculate the variance of the numbers from a file"
-author: TILEd by Tanja E.J. Vos
+summary: "Calculate the variance of the numbers from a file."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'data > types (built-in) > composite > sequences > strings', 'imperative programming > variables]"
+concepts practised: "['data > types (built-in) > composite > sequences > lists', 'io > files > text > plain', 'expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Calculate the variance of the numbers from a file
@@ -52,22 +57,3 @@ Remember to keep in mind that comparing floats for equality has
 rounding and precision problems. That is why we must compare that
 the difference between what comes out of our function and what we
 expect is less than, for example, $$10^{-7}$$.
-
-
-
-
-
-
-# Metadata
-
-| *Summary*                     | Calculate the variance of the numbers from a file |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

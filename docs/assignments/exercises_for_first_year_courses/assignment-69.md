@@ -1,6 +1,11 @@
 ---
 title: "Maximum value in a non-empty list"
-author: TILEd by Tanja E.J. Vos
+summary: "Maximum value in a non-empty list."
+prerequisites: "['io > standard > input', 'imperative programming > variables']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > loops', 'data > types (built-in) > composite > sequences > lists']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Maximum value in a non-empty list
@@ -13,18 +18,4 @@ Write a function (`maxPos`) that, given a non-empty list, returns the position w
     2          | |               
     3          ||                
     ... ||
-
-
-# Metadata
-
-| *Summary*                     | Maximum value in a non-empty list |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 

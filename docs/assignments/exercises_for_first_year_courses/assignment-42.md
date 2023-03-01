@@ -1,11 +1,14 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Failures per test case"
+summary: "Counting test case failures."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > relational operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Counting test case failures
-
-
 
 
 
@@ -53,16 +56,3 @@ handle negative numbers.
 Categorising series of inputs, where the inputs are related to test
 cases. Test cases can find errors!
 ```
-
-# Metadata
-
-| *Summary*                     | Failures per test case |
-| *TILE aspects*                | Test domain TILE-ing is applied. |
-| *Topics*                      | Conditionals, assignments, loops. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Basic calculations, loops and conditionals. Basic statistical analysis. |
-| *Testing learning goals*      | Creating awareness of test failures. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

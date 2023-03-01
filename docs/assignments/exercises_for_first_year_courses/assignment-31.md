@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Marathon selection"
+summary: "Marathon selection."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'expressions > operators > relational operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Marathon selection
@@ -59,16 +64,3 @@ Insist that the students test their programs by giving them example
 test executions. Add a comment on tests that might be missing and
 that they have to think about.
 ```
-
-# Metadata
-
-| *Summary*                     | Marathon selection |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Conditional statements, calculating percentages. |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Conditional statements, calculating percentages. |
-| *Testing learning goals*      | Boundary value testing. |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   

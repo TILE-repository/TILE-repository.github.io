@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Relational operators"
+summary: "Working with relational operators."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['control flow > conditionals', 'data > types (built-in) > primitive > boolean', 'expressions > operators > relational operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Working with relational operators
@@ -37,17 +42,3 @@ Insist that the students test their programs by giving them example
 test cases in a table. Again the chosen values will make them aware
 that this is not only for numerical values.
 ```
-
-# Metadata
-
-| *Summary*                     |  |
-| *TILE aspects*                | Test cases and test run TILE-ing is applied. |
-| *Topics*                      | Logical operators |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with logical operators |
-| *Testing learning goals*      | Testing for robustness |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

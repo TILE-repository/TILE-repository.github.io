@@ -1,13 +1,15 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "More advanced calculator"
+summary: "More advanced calculator."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
+
 # More advanced calculator
-
-
-
-
 
 Implement a program that reads two integer numbers, calculates and prints their addition, subtraction, product, division and modulus or remainder (`%`).
 
@@ -33,17 +35,3 @@ Implement a program that reads two integer numbers, calculates and prints their 
 ```testruntile
 TILEd by adding example test executions for them to test.
 ```
-
-
-# Metadata
-
-| _Summary_ | More advanced calculator. |
-| _TILE aspects_ |Test run TILE-ing is applied. |
-| _Topics_ | Input output, variables. |
-| _Technology used_ | Python. |
-| _Audience_ | CS1 |
-| _Programming learning goals_ | command line in-/output, variables. |
-| _Testing learning goals_ | Creating test awareness |
-| _Prerequisites_ |  Basic programming constructs.  |
-| _Variants_ |  Many options are possible, including porting to other programming languages. |
-| _Added by_                    | Tanja E.J. Vos |  

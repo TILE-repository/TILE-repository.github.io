@@ -1,6 +1,11 @@
 ---
-title: "Test Informed Learning with Examples assignment"
-author: TILEd by Tanja E.J. Vos
+title: "Armstrong numbers"
+summary: "Calculating armstrong numbers."
+prerequisites: "['io > standard > input', 'data > types (built-in) > primitive > numeric', 'imperative programming > variables > variable declaration', 'imperative programming > variables > assignment']"
+concepts practised: "['expressions > operators > arithmetic operators', 'control flow > loops', 'control flow > conditionals']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # Armstrong numbers
@@ -29,17 +34,3 @@ $$407=4^3+0^3+7^3$$
 Insist that the students test their programs by giving them the
 expected outcome of their program.
 ```
-
-# Metadata
-
-| *Summary*                     | Calculating armstrong numbers. |
-| *TILE aspects*                | Test run TILE-ing is applied. |
-| *Topics*                      | Arithmetics,  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  | Working with individual digits of numbers, calculating the power of a number. |
-| *Testing learning goals*      | Test completeness |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
-

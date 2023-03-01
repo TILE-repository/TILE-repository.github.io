@@ -1,6 +1,11 @@
 ---
 title: "ASCII Art of a HEART"
-author: TILEd by Tanja E.J. Vos
+summary: "ASCII Art of a HEART."
+prerequisites: "['data > types (built-in) > composite > sequences > strings', 'imperative programming > variables']"
+concepts practised: "['data > types (built-in) > composite > sequences > strings', 'control flow > loops']"
+target audience: "CS1"
+author: Tanja E.J. Vos
+license: "CC-BY"
 ...
 
 # ASCII Art of a HEART
@@ -17,18 +22,4 @@ Write Python code that prompts the user for a 4-character word and
             HEART      HEART
               HEART  HEART
                  HEART
-
-
-# Metadata
-
-| *Summary*                     | ASCII Art of a HEART |
-| *TILE aspects*                | Test domain, test cases and test run TILE-ing is applied. |
-| *Topics*                      |  |
-| *Technology used*             | Python |
-| *Audience*                    | CS1 |
-| *Programming learning goals*  |  |
-| *Testing learning goals*      |  |
-| *Prerequisites*               | Basic programming constructs. |
-| *Variants*                    | Many options are possible, including porting to other programming languages. | 
-| *Added by*                    | Tanja E.J. Vos |   
 
