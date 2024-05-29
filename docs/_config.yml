@@ -4,6 +4,7 @@ description: Repository with assignments using the Test Informed Learning with E
 author: Niels Doorn, Tanja Vos, Beatriz Marín
 show_downloads: false
 logo: TILE_logo.png
+baseurl: ""
 url: "https://tile-repository.github.io" # the base hostname & protocol for your site
 github:
   is_project_page: false
